@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { accessible: 3, checks-pass: 2 }
+failedChecks: { accessible: 3, checks-pass: 4 }
 ---
 
 # Increment: informatik-dateien-7-8
@@ -154,6 +154,10 @@ geöffnet und zitiert (alle HTTP 200, BSI, Verbraucherbereich):
 
 ### Answers
 
+- Musterseite `passwort` (Orchestrator): „Ja, die übrigen Seiten folgen diesem Muster. Der Kasten ‚Annahmen dieser App‘
+  und der Hinweis auf Ratelisten sind genau richtig.“ Runtime-Fund `number` → app-templates#217.
+
+
 - Auftrag des Orchestrators (Welle 2): „Kapitel 2 ‚Daten sichern und schützen‘ (Bausteine `datensicherung`,
   `sicheres-passwort`, `schadsoftware`, `schutzsoftware`), wie im Issue #492 und in deinem Plan (Recap, Nachrichten
   Mia–Selin, Rate-Simulation, BSI-Belege).“
@@ -251,7 +255,7 @@ einem zweiten Ort ist. Sonst keine Bilder (7-8, Nachrichten).
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Slice passwort (Musterseite): Kapitel schuetzen anlegen (chapter.yaml, app.yaml), Seite schuetzen/passwort de+en mit Nachrichten Mia-Selin, Anzeige-Komponente RateZeit mit Logik und Test (Annahmen sichtbar, kein Eingabefeld), generated Möglichkeiten zählen, Übungen zu Zugang schützen (ein Passwort je Zugang, Passwort-Manager, Zwei-Faktor); kein Sub-Agent
-- [ ] Slice Sammel-Wiederholung schuetzen/das-brauchst-du (de+en): recap informatiksysteme-im-alltag und hardware-und-software; kein Sub-Agent
+- [x] Slice Sammel-Wiederholung schuetzen/das-brauchst-du (de+en): recap informatiksysteme-im-alltag und hardware-und-software; kein Sub-Agent
 - [ ] Slice datensicherung: Seite schuetzen/datensicherung de+en, Ordnerbaum als Kopie (Prop Wurzelname), generated verlorene Tage, Lage welche Daten bleiben, Zwischenstände; kein Sub-Agent
 - [ ] Slice schadsoftware: Seite schuetzen/schadsoftware de+en, Fälle Wege der Schadsoftware (generated aus Datendatei), Arten zuordnen; kein Sub-Agent
 - [ ] Slice schutzsoftware: Seite schuetzen/schutzsoftware de+en, Fall zu Schutz (generated), Einstellungen am Tablet, Kapitelregel und Rückblick; kein Sub-Agent
