@@ -258,7 +258,7 @@ einem zweiten Ort ist. Sonst keine Bilder (7-8, Nachrichten).
 - [x] Slice Sammel-Wiederholung schuetzen/das-brauchst-du (de+en): recap informatiksysteme-im-alltag und hardware-und-software; kein Sub-Agent
 - [x] Slice datensicherung: Seite schuetzen/datensicherung de+en, Ordnerbaum als Kopie (Prop Wurzelname), generated verlorene Tage, Lage welche Daten bleiben, Zwischenstände; kein Sub-Agent
 - [x] Slice schadsoftware: Seite schuetzen/schadsoftware de+en, Fälle Wege der Schadsoftware (generated aus Datendatei), Arten zuordnen; kein Sub-Agent
-- [ ] Slice schutzsoftware: Seite schuetzen/schutzsoftware de+en, Fall zu Schutz (generated), Einstellungen am Tablet, Kapitelregel und Rückblick; kein Sub-Agent
+- [x] Slice schutzsoftware: Seite schuetzen/schutzsoftware de+en, Fall zu Schutz (generated), Einstellungen am Tablet, Kapitelregel und Rückblick; kein Sub-Agent
 <!-- tasks: slices (5 added): one per competency, as written in Plan -->
 - [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it

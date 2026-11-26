@@ -1,0 +1,98 @@
+# Cases of the page schutzsoftware: which protection helps (BSI: firewall dok/504484, antivirus dok/504492, updates
+# dok/504184, mobile devices dok/6687234). `schutz` is the right one; `falschN` the other three with why not here.
+- fall:
+    {
+      de: "Ein Programm auf Mias Laptop will heimlich Daten ins Internet schicken.",
+      en: "A program on Mia's laptop wants to send data to the internet in secret.",
+    }
+  schutz: { de: Firewall, en: firewall }
+  falsch1: { de: Virenschutz, en: antivirus }
+  falsch2: { de: Update, en: update }
+  falsch3: { de: Bildschirmsperre, en: screen lock }
+  grund1:
+    {
+      de: "Der Virenschutz sucht nach bekannter Schadsoftware. Wer welche Verbindung ins Internet aufbaut, prüft er nicht.",
+      en: "Antivirus looks for known malware. It does not check who connects to the internet.",
+    }
+  grund2:
+    {
+      de: "Ein Update schließt Lücken in Programmen. Es kontrolliert keine Verbindungen.",
+      en: "An update closes gaps in programs. It does not control connections.",
+    }
+  grund3:
+    {
+      de: "Die Sperre hält Fremde vom Bildschirm fern, nicht Programme vom Internet.",
+      en: "The lock keeps strangers away from the screen, not programs away from the internet.",
+    }
+- fall:
+    {
+      de: "Der Hersteller hat eine Sicherheitslücke in Mias App gefunden und behoben.",
+      en: "The maker has found a security gap in Mia's app and fixed it.",
+    }
+  schutz: { de: Update, en: update }
+  falsch1: { de: Firewall, en: firewall }
+  falsch2: { de: Virenschutz, en: antivirus }
+  falsch3: { de: Bildschirmsperre, en: screen lock }
+  grund1:
+    {
+      de: "Die Lücke ist in der App selbst. Nur die neue Fassung der App schließt sie.",
+      en: "The gap is in the app itself. Only the new version of the app closes it.",
+    }
+  grund2:
+    {
+      de: "Die Lücke ist keine Schadsoftware, sondern ein Fehler in der App. Den behebt das Update.",
+      en: "The gap is not malware but a mistake in the app. The update fixes it.",
+    }
+  grund3:
+    {
+      de: "Die Sperre hilft gegen Fremde am Gerät, nicht gegen Fehler in einer App.",
+      en: "The lock helps against strangers at the device, not against mistakes in an app.",
+    }
+- fall:
+    {
+      de: "Im Ordner Downloads landet eine Datei mit einer bekannten Schadsoftware.",
+      en: "A file with a known piece of malware ends up in the Downloads folder.",
+    }
+  schutz: { de: Virenschutz, en: antivirus }
+  falsch1: { de: Firewall, en: firewall }
+  falsch2: { de: Update, en: update }
+  falsch3: { de: Bildschirmsperre, en: screen lock }
+  grund1:
+    {
+      de: "Die Datei ist schon auf dem Gerät. Jetzt muss jemand sie als Schadsoftware erkennen.",
+      en: "The file is already on the device. Now something has to recognise it as malware.",
+    }
+  grund2:
+    {
+      de: "Ein Update ändert deine Programme, es prüft keine Dateien in Downloads.",
+      en: "An update changes your programs; it does not check files in Downloads.",
+    }
+  grund3:
+    {
+      de: "Die Sperre hilft gegen Fremde am Gerät, nicht gegen eine Datei, die schon da ist.",
+      en: "The lock helps against strangers at the device, not against a file that is already there.",
+    }
+- fall:
+    {
+      de: "Mia hat ihr Tablet im Bus liegen lassen. Jemand will es aufmachen und hineinschauen.",
+      en: "Mia has left her tablet on the bus. Someone wants to open it and look inside.",
+    }
+  schutz: { de: Bildschirmsperre, en: screen lock }
+  falsch1: { de: Firewall, en: firewall }
+  falsch2: { de: Virenschutz, en: antivirus }
+  falsch3: { de: Update, en: update }
+  grund1:
+    {
+      de: "Die Person sitzt direkt am Gerät, nicht im Internet.",
+      en: "The person is right at the device, not on the internet.",
+    }
+  grund2:
+    {
+      de: "Hier will kein Programm schaden, sondern ein Mensch hineinschauen.",
+      en: "No program wants to do harm here; a person wants to look inside.",
+    }
+  grund3:
+    {
+      de: "Ein Update schließt Lücken in Programmen, aber es hält niemanden vom Bildschirm fern.",
+      en: "An update closes gaps in programs, but it keeps nobody away from the screen.",
+    }
