@@ -55,6 +55,10 @@ Kapitel 2 für 7-8 ist mitgeplant und kommt als Inkrement auf `increment/7-8`.)
 - Sprachen `[de, en]`: Deutsch einfache Sprache mit „du“, Englisch Plain English mit „you“; Fachwörter wie im
   Computing curriculum England (file, folder, path, storage, cloud, USB stick). Ordner- und Dateinamen werden
   übersetzt (Schule/School), Namen der Figuren bleiben.
+- Festgelegte Bilder (Nachtrag 2 des Orchestrators), mit Herkunft kopiert: `klasse-6b.svg` (Mia), `EvaBild` (#490),
+  `glaeserner-computer.svg` (#490; Festspeicher = oranges Kästchen #e07b24), Baum-Stil aus `baum-zimmer.svg` (#491).
+  Die Sammel-Wiederholung zeigt den gläsernen Computer als `labelled-figure` und knüpft am orangen Kästchen an: „Hier
+  liegen Mias Dateien.“ Keine übersetzbaren Wörter in SVG-Dateien.
 - Einheiten: 1 Byte = 8 Bit, 1 Kilobyte = 1000 Byte, 1 Megabyte = 1000 Kilobyte, 1 Gigabyte = 1000 Megabyte (Regeln
   des Epics, wie #491).
 
