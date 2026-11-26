@@ -4,7 +4,7 @@
 # Archetype, as in the app's first plan. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: plan
+phase: code
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -33,6 +33,7 @@ Einstellungen. (Issue lernapps/apps#492, Welle 2: Kapitel 2 `schuetzen`, 4 Baust
 
 ## Key decisions
 
+- Kein `scope` (wie die erste Version: keine `open-task`, kein Material eines Erstellers).
 - Kapitel `schuetzen` „Daten sichern und schützen“ nach `ordnen`, wie im ersten Plan geplant; Reihenfolge nach der Karte:
   Sammel-Wiederholung, `datensicherung`, `passwort`, `schadsoftware`, `schutzsoftware`.
 - Sammel-Wiederholung `schuetzen/das-brauchst-du` mit `recap: [informatik/informatiksysteme-im-alltag,
@@ -177,10 +178,11 @@ geöffnet und zitiert (alle HTTP 200, BSI, Verbraucherbereich):
 - [x] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
       `lernapps-explainer-design` says, and say why the guide's patterns do not fit.
 - [x] Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
+- [x] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
       what is new. At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Ja, so bauen. Die Musterseite passwort kommt zuerst. PIN-Übung: nach der Anzahl der Möglichkeiten (10 000) fragen, nicht nach einer echten PIN. RateZeit: Zeiten in Worten ehrlich runden (ungefähr 3 Jahre); dazu sagen, dass echte Angreifer oft schneller sind, weil Menschen vorhersehbare Passwörter wählen (Grund für nicht Name + Geburtsjahr). Schadsoftware: bei wie kommt sie herein, woran erkenne ich sie, was tue ich dann (Erwachsene fragen, Gerät vom Netz) bleiben.
 
 ### Content method
 
@@ -238,17 +240,17 @@ einem zweiten Ort ist. Sonst keine Bilder (7-8, Nachrichten).
 
 ### Tasks
 
-- [ ] `git switch -c increment/<NN>-<short name>` from `main`. Commit this plan on it.
-- [ ] Load skill `lernapps-cli`. Update the app as its section "Update" says. Commit the update alone and fix its
+- [x] `git switch -c increment/<NN>-<short name>` from `main`. Commit this plan on it.
+- [x] Load skill `lernapps-cli`. Update the app as its section "Update" says. Commit the update alone and fix its
       findings before any content. The update replaces the `lernapps-*` skills: read again those you use.
-- [ ] Load skill `lernapps-explainer` and the content guide.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer` and the content guide.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Slice passwort (Musterseite): Kapitel schuetzen anlegen (chapter.yaml, app.yaml), Seite schuetzen/passwort de+en mit Nachrichten Mia-Selin, Anzeige-Komponente RateZeit mit Logik und Test (Annahmen sichtbar, kein Eingabefeld), generated Möglichkeiten zählen, Übungen zu Zugang schützen (ein Passwort je Zugang, Passwort-Manager, Zwei-Faktor); kein Sub-Agent
+- [x] Slice passwort (Musterseite): Kapitel schuetzen anlegen (chapter.yaml, app.yaml), Seite schuetzen/passwort de+en mit Nachrichten Mia-Selin, Anzeige-Komponente RateZeit mit Logik und Test (Annahmen sichtbar, kein Eingabefeld), generated Möglichkeiten zählen, Übungen zu Zugang schützen (ein Passwort je Zugang, Passwort-Manager, Zwei-Faktor); kein Sub-Agent
 - [ ] Slice Sammel-Wiederholung schuetzen/das-brauchst-du (de+en): recap informatiksysteme-im-alltag und hardware-und-software; kein Sub-Agent
 - [ ] Slice datensicherung: Seite schuetzen/datensicherung de+en, Ordnerbaum als Kopie (Prop Wurzelname), generated verlorene Tage, Lage welche Daten bleiben, Zwischenstände; kein Sub-Agent
 - [ ] Slice schadsoftware: Seite schuetzen/schadsoftware de+en, Fälle Wege der Schadsoftware (generated aus Datendatei), Arten zuordnen; kein Sub-Agent

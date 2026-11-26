@@ -41,7 +41,11 @@ Kapitel `ordnen` – Ordner, Pfade und Speicherorte (5-6):
   Pflicht), `welcher-ort` (generated), `risiko`, `cloud-nirgendwo`, `cloud-brauchen`; Abschnitt `regel` mit der
   Kapitelregel und dem Rückblick.
 
-Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `datensicherung`, `sicheres-passwort`
+Kapitel `schuetzen` – Daten sichern und schützen (7-8, im Bau auf `increment/7-8`):
+- `sicheres-passwort`: „Ich kann ein sicheres Passwort bilden und erklären, wie ich meine Zugänge schütze.“ →
+  `src/schuetzen/passwort.yaml` (Musterseite des Kapitels). Übungen: `pin-moeglichkeiten`, `moeglichkeiten`
+  (generated, Pflicht, `data/zeichenarten.yaml`), `am-schwersten`, `ein-fuer-alles`, `zusaetzlich-schuetzen`.
+Geplant: `datensicherung`, `sicheres-passwort`
 (Seite `passwort`), `schadsoftware`, `schutzsoftware`; Sammel-Wiederholung `informatiksysteme-im-alltag`,
 `hardware-und-software`.
 
@@ -71,6 +75,11 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   6. Nur auf der letzten Seite des Kapitels: `regel` – die Regel für das eigene Gerät und der Rückblick.
 - Kapitelregel 1: „Jede Datei bekommt einen klaren Namen und ihren Ordner. Was wichtig ist, liegt an zwei Orten.“
 - Länge: höchstens 350 Wörter zum Lesen und 350 in Aufgaben, höchstens 4 Textblöcke hintereinander.
+
+- **Kapitel 2 (7-8):** Mia und Selin sind 12, Klasse 7b, ein Jahr nach Kapitel 1 (Vorgabe für alle Explainer der
+  Welle 2). Die Geschichte steht als **Nachrichten** in einem `text`-Block: Zeilen „**Selin:** …“ / „**Mia:** …“,
+  keine Szenenbilder. Jede Seite beginnt und endet mit Nachrichten.
+- Fakten nur, wo das BSI sie belegt (Seiten im Abschnitt Sources); die Kapitelregel ist eine Regel der App.
 
 ## Terminology
 
@@ -115,6 +124,12 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 - **Ort → Risiko** (`speicherorte`): `matching` `risiko` mit einem Ablenker.
 - Pfade stehen fett im Text (kein `code`-Block, nicht übersetzbar).
 
+- **Ratezeit ausprobieren** (`passwort`): Anzeige-Komponente `RateZeit` (Regler Länge 4–24, Kästchen für 4
+  Zeichenarten 26/26/10/33), zeigt Zeichenvorrat, Möglichkeiten und mittlere Ratezeit bei 10¹⁰ Versuchen pro Sekunde.
+  Rate und Sonderzeichen-Zahl sind **Annahmen der App** und stehen im Kasten „Annahmen dieser App“ daneben; kein
+  Eingabefeld für Passwörter. Zahlen ehrlich gerundet mit „ungefähr“, sehr große als „eine Zahl mit n Stellen“.
+  Logik in `RateZeit.ts` mit Test; Beispiele im `nojs` aus der echten Rechnung.
+
 ## Figures
 
 - `src/images/mia-sucht.svg` (S. 1): Mia vor ihrem Tablet voller loser Datei-Symbole (Text: weißes Blatt mit Zeilen;
@@ -133,6 +148,9 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   (#491). Nichts daran ändern.
 - Alle eigenen Bilder: `source: eigene Zeichnung`, `licence: CC-BY-4.0`. Keine Screenshots fremder Software.
 
+- `RateZeit`: Rahmen und Farben nur aus den Variablen der Seite; Stufenbalken Sekunden – Stunden – Monate – Jahre –
+  Jahrtausende, erreichte Stufen in der Akzentfarbe, Beschriftung mit Silbentrennung.
+
 ## Sources
 
 - Fakten zu Speicherorten nur aus dem BSI (Cloud braucht Internet, Daten beim Anbieter; Mobilgeräte gehen leicht
@@ -143,7 +161,9 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap03.html> (3.254).
 - Dateigrößen (Foto ~4 MB, Lied ~4 MB, Video ~100 MB je Minute, Text ~20 KB) und Speichergrößen (Tablet 64 GB, Stick
   32 GB, Cloud 15 GB) sind gerundete Beispiele ohne Primärquelle; der Text sagt „ungefähr“.
-- Kapitel 2: nur belegen, was das BSI sagt (Passwörter dok/6596574, Datensicherung dok/6599060, dok/6598916,
+- Kapitel 2: Passwörter https://www.bsi.bund.de/dok/6596574 („Je länger, desto besser“, 8 Zeichen aus vier Zeichenarten
+  oder sehr lang, „20 bis 25 Zeichen“, ein Passwort je Zugang), Zwei-Faktor dok/509176, Passwort-Manager (BSI
+  Accountschutz). Das BSI nennt keine Rate pro Sekunde. Sonst nur belegen, was das BSI sagt (Passwörter dok/6596574, Datensicherung dok/6599060, dok/6598916,
   Schadprogramme dok/6596284, dok/6596868, dok/6599600, Updates dok/504184, Virenschutz dok/504492, dok/504502). Das
   BSI nennt keine 3-2-1-Regel; die eigene Regel heißt „an zwei Orten, einer davon nicht zu Hause“.
 

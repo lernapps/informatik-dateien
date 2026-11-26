@@ -1,0 +1,4 @@
+# Kinds of characters for the generated task "moeglichkeiten" (page passwort): small sets, so that the numbers stay
+# readable. The sizes are the same as in the simulation RateZeit.
+- { art: { de: Ziffern, en: digits }, n: 10 }
+- { art: { de: kleinen Buchstaben, en: small letters }, n: 26 }

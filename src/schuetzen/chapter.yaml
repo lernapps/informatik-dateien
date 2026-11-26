@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Daten sichern und schützen
+  en: Backing up and protecting data
+summary:
+  de: Du sicherst Mias Dateien, bildest sichere Passwörter, erkennst, wie Schadsoftware ins Gerät kommt, und schützt es.
+  en: You back up Mia's files, make secure passwords, spot how malware gets onto a device and protect it.
+pages: [passwort]
