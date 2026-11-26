@@ -6,3 +6,17 @@ summary:
   de: Du räumst Mias Tablet auf, findest Dateien über ihren Pfad wieder und vergleichst, wo Dateien liegen können.
   en: You tidy up Mia's tablet, find files again by their path and compare where files can be stored.
 pages: [das-brauchst-du, ordner-und-dateien, dateipfad, speicherorte]
+selfAssessment:
+  pages:
+    - exercises:
+        - /ordnen/ordner-und-dateien/#ablegen
+        - /ordnen/ordner-und-dateien/#im-ordner
+        - /ordnen/ordner-und-dateien/#ablegen
+    - exercises:
+        - /ordnen/dateipfad/#ordner-ablesen
+        - /ordnen/dateipfad/#pfad-ordnen
+        - /ordnen/dateipfad/#oeffnen
+    - exercises:
+        - /ordnen/speicherorte/#gb-in-mb
+        - /ordnen/speicherorte/#wie-viele-passen
+        - /ordnen/speicherorte/#welcher-ort

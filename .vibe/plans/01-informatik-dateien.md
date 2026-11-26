@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -197,6 +197,23 @@ Voraussetzungen von außerhalb (nicht in dieser App geübt):
   64 GB, Stick 32 GB, kostenloser Cloud-Speicher 15 GB. Die Größen sind typische Werte, keine Marken (guess, Quelle
   folgt bei der Recherche).
 - Sprachen: Deutsch (einfache Sprache, „du“) und Englisch (Plain English, „you“), je ein vollständiger Seitenbaum.
+
+### Prüfungen in Code (was ich behoben habe)
+
+- Lerncheck der Musterseite (Subagent, de+en, 360/1280 px): Ordner = „was zusammengehört“ statt „nach Art“; Merke
+  gestrichen (verriet zwei Übungen); Seeberg als Ordner im Ordner ab Stand 1; Downloads erklärt; Meldung für die
+  Wurzel; mehrdeutige Wiederfinden-Aufgaben ersetzt; Meldung für 3 bei `ordner-loeschen`; en „speech“.
+- Fachprüfer (Informatik): Pfad gilt nur auf dem Gerät (Selin besucht Mia, statt „schick mir“); ausgeschnittene Datei
+  bleibt blass an ihrem Platz; Beispiel S. 3 hält die Regel „an zwei Orten“ (Stick + Cloud); .mp3/.jpg-Aufgaben
+  eindeutig; Seeberg-Meldung für Fotos; Dateimanager definiert; Pfad auch für Ordner; Papierkorb; Anschluss beim
+  Stick; englische Wörter.
+- Lerncheck der ganzen App: Mia (11, 6b), Selin und Jona eingeführt; Selin nicht mehr „umgezogen“ (jetzt Mias Tante);
+  Videos vom Seeberg angekündigt; kein Verweis auf ein fehlendes Kapitel; Seitentitel voll; Fehler ×100 bei
+  `wie-viele-passen`; Bildtext S. 3; lange Dateinamen im Baum kleiner; englische Formulierungen.
+- Ordnerbaum Stand 2 bei 360 px: Dateien in die unterste Reihe, Kästen in die Zeichnung gerückt, Test gegen Überlappung.
+- Nicht behoben, an den Orchestrator gemeldet (Runtime): allgemeine Meldungen („Antworte zuerst …“, „vergleiche sie
+  mit dem Text über der Aufgabe“), nur „Richtig!“ ohne Grund bei Komponenten, englische Laufzeittexte, zufällige
+  Aufgabennummern. Recap-Links zeigen deutsche ids (Karte).
 
 ## Explore
 
@@ -454,7 +471,7 @@ Nachrichten zwischen Mia und Selin (7-9); Simulation „Wie lange braucht ein Re
 - [x] Run `npx --no -- lernapps check` until it passes.
 - [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
@@ -467,7 +484,7 @@ Nachrichten zwischen Mia und Selin (7-9); Simulation „Wie lange braucht ein Re
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
 - [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.

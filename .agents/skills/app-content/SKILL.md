@@ -156,7 +156,10 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 4. Abschnitte wie oben; `Ordnerbaum` mit einem neuen Stand (Datensätze mit `von: 4`); Geschichte als Nachrichten
    zwischen Mia und Selin (7-8).
 5. Übungen aus den Mustern oben; neue Datendateien in `src/data/`; Komponenten nur, wo kein Block passt.
-6. `npx --no -- lernapps check`, Commit, Vorschau-PR.
+6. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt
+   (nur Übungen, die ohne ihre Seite klar sind; Kapitel 1: `ablegen` zweimal, `im-ordner`, `ordner-ablesen`,
+   `pfad-ordnen`, `oeffnen`, `gb-in-mb`, `wie-viele-passen`, `welcher-ort`).
+7. `npx --no -- lernapps check`, Commit, Vorschau-PR.
 
 ## Rules learned from mistakes
 
