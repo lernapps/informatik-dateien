@@ -1,0 +1,84 @@
+# Situations of the page speicherorte: the one storage location that fits (Tablet, USB-Stick or Cloud), the two others
+# and why each does not fit here. Each situation names what decides (internet or not, who needs it, where).
+- lage:
+    {
+      de: "Mia will ihrem Freund Jona die Videos der Klassenfahrt geben. Jona hat zu Hause kein Internet.",
+      en: "Mia wants to give her friend Jona the videos of the class trip. Jona has no internet at home.",
+    }
+  ort: { de: USB-Stick, en: USB stick }
+  falsch1: { de: Tablet, en: tablet }
+  falsch2: { de: Cloud, en: cloud }
+  grund1:
+    {
+      de: "Auf Mias Tablet bleiben die Videos bei Mia. Jona bekommt sie so nicht.",
+      en: "On Mia's tablet the videos stay with Mia. Jona does not get them that way.",
+    }
+  grund2: { de: "Ohne Internet kommt Jona nicht an die Cloud.", en: "Without internet Jona cannot reach the cloud." }
+- lage:
+    {
+      de: "Mias Tante wohnt weit weg und hat Internet. Sie will die Fotos vom Seeberg sehen.",
+      en: "Mia's aunt lives far away and has internet. She wants to see the photos from Seeberg.",
+    }
+  ort: { de: Cloud, en: cloud }
+  falsch1: { de: Tablet, en: tablet }
+  falsch2: { de: USB-Stick, en: USB stick }
+  grund1: { de: "Auf Mias Tablet sieht nur Mia die Fotos.", en: "On Mia's tablet only Mia sees the photos." }
+  grund2:
+    {
+      de: "Einen Stick müsste Mia zu ihrer Tante bringen oder schicken. Das dauert bei dem weiten Weg lange.",
+      en: "Mia would have to take or send a stick to her aunt. With that long way, it takes a long time.",
+    }
+- lage:
+    {
+      de: "Mia will ihr Referat morgen am Schulcomputer zeigen. In der Schule hat sie kein Internet, ihr Tablet bleibt zu Hause.",
+      en: "Mia wants to show her speech on the school computer tomorrow. At school she has no internet, and her tablet stays at home.",
+    }
+  ort: { de: USB-Stick, en: USB stick }
+  falsch1: { de: Tablet, en: tablet }
+  falsch2: { de: Cloud, en: cloud }
+  grund1:
+    {
+      de: "Das Tablet bleibt zu Hause, also auch alles, was nur darauf liegt.",
+      en: "The tablet stays at home, and so does everything that is only on it.",
+    }
+  grund2:
+    {
+      de: "In der Schule hat Mia kein Internet, also kommt sie nicht an die Cloud.",
+      en: "At school Mia has no internet, so she cannot reach the cloud.",
+    }
+- lage:
+    {
+      de: "Mia sitzt im Zug ohne Internet. Sie will Lieder auf dem Tablet hören, ohne etwas anzustecken.",
+      en: "Mia is on a train with no internet. She wants to listen to songs on the tablet without plugging anything in.",
+    }
+  ort: { de: Tablet, en: tablet }
+  falsch1: { de: USB-Stick, en: USB stick }
+  falsch2: { de: Cloud, en: cloud }
+  grund1:
+    {
+      de: "Einen Stick müsste sie anstecken. Das will sie nicht.",
+      en: "She would have to plug in a stick. She does not want to.",
+    }
+  grund2:
+    {
+      de: "Im Zug hat sie kein Internet, also kommt sie nicht an die Cloud.",
+      en: "On the train she has no internet, so she cannot reach the cloud.",
+    }
+- lage:
+    {
+      de: "Mia will die Videos so aufheben, dass sie auch dann noch da sind, wenn ihr Tablet und ein Stick zu Hause verloren gehen.",
+      en: "Mia wants to keep the videos so that they are still there even if her tablet and a stick at home get lost.",
+    }
+  ort: { de: Cloud, en: cloud }
+  falsch1: { de: Tablet, en: tablet }
+  falsch2: { de: USB-Stick, en: USB stick }
+  grund1:
+    {
+      de: "Geht das Tablet verloren, ist alles weg, was nur darauf liegt.",
+      en: "If the tablet is lost, everything that is only on it is gone.",
+    }
+  grund2:
+    {
+      de: "Der Stick liegt auch zu Hause und kann mit verloren gehen.",
+      en: "The stick is also at home and can get lost too.",
+    }

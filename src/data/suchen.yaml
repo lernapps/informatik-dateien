@@ -1,0 +1,110 @@
+# What Mia looks for (page ordner-und-dateien, generated "wiederfinden"): the folder of her tree (stand 1) where it lies,
+# the two other folders and why each does not fit. Unambiguous: exactly one folder fits; the text does not name the folder.
+- was:
+    de: das Bild, das sie mit der Kamera von ihrem Geburtstagskuchen gemacht hat
+    en: the picture she took of her birthday cake with the camera
+  ordner:
+    de: Fotos
+    en: Photos
+  falsch1:
+    de: Schule
+    en: School
+  falsch2:
+    de: Musik
+    en: Music
+  grund1:
+    de: Ein Bild vom Kuchen gehört nicht zu den Sachen für die Schule.
+    en: A picture of a cake does not belong with the things for school.
+  grund2:
+    de: Ein Bild kann man nicht anhören.
+    en: You cannot listen to a picture.
+- was:
+    de: "ein Lied zum Tanzen, eine Datei mit der Endung .mp3"
+    en: "a song to dance to, a file with the extension .mp3"
+  ordner:
+    de: Musik
+    en: Music
+  falsch1:
+    de: Schule
+    en: School
+  falsch2:
+    de: Fotos
+    en: Photos
+  grund1:
+    de: "Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Text."
+    en: The extension .mp3 shows that this is something to listen to, not a text.
+  grund2:
+    de: "Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Foto."
+    en: The extension .mp3 shows that this is something to listen to, not a photo.
+- was:
+    de: ihre Notizen für den Unterricht
+    en: her notes for a lesson
+  ordner:
+    de: Schule
+    en: School
+  falsch1:
+    de: Fotos
+    en: Photos
+  falsch2:
+    de: Musik
+    en: Music
+  grund1:
+    de: Notizen sind Text, kein Foto.
+    en: Notes are text, not a photo.
+  grund2:
+    de: Notizen liest man, man hört sie nicht an.
+    en: You read notes, you do not listen to them.
+- was:
+    de: ihr Lieblingslied zum Mitsingen
+    en: her favourite song to sing along to
+  ordner:
+    de: Musik
+    en: Music
+  falsch1:
+    de: Schule
+    en: School
+  falsch2:
+    de: Fotos
+    en: Photos
+  grund1:
+    de: Ihr Lieblingslied braucht Mia nicht für den Unterricht.
+    en: Mia does not need her favourite song for lessons.
+  grund2:
+    de: Ein Lied ist kein Foto.
+    en: A song is not a photo.
+- was:
+    de: "ein Bild von einer Party, eine Datei mit der Endung .jpg"
+    en: "a picture from a party, a file with the extension .jpg"
+  ordner:
+    de: Fotos
+    en: Photos
+  falsch1:
+    de: Schule
+    en: School
+  falsch2:
+    de: Musik
+    en: Music
+  grund1:
+    de: "Die Endung .jpg zeigt: Das ist ein Foto, kein Text."
+    en: The extension .jpg shows that this is a photo, not a text.
+  grund2:
+    de: "Die Endung .jpg zeigt: Das ist ein Foto, nichts zum Hören."
+    en: The extension .jpg shows that this is a photo, not something to listen to.
+- was:
+    de: ihr Gedicht für das Fach Deutsch
+    en: her poem for German class
+  ordner:
+    de: Schule
+    en: School
+  falsch1:
+    de: Fotos
+    en: Photos
+  falsch2:
+    de: Musik
+    en: Music
+  grund1:
+    de: Ein Gedicht ist ein Text, kein Foto.
+    en: A poem is a text, not a photo.
+  grund2:
+    de: Ein Gedicht ist ein Text zum Lesen.
+    en: A poem is a text to read.

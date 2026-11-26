@@ -1,0 +1,22 @@
+# Paths of the files of Mia's tree (stand 2) that lie two folders deep: the root, the first folder, the second folder,
+# the file. Used by the generated exercises of the page dateipfad (order the parts; read off the folder).
+- wurzel: { de: Mias Tablet, en: Mia's tablet }
+  o1: { de: Schule, en: School }
+  o2: { de: Deutsch, en: German }
+  name: { de: referat.txt, en: speech.txt }
+- wurzel: { de: Mias Tablet, en: Mia's tablet }
+  o1: { de: Schule, en: School }
+  o2: { de: Deutsch, en: German }
+  name: { de: notizen.txt, en: notes.txt }
+- wurzel: { de: Mias Tablet, en: Mia's tablet }
+  o1: { de: Schule, en: School }
+  o2: { de: Mathe, en: Maths }
+  name: { de: notizen.txt, en: notes.txt }
+- wurzel: { de: Mias Tablet, en: Mia's tablet }
+  o1: { de: Fotos, en: Photos }
+  o2: { de: Seeberg, en: Seeberg }
+  name: { de: see.jpg, en: lake.jpg }
+- wurzel: { de: Mias Tablet, en: Mia's tablet }
+  o1: { de: Fotos, en: Photos }
+  o2: { de: Seeberg, en: Seeberg }
+  name: { de: zimmer22.jpg, en: room22.jpg }

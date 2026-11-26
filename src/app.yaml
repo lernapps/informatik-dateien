@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: informatik/informatiksysteme
+title:
+  de: "Meine Dateien: ordnen, speichern, schützen"
+  en: "My files: organise, store, protect"
+intro:
+  de: >-
+    Mia ist 11 Jahre alt und geht in die Klasse 6b. Sie hat ein Tablet. Darauf liegen Fotos, Lieder und Texte für die Schule. Du hilfst Mia,
+    Ordnung zu machen: Du legst Dateien in Ordner, findest sie über ihren Pfad wieder und vergleichst Tablet,
+    USB-Stick und Cloud. Wie du Dateien schützt, kommt später in einem eigenen Kapitel. Für die Klassen 5 und 6.
+  en: >-
+    Mia is 11 and in class 6b. She has a tablet. On it there are photos, songs and texts for school. You help Mia tidy it up: you
+    put files into folders, find them again by their path and compare the tablet, a USB stick and the cloud. For
+    ages 10 to 12. How to protect your files will come later in a chapter of its own.
+languages: [de, en]
+chapters: [ordnen]

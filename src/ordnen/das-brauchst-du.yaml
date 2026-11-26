@@ -1,0 +1,170 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Das brauchst du hier
+  en: What you need here
+description:
+  de: "Kurz wiederholt: Festspeicher, Ausschneiden und Einfügen, der Baum, Bit und Byte."
+  en: "A short reminder: storage, cut and paste, the tree, bits and bytes."
+recap: [informatik/computer-bestandteile, informatik/programme-bedienen, informatik/baum, informatik/bit-und-byte]
+blocks:
+  - type: text
+    text:
+      de: |
+        In diesem Kapitel räumst du Mias Tablet auf. Dafür brauchst du vier Dinge, die du schon gelernt hast. Lies
+        jeden Teil und frag dich: Kann ich das schon?
+      en: |
+        In this chapter you will tidy up Mia's tablet. For this you need four things that you have already learnt.
+        Read each part and ask yourself: can I do this already?
+  - type: section
+    id: festspeicher
+    title:
+      de: Bestandteile eines Computers
+      en: Computer components
+    blocks:
+      - type: labelled-figure
+        image: images/glaeserner-computer.svg
+        source:
+          de: eigene Zeichnung aus lernapps/informatik-computer
+          en: own drawing from lernapps/informatik-computer
+        licence: CC-BY-4.0
+        alt:
+          de: >-
+            Ein Tablet aus Glas. Innen sieht man einen grauen Chip, einen grünen Riegel und ein oranges Kästchen.
+          en: >-
+            A tablet made of glass. Inside you can see a grey chip, a green bar and an orange box.
+        caption:
+          de: "Der gläserne Computer: ein Tablet aus Glas. Das orange Kästchen (3) ist der Festspeicher."
+          en: "The glass computer: a tablet made of glass. The orange box (3) is the storage."
+        labels:
+          - { x: 33, y: 40, text: { de: "Prozessor: rechnet", en: "processor: calculates" } }
+          - {
+              x: 55,
+              y: 32,
+              text:
+                {
+                  de: "Arbeitsspeicher: hält, woran gerade gearbeitet wird",
+                  en: "memory: holds what is being worked on right now",
+                },
+            }
+          - {
+              x: 77,
+              y: 65,
+              text:
+                {
+                  de: "Festspeicher: hebt auf, auch ohne Strom. Hier liegen Mias Dateien.",
+                  en: "storage: keeps things, even without power. This is where Mia's files are.",
+                },
+            }
+      - type: text
+        text:
+          de: |
+            Kannst du das schon? Ich kann die wichtigsten Bestandteile eines Computers benennen und ihre Aufgaben
+            beschreiben. Für dieses Kapitel ist einer wichtig: Was Mia speichert, liegt im **Festspeicher**. Dort
+            bleibt es, auch wenn das Tablet aus ist.
+          en: |
+            Can you do this already? I can name the main components of a computer and describe what they do. One of
+            them matters for this chapter: what Mia saves is kept in **storage**. It stays there even when the tablet
+            is off.
+  - type: section
+    id: bedienen
+    title:
+      de: Programme bedienen
+      en: Using application software
+    blocks:
+      - type: text
+        text:
+          de: |
+            Kannst du das schon? Ich kann Grundfunktionen von Programmen wie Öffnen, Speichern, Kopieren und Einfügen
+            sicher nutzen.
+
+            - **Speichern** legt etwas in den Festspeicher.
+            - **Ausschneiden** merkt sich etwas, damit du es woanders hinlegen kannst.
+            - **Einfügen** legt es an einer neuen Stelle wieder hin.
+
+            In diesem Kapitel schneidest du Dateien aus und fügst sie in einem Ordner ein.
+          en: |
+            Can you do this already? I can use the basic functions of programs, such as open, save, copy and paste.
+
+            - **Save** puts something into storage.
+            - **Cut** remembers something so that you can put it somewhere else.
+            - **Paste** puts it back down in a new place.
+
+            In this chapter you will cut files and paste them into a folder.
+  - type: section
+    id: baum
+    title:
+      de: Baum als Datenstruktur
+      en: Trees
+    blocks:
+      - type: labelled-figure
+        image: images/baum-zimmer.svg
+        source:
+          de: eigene Zeichnung aus lernapps/informatik-daten-codieren
+          en: own drawing from lernapps/informatik-daten-codieren
+        licence: CC-BY-4.0
+        alt:
+          de: "Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter jedem Zimmer stehen zwei Kinder in Kästchen mit gestricheltem Rand."
+          en: "A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below each room there are two children in boxes with a dashed border."
+        caption:
+          de: "Der Zimmerplan von Mias Klassenfahrt an den Seeberg: die Kinder der 6b, unter ihnen Mia und ihre Freunde Selin und Jona."
+          en: "The room plan of Mia's class trip to Seeberg: the children of class 6b, among them Mia and her friends Selin and Jona."
+        labels:
+          - { x: 66, y: 12, text: { de: "Wurzel: der oberste Knoten", en: "root: the top node" } }
+          - {
+              x: 67,
+              y: 27,
+              text: { de: "Kante: eine Linie zwischen zwei Knoten", en: "edge: a line between two nodes" },
+            }
+          - { x: 5, y: 38, text: { de: "Knoten: ein Kästchen im Baum", en: "node: a box in the tree" } }
+          - {
+              x: 97,
+              y: 69,
+              text: { de: "Blatt: ein Knoten ohne Knoten darunter", en: "leaf: a node with no nodes below it" },
+            }
+      - type: text
+        text:
+          de: |
+            Kannst du das schon? Ich kann hierarchische Informationen als Baum mit Wurzel, Knoten, Kanten und
+            Blättern darstellen. Mias Tablet wird gleich genauso ein Baum.
+          en: |
+            Can you do this already? I can show information with levels as a tree with a root, nodes, edges and
+            leaves. Mia's tablet will soon be a tree just like this.
+  - type: section
+    id: byte
+    title:
+      de: Bit und Byte
+      en: Bits and bytes
+    blocks:
+      - type: text
+        text:
+          de: |
+            Kannst du das schon? Ich kann die Einheiten Bit, Byte, Kilobyte, Megabyte und Gigabyte erklären und
+            Datenmengen damit vergleichen. Du brauchst sie auf der Seite „Speicherorte vergleichen“.
+          en: |
+            Can you do this already? I can explain the units bit, byte, kilobyte, megabyte and gigabyte and use them
+            to compare amounts of data. You will need them on the page “Comparing storage locations”.
+      - type: table
+        caption:
+          de: Die Einheiten, wie wir in dieser App rechnen
+          en: The units, as we count in this app
+        header:
+          - { de: Einheit, en: Unit }
+          - { de: so viel, en: as much as }
+        rowHeaders: true
+        rows:
+          - - { de: 1 Byte, en: 1 byte }
+            - { de: 8 Bit, en: 8 bits }
+          - - { de: 1 Kilobyte (KB), en: 1 kilobyte (KB) }
+            - { de: 1000 Byte, en: 1000 bytes }
+          - - { de: 1 Megabyte (MB), en: 1 megabyte (MB) }
+            - { de: 1000 Kilobyte, en: 1000 kilobytes }
+          - - { de: 1 Gigabyte (GB), en: 1 gigabyte (GB) }
+            - { de: 1000 Megabyte, en: 1000 megabytes }
+      - type: text
+        text:
+          de: |
+            Fehlt dir etwas davon? Dann schau zuerst auf der Seite des Bausteins nach, oben auf dieser Seite. Sonst
+            geht es los: Mia sucht ihr Referat.
+          en: |
+            Is any of this missing for you? Then look at the page of that building block first, at the top of this
+            page. Otherwise, let's start: Mia is looking for her speech.

@@ -1,0 +1,8 @@
+# Tasks of the file manager in the mode `oeffnen` (page dateipfad): the id of a file of mias-tablet (stand 2) that the
+# learner opens by its path. 14 and 15 are the two files notizen.txt: each has the other as the file of the same name.
+- { ziel: 15 }
+- { ziel: 14 }
+- { ziel: 16 }
+- { ziel: 17 }
+- { ziel: 13 }
+- { ziel: 15 }

@@ -1,0 +1,349 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Speicherorte vergleichen
+  en: Comparing storage locations
+description:
+  de: "Tablet, USB-Stick und Cloud: wie viel Platz, wann du an deine Dateien kommst und was passieren kann."
+  en: "Tablet, USB stick and cloud: how much space, when you can get to your files and what can happen."
+competencies: [speicherorte-vergleichen]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Speicher fast voll
+      en: Storage almost full
+    blocks:
+      - type: text
+        text:
+          de: |
+            Mias Tablet meldet: „Speicher fast voll. Noch 2 GB frei.“ Mia will ihre Videos vom Seeberg aufheben,
+            Dateien mit der Endung .mp4. Aber wohin?
+
+            Auf den Seiten davor hast du Dateien geordnet und über ihren Pfad gefunden. Auf dieser Seite vergleichst
+            du, wo Dateien liegen können. Rechne dafür zuerst um.
+          en: |
+            Mia's tablet says: “Storage almost full. 2 GB left.” Mia wants to keep her videos from Seeberg,
+            files with the extension .mp4. But where?
+
+            On the pages before, you sorted files and found them by their path. On this page you will compare where
+            files can be stored. First, convert the units.
+      - type: number
+        id: gb-in-mb
+        text:
+          de: Wie viele Megabyte (MB) sind 2 Gigabyte (GB)?
+          en: How many megabytes (MB) are in 2 gigabytes (GB)?
+        answer: 2000
+        tolerance: 0
+        unit: { de: MB, en: MB }
+        mistakes:
+          - answer: 2048
+            message:
+              de: "Manche Geräte rechnen mit 1024. In dieser App rechnen wir mit 1000: 2 GB = 2000 MB."
+              en: "Some devices count in 1024s. In this app we count with 1000: 2 GB = 2000 MB."
+          - answer: 2
+            message:
+              de: Das ist die Zahl in GB. Ein GB sind 1000 MB. Wie viele MB sind dann 2 GB?
+              en: That is the number in GB. One GB is 1000 MB. So how many MB are 2 GB?
+          - answer: 0.002
+            message:
+              de: Du hast geteilt. MB sind kleiner als GB, also brauchst du mehr davon. Rechne mal 1000.
+              en: You divided. MB are smaller than GB, so you need more of them. Multiply by 1000.
+          - answer: 200
+            message:
+              de: Ein GB sind 1000 MB, nicht 100. Schau in die Tabelle auf der Seite „Das brauchst du hier“.
+              en: One GB is 1000 MB, not 100. Look at the table on the page “What you need here”.
+        explanation:
+          de: 1 GB = 1000 MB, also 2 GB = 2 · 1000 MB = 2000 MB. Ein Video von 1 Minute hat ungefähr 100 MB. Mit 20 Minuten Video ist das Tablet voll.
+          en: 1 GB = 1000 MB, so 2 GB = 2 · 1000 MB = 2000 MB. A video of 1 minute is about 100 MB. With 20 minutes of video the tablet is full.
+  - type: section
+    id: idee
+    title:
+      de: Drei Orte für Mias Dateien
+      en: Three places for Mia's files
+    blocks:
+      - type: labelled-figure
+        image: images/speicherorte.svg
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+        alt:
+          de: "Drei Bilder nebeneinander, auf jedem derselbe kleine Baum: links Mias Tablet mit türkiser Hülle, in der Mitte ein USB-Stick, rechts eine Wolke. Von der Wolke führt eine gestrichelte Linie nach unten zu einem Haus mit vielen Rechnern."
+          en: "Three pictures side by side, each with the same small tree: on the left Mia's tablet with a turquoise case, in the middle a USB stick, on the right a cloud. A dashed line leads down from the cloud to a building with lots of computers."
+        caption:
+          de: Mias Dateien an drei Orten. Der kleine Baum steht für Mias Ordnerbaum. Die Zahlen gehören zu den Namen darunter.
+          en: Mia's files in three places. The small tree stands for Mia's folder tree. The numbers belong to the names below.
+        labels:
+          - {
+              x: 17,
+              y: 22,
+              text: { de: "das Tablet: der Festspeicher im Gerät", en: "the tablet: the storage inside the device" },
+            }
+          - {
+              x: 50,
+              y: 22,
+              text:
+                {
+                  de: "ein USB-Stick: ein kleiner Speicher zum Anstecken",
+                  en: "a USB stick: a small storage device you plug in",
+                },
+            }
+          - {
+              x: 80,
+              y: 14,
+              text:
+                {
+                  de: "die Cloud: Speicher auf Rechnern einer Firma, über das Internet",
+                  en: "the cloud: storage on the computers of a company, over the internet",
+                },
+            }
+      - type: definition
+        term:
+          de: Speicherort
+          en: storage location
+        explanation:
+          de: Ein Speicherort ist der Platz, an dem eine Datei liegt, zum Beispiel ein Tablet, ein USB-Stick oder eine Cloud.
+          en: A storage location is the place where a file is kept, for example a tablet, a USB stick or a cloud.
+      - type: definition
+        term:
+          de: Cloud-Speicher
+          en: cloud storage
+        explanation:
+          de: Ein Cloud-Speicher liegt auf Rechnern einer Firma. Du kommst über das Internet an deine Dateien, meist mit Name und Passwort.
+          en: Cloud storage is on the computers of a company. You reach your files over the internet, usually with a name and a password.
+      - type: table
+        caption:
+          de: Mias drei Speicherorte. Die Größen sind Beispiele.
+          en: Mia's three storage locations. The sizes are examples.
+        header:
+          - { de: Ort, en: Place }
+          - { de: Wie viel Platz?, en: How much space? }
+          - { de: Wann kommst du dran?, en: When can you get to it? }
+        rowHeaders: true
+        rows:
+          - - { de: Tablet, en: tablet }
+            - { de: "64 GB, aber schon fast voll", en: "64 GB, but almost full" }
+            - { de: "immer, wenn du das Tablet dabeihast", en: "whenever you have the tablet with you" }
+          - - { de: USB-Stick, en: USB stick }
+            - { de: 32 GB, en: 32 GB }
+            - {
+                de: "an jedem Gerät mit passendem Anschluss, auch ohne Internet",
+                en: "on any device with the right socket, even without internet",
+              }
+          - - { de: Cloud, en: cloud }
+            - { de: "15 GB, kostenlos", en: "15 GB, free" }
+            - { de: "von jedem Gerät, aber nur mit Internet", en: "from any device, but only with internet" }
+      - type: note
+        title:
+          de: Sicher?
+          en: Safe?
+        blocks:
+          - type: text
+            text:
+              de: |
+                Jeder Ort hat sein Risiko. Ein Tablet kann herunterfallen, verloren gehen oder gestohlen werden. Ein
+                Stick ist so klein, dass er schnell verloren geht. In der Cloud gibst du deine Daten einer anderen Firma,
+                und wer dein Passwort kennt, kommt an sie heran.
+              en: |
+                Each place has its risk. A tablet can be dropped, lost or stolen. A stick is so small that it is easily
+                lost. In the cloud you give your data to a company, and anyone who knows your password
+                can get to it.
+  - type: section
+    id: beispiel
+    title:
+      de: Beispiel
+      en: Example
+    blocks:
+      - type: example
+        title:
+          de: Wohin mit den Videos?
+          en: Where should the videos go?
+        blocks:
+          - type: text
+            text:
+              de: |
+                Mia vergleicht die drei Orte für die Videos vom Seeberg, ungefähr 3000 MB:
+
+                - **Platz:** Auf dem Tablet sind noch 2000 MB frei, das reicht nicht. Auf den Stick passen 32 000 MB,
+                  in die Cloud 15 000 MB.
+                - **Erreichbarkeit:** Mia will die Videos auch bei Oma zeigen. Dort gibt es kein Internet. Den Stick
+                  kann sie mitnehmen.
+                - **Sicherheit:** Ein Stick kann verloren gehen oder kaputtgehen. Darum lädt Mia die Videos zusätzlich
+                  in die Cloud, dafür reichen die 15 000 MB.
+
+                Mia nimmt den Stick zu Oma mit. Und die Videos liegen an zwei Orten: auf dem Stick und in der Cloud.
+              en: |
+                Mia compares the three places for the videos from Seeberg, about 3000 MB:
+
+                - **Space:** there are 2000 MB left on the tablet, which is not enough. 32 000 MB fit on the stick,
+                  15 000 MB in the cloud.
+                - **Access:** Mia also wants to show the videos at her grandma's. There is no internet there. She can
+                  take the stick with her.
+                - **Safety:** a stick can get lost or break. So Mia also uploads the videos to the cloud; the
+                  15 000 MB are enough for that.
+
+                Mia takes the stick to her grandma's. And the videos are kept in two places: on the stick and in the
+                cloud.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: wie-viele-passen
+        given:
+          m: { pick: 1, from: { data: medien } }
+          g: { oneOf: [8, 16, 32, 64] }
+        task:
+          text:
+            de: "Wie viele {{m.art}} mit je ungefähr {{m.mb}} MB passen auf einen leeren USB-Stick mit {{g}} GB?"
+            en: "How many {{m.art}} of about {{m.mb}} MB each fit on an empty USB stick with {{g}} GB?"
+        answer:
+          value: "g * 1000 / m.mb"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "g / m.mb"
+            message:
+              de: "Du hast die GB nicht in MB umgerechnet. Rechne zuerst: {{g}} GB = {{g}} · 1000 MB."
+              en: "You did not convert the GB into MB. First work out: {{g}} GB = {{g}} · 1000 MB."
+          - value: "g * 1000 * m.mb"
+            message:
+              de: Du hast mal gerechnet. Gefragt ist, wie oft {{m.mb}} MB in den Stick passen. Teile.
+              en: You multiplied. The question is how many times {{m.mb}} MB fit on the stick. Divide.
+          - value: "g * 100 / m.mb"
+            message:
+              de: "Ein GB sind 1000 MB, nicht 100. Rechne {{g}} · 1000 MB."
+              en: "One GB is 1000 MB, not 100. Work out {{g}} · 1000 MB."
+          - value: "g * 1024 / m.mb"
+            message:
+              de: "Manche Geräte rechnen mit 1024. In dieser App rechnen wir mit 1000: 1 GB = 1000 MB."
+              en: "Some devices count in 1024s. In this app we count with 1000: 1 GB = 1000 MB."
+        hint:
+          de: Rechne die GB zuerst in MB um. Dann teile durch die Größe einer Datei.
+          en: First convert the GB into MB. Then divide by the size of one file.
+        steps:
+          - de: "{{g}} GB = {{g}} · 1000 MB."
+            en: "{{g}} GB = {{g}} · 1000 MB."
+          - de: "Geteilt durch {{m.mb}} MB für jede Datei: {{answer}} {{m.art}}."
+            en: "Divided by {{m.mb}} MB for each file: {{answer}} {{m.art}}."
+      - type: generated
+        id: welcher-ort
+        given:
+          l: { pick: 1, from: { data: lagen } }
+        task:
+          text:
+            de: "{{l.lage}} Welcher Speicherort passt hier am besten?"
+            en: "{{l.lage}} Which storage location fits best here?"
+        answer:
+          value: l.ort
+          compare:
+            choice:
+              - { de: Tablet, en: tablet }
+              - { de: USB-Stick, en: USB stick }
+              - { de: Cloud, en: cloud }
+        mistakes:
+          - value: l.falsch1
+            message: { de: "{{l.grund1}}", en: "{{l.grund1}}" }
+          - value: l.falsch2
+            message: { de: "{{l.grund2}}", en: "{{l.grund2}}" }
+        hint:
+          de: "Frag dich: Gibt es dort Internet? Wer braucht die Dateien, und wo?"
+          en: "Ask yourself: is there internet there? Who needs the files, and where?"
+        steps:
+          - de: "{{l.lage}} Darum passt hier der Speicherort {{answer}}."
+            en: "{{l.lage}} That is why the storage location {{answer}} fits here."
+      - type: matching
+        id: risiko
+        text:
+          de: Was kann an welchem Ort passieren? Ordne zu.
+          en: What can happen at which place? Match them up.
+        pairs:
+          - left: { de: Tablet, en: tablet }
+            right:
+              {
+                de: "Fällt es herunter und geht kaputt, ist alles weg, was nur darauf liegt.",
+                en: "If it falls and breaks, everything that is only on it is gone.",
+              }
+          - left: { de: USB-Stick, en: USB stick }
+            right:
+              de: "Er ist so klein, dass er schnell in einer Tasche verloren geht."
+              en: "It is so small that it easily gets lost in a bag."
+          - left: { de: Cloud, en: cloud }
+            right:
+              {
+                de: "Ohne Internet kommst du nicht an deine Dateien.",
+                en: "Without internet you cannot get to your files.",
+              }
+        distractors:
+          - { de: "Er kann nur Texte speichern, keine Fotos.", en: "It can only store texts, not photos." }
+        explanation:
+          de: Jeder Ort hat sein eigenes Risiko. Speichern können alle drei jede Art von Datei.
+          en: Each place has its own risk. All three can store any kind of file.
+      - type: true-false
+        id: cloud-nirgendwo
+        text:
+          de: Was in der Cloud liegt, liegt nirgendwo, nur in der Luft.
+          en: What is in the cloud is nowhere, just in the air.
+        answer: false
+        explanation:
+          de: Die Cloud ist nur ein Bild. Die Dateien liegen auf echten Rechnern einer Firma, in einem großen Haus voller Rechner.
+          en: The cloud is just a picture. The files are kept on real computers of a company, in a big building full of computers.
+      - type: multiple-choice
+        id: cloud-brauchen
+        text:
+          de: Mia ist bei Selin und will dort an ihre Fotos in der Cloud. Was braucht sie dafür? Wähle alles, was stimmt.
+          en: Mia is at Selin's and wants to get to her photos in the cloud there. What does she need? Choose everything that is true.
+        options:
+          - text: { de: Internet, en: internet }
+            correct: true
+            info:
+              de: Ja, die Cloud erreicht sie nur über das Internet.
+              en: Yes, she can only reach the cloud over the internet.
+          - text: { de: ihren Zugang mit Name und Passwort, en: her login with a name and password }
+            correct: true
+            info:
+              de: Ja, damit zeigt sie, dass es ihre Dateien sind.
+              en: Yes, this shows that they are her files.
+          - text: { de: ihr eigenes Tablet, en: her own tablet }
+            correct: false
+            info:
+              de: Nein, an die Cloud kommt sie von jedem Gerät, also auch von Selins.
+              en: No, she can reach the cloud from any device, so from Selin's too.
+          - text:
+              de: "den USB-Stick, auf dem die Fotos auch liegen"
+              en: "the USB stick that also has the photos on it"
+            correct: false
+            info:
+              de: Den Stick braucht sie für die Cloud nicht. Er ist ein anderer Speicherort.
+              en: She does not need the stick for the cloud. It is a different storage location.
+        explanation:
+          de: Für die Cloud brauchst du Internet und deinen Zugang. Welches Gerät du nimmst, ist egal.
+          en: For the cloud you need internet and your login. It does not matter which device you use.
+  - type: section
+    id: regel
+    title:
+      de: Deine Regel
+      en: Your rule
+    blocks:
+      - type: note
+        title:
+          de: Meine Regel für mein Gerät
+          en: My rule for my device
+        blocks:
+          - type: text
+            text:
+              de: |
+                Jede Datei bekommt einen klaren Namen und ihren Ordner. Was wichtig ist, liegt an zwei Orten.
+              en: |
+                Every file gets a clear name and its folder. What is important is kept in two places.
+      - type: text
+        text:
+          de: |
+            Rückblick: Du hast Mias Tablet aufgeräumt, Dateien über ihren Pfad gefunden und drei Speicherorte
+            verglichen. Probier die Regel an deinem eigenen Gerät aus. Warum „an zwei Orten“? Das lernst du in einem
+            späteren Kapitel, wenn Mias Tablet verloren geht.
+          en: |
+            Looking back: you tidied up Mia's tablet, found files by their path and compared three storage
+            locations. Try the rule on your own device. Why “in two places”? You will learn that in a later chapter,
+            when Mia's tablet gets lost.
