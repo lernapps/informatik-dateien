@@ -21,7 +21,7 @@ blocks:
             **Selin:** selin2014. Mein Name und mein Geburtsjahr.
             **Mia:** Das kann jeder raten, der dich kennt. Und ein Computer rät noch viel schneller.
 
-            Selin und Mia sind 12 und gehen in die 7b. Hier lernst du, warum manche Passwörter schnell erraten sind
+            Auf der Seite davor hast du Mias Dateien gesichert. Hier lernst du, warum manche Passwörter schnell erraten sind
             und wie du deine Zugänge schützt.
           en: |
             **Selin:** Mia, someone logged into my gaming account! 😮
@@ -29,7 +29,7 @@ blocks:
             **Selin:** selin2014. My name and the year I was born.
             **Mia:** Anyone who knows you can guess that. And a computer guesses even faster.
 
-            Selin and Mia are 12 and in class 7b. Here you will learn why some passwords are guessed quickly and how to
+            On the page before, you backed up Mia's files. Here you will learn why some passwords are guessed quickly and how to
             protect your accounts.
       - type: number
         id: pin-moeglichkeiten

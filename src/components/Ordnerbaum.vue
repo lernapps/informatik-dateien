@@ -5,7 +5,7 @@
 // straight lines, white background. The names come from the props, so the picture is the same in every language.
 // The logic (which nodes, where) is in Ordnerbaum.ts.
 import { computed } from "vue";
-import { layout, type Node } from "./Ordnerbaum.ts";
+import { layout, ROOT_PARENT, type Node } from "./Ordnerbaum.ts";
 
 defineOptions({ nojs: "caption" });
 
@@ -14,9 +14,20 @@ const props = defineProps<{
   nodes: Node[];
   /** How far the tree has grown: 1, 2 or 3. */
   stand: number;
+  /** Another name for the root, e.g. for a copy of the tree on a stick; without it the name of the data. */
+  rootName?: string;
 }>();
 
-const tree = computed(() => layout(props.nodes, props.stand));
+const tree = computed(() =>
+  layout(
+    props.rootName === undefined
+      ? props.nodes
+      : props.nodes.map((node) =>
+          node.parent === ROOT_PARENT ? { ...node, name: props.rootName ?? node.name } : node,
+        ),
+    props.stand,
+  ),
+);
 </script>
 
 <template>
