@@ -148,8 +148,9 @@ Geplant: `datensicherung`, `sicheres-passwort`
   (#491). Nichts daran ändern.
 - Alle eigenen Bilder: `source: eigene Zeichnung`, `licence: CC-BY-4.0`. Keine Screenshots fremder Software.
 
-- `RateZeit`: Rahmen und Farben nur aus den Variablen der Seite; Stufenbalken Sekunden – Stunden – Monate – Jahre –
-  Jahrtausende, erreichte Stufen in der Akzentfarbe, Beschriftung mit Silbentrennung.
+- `RateZeit`: Rahmen und Farben nur aus den Variablen der Seite; Stufenbalken in den Einheiten des Textes (Sekunden –
+  Minuten – Stunden – Tage – Jahre – über 1000 Jahre), füllt sich von links (im Text gesagt), erreichte Stufen in
+  der Akzentfarbe, Beschriftung mit Silbentrennung. Zahlwörter bis Trillionen; exakte Zahlen ohne „ungefähr“.
 
 ## Sources
 
@@ -182,6 +183,11 @@ Geplant: `datensicherung`, `sicheres-passwort`
 7. `npx --no -- lernapps check`, Commit, Vorschau-PR.
 
 ## Rules learned from mistakes
+
+- Eine Simulation, die die Kinder etwas vergleichen lässt, bekommt direkt danach eine Übung zu genau diesem Vergleich
+  (`was-bringt-mehr`); ein Balken nutzt dieselben Einheiten wie der Text (Lerncheck: „4 Tage“ leuchtete „Monate“).
+- Formeln kurz halten: eine lange `formula` scrollt bei 360 px und verletzt `accessible`.
+- Zahlaufgaben mit großen Zahlen: „Schreib die Zahl ohne Punkt“ (die Runtime liest „10.000“ nicht).
 
 - Ein Pfad gilt nur auf dem Gerät, auf dem die Datei liegt: Niemand „schickt“ einen Pfad statt der Datei (Fachprüfer).
 - Ausschneiden lässt eine Datei an ihrem Platz, bis sie eingefügt ist; der Dateimanager zeigt sie blass mit

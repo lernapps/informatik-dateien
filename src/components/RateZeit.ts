@@ -53,9 +53,12 @@ export function count(value: number, bigs: readonly Big[], locale: string, huge:
     return huge.replace("{n}", String(Math.floor(Math.log10(value)) + 1));
   }
   const big = sorted.find((b) => value >= b.value);
-  const prefix = about === "" ? "" : `${about} `;
-  if (big === undefined) return `${prefix}${roundHonest(value).toLocaleString(locale)}`;
-  return `${prefix}${roundHonest(value / big.value).toLocaleString(locale)} ${big.name}`;
+  const scaled = big === undefined ? value : value / big.value;
+  const rounded = roundHonest(scaled);
+  const prefix = about === "" || rounded === scaled ? "" : `${about} `;
+  return big === undefined
+    ? `${prefix}${rounded.toLocaleString(locale)}`
+    : `${prefix}${rounded.toLocaleString(locale)} ${big.name}`;
 }
 
 /**
@@ -84,12 +87,16 @@ export function duration(
   return `${prefix}${rounded.toLocaleString(locale)} ${rounded === 1 ? unit.one : unit.many}`;
 }
 
-/** The step of the bar: 0 below a minute, 1 below a day, 2 below a year, 3 below a thousand years, 4 above. */
+/**
+ * The step of the bar, in the units of the text: 0 seconds (below a minute), 1 minutes, 2 hours, 3 days (below a
+ * year), 4 years (below a thousand years), 5 thousands of years and more.
+ */
 export function stage(seconds: number): number {
   const year = 365 * 24 * 3600;
   if (seconds < 60) return 0;
-  if (seconds < 24 * 3600) return 1;
-  if (seconds < year) return 2;
-  if (seconds < 1000 * year) return 3;
-  return 4;
+  if (seconds < 3600) return 1;
+  if (seconds < 24 * 3600) return 2;
+  if (seconds < year) return 3;
+  if (seconds < 1000 * year) return 4;
+  return 5;
 }

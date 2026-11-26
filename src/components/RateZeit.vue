@@ -41,7 +41,7 @@ const props = defineProps<{
   hugeCount: string;
   /** A time beyond the largest word, with {n} for its digits. */
   hugeTime: string;
-  /** The names of the five steps of the bar, from seconds to thousands of years. */
+  /** The names of the six steps of the bar, from seconds to over a thousand years. */
   stages: string[];
   /** The word before a rounded number, e.g. ungefähr. */
   about: string;
@@ -145,7 +145,7 @@ const fill = (text: string) =>
 
 .ratezeit-bar {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2px;
   list-style: none;
   margin: 0.5rem 0 0;

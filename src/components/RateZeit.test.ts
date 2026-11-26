@@ -69,10 +69,16 @@ test("times and counts are rounded honestly in words", () => {
   expect(duration(10.44, units, bigs, "", "de", H, "ungefähr")).toBe("ungefähr 10 Sekunden");
 });
 
-test("the bar has five steps from seconds to thousands of years", () => {
+test("the bar has six steps in the units of the text, so 4 days are days, not months", () => {
   expect(stage(10)).toBe(0);
-  expect(stage(3600)).toBe(1);
-  expect(stage(30 * 86400)).toBe(2);
-  expect(stage(5 * 31536000)).toBe(3);
-  expect(stage(1e12)).toBe(4);
+  expect(stage(600)).toBe(1);
+  expect(stage(3600)).toBe(2);
+  expect(stage(4 * 86400)).toBe(3);
+  expect(stage(55 * 86400)).toBe(3);
+  expect(stage(5 * 31536000)).toBe(4);
+  expect(stage(1e12)).toBe(5);
+});
+
+test("an exact count needs no ungefähr", () => {
+  expect(count(10000, bigs, "de", H, "ungefähr")).toBe("10 Tausend");
 });
