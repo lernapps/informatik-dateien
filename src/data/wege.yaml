@@ -1,0 +1,92 @@
+# Cases of the page schadsoftware: how harmful software could get onto a device (the ways the BSI names, dok/6596284).
+# Only how it gets in and how to spot it, never how to make or spread it. `weg` is the right way; `falschN` the other
+# three, each with why it does not fit this case.
+- fall:
+    {
+      de: "Selin bekommt eine Mail von einer fremden Adresse: „Deine Rechnung, bitte öffnen“, mit einer Datei daran.",
+      en: "Selin gets an email from an unknown address: “Your bill, please open”, with a file attached.",
+    }
+  weg: { de: Anhang einer Mail, en: email attachment }
+  falsch1: { de: Gratis-Download, en: free download }
+  falsch2: { de: fremder USB-Stick, en: unknown USB stick }
+  falsch3: { de: Makro in einem Dokument, en: macro in a document }
+  grund1:
+    {
+      de: "Selin lädt nichts von einer Webseite herunter. Die Datei kommt mit der Mail.",
+      en: "Selin does not download anything from a website. The file comes with the email.",
+    }
+  grund2:
+    {
+      de: "Hier steckt niemand etwas ein. Die Datei kommt mit der Mail.",
+      en: "Nobody plugs anything in here. The file comes with the email.",
+    }
+  grund3:
+    {
+      de: "Noch ist kein Dokument offen. Die Gefahr ist die Datei, die an der Mail hängt.",
+      en: "No document is open yet. The danger is the file attached to the email.",
+    }
+- fall:
+    {
+      de: "Ein Spiel, das sonst Geld kostet, gibt es auf einer unbekannten Seite umsonst zum Herunterladen.",
+      en: "A game that normally costs money is free to download from an unknown website.",
+    }
+  weg: { de: Gratis-Download, en: free download }
+  falsch1: { de: Anhang einer Mail, en: email attachment }
+  falsch2: { de: fremder USB-Stick, en: unknown USB stick }
+  falsch3: { de: Makro in einem Dokument, en: macro in a document }
+  grund1:
+    {
+      de: "Es kommt keine Mail. Das Spiel wird von einer Webseite geladen.",
+      en: "No email arrives. The game is downloaded from a website.",
+    }
+  grund2:
+    {
+      de: "Hier steckt niemand etwas ein. Das Spiel kommt aus dem Internet.",
+      en: "Nobody plugs anything in here. The game comes from the internet.",
+    }
+  grund3: { de: "Ein Spiel ist ein Programm, kein Dokument.", en: "A game is a program, not a document." }
+- fall:
+    {
+      de: "Jona findet auf dem Schulhof einen USB-Stick und steckt ihn in den Schullaptop, um zu sehen, wem er gehört.",
+      en: "Jona finds a USB stick in the school yard and plugs it into the school laptop to see whose it is.",
+    }
+  weg: { de: fremder USB-Stick, en: unknown USB stick }
+  falsch1: { de: Anhang einer Mail, en: email attachment }
+  falsch2: { de: Gratis-Download, en: free download }
+  falsch3: { de: Makro in einem Dokument, en: macro in a document }
+  grund1:
+    { de: "Es kommt keine Mail. Die Gefahr steckt auf dem Stick.", en: "No email arrives. The danger is on the stick." }
+  grund2:
+    {
+      de: "Jona lädt nichts aus dem Internet. Er steckt einen fremden Stick ein.",
+      en: "Jona does not download anything. He plugs in an unknown stick.",
+    }
+  grund3:
+    {
+      de: "Noch ist kein Dokument offen. Schon der fremde Stick ist das Risiko.",
+      en: "No document is open yet. The unknown stick itself is the risk.",
+    }
+- fall:
+    {
+      de: "Mia öffnet ein Dokument, und eine Meldung bittet: „Bitte Makros aktivieren, um den Inhalt zu sehen.“",
+      en: "Mia opens a document, and a message asks: “Please enable macros to see the content.”",
+    }
+  weg: { de: Makro in einem Dokument, en: macro in a document }
+  falsch1: { de: Anhang einer Mail, en: email attachment }
+  falsch2: { de: Gratis-Download, en: free download }
+  falsch3: { de: fremder USB-Stick, en: unknown USB stick }
+  grund1:
+    {
+      de: "Woher das Dokument kam, sagt der Fall nicht. Die Gefahr ist das Makro, das es starten will.",
+      en: "The case does not say where the document came from. The danger is the macro it wants to run.",
+    }
+  grund2:
+    {
+      de: "Mia lädt gerade nichts herunter. Die Gefahr steckt im Dokument.",
+      en: "Mia is not downloading anything right now. The danger is in the document.",
+    }
+  grund3:
+    {
+      de: "Hier steckt niemand etwas ein. Die Gefahr steckt im Dokument.",
+      en: "Nobody plugs anything in here. The danger is in the document.",
+    }
