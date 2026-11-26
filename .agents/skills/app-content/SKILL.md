@@ -34,8 +34,12 @@ Kapitel `ordnen` – Ordner, Pfade und Speicherorte (5-6):
   `src/ordnen/ordner-und-dateien.yaml` (Musterseite). Übungen: `was-hilft`, `ablegen` (Komponente), `wiederfinden`
   (generated, Pflicht), `ordner-loeschen`, `umbenennen`, `im-ordner`.
 - `dateipfad`: „Ich kann den Ort einer Datei als Pfad angeben und einen Pfad lesen.“ → `src/ordnen/dateipfad.yaml`.
+  Übungen: `weg-zum-see`, `ordner-ablesen` (generated, im Abschnitt `idee`), `oeffnen` (Komponente), `pfad-ordnen`
+  (generated, Pflicht), `gleicher-name`.
 - `speicherorte-vergleichen`: „Ich kann Speicherorte wie Gerät, USB-Stick und Cloud nach Kapazität, Erreichbarkeit
-  und Sicherheit vergleichen.“ → `src/ordnen/speicherorte.yaml`.
+  und Sicherheit vergleichen.“ → `src/ordnen/speicherorte.yaml`. Übungen: `gb-in-mb`, `wie-viele-passen` (generated,
+  Pflicht), `welcher-ort` (generated), `risiko`, `cloud-nirgendwo`, `cloud-brauchen`; Abschnitt `regel` mit der
+  Kapitelregel und dem Rückblick.
 
 Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `datensicherung`, `sicheres-passwort`
 (Seite `passwort`), `schadsoftware`, `schutzsoftware`; Sammel-Wiederholung `informatiksysteme-im-alltag`,
@@ -53,11 +57,15 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   Ordner; Stand 2 (S. 2) Schule → Deutsch, Mathe; zwei `notizen.txt`; Stand 3 (S. 3) derselbe Baum an drei Orten; Kapitel 2: Kopie, Schloss, Angriff.
 - Abschnitte jeder Seite, ids fest, Titel passend zur Seite:
   1. `einstieg` – Szene, Ziel der Seite („Auf dieser Seite lernst du …“), eine erste leichte Frage vor der Erklärung.
-  2. `idee` – das Neue mit Ordnerbaum oder Bild, `definition` je neuem Fachwort, Kasten `note` „Merke“.
-  3. `ausprobieren` – nur wo der Dateimanager bedient wird: Anleitung der Knöpfe, die Komponente, danach die
-     unplugged-Anleitung als `note`. Sonst `beispiel` mit Kasten `example`.
-  4. `uebung` – Übungen von leicht zu schwer, am Ende ein Text mit dem Lohn und dem nächsten Schritt der Geschichte.
-  5. Nur auf der letzten Seite des Kapitels: `regel` – die Regel für das eigene Gerät und der Rückblick.
+  2. `idee` – das Neue mit Ordnerbaum oder Bild, `definition` je neuem Fachwort; ein Kasten `note` nur, wenn er
+     keine spätere Übung beantwortet (S. 3: „Sicher?“). Höchstens 4 Textblöcke in Folge: sonst eine Übung dazwischen
+     (S. 2: `ordner-ablesen`).
+  3. `beispiel` – Kasten `example` mit einem Weg in Schritten (S. 2 Pfad zu den Mathe-Notizen, S. 3 Wohin mit den
+     Videos?), auf S. 2 danach die unplugged-Anleitung als `note`.
+  4. `ausprobieren` – nur wo der Dateimanager bedient wird (S. 1, S. 2): Anleitung der Knöpfe, die Komponente; auf
+     S. 1 danach die unplugged-Anleitung als `note`.
+  5. `uebung` – Übungen von leicht zu schwer, am Ende ein Text mit dem Lohn und dem nächsten Schritt der Geschichte.
+  6. Nur auf der letzten Seite des Kapitels: `regel` – die Regel für das eigene Gerät und der Rückblick.
 - Kapitelregel 1: „Jede Datei bekommt einen klaren Namen und ihren Ordner. Was wichtig ist, liegt an zwei Orten.“
 - Länge: höchstens 350 Wörter zum Lesen und 350 in Aufgaben, höchstens 4 Textblöcke hintereinander.
 
@@ -92,8 +100,17 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 - **Zählen im Baum** (`ordner-und-dateien`): `number` `ordner-loeschen`, Fehler 0 („nur der Ordner“), 1, 4.
 - **Richtig oder falsch mit Grund**: `true-false` gegen einen typischen Fehler (`umbenennen`).
 - **Was gehört dazu**: `multiple-choice` mit `info` je Option (`im-ordner`).
-- Pfad ordnen (`order` aus `data/pfade.yaml`), Ordner ablesen, Fotos pro Stick (`number`, `data/medien.yaml`), Lage →
-  Ort (`choice`, `data/lagen.yaml`), Ort → Risiko (`matching`): folgen mit den Seiten 2 und 3.
+- **Pfad ordnen** (`dateipfad`): `generated` `pfad-ordnen`, `pick: 1` aus `data/pfade.yaml` (Felder `wurzel`, `o1`,
+  `o2`, `name`, nur Dateien zwei Ordner tief), `compare: order`; Fehler: umgekehrt, Ordner vertauscht.
+- **Ordner ablesen** (`dateipfad`): `generated` `ordner-ablesen`, gleiche Daten, `choice` aus fünf Ordnern; Fehler: der
+  erste statt des letzten Ordners.
+- **Umrechnen und teilen** (`speicherorte`): `number` `gb-in-mb` (2000, eigene Meldung für 2048) und `generated`
+  `wie-viele-passen` aus `data/medien.yaml` (Felder `art`, `mb`) mit `g` aus 8, 16, 32, 64 GB; Fehler: nicht
+  umgerechnet, mal statt geteilt, 1024 (als andere Zählweise).
+- **Lage → Ort** (`speicherorte`): `generated` `welcher-ort` aus `data/lagen.yaml` (Felder `lage`, `ort`, `falsch1`,
+  `falsch2`, `grund1`, `grund2`); jede Lage nennt, was entscheidet (Internet, wer, wo); genau ein Ort passt.
+- **Ort → Risiko** (`speicherorte`): `matching` `risiko` mit einem Ablenker.
+- Pfade stehen fett im Text (kein `code`-Block, nicht übersetzbar).
 
 ## Figures
 
@@ -106,6 +123,9 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   44 px frei. Namen kommen aus den Daten je Sprache, nie als Text in einer SVG-Datei. `nojs` beschreibt den Baum.
 - Übungskomponente `Dateimanager`: Pfadleiste, Liste des offenen Ordners (Ordner gelb, Datei gestrichelt wie im
   Baum), Knöpfe 44 px, Farben nur aus den Variablen der Seite.
+- `src/images/speicherorte.svg` (S. 3, `labelled-figure` mit 3 Markern): Mias Tablet, USB-Stick, Wolke mit Pfeil zu
+  einem Haus voller Rechner; auf jedem Ort derselbe kleine Baum (Wurzel hellblau, Blätter gestrichelt) auf hellem
+  Feld. Unten 44 px frei.
 - Kopiert mit Herkunft: `glaeserner-computer.svg` (#490, Festspeicher = oranges Kästchen #e07b24), `baum-zimmer.svg`
   (#491). Nichts daran ändern.
 - Alle eigenen Bilder: `source: eigene Zeichnung`, `licence: CC-BY-4.0`. Keine Screenshots fremder Software.
