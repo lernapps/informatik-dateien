@@ -201,7 +201,9 @@ Kapitel 2 ist so entstanden; für ein weiteres Kapitel:
 5. Übungen aus den Mustern oben; neue Datendateien in `src/data/`; Komponenten nur, wo kein Block passt.
 6. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt
    (nur Übungen, die ohne ihre Seite klar sind; Kapitel 1: `ablegen` zweimal, `im-ordner`, `ordner-ablesen`,
-   `pfad-ordnen`, `oeffnen`, `gb-in-mb`, `wie-viele-passen`, `welcher-ort`).
+   `pfad-ordnen`, `oeffnen`, `gb-in-mb`, `wie-viele-passen`, `welcher-ort`; Kapitel 2: je Seite zwei – `noch-da`,
+   `verlorene-tage`, `moeglichkeiten`, `am-schwersten`, `welcher-weg`, `arten`, `welcher-schutz`, `einstellungen`; die ganze
+   App hat damit 17).
 7. `npx --no -- lernapps check`, Commit, Vorschau-PR.
 
 ## Rules learned from mistakes
