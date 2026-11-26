@@ -41,13 +41,24 @@ Kapitel `ordnen` – Ordner, Pfade und Speicherorte (5-6):
   Pflicht), `welcher-ort` (generated), `risiko`, `cloud-nirgendwo`, `cloud-brauchen`; Abschnitt `regel` mit der
   Kapitelregel und dem Rückblick.
 
-Kapitel `schuetzen` – Daten sichern und schützen (7-8, im Bau auf `increment/7-8`):
+Kapitel `schuetzen` – Daten sichern und schützen (7-8):
+- Sammel-Wiederholung `src/schuetzen/das-brauchst-du.yaml`: `recap` auf `informatik/informatiksysteme-im-alltag`,
+  `informatik/hardware-und-software` (#490); stellt Mia und Selin ein Jahr später vor (12, 7b). Keine Übung.
+- `datensicherung`: „Ich kann meine Daten durch Sicherungskopien und gespeicherte Zwischenstände vor Verlust
+  schützen.“ → `src/schuetzen/datensicherung.yaml`. Übungen: `was-bleibt`, `noch-da` (generated, Pflicht,
+  `data/verlust.yaml`), `verlorene-tage` (generated), `verschieben`, `sicherung-ordnen`.
 - `sicheres-passwort`: „Ich kann ein sicheres Passwort bilden und erklären, wie ich meine Zugänge schütze.“ →
   `src/schuetzen/passwort.yaml` (Musterseite des Kapitels). Übungen: `pin-moeglichkeiten`, `moeglichkeiten`
-  (generated, Pflicht, `data/zeichenarten.yaml`), `am-schwersten`, `ein-fuer-alles`, `zusaetzlich-schuetzen`.
-Geplant: `datensicherung`, `sicheres-passwort`
-(Seite `passwort`), `schadsoftware`, `schutzsoftware`; Sammel-Wiederholung `informatiksysteme-im-alltag`,
-`hardware-und-software`.
+  (generated, Pflicht, `data/zeichenarten.yaml`), `was-bringt-mehr`, `am-schwersten`, `ein-fuer-alles`,
+  `zusaetzlich-schuetzen`.
+- `schadsoftware`: „Ich kann Arten von Schadsoftware wie Viren und Trojaner beschreiben und erklären, wie sie auf ein
+  Gerät gelangen.“ → `src/schuetzen/schadsoftware.yaml`. Übungen: `nur-webseiten`, `welcher-weg` (generated, Pflicht,
+  `data/wege.yaml`), `arten`, `was-tun`. Nur „wie kommt sie herein, woran erkenne ich sie, was tue ich dann“.
+- `schutzsoftware`: „Ich kann erklären, wie Firewall, Virenschutz und Updates ein Gerät schützen, und
+  Sicherheitseinstellungen nutzen.“ → `src/schuetzen/schutzsoftware.yaml`. Übungen: `nur-funktionen`,
+  `welcher-schutz` (generated, Pflicht, `data/schutz.yaml`), `einstellungen`, `was-er-tut`; Abschnitt `regel` mit der
+  Kapitelregel „Sichere an zwei Orten, einer davon nicht zu Hause. Ein eigenes, langes Passwort für jeden Zugang.
+  Updates sofort.“ und dem Rückblick auf die ganze App.
 
 ## Content structure
 
@@ -78,7 +89,8 @@ Geplant: `datensicherung`, `sicheres-passwort`
 
 - **Kapitel 2 (7-8):** Mia und Selin sind 12, Klasse 7b, ein Jahr nach Kapitel 1 (Vorgabe für alle Explainer der
   Welle 2). Die Geschichte steht als **Nachrichten** in einem `text`-Block: Zeilen „**Selin:** …“ / „**Mia:** …“,
-  keine Szenenbilder. Jede Seite beginnt und endet mit Nachrichten.
+  keine Szenenbilder. Jede Seite beginnt und endet mit Nachrichten. Jede Nachricht ist ein eigener Absatz (Leerzeile
+  dazwischen), sonst laufen sie zusammen; der Satz des Erzählers („Auf der nächsten Seite …“) steht in einem eigenen Absatz.
 - Fakten nur, wo das BSI sie belegt (Seiten im Abschnitt Sources); die Kapitelregel ist eine Regel der App.
 
 ## Terminology
@@ -124,6 +136,11 @@ Geplant: `datensicherung`, `sicheres-passwort`
 - **Ort → Risiko** (`speicherorte`): `matching` `risiko` mit einem Ablenker.
 - Pfade stehen fett im Text (kein `code`-Block, nicht übersetzbar).
 
+- **Fall → richtige Antwort mit Grund je falscher** (Kapitel 2): `generated` mit `choice` aus `data/verlust.yaml`
+  (Ja/Nein), `data/wege.yaml` (vier Wege), `data/schutz.yaml` (vier Schutzarten); Felder `falsch1..3`, `grund1..3`.
+  Jeder Fall ist eindeutig und nennt, was entscheidet.
+- **Datum ohne Rechnen im Platzhalter** (`verlorene-tage`): zwei gezogene Tage `a`, `b` mit `where`, Antwort `b - a`;
+  ein Platzhalter ist nur ein Name, nie `{{a + d}}`.
 - **Ratezeit ausprobieren** (`passwort`): Anzeige-Komponente `RateZeit` (Regler Länge 4–24, Kästchen für 4
   Zeichenarten 26/26/10/33), zeigt Zeichenvorrat, Möglichkeiten und mittlere Ratezeit bei 10¹⁰ Versuchen pro Sekunde.
   Rate und Sonderzeichen-Zahl sind **Annahmen der App** und stehen im Kasten „Annahmen dieser App“ daneben; kein
@@ -162,7 +179,10 @@ Geplant: `datensicherung`, `sicheres-passwort`
   <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap03.html> (3.254).
 - Dateigrößen (Foto ~4 MB, Lied ~4 MB, Video ~100 MB je Minute, Text ~20 KB) und Speichergrößen (Tablet 64 GB, Stick
   32 GB, Cloud 15 GB) sind gerundete Beispiele ohne Primärquelle; der Text sagt „ungefähr“.
-- Kapitel 2: Passwörter https://www.bsi.bund.de/dok/6596574 („Je länger, desto besser“, 8 Zeichen aus vier Zeichenarten
+- Kapitel 2: Datensicherung „Datensicherung – wie geht das?“, dok/10655274, dok/6598916; Ransomware dok/10366332;
+  Wege der Schadsoftware dok/6596284; Arten dok/6596868, dok/6599600; Firewall dok/504484; Virenschutz dok/504492;
+  Updates dok/504184; Mobilgeräte dok/6687234, Apps dok/6684714 (bei App-Updates widersprechen sich die beiden Seiten;
+  wir folgen dok/6687234, automatisch). Passwörter https://www.bsi.bund.de/dok/6596574 („Je länger, desto besser“, 8 Zeichen aus vier Zeichenarten
   oder sehr lang, „20 bis 25 Zeichen“, ein Passwort je Zugang), Zwei-Faktor dok/509176, Passwort-Manager (BSI
   Accountschutz). Das BSI nennt keine Rate pro Sekunde. Sonst nur belegen, was das BSI sagt (Passwörter dok/6596574, Datensicherung dok/6599060, dok/6598916,
   Schadprogramme dok/6596284, dok/6596868, dok/6599600, Updates dok/504184, Virenschutz dok/504492, dok/504502). Das
@@ -170,7 +190,9 @@ Geplant: `datensicherung`, `sicheres-passwort`
 
 ## Adding a chapter or round
 
-1. Plan im Inkrement (`npx --no -- lernapps plan new <name>`), Branch `increment/7-8`.
+Kapitel 2 ist so entstanden; für ein weiteres Kapitel:
+
+1. Plan im Inkrement (`npx --no -- lernapps plan new <name>`), Branch `increment/<name>`.
 2. Ordner `src/schuetzen/` mit `chapter.yaml`, in `src/app.yaml` an `chapters` anhängen.
 3. Zuerst `das-brauchst-du.yaml` mit `recap: [informatik/informatiksysteme-im-alltag, informatik/hardware-und-software]`,
    dann je Baustein eine Seite in der Reihenfolge der Karte, `competencies: [<id>]`.

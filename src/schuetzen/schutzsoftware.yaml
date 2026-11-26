@@ -17,12 +17,14 @@ blocks:
         text:
           de: |
             **Selin:** Mein Tablet will dauernd ein Update. Ich tippe immer auf „Später“.
+
             **Mia:** Mein Onkel sagt, genau so kam die Schadsoftware auf ein Gerät bei ihm in der Firma.
 
             Auf der Seite davor hast du gelernt, wie Schadsoftware hereinkommt. Hier lernst du, was dein Gerät davor
             schützt und welche Einstellungen du selbst machen kannst.
           en: |
             **Selin:** My tablet keeps wanting an update. I always tap “Later”.
+
             **Mia:** My uncle says that is exactly how malware got onto a device at his company.
 
             On the page before, you learnt how malware gets in. Here you will learn what protects your device from it
@@ -244,6 +246,7 @@ blocks:
             schützen. Probier die Regel an deinem eigenen Gerät aus.
 
             **Selin:** Updates sind an. 👍
+
             **Mia:** Und mein Stick liegt bei Oma.
           en: |
             Looking back: you backed up Mia's files, made secure passwords, spotted the ways malware gets in and
@@ -251,4 +254,5 @@ blocks:
             Try the rule on your own device.
 
             **Selin:** Updates are on. 👍
+
             **Mia:** And my stick is at my grandma's.

@@ -18,14 +18,18 @@ blocks:
         text:
           de: |
             **Selin:** Jona hat auf dem Schulhof einen USB-Stick gefunden und in den Schullaptop gesteckt.
+
             **Mia:** Und?
+
             **Selin:** Jetzt gehen auf dem Laptop dauernd Fenster auf, und er ist total langsam. 😬
 
             Jona ist mit Mia und Selin in der 7b. Auf der Seite davor hast du Zugänge mit Passwörtern geschützt. Hier
             lernst du, wie Schadsoftware ohne Passwort auf ein Gerät kommt und was du dann tust.
           en: |
             **Selin:** Jona found a USB stick in the school yard and plugged it into the school laptop.
+
             **Mia:** And?
+
             **Selin:** Now windows keep popping up on the laptop, and it is really slow. 😬
 
             Jona is in class 7b with Mia and Selin. On the page before, you protected accounts with passwords. Here
@@ -215,9 +219,15 @@ blocks:
         text:
           de: |
             **Mia:** Mein Onkel hat das Tablet zurückgesetzt, und mit dem Stick war alles wieder da.
-            **Selin:** Puh! Und wie verhindert man so was? Auf der nächsten Seite, „Schutzsoftware und Updates“, geht es
+
+            **Selin:** Puh! Und wie verhindert man so was?
+
+            Auf der nächsten Seite, „Schutzsoftware und Updates“, geht es
             um den Schutz.
           en: |
             **Mia:** My uncle reset the tablet, and with the stick everything was back.
-            **Selin:** Phew! And how do you stop that happening? The next page, “Security software and updates”, is
+
+            **Selin:** Phew! And how do you stop that happening?
+
+            The next page, “Security software and updates”, is
             about protection.

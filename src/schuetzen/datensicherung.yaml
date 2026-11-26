@@ -17,14 +17,18 @@ blocks:
         text:
           de: |
             **Mia:** Mein Tablet ist beim Paddeln in den See gefallen. Es geht nicht mehr an. 😭
+
             **Selin:** Oh nein! Und deine Videos vom Seeberg?
+
             **Mia:** Die liegen noch auf dem Stick und in der Cloud. Aber mein Referat von gestern war nur auf dem Tablet.
 
             Im ersten Kapitel hast du Speicherorte verglichen. Auf dieser Seite lernst du, wie du Dateien so sicherst,
             dass sie bleiben, wenn ein Gerät kaputtgeht oder verloren ist.
           en: |
             **Mia:** My tablet fell into the lake when I was canoeing. It won't turn on any more. 😭
+
             **Selin:** Oh no! What about your videos from Seeberg?
+
             **Mia:** They are still on the stick and in the cloud. But my speech from yesterday was only on the tablet.
 
             In the first chapter you compared storage locations. On this page you will learn how to back up files so
@@ -233,9 +237,13 @@ blocks:
         text:
           de: |
             **Selin:** Und dein Referat?
+
             **Mia:** Neu geschrieben. Ab jetzt sichere ich jeden Sonntag. Die Cloud hat ein Passwort – ist das gut genug?
+
             Auf der nächsten Seite, „Sichere Passwörter“, findest du es heraus.
           en: |
             **Selin:** And your speech?
+
             **Mia:** Written again. From now on I back up every Sunday. The cloud has a password – is it good enough?
+
             On the next page, “Secure passwords”, you will find out.
