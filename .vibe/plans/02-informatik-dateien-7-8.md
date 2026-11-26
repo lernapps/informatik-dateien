@@ -4,7 +4,7 @@
 # Archetype, as in the app's first plan. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -37,10 +37,13 @@ Einstellungen. (Issue lernapps/apps#492, Welle 2: Kapitel 2 `schuetzen`, 4 Baust
   Sammel-Wiederholung, `datensicherung`, `passwort`, `schadsoftware`, `schutzsoftware`.
 - Sammel-Wiederholung `schuetzen/das-brauchst-du` mit `recap: [informatik/informatiksysteme-im-alltag,
   informatik/hardware-und-software]` (#490); `speicherorte-vergleichen` übt die App selbst (Kapitel 1).
-- Geschichte für 7-8 als **Nachrichten zwischen Mia und Selin** (Form 7-9, `explainer-age-appropriate`): Zwei Jahre
-  später, beide 13, Klasse 8b. Bild nur, wo es etwas zeigt (Ordnerbaum, Simulation). (guess)
+- Geschichte für 7-8 als **Nachrichten zwischen Mia und Selin** (Form 7-9, `explainer-age-appropriate`): Ein Jahr
+  später, alle 12, Klasse 7b (Vorgabe des Orchestrators für alle Explainer der Welle 2). Bild nur, wo es etwas zeigt (Ordnerbaum, Simulation). (guess)
 - Mias Ordnerbaum wächst weiter: Stand 3 (wie Stand 2) als Kopie mit anderer Wurzel („Sicherung auf dem Stick“) –
   dafür bekommt `Ordnerbaum` eine optionale Prop für den Namen der Wurzel. (guess)
+- Rate 10¹⁰ Versuche pro Sekunde und Zeichenvorrat 26/26/10/33 stehen als Annahmen der App auf der Seite (Orchestrator).
+- Updates: Wir folgen BSI dok/6687234 (automatisch). Passwortlänge: „sehr lang (das BSI nennt 20 bis 25 Zeichen)“ mit Link.
+- Komponenten so, dass sie nach dem Update auf app-templates 0.22 `unanswered` nutzen können.
 - **Musterseite** ist `schuetzen/passwort`: Sie hat beide neuen Muster (Nachrichten, Simulation). Die Seite wird zuerst
   gebaut, steht im Kapitel aber an zweiter Stelle. (guess)
 - Neue Anzeige-Komponente `RateZeit` (Simulation): Länge (Regler 4–24) und Zeichenarten (Kästchen) wählen → Zahl der
@@ -144,8 +147,9 @@ geöffnet und zitiert (alle HTTP 200, BSI, Verbraucherbereich):
 - [x] Write under "Notes" the didactic approach per competency and the scope (in, out, data range).
 - [x] The increment needs a kind of content the guide does not cover (a new page structure, screen, component or kind
       of exercise): load skills `lernapps-explainer-design` and `lernapps-exercise-patterns`. Else skip this task.
-- [ ] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
+- [x] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
       scope, every "(guess)", the sources and what is unchecked. Stop and wait. Changes: change them, then ask again.
+      Creator: Plan passt, weiter mit der Musterseite passwort. Alter: Klasse 7b, alle 12, ein Jahr später (für alle Explainer der Welle 2). 10^10 Versuche pro Sekunde als Annahme der App, sichtbar; Zeichenvorrat 26/26/10/33 als Annahme. Updates: dok/6687234 (automatisch). Passwortlänge: sehr lang (das BSI nennt 20 bis 25 Zeichen), mit Link. Recap passt. Version: bei 0.21.0 bleiben.
 
 ### Answers
 
@@ -167,12 +171,12 @@ geöffnet und zitiert (alle HTTP 200, BSI, Verbraucherbereich):
 
 ### Tasks
 
-- [ ] Load skill `lernapps-content-growth`. Add the tasks of Code as slices, one per competency, in the guide's
+- [x] Load skill `lernapps-content-growth`. Add the tasks of Code as slices, one per competency, in the guide's
       order, one call each: `npx --no -- lernapps plan add --at slices "<task>"`. Say in each which sub-agent may
       write it in parallel, if any.
-- [ ] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
+- [x] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
       `lernapps-explainer-design` says, and say why the guide's patterns do not fit.
-- [ ] Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
+- [x] Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
 - [ ] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
       what is new. At most 2 questions.
 - [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
@@ -180,11 +184,48 @@ geöffnet und zitiert (alle HTTP 200, BSI, Verbraucherbereich):
 
 ### Content method
 
-<!-- One line each: the guide's patterns, figures and components used, and where; anything new, what it does and
-cannot. Something new goes into the guide in the slice that adds it. -->
-<!-- An explainer: per figure, model and component its learning action in two to four sentences
-(`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
-page, which a link. -->
+**Aufbau.** Kapitel `schuetzen` in `src/app.yaml` an `chapters` angehängt; Seiten `das-brauchst-du`, `datensicherung`,
+`passwort`, `schadsoftware`, `schutzsoftware`. Abschnitte wie im Inhaltsleitfaden (`einstieg`, `idee`, `beispiel` oder
+`ausprobieren`, `uebung`, auf der letzten Seite `regel`). Neu: die Geschichte als **Nachrichten** – ein `text`-Block
+mit Zeilen „**Selin:** …“ / „**Mia:** …“ (kein neuer Block, keine Komponente).
+
+**Muster aus dem Leitfaden:** `generated` mit `choice` aus Datendatei (Lage → Antwort mit Grund je falscher Antwort),
+`number` mit typischen Fehlern, `matching`, `true-false`, `multiple-choice`, `ordering`, Ordnerbaum.
+
+**Neu:**
+- Anzeige-Komponente `RateZeit` (S. `passwort`, Abschnitt `ausprobieren`): Regler „Länge“ (4–24), vier Kästchen
+  (Kleinbuchstaben 26, Großbuchstaben 26, Ziffern 10, Sonderzeichen 33), darunter: Zeichenvorrat N, Möglichkeiten N^L
+  (gerundet, mit Zehnerpotenz und Wort: „etwa 2 Billionen“), Ratezeit bei 10¹⁰ Versuchen/Sekunde, im Mittel die
+  Hälfte (wird gesagt) – in Sekunden, Minuten, Stunden, Tagen, Jahren. Ein Balken (logarithmisch, beschriftet) zeigt
+  die Zeit im Vergleich zu „1 Sekunde / 1 Tag / 1 Jahr / Alter des Universums“? Nein: nur Text und Balken mit Stufen
+  „Sekunden – Tage – Jahre – Jahrtausende“. Kein Eingabefeld. Die Kinder ändern Länge und Zeichenarten und sehen: +1
+  Zeichen multipliziert mit N, +1 Zeichenart addiert zu N. Warum keine Block-Übung: ein Modell, das man verstellt,
+  ist kein Block (`prefer-built-in-block`). Text ohne JS: Tabelle mit Beispielen im `nojs`. Logik in `RateZeit.ts`
+  mit Test. Keine Übungskomponente (die Übungen sind Blöcke), darum kein `unanswered` nötig.
+- `Ordnerbaum`: optionale Prop `rootName` (Wurzel umbenennen, „Sicherung auf dem Stick“), S. `datensicherung`.
+- Datendateien: `passwoerter-faelle.yaml` (Lagen zum Zugang), `verlust.yaml` (Lagen: was bleibt), `wege.yaml`
+  (Fälle der Schadsoftware), `schutz.yaml` (Fall → Schutz).
+
+**Je Seite (Übungen, Pflicht = generated):**
+- `passwort`: number „Wie viele PINs mit 4 Ziffern?“ (10000; Fehler 40, 9999); generated `moeglichkeiten` (N^L
+  für kleine L, Fehler N·L und L^N); single-choice „Welches ist am schwersten zu erraten?“ (lang vs. kurz mit
+  Sonderzeichen); true-false „Ein starkes Passwort für alle Zugänge reicht“; multiple-choice „Was schützt deinen
+  Zugang zusätzlich?“ (Zwei-Faktor, Passwort-Manager; nicht: Passwort an Freundin schicken, Passwort auf Zettel am
+  Tablet).
+- `datensicherung`: generated „verlorene Tage“ (letzte Sicherung am Tag a, Verlust am Tag b; Fehler b−a+1, 0);
+  generated Lage → was bleibt (Tablet weg, Stick weg, Erpressungssoftware); ordering Sicherung in Schritten;
+  true-false „Verschieben auf den Stick ist eine Sicherung“; matching Gefahr → Schutz.
+- `schadsoftware`: generated Fall → Weg (Anhang, Gratis-Download, Makro, Stick); matching Art → Beschreibung (Virus,
+  Wurm, Trojaner, Ransomware); true-false „nur von schlechten Webseiten“; single-choice „Woran erkennst du …“.
+- `schutzsoftware`: generated Fall → Schutz (Firewall, Virenschutz, Update, Einstellung); multiple-choice
+  Einstellungen am Tablet; true-false „Updates bringen nur neue Funktionen“; matching Schutz → was er tut.
+
+**Figuren und Lernhandlung:** RateZeit – die Kinder erzeugen selbst die Zahlen, aus denen die Regel „Länge zählt“
+folgt; die Seite fragt danach, was sie gesehen haben. Ordnerbaum-Kopie – zeigt, dass eine Sicherung derselbe Baum an
+einem zweiten Ort ist. Sonst keine Bilder (7-8, Nachrichten).
+
+**Voraussetzungen von außen:** `informatiksysteme-im-alltag`, `hardware-und-software` auf der Sammel-Wiederholung;
+`speicherorte-vergleichen` übt Kapitel 1.
 
 ## Code
 
@@ -207,7 +248,12 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: slices: one per competency, as written in Plan -->
+- [ ] Slice passwort (Musterseite): Kapitel schuetzen anlegen (chapter.yaml, app.yaml), Seite schuetzen/passwort de+en mit Nachrichten Mia-Selin, Anzeige-Komponente RateZeit mit Logik und Test (Annahmen sichtbar, kein Eingabefeld), generated Möglichkeiten zählen, Übungen zu Zugang schützen (ein Passwort je Zugang, Passwort-Manager, Zwei-Faktor); kein Sub-Agent
+- [ ] Slice Sammel-Wiederholung schuetzen/das-brauchst-du (de+en): recap informatiksysteme-im-alltag und hardware-und-software; kein Sub-Agent
+- [ ] Slice datensicherung: Seite schuetzen/datensicherung de+en, Ordnerbaum als Kopie (Prop Wurzelname), generated verlorene Tage, Lage welche Daten bleiben, Zwischenstände; kein Sub-Agent
+- [ ] Slice schadsoftware: Seite schuetzen/schadsoftware de+en, Fälle Wege der Schadsoftware (generated aus Datendatei), Arten zuordnen; kein Sub-Agent
+- [ ] Slice schutzsoftware: Seite schuetzen/schutzsoftware de+en, Fall zu Schutz (generated), Einstellungen am Tablet, Kapitelregel und Rückblick; kein Sub-Agent
+<!-- tasks: slices (5 added): one per competency, as written in Plan -->
 - [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it
       finds, then ask the creator whether the others may follow it, and wait.
