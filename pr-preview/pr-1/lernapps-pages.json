@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "strand": "informatik/informatiksysteme",
+  "pages": [
+    {
+      "path": "ordnen/ordner-und-dateien/",
+      "title": {
+        "de": "Ordner und Dateien",
+        "en": "Files and folders"
+      },
+      "competencies": [
+        "ordner-und-dateien"
+      ]
+    }
+  ]
+}
