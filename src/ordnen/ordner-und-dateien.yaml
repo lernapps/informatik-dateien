@@ -31,7 +31,7 @@ blocks:
             Mia hat gestern ihr Referat für das Fach Deutsch geschrieben und gespeichert. Heute findet sie es nicht.
 
             Auf dieser Seite lernst du, wie du Dateien so ablegst, dass du sie wiederfindest. Dafür brauchst du den
-            Baum, den du schon kennst.
+            Baum wieder.
           en: |
             Yesterday Mia wrote her speech for German class and saved it. Today she cannot find it.
 
@@ -55,8 +55,8 @@ blocks:
               en: She looks in the list “Recent”.
             correct: false
             info:
-              de: Das hilft nur heute. „Zuletzt verwendet“ zeigt die letzten Dateien, ist aber kein Platz. Nächste Woche ist das Referat aus der Liste verschwunden.
-              en: That only helps today. “Recent” shows the last files, but it is not a place. Next week the speech will be gone from the list.
+              de: Das hilft nur heute. „Zuletzt verwendet“ zeigt die letzten Dateien, ist aber kein Platz. Bald ist das Referat vielleicht aus der Liste verschwunden.
+              en: That only helps today. “Recent” shows the last files, but it is not a place. Soon the speech may be gone from the list.
           - text:
               de: Sie speichert das Referat noch einmal, dann ist es sicher da.
               en: She saves the speech again, then it is sure to be there.
@@ -114,15 +114,15 @@ blocks:
           de: Datei
           en: file
         explanation:
-          de: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text. In einer Datei liegt kein Ordner, darum ist sie im Baum ein Blatt.
-          en: A file is a stored piece of data with a name, for example a photo, a song or a text. A file holds no folder, so in the tree it is a leaf.
+          de: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text. In einer Datei liegt nichts weiter, darum ist sie im Baum immer ein Blatt.
+          en: A file is a stored piece of data with a name, for example a photo, a song or a text. Nothing else is inside a file, so in the tree it is always a leaf.
       - type: definition
         term:
           de: Dateiendung
           en: file extension
         explanation:
-          de: Die Endung ist der letzte Teil des Dateinamens, nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text. Im Baum steht sie unten.
-          en: The extension is the last part of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text. In the tree it is at the bottom.
+          de: Die Endung ist der letzte Teil des Dateinamens, nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text.
+          en: The extension is the last part of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text.
   - type: section
     id: ausprobieren
     title:
@@ -132,25 +132,25 @@ blocks:
       - type: text
         text:
           de: |
-            Auf dem Tablet siehst du den Baum nie ganz. Ein **Dateimanager** zeigt immer nur einen Ordner:
+            Ein **Dateimanager** ist ein Programm, mit dem du Ordner öffnest und Dateien verschiebst. Auf dem Tablet zeigt er meist
+            nur einen Ordner:
 
             - Tippe auf einen Ordner, dann öffnet er sich. Oben steht, wo du gerade bist.
             - „Nach oben“ bringt dich einen Ordner zurück.
-            - „Ausschneiden“ nimmt eine Datei weg. Öffne dann den Ordner, in den sie soll, und tippe auf „Einfügen“.
-              Ausschneiden und Einfügen heißt zusammen: **verschieben**.
+            - „Ausschneiden“ merkt sich eine Datei. Sie bleibt an ihrem Platz, bis du einfügst. Öffne dann den Ordner,
+              in den sie soll, und tippe auf „Einfügen“. Ausschneiden und Einfügen heißt zusammen: **verschieben**.
 
-            Was du aus dem Internet oder aus einer Nachricht holst, landet oft im Ordner „Downloads“. Dort liegt
-            eine neue Datei. Lege sie in einen passenden Ordner und drück dann „Prüfen“.
+            Neue Dateien landen oft im Ordner „Downloads“. Lege die neue Datei in einen passenden Ordner und drück dann „Prüfen“.
           en: |
-            On the tablet you never see the whole tree. A **file manager** only ever shows one folder:
+            A **file manager** is a program you use to open folders and move files. On a tablet it usually shows only
+            one folder at a time:
 
             - Tap a folder and it opens. At the top it says where you are.
             - “Up” takes you back one folder.
-            - “Cut” takes a file away. Then open the folder where it should go and tap “Paste”. Cut and paste
-              together mean: **move**.
+            - “Cut” remembers a file. It stays where it is until you paste. Then open the folder where it should go
+              and tap “Paste”. Cut and paste together mean: **move**.
 
-            What you get from the internet or from a message often ends up in the folder “Downloads”. A new file is
-            there. Put it into a folder that fits and then press “Check”.
+            New files often end up in the folder “Downloads”. Put the new file into a folder that fits and then press “Check”.
       - type: vue-component
         id: ablegen
         component: Dateimanager
@@ -166,9 +166,10 @@ blocks:
           here: { de: "Du bist hier:", en: "You are here:" }
           up: { de: Nach oben, en: Up }
           cut: { de: Ausschneiden, en: Cut }
+          cutMark: { de: ausgeschnitten, en: cut }
           paste: { de: "Einfügen: {datei}", en: "Paste: {datei}" }
           open: { de: Öffnen, en: Open }
-          opened: { de: "Offen: {pfad}", en: "Open: {pfad}" }
+          opened: { de: "Offen: {pfad}", en: "Opened: {pfad}" }
           empty: { de: Dieser Ordner ist leer., en: This folder is empty. }
           folder: { de: "Ordner", en: "folder" }
           file: { de: "Datei", en: "file" }
@@ -182,8 +183,8 @@ blocks:
             de: "Die Datei liegt jetzt in {ordner}. {art} Gehört sie dort zu den anderen Dateien?"
             en: "The file is now in {ordner}. {art} Does it belong with the other files there?"
           loose:
-            de: Die Datei liegt jetzt lose auf dem Tablet, in keinem Ordner. So findest du sie bald nicht mehr. Öffne einen Ordner, bevor du einfügst.
-            en: The file is now loose on the tablet, in no folder. Soon you will not find it. Open a folder before you paste.
+            de: Die Datei liegt jetzt direkt in der Wurzel, neben den Ordnern. Öffne erst einen passenden Ordner.
+            en: The file is now directly in the root, next to the folders. First open a folder that fits.
           sameName: { de: "", en: "" }
           otherFile: { de: "", en: "" }
         examples:
@@ -266,8 +267,8 @@ blocks:
               de: Das sind alle Dateien auf dem Tablet. Weg sind nur die unter dem Ordner Fotos.
               en: Those are all the files on the tablet. Only the ones below the folder Photos are gone.
         explanation:
-          de: Unter Fotos liegen zwei Dateien, see.jpg im Ordner Seeberg und party.jpg. Wer einen Ordner löscht, löscht alles darin mit, auch die Ordner darin.
-          en: Below Photos there are two files, lake.jpg in the folder Seeberg and party.jpg. If you delete a folder, you also delete everything in it, the folders in it too.
+          de: "Unter Fotos liegen zwei Dateien: see.jpg in Seeberg und party.jpg. Wer einen Ordner löscht, löscht alles darin mit. Oft landet es erst im Papierkorb."
+          en: "Below Photos there are two files: lake.jpg in Seeberg and party.jpg. If you delete a folder, you also delete everything in it. Often it goes into the bin first."
       - type: true-false
         id: umbenennen
         text:
@@ -275,8 +276,8 @@ blocks:
           en: Mia gives lake.jpg a new name, trip.jpg. Now the file shows a different picture.
         answer: false
         explanation:
-          de: Der Name ist wie ein Schild an der Datei. Ein neues Schild ändert nicht, was in der Datei ist. Die Endung .jpg bleibt, es ist dasselbe Foto.
-          en: The name is like a label on the file. A new label does not change what is in the file. The extension .jpg stays, it is the same photo.
+          de: Der Name ist wie ein Schild an der Datei. Ein neues Schild ändert nicht, was in der Datei ist. Mia lässt die Endung .jpg gleich, damit das Tablet weiter weiß, dass es ein Foto ist.
+          en: The name is like a label on the file. A new label does not change what is in the file. Mia keeps the extension .jpg, so that the tablet still knows it is a photo.
       - type: multiple-choice
         id: im-ordner
         text:
@@ -309,8 +310,6 @@ blocks:
       - type: text
         text:
           de: |
-            Mias Tablet ist aufgeräumt. Jede Datei hat ihren Ordner. Da schreibt Selin: „Schick mir das Foto vom See!“
-            Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
+            Jede Datei hat jetzt ihren Ordner. Da kommt Selin zu Besuch, ihre Freundin. Sie will das Foto vom See sehen. Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
           en: |
-            Mia's tablet is tidy. Every file has its folder. Then Selin writes: “Send me the photo of the lake!” On
-            the next page, “File paths”, Mia describes exactly where it is.
+            Every file now has its folder. Then Selin, her friend, comes to visit. She wants to see the photo of the lake. On the next page, “File paths”, Mia describes exactly where it is.

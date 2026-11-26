@@ -19,8 +19,8 @@
     de: Ein Bild kann man nicht anhören.
     en: You cannot listen to a picture.
 - was:
-    de: eine Datei mit der Endung .mp3
-    en: a file with the extension .mp3
+    de: "ein Lied zum Tanzen, eine Datei mit der Endung .mp3"
+    en: "a song to dance to, a file with the extension .mp3"
   ordner:
     de: Musik
     en: Music
@@ -73,8 +73,8 @@
     de: Ein Lied ist kein Foto.
     en: A song is not a photo.
 - was:
-    de: eine Datei mit der Endung .jpg
-    en: a file with the extension .jpg
+    de: "ein Bild von einer Party, eine Datei mit der Endung .jpg"
+    en: "a picture from a party, a file with the extension .jpg"
   ordner:
     de: Fotos
     en: Photos

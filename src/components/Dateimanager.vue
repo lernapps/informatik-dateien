@@ -26,6 +26,8 @@ const props = defineProps<{
   up: string;
   /** The button of a file: cut it. */
   cut: string;
+  /** The mark of a cut file, which stays in its place until it is pasted. */
+  cutMark: string;
   /** The button that pastes the cut file, with {datei}. */
   paste: string;
   /** The button of a file: open it. */
@@ -56,6 +58,8 @@ const ROOT = computed(() => props.nodes.find((node) => node.parent === ROOT_PARE
 const at = ref(ROOT.value);
 /** ablegen: where the new file lies, CUT while cut. */
 const newAt = ref(START);
+/** ablegen: the folder the new file lies in until it is pasted elsewhere; a cut file stays there, marked. */
+const lastAt = ref(START);
 /** oeffnen: the file opened. */
 const openId = ref(NONE);
 
@@ -74,7 +78,8 @@ const newFile = computed<Node | undefined>(() =>
 );
 const shown = computed(() => {
   const inside = contents(props, at.value);
-  return newFile.value !== undefined && newAt.value === at.value ? [...inside, newFile.value] : inside;
+  const here = newAt.value === at.value || (newAt.value === CUT && lastAt.value === at.value);
+  return newFile.value !== undefined && here ? [...inside, newFile.value] : inside;
 });
 const isRoot = computed(() => at.value === ROOT.value);
 const bar = computed(() => path(props, at.value, " / "));
@@ -94,6 +99,7 @@ function cutNew(): void {
 }
 function pasteNew(): void {
   newAt.value = at.value;
+  lastAt.value = at.value;
   emit("answer", at.value);
 }
 function openFile(id: number): void {
@@ -128,11 +134,21 @@ function openFile(id: number): void {
             {{ node.name }}
             <span aria-hidden="true">›</span>
           </button>
-          <div v-else class="dateimanager-file" :class="{ 'dateimanager-open': node.id === openId }">
+          <div
+            v-else
+            class="dateimanager-file"
+            :class="{
+              'dateimanager-open': node.id === openId,
+              'dateimanager-cut': node.id === NEW_FILE && newAt === CUT,
+            }"
+          >
             <span class="dateimanager-icon dateimanager-icon-file" aria-hidden="true"></span>
             <span class="dateimanager-sr">{{ file }}</span>
             <span class="dateimanager-name">{{ node.name }}</span>
-            <button v-if="mode === 'ablegen' && node.id === NEW_FILE" type="button" @click="cutNew">{{ cut }}</button>
+            <span v-if="node.id === NEW_FILE && newAt === CUT" class="dateimanager-mark">{{ cutMark }}</span>
+            <button v-else-if="mode === 'ablegen' && node.id === NEW_FILE" type="button" @click="cutNew">
+              {{ cut }}
+            </button>
             <button v-if="mode === 'oeffnen'" type="button" @click="openFile(node.id)">{{ open }}</button>
           </div>
         </li>
@@ -211,6 +227,17 @@ function openFile(id: number): void {
 
 .dateimanager-name {
   flex: 1 1 auto;
+}
+
+/* a cut file stays in its place, lighter and marked, until it is pasted */
+.dateimanager-cut .dateimanager-name,
+.dateimanager-cut .dateimanager-icon {
+  opacity: 0.55;
+}
+
+.dateimanager-mark {
+  color: var(--page-muted);
+  font-style: italic;
 }
 
 .dateimanager-open {

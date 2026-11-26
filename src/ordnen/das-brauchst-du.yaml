@@ -33,8 +33,8 @@ blocks:
           en: >-
             A tablet made of glass. Inside you can see a grey chip, a green bar and an orange box.
         caption:
-          de: "Der gläserne Computer. Das orange Kästchen (3) ist der Festspeicher."
-          en: "The glass computer. The orange box (3) is the storage."
+          de: "Der gläserne Computer: ein Tablet aus Glas. Das orange Kästchen (3) ist der Festspeicher."
+          en: "The glass computer: a tablet made of glass. The orange box (3) is the storage."
         labels:
           - { x: 33, y: 40, text: { de: "Prozessor: rechnet", en: "processor: calculates" } }
           - {
@@ -78,7 +78,7 @@ blocks:
             sicher nutzen.
 
             - **Speichern** legt etwas in den Festspeicher.
-            - **Ausschneiden** nimmt etwas weg und merkt es sich.
+            - **Ausschneiden** merkt sich etwas, damit du es woanders hinlegen kannst.
             - **Einfügen** legt es an einer neuen Stelle wieder hin.
 
             In diesem Kapitel schneidest du Dateien aus und fügst sie in einem Ordner ein.
@@ -86,7 +86,7 @@ blocks:
             Can you do this already? I can use the basic functions of programs, such as open, save, copy and paste.
 
             - **Save** puts something into storage.
-            - **Cut** takes something away and remembers it.
+            - **Cut** remembers something so that you can put it somewhere else.
             - **Paste** puts it back down in a new place.
 
             In this chapter you will cut files and paste them into a folder.
@@ -106,8 +106,8 @@ blocks:
           de: "Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter jedem Zimmer stehen zwei Kinder in Kästchen mit gestricheltem Rand."
           en: "A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below each room there are two children in boxes with a dashed border."
         caption:
-          de: Der Zimmerplan der Klassenfahrt als Baum.
-          en: The room plan of the class trip as a tree.
+          de: "Der Zimmerplan von Mias Klassenfahrt an den Seeberg: die Kinder der 6b, unter ihnen Mia und ihre Freunde Selin und Jona."
+          en: "The room plan of Mia's class trip to Seeberg: the children of class 6b, among them Mia and her friends Selin and Jona."
         labels:
           - { x: 66, y: 12, text: { de: "Wurzel: der oberste Knoten", en: "root: the top node" } }
           - {
@@ -139,10 +139,10 @@ blocks:
         text:
           de: |
             Kannst du das schon? Ich kann die Einheiten Bit, Byte, Kilobyte, Megabyte und Gigabyte erklären und
-            Datenmengen damit vergleichen. Du brauchst sie auf der Seite „Speicherorte“.
+            Datenmengen damit vergleichen. Du brauchst sie auf der Seite „Speicherorte vergleichen“.
           en: |
             Can you do this already? I can explain the units bit, byte, kilobyte, megabyte and gigabyte and use them
-            to compare amounts of data. You will need them on the page “Storage locations”.
+            to compare amounts of data. You will need them on the page “Comparing storage locations”.
       - type: table
         caption:
           de: Die Einheiten, wie wir in dieser App rechnen

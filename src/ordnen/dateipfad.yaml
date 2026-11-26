@@ -16,14 +16,14 @@ blocks:
       - type: text
         text:
           de: |
-            Selin schreibt Mia: „Schick mir das Foto vom See!“ Mia hat noch mehr Ordnung gemacht. Im Ordner Schule
-            liegt jetzt ein Ordner für jedes Fach. Ihr Baum ist gewachsen.
+            Selin ist bei Mia zu Besuch und will auf Mias Tablet das Foto vom See ansehen. Mia hat noch mehr Ordnung
+            gemacht: Im Ordner Schule liegt jetzt ein Ordner für jedes Fach. Ihr Baum ist gewachsen.
 
             Auf der Seite davor hast du Dateien in Ordner gelegt. Auf dieser Seite lernst du, den Ort einer Datei
             genau aufzuschreiben, so dass jeder sie findet.
           en: |
-            Selin writes to Mia: “Send me the photo of the lake!” Mia has tidied up even more. Inside the folder
-            School there is now a folder for each subject. Her tree has grown.
+            Selin is visiting Mia and wants to look at the photo of the lake on Mia's tablet. Mia has tidied up even
+            more: inside the folder School there is now a folder for each subject. Her tree has grown.
 
             On the page before, you put files into folders. On this page you will learn to write down exactly where a
             file is, so that anyone can find it.
@@ -91,8 +91,8 @@ blocks:
           de: Pfad
           en: path
         explanation:
-          de: Der Pfad einer Datei ist ihr Weg im Ordnerbaum, von der Wurzel bis zur Datei. Zwischen die Namen setzt man einen Schrägstrich /.
-          en: The path of a file is its way in the folder tree, from the root to the file. You put a slash / between the names.
+          de: Jede Datei und jeder Ordner hat einen Pfad. Das ist der Weg im Ordnerbaum, von der Wurzel bis dorthin. Zwischen die Namen setzt man einen Schrägstrich /.
+          en: Every file and every folder has a path. It is the way in the folder tree, from the root to there. You put a slash / between the names.
       - type: text
         text:
           de: |
@@ -131,8 +131,8 @@ blocks:
           p: { pick: 1, from: { data: pfade } }
         task:
           text:
-            de: "Jona bekommt den Pfad {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}. In welchem Ordner liegt die Datei?"
-            en: "Jona gets the path {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}. Which folder is the file in?"
+            de: "Mias Freund Jona bekommt den Pfad {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}. In welchem Ordner liegt die Datei?"
+            en: "Mia's friend Jona gets the path {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}. Which folder is the file in?"
         answer:
           value: p.o2
           compare:
@@ -204,11 +204,11 @@ blocks:
       - type: text
         text:
           de: |
-            Selin hat Mias Pfad bekommen. Jetzt bist du Selin: Öffne im Dateimanager die Datei mit diesem Pfad. Geh
+            Mia sagt Selin den Pfad. Jetzt bist du Selin, an Mias Tablet: Öffne im Dateimanager die Datei mit diesem Pfad. Geh
             dafür den Pfad von links nach rechts durch, Ordner für Ordner. Tippe dann bei der Datei auf „Öffnen“ und
             drück „Prüfen“.
           en: |
-            Selin has got Mia's path. Now you are Selin: in the file manager, open the file with this path. To do
+            Mia tells Selin the path. Now you are Selin, at Mia's tablet: in the file manager, open the file with this path. To do
             this, go through the path from left to right, folder by folder. Then tap “Open” next to the file and press
             “Check”.
       - type: vue-component
@@ -226,9 +226,10 @@ blocks:
           here: { de: "Du bist hier:", en: "You are here:" }
           up: { de: Nach oben, en: Up }
           cut: { de: Ausschneiden, en: Cut }
+          cutMark: { de: ausgeschnitten, en: cut }
           paste: { de: "Einfügen: {datei}", en: "Paste: {datei}" }
           open: { de: Öffnen, en: Open }
-          opened: { de: "Offen: {pfad}", en: "Open: {pfad}" }
+          opened: { de: "Offen: {pfad}", en: "Opened: {pfad}" }
           empty: { de: Dieser Ordner ist leer., en: This folder is empty. }
           folder: { de: "Ordner", en: "folder" }
           file: { de: "Datei", en: "file" }
@@ -260,8 +261,8 @@ blocks:
           p: { pick: 1, from: { data: pfade } }
         task:
           text:
-            de: "Mia schreibt Selin den Pfad zu {{p.name}} im Ordner {{p.o2}}. Bring die Teile in die richtige Reihenfolge, von links nach rechts."
-            en: "Mia writes Selin the path to {{p.name}} in the folder {{p.o2}}. Put the parts in the right order, from left to right."
+            de: "Mia schreibt für Selin den Pfad zu {{p.name}} im Ordner {{p.o2}}. Bring die Teile in die richtige Reihenfolge, von links nach rechts."
+            en: "Mia writes down the path for Selin to {{p.name}} in the folder {{p.o2}}. Put the parts in the right order, from left to right."
         answer:
           value: "[p.wurzel, p.o1, p.o2, p.name]"
           compare: order
@@ -292,8 +293,10 @@ blocks:
       - type: text
         text:
           de: |
-            Selin hat das Foto vom See gefunden, mit Mias Pfad in einer Sekunde. Da meldet Mias Tablet: „Speicher fast
-            voll.“ Auf der nächsten Seite, „Speicherorte“, sucht Mia einen Platz für ihre Videos.
+            Mit Mias Pfad hat Selin das Foto vom See sofort gefunden. Ein Pfad gilt nur auf dem Gerät, auf dem die Datei
+            liegt. Nun will Mia ihre Videos vom Seeberg aufs Tablet holen. Da meldet es: „Speicher fast voll.“ Auf
+            der nächsten Seite, „Speicherorte vergleichen“, sucht Mia einen Platz für die Videos.
           en: |
-            Selin has found the photo of the lake, in one second with Mia's path. Then Mia's tablet says: “Storage
-            almost full.” On the next page, “Storage locations”, Mia looks for a place for her videos.
+            With Mia's path, Selin found the photo of the lake straight away. A path only works on the device where the
+            file is. Now Mia wants to put her videos from Seeberg onto the tablet. Then it says: “Storage almost
+            full.” On the next page, “Comparing storage locations”, Mia looks for a place for the videos.

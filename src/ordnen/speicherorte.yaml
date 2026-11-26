@@ -16,14 +16,14 @@ blocks:
       - type: text
         text:
           de: |
-            Mias Tablet meldet: „Speicher fast voll. Noch 2 GB frei.“ Mia will die Videos vom Seeberg aufheben. Aber
-            wohin?
+            Mias Tablet meldet: „Speicher fast voll. Noch 2 GB frei.“ Mia will ihre Videos vom Seeberg aufheben,
+            Dateien mit der Endung .mp4. Aber wohin?
 
             Auf den Seiten davor hast du Dateien geordnet und über ihren Pfad gefunden. Auf dieser Seite vergleichst
             du, wo Dateien liegen können. Rechne dafür zuerst um.
           en: |
-            Mia's tablet says: “Storage almost full. 2 GB left.” Mia wants to keep the videos from Seeberg. But
-            where?
+            Mia's tablet says: “Storage almost full. 2 GB left.” Mia wants to keep her videos from Seeberg,
+            files with the extension .mp4. But where?
 
             On the pages before, you sorted files and found them by their path. On this page you will compare where
             files can be stored. First, convert the units.
@@ -31,7 +31,7 @@ blocks:
         id: gb-in-mb
         text:
           de: Wie viele Megabyte (MB) sind 2 Gigabyte (GB)?
-          en: How many megabytes (MB) are 2 gigabytes (GB)?
+          en: How many megabytes (MB) are in 2 gigabytes (GB)?
         answer: 2000
         tolerance: 0
         unit: { de: MB, en: MB }
@@ -39,7 +39,7 @@ blocks:
           - answer: 2048
             message:
               de: "Manche Geräte rechnen mit 1024. In dieser App rechnen wir mit 1000: 2 GB = 2000 MB."
-              en: "Some devices count with 1024. In this app we count with 1000: 2 GB = 2000 MB."
+              en: "Some devices count in 1024s. In this app we count with 1000: 2 GB = 2000 MB."
           - answer: 2
             message:
               de: Das ist die Zahl in GB. Ein GB sind 1000 MB. Wie viele MB sind dann 2 GB?
@@ -68,11 +68,11 @@ blocks:
           en: own drawing
         licence: CC-BY-4.0
         alt:
-          de: "Drei Bilder nebeneinander, auf jedem derselbe kleine Baum: links Mias Tablet mit türkiser Hülle, in der Mitte ein USB-Stick, rechts eine Wolke. Von der Wolke führt ein Pfeil nach unten zu einem Haus mit vielen Rechnern."
-          en: "Three pictures side by side, each with the same small tree: on the left Mia's tablet with a turquoise case, in the middle a USB stick, on the right a cloud. An arrow leads down from the cloud to a building with lots of computers."
+          de: "Drei Bilder nebeneinander, auf jedem derselbe kleine Baum: links Mias Tablet mit türkiser Hülle, in der Mitte ein USB-Stick, rechts eine Wolke. Von der Wolke führt eine gestrichelte Linie nach unten zu einem Haus mit vielen Rechnern."
+          en: "Three pictures side by side, each with the same small tree: on the left Mia's tablet with a turquoise case, in the middle a USB stick, on the right a cloud. A dashed line leads down from the cloud to a building with lots of computers."
         caption:
-          de: Derselbe Ordnerbaum an drei Orten. Die Zahlen gehören zu den Namen darunter.
-          en: The same folder tree in three places. The numbers belong to the names below.
+          de: Mias Dateien an drei Orten. Der kleine Baum steht für Mias Ordnerbaum. Die Zahlen gehören zu den Namen darunter.
+          en: Mia's files in three places. The small tree stands for Mia's folder tree. The numbers belong to the names below.
         labels:
           - {
               x: 17,
@@ -127,8 +127,8 @@ blocks:
           - - { de: USB-Stick, en: USB stick }
             - { de: 32 GB, en: 32 GB }
             - {
-                de: "an jedem Gerät, an das du ihn ansteckst, auch ohne Internet",
-                en: "on any device you plug it into, even without internet",
+                de: "an jedem Gerät mit passendem Anschluss, auch ohne Internet",
+                en: "on any device with the right socket, even without internet",
               }
           - - { de: Cloud, en: cloud }
             - { de: "15 GB, kostenlos", en: "15 GB, free" }
@@ -142,11 +142,11 @@ blocks:
             text:
               de: |
                 Jeder Ort hat sein Risiko. Ein Tablet kann herunterfallen, verloren gehen oder gestohlen werden. Ein
-                Stick ist so klein, dass er schnell verloren geht. In der Cloud gibst du deine Daten einer fremden Firma,
+                Stick ist so klein, dass er schnell verloren geht. In der Cloud gibst du deine Daten einer anderen Firma,
                 und wer dein Passwort kennt, kommt an sie heran.
               en: |
                 Each place has its risk. A tablet can be dropped, lost or stolen. A stick is so small that it is easily
-                lost. In the cloud you give your data to a company you do not know, and anyone who knows your password
+                lost. In the cloud you give your data to a company, and anyone who knows your password
                 can get to it.
   - type: section
     id: beispiel
@@ -168,9 +168,10 @@ blocks:
                   in die Cloud 15 000 MB.
                 - **Erreichbarkeit:** Mia will die Videos auch bei Oma zeigen. Dort gibt es kein Internet. Den Stick
                   kann sie mitnehmen.
-                - **Sicherheit:** Den Stick bewahrt sie in ihrer Schreibtischschublade auf, damit er nicht verloren geht.
+                - **Sicherheit:** Ein Stick kann verloren gehen oder kaputtgehen. Darum lädt Mia die Videos zusätzlich
+                  in die Cloud, dafür reichen die 15 000 MB.
 
-                Mia wählt den Stick. Für eine andere Lage kann ein anderer Ort besser sein.
+                Mia nimmt den Stick zu Oma mit. Und die Videos liegen an zwei Orten: auf dem Stick und in der Cloud.
               en: |
                 Mia compares the three places for the videos from Seeberg, about 3000 MB:
 
@@ -178,9 +179,11 @@ blocks:
                   15 000 MB in the cloud.
                 - **Access:** Mia also wants to show the videos at her grandma's. There is no internet there. She can
                   take the stick with her.
-                - **Safety:** she keeps the stick in her desk drawer so that it does not get lost.
+                - **Safety:** a stick can get lost or break. So Mia also uploads the videos to the cloud; the
+                  15 000 MB are enough for that.
 
-                Mia chooses the stick. For a different situation, another place can be better.
+                Mia takes the stick to her grandma's. And the videos are kept in two places: on the stick and in the
+                cloud.
   - type: section
     id: uebung
     title:
@@ -208,10 +211,14 @@ blocks:
             message:
               de: Du hast mal gerechnet. Gefragt ist, wie oft {{m.mb}} MB in den Stick passen. Teile.
               en: You multiplied. The question is how many times {{m.mb}} MB fit on the stick. Divide.
+          - value: "g * 100 / m.mb"
+            message:
+              de: "Ein GB sind 1000 MB, nicht 100. Rechne {{g}} · 1000 MB."
+              en: "One GB is 1000 MB, not 100. Work out {{g}} · 1000 MB."
           - value: "g * 1024 / m.mb"
             message:
               de: "Manche Geräte rechnen mit 1024. In dieser App rechnen wir mit 1000: 1 GB = 1000 MB."
-              en: "Some devices count with 1024. In this app we count with 1000: 1 GB = 1000 MB."
+              en: "Some devices count in 1024s. In this app we count with 1000: 1 GB = 1000 MB."
         hint:
           de: Rechne die GB zuerst in MB um. Dann teile durch die Größe einer Datei.
           en: First convert the GB into MB. Then divide by the size of one file.
@@ -244,8 +251,8 @@ blocks:
           de: "Frag dich: Gibt es dort Internet? Wer braucht die Dateien, und wo?"
           en: "Ask yourself: is there internet there? Who needs the files, and where?"
         steps:
-          - de: "{{l.lage}} Darum passt hier {{answer}}."
-            en: "{{l.lage}} That is why {{answer}} fits here."
+          - de: "{{l.lage}} Darum passt hier der Speicherort {{answer}}."
+            en: "{{l.lage}} That is why the storage location {{answer}} fits here."
       - type: matching
         id: risiko
         text:
@@ -334,9 +341,9 @@ blocks:
         text:
           de: |
             Rückblick: Du hast Mias Tablet aufgeräumt, Dateien über ihren Pfad gefunden und drei Speicherorte
-            verglichen. Probier die Regel an deinem eigenen Gerät aus. Warum „an zwei Orten“? Das lernst du im
-            nächsten Kapitel: Mias Tablet geht verloren.
+            verglichen. Probier die Regel an deinem eigenen Gerät aus. Warum „an zwei Orten“? Das lernst du in einem
+            späteren Kapitel, wenn Mias Tablet verloren geht.
           en: |
             Looking back: you tidied up Mia's tablet, found files by their path and compared three storage
-            locations. Try the rule on your own device. Why “in two places”? You will learn that in the next chapter:
-            Mia's tablet gets lost.
+            locations. Try the rule on your own device. Why “in two places”? You will learn that in a later chapter,
+            when Mia's tablet gets lost.

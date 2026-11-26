@@ -2,8 +2,8 @@
 # and why each does not fit here. Each situation names what decides (internet or not, who needs it, where).
 - lage:
     {
-      de: "Mia will Jona die Videos der Klassenfahrt geben. Jona hat zu Hause kein Internet.",
-      en: "Mia wants to give Jona the videos of the class trip. Jona has no internet at home.",
+      de: "Mia will ihrem Freund Jona die Videos der Klassenfahrt geben. Jona hat zu Hause kein Internet.",
+      en: "Mia wants to give her friend Jona the videos of the class trip. Jona has no internet at home.",
     }
   ort: { de: USB-Stick, en: USB stick }
   falsch1: { de: Tablet, en: tablet }
@@ -16,8 +16,8 @@
   grund2: { de: "Ohne Internet kommt Jona nicht an die Cloud.", en: "Without internet Jona cannot reach the cloud." }
 - lage:
     {
-      de: "Selin ist umgezogen und wohnt jetzt weit weg. Sie will die Fotos vom Seeberg sehen.",
-      en: "Selin has moved and now lives far away. She wants to see the photos from Seeberg.",
+      de: "Mias Tante wohnt weit weg und hat Internet. Sie will die Fotos vom Seeberg sehen.",
+      en: "Mia's aunt lives far away and has internet. She wants to see the photos from Seeberg.",
     }
   ort: { de: Cloud, en: cloud }
   falsch1: { de: Tablet, en: tablet }
@@ -25,8 +25,8 @@
   grund1: { de: "Auf Mias Tablet sieht nur Mia die Fotos.", en: "On Mia's tablet only Mia sees the photos." }
   grund2:
     {
-      de: "Einen Stick müsste Mia zu Selin bringen oder schicken. Das dauert bei dem weiten Weg lange.",
-      en: "Mia would have to take or send a stick to Selin. With that long way, it takes a long time.",
+      de: "Einen Stick müsste Mia zu ihrer Tante bringen oder schicken. Das dauert bei dem weiten Weg lange.",
+      en: "Mia would have to take or send a stick to her aunt. With that long way, it takes a long time.",
     }
 - lage:
     {

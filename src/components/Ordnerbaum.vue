@@ -65,6 +65,7 @@ const tree = computed(() => layout(props.nodes, props.stand));
         :y="node.y + (node.lines.length > 1 ? 15 + i * 12 : 21)"
         text-anchor="middle"
         fill="#222"
+        :font-size="node.datei && line.length > 7 ? 10.5 : undefined"
         :font-weight="node.root ? 'bold' : undefined"
       >
         {{ line }}

@@ -24,8 +24,8 @@
     ordner: [4],
     art:
       {
-        de: "Die Endung .jpg zeigt: Das ist ein Foto. Es zeigt ein Tor beim Fußball.",
-        en: "The extension .jpg shows that this is a photo. It shows a goal in a football match.",
+        de: "Die Endung .jpg zeigt: Das ist ein Foto. Es zeigt ein Tor beim Fußball, nicht die Klassenfahrt.",
+        en: "The extension .jpg shows that this is a photo. It shows a goal in a football match, not the class trip.",
       },
   }
 - {
@@ -33,8 +33,8 @@
     ordner: [4],
     art:
       {
-        de: "Die Endung .jpg zeigt: Das ist ein Foto. Es zeigt einen Kuchen.",
-        en: "The extension .jpg shows that this is a photo. It shows a cake.",
+        de: "Die Endung .jpg zeigt: Das ist ein Foto. Es zeigt einen Kuchen, nicht die Klassenfahrt.",
+        en: "The extension .jpg shows that this is a photo. It shows a cake, not the class trip.",
       },
   }
 - {

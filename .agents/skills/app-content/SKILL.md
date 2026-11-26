@@ -48,9 +48,12 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 ## Content structure
 
 - Geschichte: **Mias Tablet**. Mia (11) aus der Klasse 6b: schwarze Locken #222, runde Brille, Haut #8d5a3b, lila
-  Jacke #7b4fb8 (aus `klasse-6b.svg` von lernapps/informatik-computer). Ihr Tablet: türkise Hülle #2a9d8f, gelber
+  Jacke #7b4fb8 (aus `klasse-6b.svg` von lernapps/informatik-computer). Die App-Einleitung nennt Alter und Klasse. Ihr Tablet: türkise Hülle #2a9d8f, gelber
   Stern #f2c14e als Aufkleber unten rechts, Bildschirm #1f2a36 mit hellem Rand #dfe8ee. Weitere Figuren der 6b:
-  Selin (will das Foto vom See, S. 2), Jona (hat einen USB-Stick, S. 3). Fotos vom Seeberg und Zimmer 22 knüpfen an
+  Selin, Mias Freundin (besucht Mia und sucht auf Mias Tablet das Foto vom See, S. 2), Jona, Mias Freund (bekommt
+  einen Pfad, S. 2; die Videos auf einem Stick, S. 3). Beide stehen zuerst auf der Sammel-Wiederholung (Zimmerplan).
+  Mias Oma hat kein Internet (Beispiel S. 3), Mias Tante wohnt weit weg und hat Internet (Lage → Cloud). Die Videos
+  vom Seeberg (.mp4) holt Mia am Ende von S. 2 aufs Tablet; sie stehen nicht im Ordnerbaum. Fotos vom Seeberg und Zimmer 22 knüpfen an
   die Klassenfahrt von #491 an.
 - Mias Ordnerbaum wächst (`src/data/mias-tablet.yaml`, Feld `von`/`bis`): Stand 1 (S. 1) Wurzel „Mias Tablet“ →
   Schule (referat.txt), Fotos (Ordner Seeberg mit see.jpg, dazu party.jpg), Musik (lied.mp3): schon ein Ordner im
@@ -156,6 +159,15 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 6. `npx --no -- lernapps check`, Commit, Vorschau-PR.
 
 ## Rules learned from mistakes
+
+- Ein Pfad gilt nur auf dem Gerät, auf dem die Datei liegt: Niemand „schickt“ einen Pfad statt der Datei (Fachprüfer).
+- Ausschneiden lässt eine Datei an ihrem Platz, bis sie eingefügt ist; der Dateimanager zeigt sie blass mit
+  „ausgeschnitten“ (Fachprüfer).
+- Jedes Beispiel hält die Kapitelregel ein: wichtige Dateien an zwei Orten (Fachprüfer, Beispiel Stick + Cloud).
+- Jede Person ist eingeführt, bevor sie handelt, und widerspricht sich nicht über die Seiten (Lerncheck: Selin
+  „umgezogen“ und zugleich zu Besuch).
+- Verweise auf Seiten mit ihrem vollen Titel; kein Verweis auf ein Kapitel, das es noch nicht gibt („in einem
+  späteren Kapitel“).
 
 - Ordner heißen „alles, was zusammengehört“ (Thema oder Art), nie nur „nach der Art der Datei“: Schule ist ein Thema,
   Fotos und Musik sind Arten; der Lerncheck fand den Widerspruch. Keine Wiederfinden-Aufgabe, die zwei Ordner zulässt
