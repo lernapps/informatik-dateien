@@ -240,6 +240,9 @@ blocks:
           sameName:
             de: "Du hast {pfad} geöffnet. Der Name stimmt, aber der Ordner nicht. Vergleiche den Pfad Ordner für Ordner."
             en: "You opened {pfad}. The name is right, but the folder is not. Compare the path folder by folder."
+          unanswered:
+            de: "Noch ist keine Datei offen. Geh den Pfad Ordner für Ordner und tippe bei der Datei auf „Öffnen“."
+            en: "No file is open yet. Follow the path folder by folder and tap “Open” next to the file."
           otherFile:
             de: "Du hast {pfad} geöffnet. Schau dir den letzten Teil des Pfads an: Wie heißt die Datei?"
             en: "You opened {pfad}. Look at the last part of the path: what is the file called?"

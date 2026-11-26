@@ -45,6 +45,8 @@ export interface Props {
   sameName: string;
   /** oeffnen: another file, with {pfad} of the opened file. */
   otherFile: string;
+  /** What "Prüfen" says before the learner did anything. */
+  unanswered: string;
 }
 
 export type Task = { mode: "ablegen"; ablage: Ablage } | { mode: "oeffnen"; ziel: number };
@@ -129,6 +131,11 @@ export function solution(task: Task): Answer {
 /** A wrong answer: the file left in Downloads, or nothing opened. */
 export function wrong(task: Task): Answer {
   return task.mode === "ablegen" ? START : NONE;
+}
+
+/** What "Prüfen" says before the learner did anything: the text of the props for the mode of the block. */
+export function unanswered(props: Pick<Props, "unanswered">, _lang?: string): string {
+  return props.unanswered;
 }
 
 /** The answer of each typical mistake of about.mistakes, per mode; none where the mode has no such mistake. */

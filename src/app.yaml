@@ -14,4 +14,6 @@ intro:
     put files into folders, find them again by their path and compare the tablet, a USB stick and the cloud. For
     ages 10 to 12. How to protect your files will come later in a chapter of its own.
 languages: [de, en]
+# every exercise that draws tasks by number starts at task 1 (young learners)
+tasks: { start: first }
 chapters: [ordnen, schuetzen]
