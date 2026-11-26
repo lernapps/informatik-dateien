@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Ordner, Pfade und Speicherorte
+  en: Folders, paths and storage
+summary:
+  de: Du räumst Mias Tablet auf, findest Dateien über ihren Pfad wieder und vergleichst, wo Dateien liegen können.
+  en: You tidy up Mia's tablet, find files again by their path and compare where files can be stored.
+pages: [ordner-und-dateien]

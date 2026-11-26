@@ -1,0 +1,70 @@
+# What Mia looks for (page ordner-und-dateien, generated "wiederfinden"): the folder of her tree (stand 1) where it lies,
+# the two other folders and why each does not fit. Unambiguous: exactly one folder fits.
+- {
+    was: { de: das Foto vom Kuchen, en: the photo of the cake },
+    ordner: { de: Fotos, en: Photos },
+    falsch1: { de: Schule, en: School },
+    falsch2: { de: Musik, en: Music },
+    grund1: { de: "Ein Foto ist kein Text für die Schule.", en: "A photo is not a text for school." },
+    grund2: { de: "Ein Foto kann man nicht anhören.", en: "You cannot listen to a photo." },
+  }
+- {
+    was: { de: "eine Datei mit der Endung .mp3", en: "a file with the extension .mp3" },
+    ordner: { de: Musik, en: Music },
+    falsch1: { de: Schule, en: School },
+    falsch2: { de: Fotos, en: Photos },
+    grund1:
+      {
+        de: "Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Text.",
+        en: "The extension .mp3 shows that this is something to listen to, not a text.",
+      },
+    grund2:
+      {
+        de: "Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Foto.",
+        en: "The extension .mp3 shows that this is something to listen to, not a photo.",
+      },
+  }
+- {
+    was: { de: ihre Notizen für den Unterricht, en: her notes for a lesson },
+    ordner: { de: Schule, en: School },
+    falsch1: { de: Fotos, en: Photos },
+    falsch2: { de: Musik, en: Music },
+    grund1: { de: "Notizen sind Text, kein Foto.", en: "Notes are text, not a photo." },
+    grund2: { de: "Notizen liest man, man hört sie nicht an.", en: "You read notes, you do not listen to them." },
+  }
+- {
+    was: { de: das Lied vom Schulfest, en: the song from the school party },
+    ordner: { de: Musik, en: Music },
+    falsch1: { de: Schule, en: School },
+    falsch2: { de: Fotos, en: Photos },
+    grund1:
+      {
+        de: "Das Lied ist vom Schulfest, aber es ist etwas zum Hören, kein Text für den Unterricht.",
+        en: "The song is from the school party, but it is something to listen to, not a text for a lesson.",
+      },
+    grund2: { de: "Ein Lied ist kein Foto.", en: "A song is not a photo." },
+  }
+- {
+    was: { de: "eine Datei mit der Endung .jpg", en: "a file with the extension .jpg" },
+    ordner: { de: Fotos, en: Photos },
+    falsch1: { de: Schule, en: School },
+    falsch2: { de: Musik, en: Music },
+    grund1:
+      {
+        de: "Die Endung .jpg zeigt: Das ist ein Foto, kein Text.",
+        en: "The extension .jpg shows that this is a photo, not a text.",
+      },
+    grund2:
+      {
+        de: "Die Endung .jpg zeigt: Das ist ein Foto, nichts zum Hören.",
+        en: "The extension .jpg shows that this is a photo, not something to listen to.",
+      },
+  }
+- {
+    was: { de: ihr Gedicht für Deutsch, en: her poem for German },
+    ordner: { de: Schule, en: School },
+    falsch1: { de: Fotos, en: Photos },
+    falsch2: { de: Musik, en: Music },
+    grund1: { de: "Ein Gedicht ist ein Text, kein Foto.", en: "A poem is a text, not a photo." },
+    grund2: { de: "Ein Gedicht ist ein Text zum Lesen.", en: "A poem is a text to read." },
+  }

@@ -1,10 +1,17 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
-languages: [de]
-chapters: [thema]
+strand: informatik/informatiksysteme
+title:
+  de: "Meine Dateien: ordnen, speichern, schützen"
+  en: "My files: organise, store, protect"
+intro:
+  de: >-
+    Mia aus der Klasse 6b hat ein Tablet. Darauf liegen Fotos, Lieder und Texte für die Schule. Du hilfst Mia,
+    Ordnung zu machen: Du legst Dateien in Ordner, findest sie über ihren Pfad wieder und vergleichst Tablet,
+    USB-Stick und Cloud. Für die Klassen 5 und 6.
+  en: >-
+    Mia from class 6b has a tablet. On it there are photos, songs and texts for school. You help Mia tidy it up: you
+    put files into folders, find them again by their path and compare the tablet, a USB stick and the cloud. For
+    ages 10 to 12.
+languages: [de, en]
+chapters: [ordnen]

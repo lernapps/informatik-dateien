@@ -1,0 +1,57 @@
+# Tasks of the file manager in the mode `ablegen` (page ordner-und-dateien): a new file lies in Downloads; the learner
+# cuts it and pastes it into a fitting folder. `ordner`: the ids (numbers) of mias-tablet where it fits (stand 1). `art`: what
+# its ending says it is; the message for a wrong folder uses it, never the folder.
+- {
+    datei: { de: gedicht.txt, en: poem.txt },
+    ordner: [3],
+    art:
+      {
+        de: "Die Endung .txt zeigt: Das ist ein Text. Es ist ein Gedicht für den Unterricht.",
+        en: "The extension .txt shows that this is a text. It is a poem for a lesson.",
+      },
+  }
+- {
+    datei: { de: vokabeln.txt, en: words.txt },
+    ordner: [3],
+    art:
+      {
+        de: "Die Endung .txt zeigt: Das ist ein Text. Darin stehen Vokabeln für den Unterricht.",
+        en: "The extension .txt shows that this is a text. It has words to learn for a lesson.",
+      },
+  }
+- {
+    datei: { de: tor.jpg, en: goal.jpg },
+    ordner: [4],
+    art:
+      {
+        de: "Die Endung .jpg zeigt: Das ist ein Foto. Es zeigt ein Tor beim Fußball.",
+        en: "The extension .jpg shows that this is a photo. It shows a goal in a football match.",
+      },
+  }
+- {
+    datei: { de: kuchen.jpg, en: cake.jpg },
+    ordner: [4],
+    art:
+      {
+        de: "Die Endung .jpg zeigt: Das ist ein Foto. Es zeigt einen Kuchen.",
+        en: "The extension .jpg shows that this is a photo. It shows a cake.",
+      },
+  }
+- {
+    datei: { de: tanz.mp3, en: dance.mp3 },
+    ordner: [5],
+    art:
+      {
+        de: "Die Endung .mp3 zeigt: Das ist etwas zum Hören. Es ist ein Lied zum Tanzen.",
+        en: "The extension .mp3 shows that this is something to listen to. It is a song to dance to.",
+      },
+  }
+- {
+    datei: { de: gitarre.mp3, en: guitar.mp3 },
+    ordner: [5],
+    art:
+      {
+        de: "Die Endung .mp3 zeigt: Das ist etwas zum Hören. Es ist ein Stück auf der Gitarre.",
+        en: "The extension .mp3 shows that this is something to listen to. It is a piece played on a guitar.",
+      },
+  }
