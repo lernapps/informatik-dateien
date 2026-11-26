@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -172,10 +172,12 @@ Voraussetzungen von außerhalb (nicht in dieser App geübt):
   (wie viele Fotos passen?), vergleichen in einer Tabelle Tablet, USB-Stick und Cloud nach Kapazität, Erreichbarkeit
   (ohne Internet? von einem anderen Gerät?) und Sicherheit (verlieren, kaputt, fremde Rechner, Passwort) und wählen
   für eine Lage den passenden Ort mit Grund. Fehler: „Die Cloud ist nirgendwo / im Himmel“ (sie liegt auf Rechnern
-  einer Firma), „Cloud geht auch ohne Internet“, 1 GB = 1024 MB oder MB und GB verwechselt, „Auf dem Stick ist es
+  einer Firma), „Cloud geht auch ohne Internet“, MB und GB verwechselt (1024 statt 1000 wird nicht als Fehler
+  abgefangen, nur als andere Zählweise genannt), „Auf dem Stick ist es
   sicher, weil ich ihn habe“ (verlieren), „Es gibt einen Ort, der immer am besten ist“.
 - Kapitel 2 (später): datensicherung – Mias Tablet fällt ins Wasser; Kopie an einem zweiten Ort, Zwischenstände
-  speichern; Fehler: „Verschieben ist Sichern“, „Die Kopie auf demselben Gerät reicht“. sicheres-passwort –
+  speichern, Regel selbst formuliert „an zwei Orten, einer davon nicht zu Hause“ (keine 3-2-1-Regel beim BSI);
+  Fehler: „Verschieben ist Sichern“, „Die Kopie auf demselben Gerät reicht“. sicheres-passwort –
   Simulation, wie lange ein Rechner zum Erraten braucht (Länge und Zeichenarten); Fehler: „Kurz und mit Sonderzeichen
   ist sicherer als lang“, „ein Passwort für alles“. schadsoftware – Fälle (Anhang, falsche App, Stick); Fehler:
   „Schadsoftware kommt nur von schlechten Webseiten“, Virus/Trojaner verwechselt. schutzsoftware – Firewall,
@@ -234,9 +236,10 @@ Voraussetzungen von außerhalb (nicht in dieser App geübt):
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Einverstanden, weiter mit dem Plan. Weitere Fehler: „Wer einen Ordner löscht, löscht nur den Ordner“, „Ein neuer Name macht aus dem Foto eine andere Datei“, „Was ich unter ‚Zuletzt verwendet‘ finde, liegt dort“, „Gespeichert ist gespeichert, egal wo“ (Downloads). computer-bestandteile im recap: ja, ein Absatz je Baustein. Pfade mit /, Wurzel „Mias Tablet“, Satz zu \ und C:\: passt. Mias Tablet türkis #2a9d8f mit gelbem Stern #f2c14e: festgelegt. Dateigrößen „ungefähr“: in Ordnung. 1 GB = 1000 MB; „1 GB = 1024 MB“ nicht als Fehler abfangen, höchstens als andere Zählweise nennen. Kapitel 2: keine 3-2-1-Regel beim BSI; Regel selbst formulieren („an zwei Orten, einer davon nicht zu Hause“), nur belegen, was das BSI sagt.
 
 ### Answers
 
@@ -271,28 +274,146 @@ Die „Ersteller“-Rolle hat in diesem Epic der Orchestrator (lernapps/apps#509
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-<archetype>-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-<archetype>-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
+- [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
 - [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
 
 ### Content method
 
-<!-- One line each: the patterns and where; the figures and how they are made; the data files; each component, what it
-checks and what it cannot; how a later agent adds a chapter. It becomes the content guide in Code. -->
-<!-- An explainer: per figure, model and component its learning action in two to four sentences
-(`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
-page, which a link. -->
+**Aufbau.** `src/app.yaml` mit `format: 2`, `strand: informatik/informatiksysteme`, `languages: [de, en]`,
+`chapters: [ordnen]` (Welle 1; `schuetzen` kommt mit `increment/7-8`). Kapitel `ordnen`, Seiten in dieser Reihenfolge:
+`das-brauchst-du` (recap), `ordner-und-dateien`, `dateipfad`, `speicherorte`. Abschnitte mit gleichen ids:
+`einstieg` (Szene und erste Aufgabe), `idee` (das Neue, mit Baum oder Bild), `ausprobieren` (Dateimanager, nur wo
+man etwas bedient) oder `beispiel` (Kasten `example`), `uebung`; die letzte Seite zusätzlich `regel` (Kapitelende).
+Titel passen zur Seite.
+
+**Sammel-Wiederholung `ordnen/das-brauchst-du`** (`recap: [informatik/computer-bestandteile,
+informatik/programme-bedienen, informatik/baum, informatik/bit-und-byte]`), ein kurzer Absatz je Baustein mit seinem
+Namen aus der Karte, als Selbstcheck „Kannst du das schon?“, keine Übung:
+- Bestandteile eines Computers: `labelled-figure` `glaeserner-computer.svg` (#490, kopiert), Marker am orangen
+  Kästchen „Festspeicher: hebt auf, auch ohne Strom. Hier liegen Mias Dateien.“
+- Programme bedienen: Speichern, Ausschneiden, Einfügen in einem Satz je Befehl („Ausschneiden + Einfügen =
+  verschieben“).
+- Baum: `labelled-figure` `baum-zimmer.svg` (#491, kopiert) mit den vier Markern Wurzel, Knoten, Kante, Blatt.
+- Bit und Byte: `table` 1 Byte = 8 Bit, 1 KB = 1000 Byte, 1 MB = 1000 KB, 1 GB = 1000 MB.
+
+**Muster je Baustein** (Fehler und Rückmeldung wie unter Notes; jede falsche Option hat `info`, `generated` hat
+`mistakes` und `hint`; Pflichtübung ist jeweils eine `generated`):
+- ordner-und-dateien (ablegen, wiederfinden):
+  - `single-choice` (Einstieg) „Was hilft Mia am meisten, ihr Referat wiederzufinden?“, mit der Option „Zuletzt
+    verwendet“ (Liste, kein Ort).
+  - Komponente `Dateimanager` im Modus `ablegen`: eine Datei liegt in `Downloads`, die Kinder schneiden sie aus und
+    fügen sie im passenden Ordner ein.
+  - `generated` mit `choice` [Schule, Fotos, Musik] aus `data/dateien.yaml` (Felder `name`, `ordner`, `grund`): „In
+    welchen Ordner gehört `{{d.name}}`?“; der Grund nennt die Endung.
+  - `number` „Mia löscht den Ordner Fotos. Wie viele Dateien sind dann weg?“ (Fehler 0: „nur der Ordner“).
+  - `true-false` „Ein neuer Name macht aus dem Foto eine andere Datei.“ (falsch).
+  - `multiple-choice` „Was kann in einem Ordner liegen?“ (Dateien, Ordner; nicht: „ein Gerät“, „die Wurzel“).
+- dateipfad (Pfad angeben und lesen):
+  - `single-choice` (Einstieg) „Welcher Weg führt zu `see.jpg`?“; die Fehler sind die umgekehrte Reihenfolge, ein
+    fehlender Ordner und ein Pfad, der beim Ordner endet.
+  - Komponente `Dateimanager` im Modus `oeffnen`: „Öffne `Mias Tablet/Schule/Mathe/notizen.txt`“; `reason` bei der
+    gleichnamigen Datei in Deutsch.
+  - `generated` mit `order` aus `data/pfade.yaml` (Felder `datei`, `teile` als feste Felder `o1`, `o2`, `name`):
+    Teile eines Pfads in die richtige Reihenfolge; Fehler „umgekehrt“ (`reverse(answer)`).
+  - `generated` mit `choice` aus `data/pfade.yaml`: „In welchem Ordner liegt die Datei mit dem Pfad …?“ (Fehler: die
+    Wurzel oder der erste Ordner statt des letzten).
+  - `true-false` „Zwei Dateien dürfen gleich heißen, wenn sie in verschiedenen Ordnern liegen.“ (richtig).
+- speicherorte-vergleichen (nach Kapazität, Erreichbarkeit, Sicherheit vergleichen):
+  - `number` (Einstieg) „Wie viele MB sind 2 GB?“ (2000; 2048 bekommt eine eigene Meldung „andere Zählweise, hier
+    gilt 1 GB = 1000 MB“; 2 und 0,002 als Fehler „falsche Richtung“).
+  - `generated` `number` aus `data/medien.yaml` (Felder `art`, `mb`): „Wie viele `{{m.art}}` mit je ungefähr
+    `{{m.mb}}` MB passen auf einen Stick mit `{{g}}` GB?“ (Fehler: GB nicht umgerechnet; mal statt geteilt).
+  - `generated` mit `choice` [Tablet, USB-Stick, Cloud] aus `data/lagen.yaml` (Felder `lage`, `ort`, `grund`,
+    `grundFalsch1`, `grundFalsch2`): passender Ort für eine Lage, mit Grund.
+  - `matching` Speicherort → Risiko (Tablet: fällt runter, alles weg; Stick: geht verloren; Cloud: ohne Internet kein
+    Zugriff, Daten bei einer Firma).
+  - `true-false` „Was in der Cloud liegt, liegt nirgendwo, im Himmel.“ (falsch: auf Rechnern einer Firma).
+  - `multiple-choice` „Was brauchst du, um an deine Dateien in der Cloud zu kommen?“ (Internet, Zugang mit Passwort;
+    nicht: den Stick, das gleiche Gerät).
+- Jede Seite: mindestens 4 Übungen (die Komponente zählt), höchstens drei Viertel ratbar, nicht alle einer Art. Die
+  Seiten unterscheiden sich in ihren Übungsarten (`explainer-page-variety`).
+
+**Bilder** (eigene SVG, `source: eigene Zeichnung`, `licence: CC-BY-4.0`; kein übersetzbares Wort in SVG-Dateien,
+Namen dürfen stehen; unten 44 px frei; Figuren aus `klasse-6b.svg`):
+- `mia-sucht.svg` (S. 1, Einstieg): Mia mit ihrem Tablet (türkise Hülle, gelber Stern), auf dem Bildschirm viele
+  lose Datei-Symbole ohne Beschriftung durcheinander. Die Kinder sehen das Problem, bevor das Wort „Ordner“ fällt.
+- Anzeige-Komponente `Ordnerbaum` (S. 1, S. 2, S. 3): Mias Ordnerbaum im Stil von `baum-zimmer.svg` (Wurzel oben,
+  hellblau #e8f0fb, Knoten abgerundet, Rand #333 2 px, Blätter gestrichelt, Kanten gerade Linien). Ordner mit kleinem
+  Ordner-Zeichen, Dateien mit Name und Endung in zwei Zeilen, damit es bei 360 px passt. Prop `stand` (1, 2, 3)
+  zeigt, wie weit der Baum gewachsen ist; die Knoten kommen aus `data/mias-tablet.yaml` (`id`, `name` {de, en},
+  `parent`, `datei`, `stand`). Die Kinder lesen: Wurzel = Tablet, Knoten = Ordner, Blätter = Dateien; dann bauen sie
+  ihn im Dateimanager nach. Ein Satz neben dem Baum nennt die drei Entsprechungen.
+- `speicherorte.svg` (S. 3, `labelled-figure`): Mias Tablet, ein USB-Stick, eine Wolke mit Pfeil zu einem Haus voller
+  Rechner (Rechenzentrum). Marker 1-3 an den drei Orten mit Legende; die Wolke zeigt, dass die Cloud auf Rechnern
+  einer Firma liegt. Die Kinder lesen das Bild, dann die Tabelle.
+- Kopiert mit Herkunft im Dateikopf: `glaeserner-computer.svg` (#490), `baum-zimmer.svg` (#491).
+
+**Datendateien** (`src/data/`, Texte als `{ de, en }`): `mias-tablet.yaml` (Baum), `dateien.yaml` (Dateien zum
+Einordnen), `pfade.yaml` (Pfade der Blätter des Baums, Stand 2), `medien.yaml` (Foto 4 MB, Lied 4 MB, Video 1 Minute
+100 MB, Text 0,02 MB), `lagen.yaml` (Lagen mit passendem Ort und Gründen), `ablegen.yaml` und `oeffnen.yaml`
+(Aufgaben des Dateimanagers).
+
+**Komponente `Dateimanager`** (Übungskomponente; kein Block kann „in einem Baum navigieren und verschieben“
+ausdrücken): oben eine Pfadleiste (`Mias Tablet / Schule`), darunter der Inhalt des offenen Ordners als Liste
+(Ordner-Zeile öffnet den Ordner, Datei-Zeile hat „Ausschneiden“ bzw. „Öffnen“), Knöpfe „Nach oben“ und „Einfügen“.
+Alles als `<button>`, mit Tastatur bedienbar, 44 px hoch.
+- Modus `ablegen`: Aufgabe „Räume `{{datei}}` aus Downloads auf“; Antwort ist der Ordner, in dem die Datei nach dem
+  Einfügen liegt. Prüft die Eigenschaft „ein passender Ordner“ (Liste je Aufgabe, z. B. Foto: Fotos oder
+  Fotos/Klassenfahrt). `reason`: Datei noch in Downloads; Ordner der falschen Art (mit Grund aus der Aufgabe);
+  ausgeschnitten, aber nicht eingefügt.
+- Modus `oeffnen`: Aufgabe „Öffne die Datei mit dem Pfad …“; Antwort ist der Pfad der geöffneten Datei. Prüft
+  Gleichheit mit dem Pfad (eindeutig). `reason`: gleichnamige Datei in einem anderen Ordner; andere Datei im
+  richtigen Ordner.
+- Kann nicht: Ordner anlegen, umbenennen, löschen; freie Namen. Startzustand: Ordner `Mias Tablet` offen, alle
+  Ordner da; nichts zeigt vor „Prüfen“ den Zielordner. Text ohne JS aus `describe`. Budget: nur Variablen der Seite.
+
+**Anzeige-Komponente `Ordnerbaum`**: SVG aus den Props, `aria-hidden`, Beschreibung im `nojs` (als Beschriftung
+behalten, `defineOptions({ nojs: "caption" })`), Logik (Positionen) in `Ordnerbaum.ts` mit Test.
+
+**Figuren und Material je Seite**, wofür (`explainer-representation-explained`):
+- Glaeserner Computer: erinnert, wo Dateien liegen (Festspeicher); die Kinder finden das orange Kästchen.
+- Baum der Zimmer: erinnert an Wurzel, Knoten, Kante, Blatt; diese Wörter tragen die Seiten 1 und 2.
+- Ordnerbaum: zeigt die ganze Ordnung auf einmal; die Kinder lesen, was in welchem Ordner liegt, und zählen (S. 1),
+  gehen den Weg von der Wurzel zum Blatt (S. 2) und sehen denselben Baum an drei Orten (S. 3).
+- Dateimanager: zeigt immer nur einen Ordner, wie auf echten Geräten; die Kinder lernen, dass der Baum die Karte und
+  der Dateimanager der Weg ist.
+
+**Voraussetzungen von außerhalb:** alle vier auf der Sammel-Wiederholung; zusätzlich ein Link zur Karte auf der
+Seite, die sie braucht (`baum` auf S. 1, `bit-und-byte` auf S. 3).
+
+**Engagement je Seite:**
+0. das-brauchst-du: Einstieg Selbstcheck „Kannst du das schon?“ – Wechsel: Bild, Satz, Bild, Tabelle – Lohn: „Dann
+   kann es losgehen“ – Geschichte: Mia hat ein Tablet, darin liegt im orangen Kästchen alles, was sie speichert.
+1. ordner-und-dateien: Einstieg „Mia hat ihr Referat gespeichert und findet es nicht. Was hilft?“ – Wechsel: Szene,
+   Baum lesen, Dateimanager bedienen, Ranzen-Baum (unplugged), einordnen – Lohn: Mias Tablet ist aufgeräumt, der
+   Baum steht – Geschichte: nächste Station: Selin will das Foto vom Seeberg.
+2. dateipfad: Einstieg „Selin fragt: Wo liegt das Foto vom See?“ – Wechsel: Baum, Weg mit dem Finger, Pfad-Diktat
+   (unplugged), Dateimanager, Pfad legen – Lohn: Mia schickt Selin den Pfad, Selin findet das Foto sofort –
+   Geschichte: nächste Station: Das Tablet ist voll.
+3. speicherorte: Einstieg „Mias Tablet meldet: Speicher fast voll. Wie viele MB sind 2 GB?“ – Wechsel: Bild der drei
+   Orte, Tabelle, Rechnen, Lagen entscheiden – Lohn: Mias Plan, wo was liegt, und die Regel für das eigene Gerät –
+   Geschichte: Kapitelende, Ausblick auf Kapitel 2 („an zwei Orten“).
+
+**Wiederholen mit Absicht:** Der Ordnerbaum kommt auf jeder Seite wieder, jedes Mal mit einer neuen Frage (was liegt
+wo – welcher Weg – an welchem Ort). Ausschneiden und Einfügen aus #490 kommen im Dateimanager als „Verschieben“ wieder.
+
+**Ein neues Kapitel** (7-8, `increment/7-8`): Ordner `src/schuetzen/`, Seiten `das-brauchst-du` (recap
+`informatiksysteme-im-alltag`, `hardware-und-software`), `datensicherung`, `passwort`, `schadsoftware`,
+`schutzsoftware`; gleiche Abschnitts-ids; `Ordnerbaum` mit Stand 4 (Kopie, Schloss, Angriff); Geschichte als
+Nachrichten zwischen Mia und Selin (7-9); Simulation „Wie lange braucht ein Rechner zum Erraten?“ als
+Übungskomponente; Fälle zu Schadsoftware als `generated` aus einer Datendatei; nur BSI-Aussagen belegen.
 
 ## Code
 
@@ -317,11 +438,15 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite ordnen/ordner-und-dateien in de und en: Szene mia-sucht, Anzeige-Komponente Ordnerbaum (Stand 1) mit Test, Übungskomponente Dateimanager Modus ablegen mit Test, generated aus dateien, Data mias-tablet, dateien, ablegen; zeigt Mias Tablet, den Ordnerbaum und das Seitenmuster
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Sammel-Wiederholung ordnen/das-brauchst-du (de, en): recap computer-bestandteile, programme-bedienen, baum, bit-und-byte; glaeserner-computer und baum-zimmer mit Herkunft kopiert; zeigt die Anknüpfung an #490 und #491
+- [ ] Seite ordnen/dateipfad (de, en): Ordnerbaum Stand 2, Dateimanager Modus oeffnen, generated Pfad ordnen und Ordner ablesen aus pfade, Pfad-Diktat unplugged; zeigt Pfad angeben und lesen
+- [ ] Seite ordnen/speicherorte (de, en): Bild speicherorte, Vergleichstabelle, generated Fotos pro Stick aus medien, generated Lagen, matching Risiken, Kapitelregel und Rückblick; zeigt Speicherorte vergleichen
+<!-- tasks: pages (3 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.

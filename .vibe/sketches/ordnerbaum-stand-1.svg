@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 284" font-family="sans-serif" font-size="11"><rect width="360" height="284" fill="#fff"/><text x="4" y="12" fill="#888">Skizze Ordnerbaum, Stand 1 (S. 1), 360 px</text>
+<line x1="180.0" y1="54" x2="45.0" y2="100" stroke="#333" stroke-width="2"/>
+<line x1="180.0" y1="54" x2="180.0" y2="100" stroke="#333" stroke-width="2"/>
+<line x1="180.0" y1="54" x2="315.0" y2="100" stroke="#333" stroke-width="2"/>
+<line x1="45.0" y1="134" x2="45.0" y2="180" stroke="#333" stroke-width="2"/>
+<line x1="180.0" y1="134" x2="135.0" y2="180" stroke="#333" stroke-width="2"/>
+<line x1="180.0" y1="134" x2="225.0" y2="180" stroke="#333" stroke-width="2"/>
+<line x1="315.0" y1="134" x2="315.0" y2="180" stroke="#333" stroke-width="2"/>
+<rect x="140.0" y="20" width="80.0" height="34" rx="8" fill="#e8f0fb" stroke="#333" stroke-width="2"/>
+<text x="180.0" y="41" text-anchor="middle">Mias Tablet</text>
+<rect x="5.0" y="100" width="80.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="45.0" y="121" text-anchor="middle">📁 Schule</text>
+<rect x="140.0" y="100" width="80.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="180.0" y="121" text-anchor="middle">📁 Fotos</text>
+<rect x="275.0" y="100" width="80.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="315.0" y="121" text-anchor="middle">📁 Musik</text>
+<rect x="2.0" y="180" width="86.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="45.0" y="195" text-anchor="middle">referat</text>
+<text x="45.0" y="207" text-anchor="middle">.txt</text>
+<rect x="92.0" y="180" width="86.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="135.0" y="195" text-anchor="middle">see</text>
+<text x="135.0" y="207" text-anchor="middle">.jpg</text>
+<rect x="182.0" y="180" width="86.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="225.0" y="195" text-anchor="middle">geburtstag</text>
+<text x="225.0" y="207" text-anchor="middle">.jpg</text>
+<rect x="272.0" y="180" width="86.0" height="34" rx="8" fill="#fff" stroke="#333" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="315.0" y="195" text-anchor="middle">floetenlied</text>
+<text x="315.0" y="207" text-anchor="middle">.mp3</text>
+</svg>

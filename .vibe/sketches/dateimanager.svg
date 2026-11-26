@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 330" font-family="sans-serif" font-size="12">
+<rect width="740" height="330" fill="#fff"/>
+<text x="4" y="14" fill="#888">Skizze Dateimanager (Modus ablegen), 360 px: links Start, rechts nach "Ausschneiden" und Wechsel in Fotos</text>
+<g transform="translate(10,26)">
+<rect width="350" height="290" rx="8" fill="#fff" stroke="#333"/>
+<text x="10" y="20">Aufgabe: Räume see.jpg aus Downloads auf.</text>
+<rect x="10" y="32" width="330" height="30" fill="#f2f2f2" stroke="#999"/><text x="18" y="52">Mias Tablet / Downloads</text>
+<rect x="10" y="70" width="90" height="44" rx="6" fill="#fff" stroke="#333"/><text x="22" y="97">↑ Nach oben</text>
+<rect x="10" y="122" width="330" height="44" fill="#fff" stroke="#bbb"/><text x="20" y="149">🖼 see.jpg</text>
+<rect x="240" y="128" width="94" height="32" rx="6" fill="#fff" stroke="#333"/><text x="250" y="149">Ausschneiden</text>
+<rect x="10" y="170" width="330" height="44" fill="#fff" stroke="#bbb"/><text x="20" y="197">📄 einkauf.txt</text>
+<rect x="240" y="176" width="94" height="32" rx="6" fill="#fff" stroke="#333"/><text x="250" y="197">Ausschneiden</text>
+<text x="10" y="240" fill="#555">Einfügen: ausgegraut (nichts ausgeschnitten)</text>
+<rect x="10" y="250" width="120" height="30" rx="6" fill="#4a72c4"/><text x="40" y="270" fill="#fff">Prüfen</text>
+</g>
+<g transform="translate(380,26)">
+<rect width="350" height="290" rx="8" fill="#fff" stroke="#333"/>
+<text x="10" y="20">Aufgabe: Räume see.jpg aus Downloads auf.</text>
+<rect x="10" y="32" width="330" height="30" fill="#f2f2f2" stroke="#999"/><text x="18" y="52">Mias Tablet / Fotos</text>
+<rect x="10" y="70" width="90" height="44" rx="6" fill="#fff" stroke="#333"/><text x="22" y="97">↑ Nach oben</text>
+<rect x="108" y="70" width="180" height="44" rx="6" fill="#fff" stroke="#333" stroke-width="2"/><text x="118" y="97">Einfügen: see.jpg</text>
+<rect x="10" y="122" width="330" height="44" fill="#fff" stroke="#bbb"/><text x="20" y="149">📁 Klassenfahrt  ›</text>
+<rect x="10" y="170" width="330" height="44" fill="#fff" stroke="#bbb"/><text x="20" y="197">🖼 geburtstag.jpg</text>
+<text x="10" y="240" fill="#555">Ordner-Zeile antippen = Ordner öffnen</text>
+<rect x="10" y="250" width="120" height="30" rx="6" fill="#4a72c4"/><text x="40" y="270" fill="#fff">Prüfen</text>
+</g>
+</svg>
