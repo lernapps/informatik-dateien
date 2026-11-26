@@ -48,45 +48,47 @@ Why a long password is hard to guess: a simulation, the BSI's advice and how to 
 **Selin:** selin2014. My name and the year I was born.
 **Mia:** Anyone who knows you can guess that. And a computer guesses even faster.
 
-Selin and Mia are 12 and in class 7b. On this page you will learn why some passwords are guessed quickly
-and others almost never, and how to protect your accounts.
+Selin and Mia are 12 and in class 7b. Here you will learn why some passwords are guessed quickly and how to
+protect your accounts.
 
 - Exercise `pin-moeglichkeiten` (below)
 
 ### How many passwords are there?
 
-A guessing program tries all passwords. How long that takes depends on how many
-there are. That depends on two numbers: how many characters you can choose from and how long the
-password is.
+A guessing program tries all passwords. How long that takes depends on how many there are.
 
-- **character set**: All the characters a password may be made of, for example 26 small letters or 10 digits.
+- **character set**: All the characters a password may be made of, for example 26 lowercase letters or 10 digits.
 
-$\text{Anzahl} = \text{Zeichenvorrat}^{\,\text{Länge}}$
+$\text{number} = \text{set}^{\,\text{length}}$
 
 - Exercise `moeglichkeiten` (below)
 
 ### Try out how long guessing takes
 
-Set the length with the slider and tick the kinds of characters. You do not type a password here. First
-try 12 instead of 8 characters. Then go back to 8 and tick all four kinds. Which helps more?
+Set the length with the slider and tick the kinds of characters. You do not type a password here. The bar
+fills from the left: the further it goes, the longer guessing takes. First try 12 instead of 8 characters.
+Then go back to 8 and tick all four kinds.
 
-Interactive: A simulation: you choose the length (4 to 24 characters) and the kinds of characters, and it shows how long a computer needs on average to guess, if it tries 10 billion passwords per second. Examples: 8 small letters: about 10 seconds. 8 characters from all four kinds (95): about 4 days. 12 small letters: about 55 days. 20 small letters: about 32 billion years.
+Interactive: A simulation: you choose the length (4 to 24 characters) and the kinds of characters, and it shows how long a computer needs on average to guess, if it tries 10 billion passwords per second. Examples: 8 small letters: about 10 seconds. 8 characters from all four kinds (95): about 4 days. 12 lowercase letters: about 55 days. 20 lowercase letters: about 32 billion years.
+
+- Exercise `was-bringt-mehr` (below)
 
 **Remember: What this app assumes**
 
 The computer tries 10 billion passwords per second, and on average it finds the right one after half
-of them. We count special characters as 33. These are assumptions, not measurements. Real attackers
-are often faster: they try names, words and years of birth first, because people choose passwords
-like that. That is why “selin2014” does not help.
+of them. We count special characters as 33. Real attackers
+are often faster: they try lists of names, words and years of birth first, because people choose
+passwords like that. “selin2014” is near the top of such a list.
 
 ### Protecting your account
 
-The BSI, Germany's office for information security, advises: “The longer, the better.” A short password
-needs at least 8 characters from four kinds. A very long one is better, for example made of several words
+The BSI, Germany's office for information security, advises: “The longer, the better.” As a minimum it
+names 8 characters from four kinds; the simulation shows why that is only the minimum. A very long one is
+better, for example made of several words
 (the BSI says 20 to 25 characters). And: use each password for one account only.
 [More from the BSI (in German)](https://www.bsi.bund.de/dok/6596574)
 
-- **password manager**: A program that keeps your passwords encrypted. You only need to remember one long main password.
+- **password manager**: A program that keeps your passwords encrypted, that is in a secret code only it can read. You only need to remember one long main password.
 
 - **two-factor login**: You log in with two things of different kinds, for example something you know (a password) and something you have (a phone with a code). If the password gets out, the account is still protected.
 
@@ -104,12 +106,13 @@ will find out how harmful programs get in.
 
 ### Exercise pin-moeglichkeiten
 
-- Task: A PIN has 4 digits, each from 0 to 9. How many different PINs are there?
+- Task: A PIN has 4 digits, each from 0 to 9. How many different PINs are there? Write the number without a comma.
 - Answer format: type a number
 - Solution: 10,000
-- Explanation: 10 · 10 · 10 · 10 = 10 000 PINs, from 0000 to 9999. A computer tries them all in a moment.
+- Explanation: 10 · 10 · 10 · 10 = 10,000 PINs, from 0000 to 9999.
 - Typical mistakes and what the app says:
-  - 40: You worked out 10 · 4. Each digit has 10 options, and each can go with every other one. So 10 · 10 · 10 · 10.
+  - 40: You worked out 10 · 4. Each digit has 10 options, with every other one: 10 · 10 · 10 · 10.
+  - 1000: That would be PINs with 3 digits. Each of the 4 digits has 10 options.
   - 9999: Nearly. The PIN 0000 counts too. From 0000 to 9999 there is one more.
 - Link: [../?via=tutor#pin-moeglichkeiten](../?via=tutor#pin-moeglichkeiten)
 
@@ -121,32 +124,44 @@ will find out how harmful programs get in.
 - Steps of the solution:
   - {z.n} to the power of {l} = {answer}.
 - Typical mistakes and what the app says:
-  - F1: „You worked out {z.n} · {l}. Each character has {z.n} options, and they go together: multiply {z.n} by itself as many times as the password has characters.“
+  - F1: „You worked out {z.n} · {l}. Multiply {z.n} by itself as many times as the password has characters.“
   - F2: „You swapped the length and the character set. The character set is the base, the length is the power.“
 - Link to number n: `../?moeglichkeiten=n&via=tutor#moeglichkeiten`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
 
 ```
 No. | l | z.art | z.n | Solution | F1 | F2
-1 | 2 | small letters | 26 | 676 | 52 | 67,108,864
+1 | 2 | lowercase letters | 26 | 676 | 52 | 67,108,864
 2 | 3 | digits | 10 | 1,000 | 30 | 59,049
-3 | 4 | small letters | 26 | 456,976 | 104 | 4,503,599,627,370,496
+3 | 4 | lowercase letters | 26 | 456,976 | 104 | 4,503,599,627,370,496
 4 | 4 | digits | 10 | 10,000 | 40 | 1,048,576
 5 | 2 | digits | 10 | 100 | 20 | 1,024
-6 | 3 | small letters | 26 | 17,576 | 78 | 2,541,865,828,329
+6 | 3 | lowercase letters | 26 | 17,576 | 78 | 2,541,865,828,329
 ```
+
+### Exercise was-bringt-mehr
+
+- Task: You have tried it out: what makes a password of 8 lowercase letters stronger?
+- Answer format: choose one answer
+- Choices (✓ right, ✗ wrong, with the app's message):
+  - ✓ 4 more characters (12 lowercase letters) – About 55 days instead of 10 seconds. Each extra character multiplies the number by 26.
+  - ✗ all four kinds (8 characters) – About 4 days. Only the character set grows; the length stays 8.
+  - ✗ Both help exactly the same. – Compare the times: 55 days and 4 days.
+- Solution: 4 more characters (12 lowercase letters)
+- Explanation: Each extra character multiplies the number by the character set. That is why length counts most.
+- Link: [../?via=tutor#was-bringt-mehr](../?via=tutor#was-bringt-mehr)
 
 ### Exercise am-schwersten
 
-- Task: Which of these passwords takes a guessing program the longest if it tries all possibilities?
+- Task: A guessing program tries all possibilities, character by character. Which password takes it the longest?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ tomatobicyclecloudrain (22 small letters) – 26 to the power of 22 is a number with 32 digits. The length makes it so strong, even though it only has small letters.
-  - ✗ Dog!7x (6 characters, four kinds) – 95 to the power of 6 is about 740 billion. The computer gets through that in less than a minute.
-  - ✗ selin2014 (9 characters) – A name and a year of birth. Attackers try passwords like that first.
-  - ✗ Abc12345 (8 characters) – A well-known row of letters and digits. That too is near the top of guessing lists.
-- Solution: tomatobicyclecloudrain (22 small letters)
-- Explanation: Each extra character multiplies the number by the character set. An extra kind only makes the character set bigger. That is why length counts most.
+  - ✓ tomatobicyclecloudrain (22 lowercase letters) – On average about 21 trillion years.
+  - ✗ Dog!7x (6 characters, four kinds) – 95 to the power of 6: about 37 seconds.
+  - ✗ selin2014 (9 characters) – 36 to the power of 9: about an hour, and it is near the top of attackers' lists.
+  - ✗ Abc12345 (8 characters) – 62 to the power of 8: about 3 hours.
+- Solution: tomatobicyclecloudrain (22 lowercase letters)
+- Explanation: The longest password wins, even though it only has lowercase letters. That is why the BSI advises very long passwords.
 - Link: [../?via=tutor#am-schwersten](../?via=tutor#am-schwersten)
 
 ### Exercise ein-fuer-alles
@@ -154,7 +169,7 @@ No. | l | z.art | z.n | Solution | F1 | F2
 - Task: If a password is very strong, you can use it for all your accounts.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: If it gets out at one service, all your accounts are open. The BSI advises using each password for one account only. A password manager helps you remember them.
+- Explanation: If it gets out at one service, all your accounts are open. The BSI advises: each password for one account only.
 - Link: [../?via=tutor#ein-fuer-alles](../?via=tutor#ein-fuer-alles)
 
 ### Exercise zusaetzlich-schuetzen
@@ -164,8 +179,8 @@ No. | l | z.art | z.n | Solution | F1 | F2
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ turning on two-factor login – Yes. The BSI advises using it as soon as a service offers it.
   - ✓ using a password manager – Yes. Then you can have a separate long password for each account.
-  - ✗ sending the password to your best friend so it does not get lost – A password that someone else knows is no longer secret, even if you trust each other.
+  - ✗ sending the password to your best friend so it does not get lost – What someone else knows is no longer secret.
   - ✗ sticking the password on a note on the tablet – Then anyone who picks up the tablet can read it.
 - Solution: turning on two-factor login; using a password manager
-- Explanation: Two-factor login and a password manager give you extra protection. A shared password or one on a note does not.
+- Explanation: Two-factor login and a password manager give extra protection.
 - Link: [../?via=tutor#zusaetzlich-schuetzen](../?via=tutor#zusaetzlich-schuetzen)
