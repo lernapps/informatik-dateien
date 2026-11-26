@@ -46,6 +46,27 @@
       ]
     },
     {
+      "path": "schuetzen/das-brauchst-du/",
+      "title": {
+        "de": "Das brauchst du hier",
+        "en": "What you need here"
+      },
+      "recap": [
+        "informatik/informatiksysteme-im-alltag",
+        "informatik/hardware-und-software"
+      ]
+    },
+    {
+      "path": "schuetzen/datensicherung/",
+      "title": {
+        "de": "Datensicherung",
+        "en": "Backing up data"
+      },
+      "competencies": [
+        "datensicherung"
+      ]
+    },
+    {
       "path": "schuetzen/passwort/",
       "title": {
         "de": "Sichere Passwörter",

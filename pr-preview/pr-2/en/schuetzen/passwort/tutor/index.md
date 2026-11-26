@@ -48,7 +48,7 @@ Why a long password is hard to guess: a simulation, the BSI's advice and how to 
 **Selin:** selin2014. My name and the year I was born.
 **Mia:** Anyone who knows you can guess that. And a computer guesses even faster.
 
-Selin and Mia are 12 and in class 7b. Here you will learn why some passwords are guessed quickly and how to
+On the page before, you backed up Mia's files. Here you will learn why some passwords are guessed quickly and how to
 protect your accounts.
 
 - Exercise `pin-moeglichkeiten` (below)

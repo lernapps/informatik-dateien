@@ -49,6 +49,8 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 ### Kapitel „Daten sichern und schützen“
 
 - keine Selbsteinschätzung
+- „Das brauchst du hier“
+- „Datensicherung“ · nicht abgefragt
 - „Sichere Passwörter“ · nicht abgefragt
 
 ## Die Aufgaben dieser Selbsteinschätzung

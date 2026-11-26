@@ -48,7 +48,7 @@ Warum ein langes Passwort schwer zu erraten ist: eine Simulation, die Regeln des
 **Selin:** selin2014. Mein Name und mein Geburtsjahr.
 **Mia:** Das kann jeder raten, der dich kennt. Und ein Computer rät noch viel schneller.
 
-Selin und Mia sind 12 und gehen in die 7b. Hier lernst du, warum manche Passwörter schnell erraten sind
+Auf der Seite davor hast du Mias Dateien gesichert. Hier lernst du, warum manche Passwörter schnell erraten sind
 und wie du deine Zugänge schützt.
 
 - Aufgabe `pin-moeglichkeiten` (unten)

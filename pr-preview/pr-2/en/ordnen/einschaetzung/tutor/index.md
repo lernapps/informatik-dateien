@@ -49,6 +49,8 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 ### Chapter “Backing up and protecting data”
 
 - no self-assessment
+- “What you need here”
+- “Backing up data”
 - “Secure passwords”
 
 ## The tasks of this self-assessment
