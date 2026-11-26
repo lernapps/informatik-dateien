@@ -101,7 +101,8 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   Foto: Himmel, Sonne, grüner Hügel; Musik: lila Note). Hintergrund #f4efe2, Boden #c9a77a, unten 44 px frei.
 - Anzeige-Komponente `Ordnerbaum` (`src/components/Ordnerbaum.vue`, Prop `stand`): Stil des Baums aus #491
   (`baum-zimmer.svg`): Wurzel oben, hellblau #e8f0fb, fett; Knoten abgerundet (rx 8), Rand #333 2 px; Ordner mit
-  gelbem Ordner-Zeichen #f2c14e; Dateien gestrichelt (5 3), Name und Endung in zwei Zeilen; weißer Hintergrund, unten
+  gelbem Ordner-Zeichen #f2c14e; Dateien gestrichelt (5 3), Name und Endung in zwei Zeilen, alle Dateien in der
+  untersten Reihe; Kästen am Rand werden in die Zeichnung gerückt (Test gegen Überlappung); weißer Hintergrund, unten
   44 px frei. Namen kommen aus den Daten je Sprache, nie als Text in einer SVG-Datei. `nojs` beschreibt den Baum.
 - Übungskomponente `Dateimanager`: Pfadleiste, Liste des offenen Ordners (Ordner gelb, Datei gestrichelt wie im
   Baum), Knöpfe 44 px, Farben nur aus den Variablen der Seite.
@@ -146,3 +147,6 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   einer); für die Wurzel meldet er eigens „lose auf dem Tablet“.
 
 - Namen im Ordnerbaum höchstens 8 Zeichen: Die Skizze bei 360 px hatte bei 7 Blättern überlappende Namen.
+- Dateien immer in der untersten Reihe des Ordnerbaums: In Stand 2 stieß party.jpg neben dem Ordner Mathe an, und
+  Musik ragte über den rechten Rand.
+- Kein `code`-Block und kein `…` in Texten für Pfade (nicht übersetzbar, Build lehnt ab): Pfade fett im Text.

@@ -1,0 +1,299 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Dateipfad
+  en: File paths
+description:
+  de: "Der Pfad ist der Weg von der Wurzel zur Datei: Pfade lesen, angeben und im Dateimanager benutzen."
+  en: "A path is the way from the root to the file: reading paths, writing them and using them in a file manager."
+competencies: [dateipfad]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Wo liegt das Foto vom See?
+      en: Where is the photo of the lake?
+    blocks:
+      - type: text
+        text:
+          de: |
+            Selin schreibt Mia: „Schick mir das Foto vom See!“ Mia hat noch mehr Ordnung gemacht. Im Ordner Schule
+            liegt jetzt ein Ordner für jedes Fach. Ihr Baum ist gewachsen.
+
+            Auf der Seite davor hast du Dateien in Ordner gelegt. Auf dieser Seite lernst du, den Ort einer Datei
+            genau aufzuschreiben, so dass jeder sie findet.
+          en: |
+            Selin writes to Mia: “Send me the photo of the lake!” Mia has tidied up even more. Inside the folder
+            School there is now a folder for each subject. Her tree has grown.
+
+            On the page before, you put files into folders. On this page you will learn to write down exactly where a
+            file is, so that anyone can find it.
+      - type: vue-component
+        component: Ordnerbaum
+        props:
+          nodes: { data: mias-tablet }
+          stand: 2
+        nojs:
+          de: >-
+            Mias Ordnerbaum, gewachsen. Oben die Wurzel „Mias Tablet“. Darunter die Ordner Schule, Fotos und Musik. Im
+            Ordner Schule liegen die Ordner Deutsch und Mathe. In Deutsch liegen referat.txt und notizen.txt, in Mathe
+            liegt auch eine notizen.txt. Im Ordner Fotos liegen der Ordner Seeberg und party.jpg; in Seeberg liegen
+            see.jpg und zimmer22.jpg. Im Ordner Musik liegt lied.mp3.
+          en: >-
+            Mia's folder tree, grown. At the top is the root “Mia's tablet”. Below it are the folders School, Photos
+            and Music. Inside the folder School are the folders German and Maths. In German there are speech.txt and
+            notes.txt, and in Maths there is a notes.txt too. In the folder Photos there are the folder Seeberg and
+            party.jpg; in Seeberg there are lake.jpg and room22.jpg. In the folder Music there is song.mp3.
+      - type: single-choice
+        id: weg-zum-see
+        text:
+          de: Mia beschreibt Selin den Weg im Baum. Welcher Weg führt von oben zu see.jpg?
+          en: Mia describes the way in the tree to Selin. Which way leads from the top to lake.jpg?
+        options:
+          - text:
+              {
+                de: "Mias Tablet, dann Fotos, dann Seeberg, dann see.jpg",
+                en: "Mia's tablet, then Photos, then Seeberg, then lake.jpg",
+              }
+            correct: true
+            info:
+              de: Jeder Schritt folgt einer Kante nach unten, vom Tablet bis zur Datei.
+              en: Each step follows an edge down, from the tablet to the file.
+          - text:
+              {
+                de: "see.jpg, dann Seeberg, dann Fotos, dann Mias Tablet",
+                en: "lake.jpg, then Seeberg, then Photos, then Mia's tablet",
+              }
+            correct: false
+            info:
+              de: Das ist der Weg von unten nach oben. Selin fängt aber beim Tablet an und sucht die Datei.
+              en: That is the way from the bottom to the top. But Selin starts at the tablet and looks for the file.
+          - text: { de: "Mias Tablet, dann Seeberg, dann see.jpg", en: "Mia's tablet, then Seeberg, then lake.jpg" }
+            correct: false
+            info:
+              de: Vom Tablet führt keine Kante direkt zu Seeberg. Seeberg liegt im Ordner Fotos.
+              en: No edge leads straight from the tablet to Seeberg. Seeberg is inside the folder Photos.
+          - text: { de: "Mias Tablet, dann Fotos, dann Seeberg", en: "Mia's tablet, then Photos, then Seeberg" }
+            correct: false
+            info:
+              de: Damit ist Selin im richtigen Ordner, aber dort liegen zwei Fotos. Welches meint Mia?
+              en: That gets Selin to the right folder, but there are two photos in it. Which one does Mia mean?
+        explanation:
+          de: Der Weg beginnt oben bei der Wurzel und geht Kante für Kante nach unten bis zur Datei.
+          en: The way starts at the root at the top and goes down edge by edge to the file.
+  - type: section
+    id: idee
+    title:
+      de: Der Pfad
+      en: The path
+    blocks:
+      - type: definition
+        term:
+          de: Pfad
+          en: path
+        explanation:
+          de: Der Pfad einer Datei ist ihr Weg im Ordnerbaum, von der Wurzel bis zur Datei. Zwischen die Namen setzt man einen Schrägstrich /.
+          en: The path of a file is its way in the folder tree, from the root to the file. You put a slash / between the names.
+      - type: text
+        text:
+          de: |
+            Drei Pfade aus Mias Baum:
+
+            - **Mias Tablet/Fotos/Seeberg/see.jpg**
+            - **Mias Tablet/Schule/Deutsch/notizen.txt**
+            - **Mias Tablet/Schule/Mathe/notizen.txt**
+
+            Die beiden Dateien notizen.txt heißen gleich, ihre Pfade nicht.
+          en: |
+            Three paths from Mia's tree:
+
+            - **Mia's tablet/Photos/Seeberg/lake.jpg**
+            - **Mia's tablet/School/German/notes.txt**
+            - **Mia's tablet/School/Maths/notes.txt**
+
+            The two files notes.txt have the same name, but not the same path.
+      - type: text
+        text:
+          de: |
+            Lies einen Pfad von links nach rechts: Links steht die Wurzel, rechts die Datei. Der Name direkt vor der
+            Datei ist der Ordner, in dem sie liegt.
+
+            Echte Computer schreiben die Wurzel anders, zum Beispiel nur „/“ oder „C:\“. Manche trennen mit „\“
+            statt mit „/“. Die Idee ist dieselbe.
+          en: |
+            Read a path from left to right: the root is on the left, the file is on the right. The name just before
+            the file is the folder it is in.
+
+            Real computers write the root differently, for example just “/” or “C:\”. Some use “\” instead of “/”
+            to separate the names. The idea is the same.
+      - type: generated
+        id: ordner-ablesen
+        given:
+          p: { pick: 1, from: { data: pfade } }
+        task:
+          text:
+            de: "Jona bekommt den Pfad {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}. In welchem Ordner liegt die Datei?"
+            en: "Jona gets the path {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}. Which folder is the file in?"
+        answer:
+          value: p.o2
+          compare:
+            choice:
+              - { de: Schule, en: School }
+              - { de: Deutsch, en: German }
+              - { de: Mathe, en: Maths }
+              - { de: Fotos, en: Photos }
+              - { de: Seeberg, en: Seeberg }
+        mistakes:
+          - value: p.o1
+            message:
+              de: "{{p.o1}} ist der erste Ordner im Pfad. Darin liegt noch ein Ordner. Die Datei liegt im Ordner direkt vor ihrem Namen."
+              en: "{{p.o1}} is the first folder in the path. There is another folder inside it. The file is in the folder just before its name."
+        hint:
+          de: Lies den Pfad von rechts. Welcher Name steht direkt vor der Datei?
+          en: Read the path from the right. Which name comes just before the file?
+        steps:
+          - de: "Direkt vor {{p.name}} steht {{answer}}. Dort liegt die Datei."
+            en: "Just before {{p.name}} comes {{answer}}. That is where the file is."
+  - type: section
+    id: beispiel
+    title:
+      de: Beispiel
+      en: Example
+    blocks:
+      - type: example
+        title:
+          de: Der Pfad zu den Mathe-Notizen
+          en: The path to the Maths notes
+        blocks:
+          - type: text
+            text:
+              de: |
+                Fahr im Baum mit dem Finger von oben nach unten und schreib jeden Namen auf:
+
+                1. Oben steht die Wurzel: **Mias Tablet**
+                2. Eine Kante tiefer der Ordner Schule: **Mias Tablet/Schule**
+                3. Darunter der Ordner Mathe: **Mias Tablet/Schule/Mathe**
+                4. Zum Schluss die Datei: **Mias Tablet/Schule/Mathe/notizen.txt**
+              en: |
+                Run your finger down the tree from the top and write down each name:
+
+                1. At the top is the root: **Mia's tablet**
+                2. One edge lower, the folder School: **Mia's tablet/School**
+                3. Below it, the folder Maths: **Mia's tablet/School/Maths**
+                4. Last, the file: **Mia's tablet/School/Maths/notes.txt**
+      - type: note
+        title:
+          de: Zum Mitmachen ohne Tablet
+          en: Try it without a tablet
+        blocks:
+          - type: text
+            text:
+              de: |
+                Pfad-Diktat zu zweit: Zeichne deinen Schulranzen-Baum von der Seite davor ab. Dein Partner sagt einen
+                Pfad, zum Beispiel „Ranzen, Vorderfach, Mäppchen, Radiergummi“. Du zeigst mit dem Finger den Weg im
+                Baum. Dann tauscht ihr.
+              en: |
+                Path dictation in pairs: copy your school bag tree from the page before. Your partner says a path, for
+                example “bag, front pocket, pencil case, rubber”. You show the way in the tree with your finger. Then
+                swap.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Eine Datei über ihren Pfad öffnen
+      en: Opening a file by its path
+    blocks:
+      - type: text
+        text:
+          de: |
+            Selin hat Mias Pfad bekommen. Jetzt bist du Selin: Öffne im Dateimanager die Datei mit diesem Pfad. Geh
+            dafür den Pfad von links nach rechts durch, Ordner für Ordner. Tippe dann bei der Datei auf „Öffnen“ und
+            drück „Prüfen“.
+          en: |
+            Selin has got Mia's path. Now you are Selin: in the file manager, open the file with this path. To do
+            this, go through the path from left to right, folder by folder. Then tap “Open” next to the file and press
+            “Check”.
+      - type: vue-component
+        id: oeffnen
+        component: Dateimanager
+        props:
+          mode: oeffnen
+          nodes: { data: mias-tablet }
+          stand: 2
+          ablagen: []
+          oeffnen: { data: oeffnen }
+          task:
+            de: "Öffne die Datei mit dem Pfad {pfad}"
+            en: "Open the file with the path {pfad}"
+          here: { de: "Du bist hier:", en: "You are here:" }
+          up: { de: Nach oben, en: Up }
+          cut: { de: Ausschneiden, en: Cut }
+          paste: { de: "Einfügen: {datei}", en: "Paste: {datei}" }
+          open: { de: Öffnen, en: Open }
+          opened: { de: "Offen: {pfad}", en: "Open: {pfad}" }
+          empty: { de: Dieser Ordner ist leer., en: This folder is empty. }
+          folder: { de: "Ordner", en: "folder" }
+          file: { de: "Datei", en: "file" }
+          notMoved: { de: "", en: "" }
+          notPasted: { de: "", en: "" }
+          wrongFolder: { de: "", en: "" }
+          loose: { de: "", en: "" }
+          sameName:
+            de: "Du hast {pfad} geöffnet. Der Name stimmt, aber der Ordner nicht. Vergleiche den Pfad Ordner für Ordner."
+            en: "You opened {pfad}. The name is right, but the folder is not. Compare the path folder by folder."
+          otherFile:
+            de: "Du hast {pfad} geöffnet. Schau dir den letzten Teil des Pfads an: Wie heißt die Datei?"
+            en: "You opened {pfad}. Look at the last part of the path: what is the file called?"
+        examples:
+          accepted:
+            - { answer: 17, seed: 1 }
+          rejected:
+            - { answer: 16, seed: 1 }
+            - { answer: 0, seed: 1 }
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: pfad-ordnen
+        given:
+          p: { pick: 1, from: { data: pfade } }
+        task:
+          text:
+            de: "Mia schreibt Selin den Pfad zu {{p.name}} im Ordner {{p.o2}}. Bring die Teile in die richtige Reihenfolge, von links nach rechts."
+            en: "Mia writes Selin the path to {{p.name}} in the folder {{p.o2}}. Put the parts in the right order, from left to right."
+        answer:
+          value: "[p.wurzel, p.o1, p.o2, p.name]"
+          compare: order
+        mistakes:
+          - value: "[p.name, p.o2, p.o1, p.wurzel]"
+            message:
+              de: Du hast bei der Datei angefangen. Ein Pfad beginnt bei der Wurzel, ganz oben im Baum.
+              en: You started with the file. A path starts at the root, at the very top of the tree.
+          - value: "[p.wurzel, p.o2, p.o1, p.name]"
+            message:
+              de: "Die beiden Ordner sind vertauscht. Welcher Ordner liegt im anderen? Schau im Baum nach: {{p.o2}} hängt unter {{p.o1}}."
+              en: "The two folders are swapped. Which folder is inside the other? Look in the tree: {{p.o2}} hangs below {{p.o1}}."
+        hint:
+          de: Fang oben im Baum an und geh Kante für Kante nach unten bis zur Datei.
+          en: Start at the top of the tree and go down edge by edge to the file.
+        steps:
+          - de: "Wurzel, dann die Ordner von oben nach unten, zum Schluss die Datei: {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}."
+            en: "Root, then the folders from top to bottom, the file last: {{p.wurzel}}/{{p.o1}}/{{p.o2}}/{{p.name}}."
+      - type: true-false
+        id: gleicher-name
+        text:
+          de: Im selben Ordner können zwei Dateien mit genau demselben Namen liegen.
+          en: Two files with exactly the same name can be in the same folder.
+        answer: false
+        explanation:
+          de: Dann hätten beide denselben Pfad, und niemand wüsste, welche gemeint ist. In verschiedenen Ordnern geht es, wie bei den beiden notizen.txt.
+          en: Then both would have the same path, and nobody would know which one is meant. In different folders it works, like the two files notes.txt.
+      - type: text
+        text:
+          de: |
+            Selin hat das Foto vom See gefunden, mit Mias Pfad in einer Sekunde. Da meldet Mias Tablet: „Speicher fast
+            voll.“ Auf der nächsten Seite, „Speicherorte“, sucht Mia einen Platz für ihre Videos.
+          en: |
+            Selin has found the photo of the lake, in one second with Mia's path. Then Mia's tablet says: “Storage
+            almost full.” On the next page, “Storage locations”, Mia looks for a place for her videos.

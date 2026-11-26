@@ -79,20 +79,26 @@ export function layout(all: readonly Node[], stand: number): { width: number; he
     return value;
   };
   const levels = Math.max(...depth.values());
+  // files on the bottom row, folders on the row of their level: a file never stands beside a folder
+  const row = (node: Node) => (node.datei ? levels : (depth.get(node.id) ?? 0));
+  const boxWidth = (node: Node) =>
+    node === root ? 110 : node.datei ? Math.min(slot - 4, 70) : Math.min(Math.max(slot * 1.4, 62), 84);
+  // a box near the edge is moved inside the drawing
+  const drawnX = (node: Node) => {
+    const half = boxWidth(node) / 2 + 1;
+    return Math.min(Math.max(centre(node), half), width - half);
+  };
   const placed = nodes.map((node): Placed => {
-    const level = depth.get(node.id) ?? 0;
     const parent = nodes.find((other) => other.id === node.parent);
-    const isRoot = node === root;
-    const boxWidth = isRoot ? 110 : node.datei ? Math.min(slot - 4, 70) : Math.min(Math.max(slot * 1.4, 62), 84);
     return {
       id: node.id,
-      x: centre(node),
-      y: TOP + level * ROW,
-      width: boxWidth,
+      x: drawnX(node),
+      y: TOP + row(node) * ROW,
+      width: boxWidth(node),
       datei: node.datei,
-      root: isRoot,
+      root: node === root,
       lines: lines(node),
-      from: parent === undefined ? undefined : { x: centre(parent), y: TOP + (depth.get(parent.id) ?? 0) * ROW + BOX },
+      from: parent === undefined ? undefined : { x: drawnX(parent), y: TOP + row(parent) * ROW + BOX },
     };
   });
   return { width, height: TOP + levels * ROW + BOX + 8 + BOTTOM, placed };

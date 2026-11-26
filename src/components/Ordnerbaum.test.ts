@@ -59,3 +59,35 @@ test("keeps every box inside the drawing and widens it for many leaves", () => {
 test("describes each folder with what lies in it", () => {
   expect(describe(tree, 1)).toEqual(["Tablet: A, B", "A: x.jpg", "B: y.mp3"]);
 });
+
+test("Mia's tree: no two boxes of a row overlap and every box stays inside, in stand 1 and 2", () => {
+  // the structure of src/data/mias-tablet.yaml, with the longest names of both languages
+  const mia: Node[] = [
+    n(1, "Mia's tablet", 0, false),
+    n(2, "Downloads", 1, false, 1, 0, false),
+    n(3, "School", 1, false),
+    n(4, "Photos", 1, false),
+    n(5, "Music", 1, false),
+    n(6, "referat.txt", 3, true, 1, 1),
+    n(8, "party.jpg", 4, true),
+    n(9, "song.mp3", 5, true),
+    n(10, "Deutsch", 3, false, 2),
+    n(11, "Maths", 3, false, 2),
+    n(12, "Seeberg", 4, false),
+    n(13, "referat.txt", 10, true, 2),
+    n(14, "notizen.txt", 10, true, 2),
+    n(15, "notizen.txt", 11, true, 2),
+    n(16, "see.jpg", 12, true),
+    n(17, "zimmer22.jpg", 12, true, 2),
+  ];
+  for (const stand of [1, 2]) {
+    const { placed, width } = layout(mia, stand);
+    for (const box of placed) {
+      expect(box.x - box.width / 2 >= 0 && box.x + box.width / 2 <= width).toBe(true);
+      for (const other of placed) {
+        if (other === box || other.y !== box.y) continue;
+        expect(Math.abs(other.x - box.x) >= (other.width + box.width) / 2).toBe(true);
+      }
+    }
+  }
+});
