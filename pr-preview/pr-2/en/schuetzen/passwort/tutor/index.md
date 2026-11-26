@@ -44,8 +44,11 @@ Why a long password is hard to guess: a simulation, the BSI's advice and how to 
 ### Someone was in Selin's account
 
 **Selin:** Mia, someone logged into my gaming account! 😮
+
 **Mia:** What was your password?
+
 **Selin:** selin2014. My name and the year I was born.
+
 **Mia:** Anyone who knows you can guess that. And a computer guesses even faster.
 
 On the page before, you backed up Mia's files. Here you will learn why some passwords are guessed quickly and how to
@@ -101,7 +104,10 @@ better, for example made of several words
 - Exercise `zusaetzlich-schuetzen` (below)
 
 **Selin:** New password: long, only for this account, and two-factor is on. 💪
-**Mia:** Great! But can someone get into a device without a password? On the next page, “Malware”, you
+
+**Mia:** Great! But can someone get into a device without a password?
+
+On the next page, “Malware”, you
 will find out how harmful programs get in.
 
 ### Exercise pin-moeglichkeiten

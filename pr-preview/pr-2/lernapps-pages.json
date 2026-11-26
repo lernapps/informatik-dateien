@@ -75,6 +75,26 @@
       "competencies": [
         "sicheres-passwort"
       ]
+    },
+    {
+      "path": "schuetzen/schadsoftware/",
+      "title": {
+        "de": "Schadsoftware",
+        "en": "Malware"
+      },
+      "competencies": [
+        "schadsoftware"
+      ]
+    },
+    {
+      "path": "schuetzen/schutzsoftware/",
+      "title": {
+        "de": "Schutzsoftware und Updates",
+        "en": "Security software and updates"
+      },
+      "competencies": [
+        "schutzsoftware"
+      ]
     }
   ]
 }

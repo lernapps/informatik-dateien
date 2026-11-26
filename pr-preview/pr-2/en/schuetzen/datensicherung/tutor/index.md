@@ -44,7 +44,9 @@ Backup copies in a second place and saved versions: how Mia's files stay safe ev
 ### The tablet in the lake
 
 **Mia:** My tablet fell into the lake when I was canoeing. It won't turn on any more. 😭
+
 **Selin:** Oh no! What about your videos from Seeberg?
+
 **Mia:** They are still on the stick and in the cloud. But my speech from yesterday was only on the tablet.
 
 In the first chapter you compared storage locations. On this page you will learn how to back up files so
@@ -97,7 +99,9 @@ that is not plugged into the device, you get your data back without paying a ran
 - Exercise `sicherung-ordnen` (below)
 
 **Selin:** And your speech?
+
 **Mia:** Written again. From now on I back up every Sunday. The cloud has a password – is it good enough?
+
 On the next page, “Secure passwords”, you will find out.
 
 ### Exercise was-bleibt

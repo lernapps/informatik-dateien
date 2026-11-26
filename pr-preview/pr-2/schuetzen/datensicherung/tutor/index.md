@@ -44,7 +44,9 @@ Sicherungskopien an einem zweiten Ort und Zwischenstände: so bleiben Mias Datei
 ### Das Tablet im See
 
 **Mia:** Mein Tablet ist beim Paddeln in den See gefallen. Es geht nicht mehr an. 😭
+
 **Selin:** Oh nein! Und deine Videos vom Seeberg?
+
 **Mia:** Die liegen noch auf dem Stick und in der Cloud. Aber mein Referat von gestern war nur auf dem Tablet.
 
 Im ersten Kapitel hast du Speicherorte verglichen. Auf dieser Seite lernst du, wie du Dateien so sicherst,
@@ -97,7 +99,9 @@ verlangen Geld. Mit einer Kopie, die nicht am Gerät steckt, kommst du ohne Lös
 - Aufgabe `sicherung-ordnen` (unten)
 
 **Selin:** Und dein Referat?
+
 **Mia:** Neu geschrieben. Ab jetzt sichere ich jeden Sonntag. Die Cloud hat ein Passwort – ist das gut genug?
+
 Auf der nächsten Seite, „Sichere Passwörter“, findest du es heraus.
 
 ### Aufgabe was-bleibt

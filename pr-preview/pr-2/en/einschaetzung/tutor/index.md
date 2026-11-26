@@ -48,10 +48,12 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ### Chapter “Backing up and protecting data”
 
-- no self-assessment
+- self-assessment of the chapter
 - “What you need here”
-- “Backing up data” · not asked
-- “Secure passwords” · not asked
+- “Backing up data” · Tasks A10, A11
+- “Secure passwords” · Tasks A12, A13
+- “Malware” · Tasks A14, A15
+- “Security software and updates” · Tasks A16, A17
 
 ## The tasks of this self-assessment
 
@@ -64,3 +66,11 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 - A7: exercise gb-in-mb of the page “Comparing storage locations” (always the same task, on its page too: right may be remembered)
 - A8: exercise wie-viele-passen of the page “Comparing storage locations”
 - A9: exercise welcher-ort of the page “Comparing storage locations”
+- A10: exercise noch-da of the page “Backing up data”
+- A11: exercise verlorene-tage of the page “Backing up data”
+- A12: exercise moeglichkeiten of the page “Secure passwords”
+- A13: exercise am-schwersten of the page “Secure passwords” (always the same task, on its page too: right may be remembered)
+- A14: exercise welcher-weg of the page “Malware”
+- A15: exercise arten of the page “Malware” (always the same task, on its page too: right may be remembered)
+- A16: exercise welcher-schutz of the page “Security software and updates”
+- A17: exercise einstellungen of the page “Security software and updates” (always the same task, on its page too: right may be remembered)

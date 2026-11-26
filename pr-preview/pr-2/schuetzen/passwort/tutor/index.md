@@ -44,8 +44,11 @@ Warum ein langes Passwort schwer zu erraten ist: eine Simulation, die Regeln des
 ### Jemand war in Selins Konto
 
 **Selin:** Mia, jemand hat sich in mein Spiele-Konto eingeloggt! 😮
+
 **Mia:** Was war dein Passwort?
+
 **Selin:** selin2014. Mein Name und mein Geburtsjahr.
+
 **Mia:** Das kann jeder raten, der dich kennt. Und ein Computer rät noch viel schneller.
 
 Auf der Seite davor hast du Mias Dateien gesichert. Hier lernst du, warum manche Passwörter schnell erraten sind
@@ -101,7 +104,10 @@ mehreren Wörtern (das BSI nennt 20 bis 25 Zeichen). Und: Jedes Passwort nur fü
 - Aufgabe `zusaetzlich-schuetzen` (unten)
 
 **Selin:** Neues Passwort: lang, nur für dieses Konto, und Zwei-Faktor ist an. 💪
-**Mia:** Gut! Aber kann man auch ohne Passwort in ein Gerät? Auf der nächsten Seite, „Schadsoftware“, geht
+
+**Mia:** Gut! Aber kann man auch ohne Passwort in ein Gerät?
+
+Auf der nächsten Seite, „Schadsoftware“, geht
 es darum, wie Schadprogramme hineinkommen.
 
 ### Aufgabe pin-moeglichkeiten
