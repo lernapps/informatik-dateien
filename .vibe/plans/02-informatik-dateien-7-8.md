@@ -67,16 +67,41 @@ Einstellungen. (Issue lernapps/apps#492, Welle 2: Kapitel 2 `schuetzen`, 4 Baust
 
 ### Quellen
 
-Wie im ersten Plan (GI IS-8, IS-9, IMG-5; BY MS 6 LB 1, Gym NT 7 LB 2.2; BSI-Seiten). Ergänzende BSI-Seiten (Firewall,
-Einstellungen, Zwei-Faktor, Passwortmanager, Versionen, Erpressungssoftware) liest ein Hilfsagent; Ergebnis folgt.
+Wie im ersten Plan (GI IS-8, IS-9, IMG-5; BY MS 6 LB 1, Gym NT 7 LB 2.2; BSI-Seiten). Dazu, von einem Hilfsagenten
+geöffnet und zitiert (alle HTTP 200, BSI, Verbraucherbereich):
+- Firewall, https://www.bsi.bund.de/dok/504484: „kontrolliert … Alle Daten, die das Netz verlassen werden ebenso
+  überprüft, wie die, die hinein wollen“; Personal Firewall soll verhindern, „dass bestimmte Programme … Kontakt vom
+  Rechner zum Internet aufnimmt“.
+- Mobilgeräte, https://www.bsi.bund.de/dok/6687234: „Bildschirm-Sperre oder die PIN-Abfrage“, „Aktivieren Sie die
+  automatische Update-Funktion“, Zugriffsrechte prüfen, „Im Zweifelsfall ist es besser, die App nicht zu
+  installieren“. Apps, https://www.bsi.bund.de/dok/6684714: „nur aus vertrauenswürdigen Quellen“. **Widerspruch:**
+  dok/6684714 rät bei Apps zu manuellen Updates; ich folge dok/6687234 (automatisch) und nenne den Grund nicht.
+- Zwei-Faktor, https://www.bsi.bund.de/dok/509176: Faktoren aus Wissen, Besitz, Biometrie; „Wenden Sie eine
+  Zwei-Faktor-Authentisierung an, sobald ein Online-Dienst dies ermöglicht.“
+- Passwort-Manager (BSI-Seite „Passwort-Manager“ unter Accountschutz): „in der Regel lohnt sich“; nur ein
+  Masterpasswort merken, verliert man es, „sind im schlechtesten Fall alle Daten verloren“.
+- Datensicherung: „Datensicherung – wie geht das?“: Häufigkeit „hängt von Ihnen ab“, „Programme, die den
+  Speicherprozess automatisch abwickeln“, „räumlich getrennt vom PC“; https://www.bsi.bund.de/dok/10655274:
+  „regelmäßigen Turnus“, gelegentlich prüfen, ob das Back-up lesbar ist; dok/6598916: „mehrere Kopien … an
+  unterschiedlichen Orten“, „unter einem anderen Dokumentennamen, wenn Sie alte Versionen behalten wollen“ (das sind
+  die Zwischenstände; „Version“ als Wort sonst nicht beim BSI).
+- Ransomware, https://www.bsi.bund.de/dok/10366332: schränkt den Zugriff auf Daten ein, „Lösegeld“; „regelmäßig
+  Sicherheitskopien anzulegen, ist eine wirksame Ransomware-Prävention“.
+- Wege der Schadsoftware, dok/6596284: Dateianhang, „Zugabe“ bei einem Gratis-Download, Makro; USB-Sticks „spielen
+  auch heute noch … eine Rolle“.
+- **Keine Zahl für Rateversuche pro Sekunde beim BSI** (dok/6596574 nur: Werkzeuge, „die vollautomatisch alle
+  möglichen Zeichenkombinationen ausprobieren“). Die Rate der Simulation ist eine Annahme der App und steht so da.
+- Nicht geprüft: deutsche Fassungen von dok/6596868 (Trojaner) und dok/6599600 (Viren/Würmer) diesmal nicht neu
+  geöffnet (im ersten Plan gelesen); BSI-Seite Phishing; Inhalte von dok/504184, 504492 nicht neu gelesen.
+- Cloud-Synchronisation („gelöschte Datei wird mitgelöscht“): kein BSI-Beleg gefunden → kommt nicht vor.
 
 ### Didaktik und Fehler je Baustein
 
 - datensicherung: Mias Tablet fällt in den See (Nachricht). Was ist noch da? Nur, was es an einem zweiten Ort gibt.
   Kopieren statt verschieben, regelmäßig, Zwischenstände (Versionen, automatisches Speichern). Rechnen: Wie viele Tage
   Arbeit sind weg, wenn die letzte Sicherung am Sonntag war? Fehler: „Verschieben ist Sichern“, „Kopie auf demselben
-  Gerät reicht“, „Cloud-Sicherung schützt vor allem“ (gelöschte Datei wird mit synchronisiert – nur wenn BSI belegt,
-  sonst weglassen), „einmal sichern reicht“.
+  Gerät reicht“, „einmal sichern reicht“, „die Sicherung muss ich nie prüfen“. Erpressungssoftware als Grund für eine
+  Kopie, die nicht am Gerät hängt.
 - sicheres-passwort: Selins Zugang wurde erraten („selin2011“). Simulation: Länge und Zeichenarten → Ratezeit; die
   Kinder leiten ab, dass Länge mehr bringt als ein Sonderzeichen. Dazu: ein Passwort je Zugang, Passwortmanager,
   Zwei-Faktor (wenn BSI belegt). Fehler: „kurz mit Sonderzeichen ist sicherer als lang“, „ein starkes Passwort für
@@ -114,10 +139,10 @@ Einstellungen, Zwei-Faktor, Passwortmanager, Versionen, Erpressungssoftware) lie
 - [x] Interview, one topic per question, the creator's words under "Answers": which competencies, chapters or rounds,
       for which school years; hurdles and examples; the amount; any change of look and feel or of terms. No answer:
       ask once more, then write your assumption with "(guess)".
-- [ ] Load skill `lernapps-content-research`. Research what the content guide does not cover. Write under "Notes":
+- [x] Load skill `lernapps-content-research`. Research what the content guide does not cover. Write under "Notes":
       the new competencies by chapter with their ids, the sources you opened.
-- [ ] Write under "Notes" the didactic approach per competency and the scope (in, out, data range).
-- [ ] The increment needs a kind of content the guide does not cover (a new page structure, screen, component or kind
+- [x] Write under "Notes" the didactic approach per competency and the scope (in, out, data range).
+- [x] The increment needs a kind of content the guide does not cover (a new page structure, screen, component or kind
       of exercise): load skills `lernapps-explainer-design` and `lernapps-exercise-patterns`. Else skip this task.
 - [ ] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
       scope, every "(guess)", the sources and what is unchecked. Stop and wait. Changes: change them, then ask again.
