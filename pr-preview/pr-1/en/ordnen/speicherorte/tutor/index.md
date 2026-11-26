@@ -43,8 +43,8 @@ Tablet, USB stick and cloud: how much space, when you can get to your files and 
 
 ### Storage almost full
 
-Mia's tablet says: “Storage almost full. 2 GB left.” Mia wants to keep the videos from Seeberg. But
-where?
+Mia's tablet says: “Storage almost full. 2 GB left.” Mia wants to keep her videos from Seeberg,
+files with the extension .mp4. But where?
 
 On the pages before, you sorted files and found them by their path. On this page you will compare where
 files can be stored. First, convert the units.
@@ -53,7 +53,7 @@ files can be stored. First, convert the units.
 
 ### Three places for Mia's files
 
-Picture: Three pictures side by side, each with the same small tree: on the left Mia's tablet with a turquoise case, in the middle a USB stick, on the right a cloud. An arrow leads down from the cloud to a building with lots of computers. Caption: The same folder tree in three places. The numbers belong to the names below. Labels: 1 the tablet: the storage inside the device, 2 a USB stick: a small storage device you plug in, 3 the cloud: storage on the computers of a company, over the internet
+Picture: Three pictures side by side, each with the same small tree: on the left Mia's tablet with a turquoise case, in the middle a USB stick, on the right a cloud. A dashed line leads down from the cloud to a building with lots of computers. Caption: Mia's files in three places. The small tree stands for Mia's folder tree. The numbers belong to the names below. Labels: 1 the tablet: the storage inside the device, 2 a USB stick: a small storage device you plug in, 3 the cloud: storage on the computers of a company, over the internet
 
 - **storage location**: A storage location is the place where a file is kept, for example a tablet, a USB stick or a cloud.
 
@@ -62,13 +62,13 @@ Picture: Three pictures side by side, each with the same small tree: on the left
 Mia's three storage locations. The sizes are examples.:
 - Place | How much space? | When can you get to it?
 - tablet | 64 GB, but almost full | whenever you have the tablet with you
-- USB stick | 32 GB | on any device you plug it into, even without internet
+- USB stick | 32 GB | on any device with the right socket, even without internet
 - cloud | 15 GB, free | from any device, but only with internet
 
 **Remember: Safe?**
 
 Each place has its risk. A tablet can be dropped, lost or stolen. A stick is so small that it is easily
-lost. In the cloud you give your data to a company you do not know, and anyone who knows your password
+lost. In the cloud you give your data to a company, and anyone who knows your password
 can get to it.
 
 ### Example
@@ -81,9 +81,11 @@ Mia compares the three places for the videos from Seeberg, about 3000 MB:
   15 000 MB in the cloud.
 - **Access:** Mia also wants to show the videos at her grandma's. There is no internet there. She can
   take the stick with her.
-- **Safety:** she keeps the stick in her desk drawer so that it does not get lost.
+- **Safety:** a stick can get lost or break. So Mia also uploads the videos to the cloud; the
+  15 000 MB are enough for that.
 
-Mia chooses the stick. For a different situation, another place can be better.
+Mia takes the stick to her grandma's. And the videos are kept in two places: on the stick and in the
+cloud.
 
 ### Practice
 
@@ -104,17 +106,17 @@ Mia chooses the stick. For a different situation, another place can be better.
 Every file gets a clear name and its folder. What is important is kept in two places.
 
 Looking back: you tidied up Mia's tablet, found files by their path and compared three storage
-locations. Try the rule on your own device. Why “in two places”? You will learn that in the next chapter:
-Mia's tablet gets lost.
+locations. Try the rule on your own device. Why “in two places”? You will learn that in a later chapter,
+when Mia's tablet gets lost.
 
 ### Exercise gb-in-mb
 
-- Task: How many megabytes (MB) are 2 gigabytes (GB)?
+- Task: How many megabytes (MB) are in 2 gigabytes (GB)?
 - Answer format: type a number (MB)
 - Solution: 2,000 MB
 - Explanation: 1 GB = 1000 MB, so 2 GB = 2 · 1000 MB = 2000 MB. A video of 1 minute is about 100 MB. With 20 minutes of video the tablet is full.
 - Typical mistakes and what the app says:
-  - 2048: Some devices count with 1024. In this app we count with 1000: 2 GB = 2000 MB.
+  - 2048: Some devices count in 1024s. In this app we count with 1000: 2 GB = 2000 MB.
   - 2: That is the number in GB. One GB is 1000 MB. So how many MB are 2 GB?
   - 0.002: You divided. MB are smaller than GB, so you need more of them. Multiply by 1000.
   - 200: One GB is 1000 MB, not 100. Look at the table on the page “What you need here”.
@@ -131,28 +133,29 @@ Mia's tablet gets lost.
 - Typical mistakes and what the app says:
   - F1: „You did not convert the GB into MB. First work out: {g} GB = {g} · 1000 MB.“
   - F2: „You multiplied. The question is how many times {m.mb} MB fit on the stick. Divide.“
-  - F3: „Some devices count with 1024. In this app we count with 1000: 1 GB = 1000 MB.“
+  - F3: „One GB is 1000 MB, not 100. Work out {g} · 1000 MB.“
+  - F4: „Some devices count in 1024s. In this app we count with 1000: 1 GB = 1000 MB.“
 - Link to number n: `../?wie-viele-passen=n&via=tutor#wie-viele-passen`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
 
 ```
-No. | m.art | m.mb | g | Solution | F1 | F2 | F3
-1 | photos | 4 | 64 | 16,000 | 16 | 256,000 | 16,384
-2 | audiobooks of 1 hour each | 50 | 32 | 640 | 0.64 | 1,600,000 | 655.36
-3 | songs | 5 | 64 | 12,800 | 12.8 | 320,000 | 13,107.2
-4 | photos | 4 | 8 | 2,000 | 2 | 32,000 | 2,048
-5 | songs | 5 | 8 | 1,600 | 1.6 | 40,000 | 1,638.4
-6 | photos | 4 | 16 | 4,000 | 4 | 64,000 | 4,096
-7 | songs | 5 | 16 | 3,200 | 3.2 | 80,000 | 3,276.8
-8 | videos of 1 minute each | 100 | 8 | 80 | 0.08 | 800,000 | 81.92
-9 | videos of 1 minute each | 100 | 64 | 640 | 0.64 | 6,400,000 | 655.36
-10 | songs | 5 | 32 | 6,400 | 6.4 | 160,000 | 6,553.6
-11 | videos of 1 minute each | 100 | 16 | 160 | 0.16 | 1,600,000 | 163.84
-12 | audiobooks of 1 hour each | 50 | 8 | 160 | 0.16 | 400,000 | 163.84
-13 | videos of 1 minute each | 100 | 32 | 320 | 0.32 | 3,200,000 | 327.68
-14 | audiobooks of 1 hour each | 50 | 64 | 1,280 | 1.28 | 3,200,000 | 1,310.72
-15 | audiobooks of 1 hour each | 50 | 16 | 320 | 0.32 | 800,000 | 327.68
-16 | photos | 4 | 32 | 8,000 | 8 | 128,000 | 8,192
+No. | m.art | m.mb | g | Solution | F1 | F2 | F3 | F4
+1 | photos | 4 | 64 | 16,000 | 16 | 256,000 | 1,600 | 16,384
+2 | audiobooks of 1 hour each | 50 | 32 | 640 | 0.64 | 1,600,000 | 64 | 655.36
+3 | songs | 5 | 64 | 12,800 | 12.8 | 320,000 | 1,280 | 13,107.2
+4 | photos | 4 | 8 | 2,000 | 2 | 32,000 | 200 | 2,048
+5 | songs | 5 | 8 | 1,600 | 1.6 | 40,000 | 160 | 1,638.4
+6 | photos | 4 | 16 | 4,000 | 4 | 64,000 | 400 | 4,096
+7 | songs | 5 | 16 | 3,200 | 3.2 | 80,000 | 320 | 3,276.8
+8 | videos of 1 minute each | 100 | 8 | 80 | 0.08 | 800,000 | 8 | 81.92
+9 | videos of 1 minute each | 100 | 64 | 640 | 0.64 | 6,400,000 | 64 | 655.36
+10 | songs | 5 | 32 | 6,400 | 6.4 | 160,000 | 640 | 6,553.6
+11 | videos of 1 minute each | 100 | 16 | 160 | 0.16 | 1,600,000 | 16 | 163.84
+12 | audiobooks of 1 hour each | 50 | 8 | 160 | 0.16 | 400,000 | 16 | 163.84
+13 | videos of 1 minute each | 100 | 32 | 320 | 0.32 | 3,200,000 | 32 | 327.68
+14 | audiobooks of 1 hour each | 50 | 64 | 1,280 | 1.28 | 3,200,000 | 128 | 1,310.72
+15 | audiobooks of 1 hour each | 50 | 16 | 320 | 0.32 | 800,000 | 32 | 327.68
+16 | photos | 4 | 32 | 8,000 | 8 | 128,000 | 800 | 8,192
 ```
 
 ### Exercise welcher-ort
@@ -161,7 +164,7 @@ No. | m.art | m.mb | g | Solution | F1 | F2 | F3
 - Answer format: choose one answer
 - The app's hint: „Ask yourself: is there internet there? Who needs the files, and where?“
 - Steps of the solution:
-  - {l.lage} That is why {answer} fits here.
+  - {l.lage} That is why the storage location {answer} fits here.
 - Typical mistakes and what the app says:
   - F1: „{l.grund1}“
   - F2: „{l.grund2}“
@@ -172,8 +175,8 @@ No. | m.art | m.mb | g | Solution | F1 | F2 | F3
 No. | l.lage | l.grund1 | l.grund2 | Choices | Solution | F1 | F2
 1 | Mia wants to keep the videos so that they are still there even if her tablet and a stick at home get lost. | If the tablet is lost, everything that is only on it is gone. | The stick is also at home and can get lost too. | tablet; USB stick; cloud | cloud | tablet | USB stick
 2 | Mia wants to show her speech on the school computer tomorrow. At school she has no internet, and her tablet stays at home. | The tablet stays at home, and so does everything that is only on it. | At school Mia has no internet, so she cannot reach the cloud. | tablet; USB stick; cloud | USB stick | tablet | cloud
-3 | Mia wants to give Jona the videos of the class trip. Jona has no internet at home. | On Mia's tablet the videos stay with Mia. Jona does not get them that way. | Without internet Jona cannot reach the cloud. | tablet; USB stick; cloud | USB stick | tablet | cloud
-4 | Selin has moved and now lives far away. She wants to see the photos from Seeberg. | On Mia's tablet only Mia sees the photos. | Mia would have to take or send a stick to Selin. With that long way, it takes a long time. | tablet; USB stick; cloud | cloud | tablet | USB stick
+3 | Mia wants to give her friend Jona the videos of the class trip. Jona has no internet at home. | On Mia's tablet the videos stay with Mia. Jona does not get them that way. | Without internet Jona cannot reach the cloud. | tablet; USB stick; cloud | USB stick | tablet | cloud
+4 | Mia's aunt lives far away and has internet. She wants to see the photos from Seeberg. | On Mia's tablet only Mia sees the photos. | Mia would have to take or send a stick to her aunt. With that long way, it takes a long time. | tablet; USB stick; cloud | cloud | tablet | USB stick
 5 | Mia is on a train with no internet. She wants to listen to songs on the tablet without plugging anything in. | She would have to plug in a stick. She does not want to. | On the train she has no internet, so she cannot reach the cloud. | tablet; USB stick; cloud | tablet | USB stick | cloud
 ```
 

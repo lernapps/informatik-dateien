@@ -46,7 +46,7 @@ Read each part and ask yourself: can I do this already?
 
 ### Computer components
 
-Picture: A tablet made of glass. Inside you can see a grey chip, a green bar and an orange box. Caption: The glass computer. The orange box (3) is the storage. Labels: 1 processor: calculates, 2 memory: holds what is being worked on right now, 3 storage: keeps things, even without power. This is where Mia's files are.
+Picture: A tablet made of glass. Inside you can see a grey chip, a green bar and an orange box. Caption: The glass computer: a tablet made of glass. The orange box (3) is the storage. Labels: 1 processor: calculates, 2 memory: holds what is being worked on right now, 3 storage: keeps things, even without power. This is where Mia's files are.
 
 Can you do this already? I can name the main components of a computer and describe what they do. One of
 them matters for this chapter: what Mia saves is kept in **storage**. It stays there even when the tablet
@@ -57,14 +57,14 @@ is off.
 Can you do this already? I can use the basic functions of programs, such as open, save, copy and paste.
 
 - **Save** puts something into storage.
-- **Cut** takes something away and remembers it.
+- **Cut** remembers something so that you can put it somewhere else.
 - **Paste** puts it back down in a new place.
 
 In this chapter you will cut files and paste them into a folder.
 
 ### Trees
 
-Picture: A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below each room there are two children in boxes with a dashed border. Caption: The room plan of the class trip as a tree. Labels: 1 root: the top node, 2 edge: a line between two nodes, 3 node: a box in the tree, 4 leaf: a node with no nodes below it
+Picture: A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below each room there are two children in boxes with a dashed border. Caption: The room plan of Mia's class trip to Seeberg: the children of class 6b, among them Mia and her friends Selin and Jona. Labels: 1 root: the top node, 2 edge: a line between two nodes, 3 node: a box in the tree, 4 leaf: a node with no nodes below it
 
 Can you do this already? I can show information with levels as a tree with a root, nodes, edges and
 leaves. Mia's tablet will soon be a tree just like this.
@@ -72,7 +72,7 @@ leaves. Mia's tablet will soon be a tree just like this.
 ### Bits and bytes
 
 Can you do this already? I can explain the units bit, byte, kilobyte, megabyte and gigabyte and use them
-to compare amounts of data. You will need them on the page “Storage locations”.
+to compare amounts of data. You will need them on the page “Comparing storage locations”.
 
 The units, as we count in this app:
 - Unit | as much as

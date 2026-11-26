@@ -64,21 +64,21 @@ Interactive: Mia's folder tree. At the top is the root “Mia's tablet”. Below
 
 - **folder**: A folder is a place with a name. It holds files and more folders that belong together.
 
-- **file**: A file is a stored piece of data with a name, for example a photo, a song or a text. A file holds no folder, so in the tree it is a leaf.
+- **file**: A file is a stored piece of data with a name, for example a photo, a song or a text. Nothing else is inside a file, so in the tree it is always a leaf.
 
-- **file extension**: The extension is the last part of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text. In the tree it is at the bottom.
+- **file extension**: The extension is the last part of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text.
 
 ### Tidying up in the file manager
 
-On the tablet you never see the whole tree. A **file manager** only ever shows one folder:
+A **file manager** is a program you use to open folders and move files. On a tablet it usually shows only
+one folder at a time:
 
 - Tap a folder and it opens. At the top it says where you are.
 - “Up” takes you back one folder.
-- “Cut” takes a file away. Then open the folder where it should go and tap “Paste”. Cut and paste
-  together mean: **move**.
+- “Cut” remembers a file. It stays where it is until you paste. Then open the folder where it should go
+  and tap “Paste”. Cut and paste together mean: **move**.
 
-What you get from the internet or from a message often ends up in the folder “Downloads”. A new file is
-there. Put it into a folder that fits and then press “Check”.
+New files often end up in the folder “Downloads”. Put the new file into a folder that fits and then press “Check”.
 
 - Exercise `ablegen` (below)
 
@@ -98,8 +98,7 @@ homework book? Can the person next to you find it in ten seconds with your tree?
 
 - Exercise `im-ordner` (below)
 
-Mia's tablet is tidy. Every file has its folder. Then Selin writes: “Send me the photo of the lake!” On
-the next page, “File paths”, Mia describes exactly where it is.
+Every file now has its folder. Then Selin, her friend, comes to visit. She wants to see the photo of the lake. On the next page, “File paths”, Mia describes exactly where it is.
 
 ### Exercise was-hilft
 
@@ -107,7 +106,7 @@ the next page, “File paths”, Mia describes exactly where it is.
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ She puts everything that belongs together in one fixed place, for example everything for school. – Then she knows where to look, even a year from now.
-  - ✗ She looks in the list “Recent”. – That only helps today. “Recent” shows the last files, but it is not a place. Next week the speech will be gone from the list.
+  - ✗ She looks in the list “Recent”. – That only helps today. “Recent” shows the last files, but it is not a place. Soon the speech may be gone from the list.
   - ✗ She saves the speech again, then it is sure to be there. – It is already saved. The question is where. Without a fixed place, Mia will not know next time either.
 - Solution: She puts everything that belongs together in one fixed place, for example everything for school.
 - Explanation: If something has a fixed place, you can find it again.
@@ -152,11 +151,11 @@ No. | datei | Solution | F1 | F2 | F3
 
 ```
 No. | s.was | s.grund1 | s.grund2 | Choices | Solution | F1 | F2
-1 | a file with the extension .jpg | The extension .jpg shows that this is a photo, not a text. | The extension .jpg shows that this is a photo, not something to listen to. | School; Photos; Music | Photos | School | Music
+1 | a picture from a party, a file with the extension .jpg | The extension .jpg shows that this is a photo, not a text. | The extension .jpg shows that this is a photo, not something to listen to. | School; Photos; Music | Photos | School | Music
 2 | the picture she took of her birthday cake with the camera | A picture of a cake does not belong with the things for school. | You cannot listen to a picture. | School; Photos; Music | Photos | School | Music
 3 | her favourite song to sing along to | Mia does not need her favourite song for lessons. | A song is not a photo. | School; Photos; Music | Music | School | Photos
 4 | her notes for a lesson | Notes are text, not a photo. | You read notes, you do not listen to them. | School; Photos; Music | School | Photos | Music
-5 | a file with the extension .mp3 | The extension .mp3 shows that this is something to listen to, not a text. | The extension .mp3 shows that this is something to listen to, not a photo. | School; Photos; Music | Music | School | Photos
+5 | a song to dance to, a file with the extension .mp3 | The extension .mp3 shows that this is something to listen to, not a text. | The extension .mp3 shows that this is something to listen to, not a photo. | School; Photos; Music | Music | School | Photos
 6 | her poem for German class | A poem is a text, not a photo. | A poem is a text to read. | School; Photos; Music | School | Photos | Music
 ```
 
@@ -165,7 +164,7 @@ No. | s.was | s.grund1 | s.grund2 | Choices | Solution | F1 | F2
 - Task: In the folder tree above, Mia deletes the folder Photos. How many files are gone then? Write the number.
 - Answer format: type a number
 - Solution: 2
-- Explanation: Below Photos there are two files, lake.jpg in the folder Seeberg and party.jpg. If you delete a folder, you also delete everything in it, the folders in it too.
+- Explanation: Below Photos there are two files: lake.jpg in Seeberg and party.jpg. If you delete a folder, you also delete everything in it. Often it goes into the bin first.
 - Typical mistakes and what the app says:
   - 0: A folder is a place for files. If the place is gone, everything in it is gone too. Count the files below Photos.
   - 1: You only counted party.jpg. There is also a file in the folder Seeberg, and Seeberg is inside the folder Photos.
@@ -178,7 +177,7 @@ No. | s.was | s.grund1 | s.grund2 | Choices | Solution | F1 | F2
 - Task: Mia gives lake.jpg a new name, trip.jpg. Now the file shows a different picture.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: The name is like a label on the file. A new label does not change what is in the file. The extension .jpg stays, it is the same photo.
+- Explanation: The name is like a label on the file. A new label does not change what is in the file. Mia keeps the extension .jpg, so that the tablet still knows it is a photo.
 - Link: [../?via=tutor#umbenennen](../?via=tutor#umbenennen)
 
 ### Exercise im-ordner

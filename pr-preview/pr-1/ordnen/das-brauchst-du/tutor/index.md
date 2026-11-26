@@ -46,7 +46,7 @@ jeden Teil und frag dich: Kann ich das schon?
 
 ### Bestandteile eines Computers
 
-Bild: Ein Tablet aus Glas. Innen sieht man einen grauen Chip, einen grünen Riegel und ein oranges Kästchen. Bildunterschrift: Der gläserne Computer. Das orange Kästchen (3) ist der Festspeicher. Beschriftungen: 1 Prozessor: rechnet, 2 Arbeitsspeicher: hält, woran gerade gearbeitet wird, 3 Festspeicher: hebt auf, auch ohne Strom. Hier liegen Mias Dateien.
+Bild: Ein Tablet aus Glas. Innen sieht man einen grauen Chip, einen grünen Riegel und ein oranges Kästchen. Bildunterschrift: Der gläserne Computer: ein Tablet aus Glas. Das orange Kästchen (3) ist der Festspeicher. Beschriftungen: 1 Prozessor: rechnet, 2 Arbeitsspeicher: hält, woran gerade gearbeitet wird, 3 Festspeicher: hebt auf, auch ohne Strom. Hier liegen Mias Dateien.
 
 Kannst du das schon? Ich kann die wichtigsten Bestandteile eines Computers benennen und ihre Aufgaben
 beschreiben. Für dieses Kapitel ist einer wichtig: Was Mia speichert, liegt im **Festspeicher**. Dort
@@ -58,14 +58,14 @@ Kannst du das schon? Ich kann Grundfunktionen von Programmen wie Öffnen, Speich
 sicher nutzen.
 
 - **Speichern** legt etwas in den Festspeicher.
-- **Ausschneiden** nimmt etwas weg und merkt es sich.
+- **Ausschneiden** merkt sich etwas, damit du es woanders hinlegen kannst.
 - **Einfügen** legt es an einer neuen Stelle wieder hin.
 
 In diesem Kapitel schneidest du Dateien aus und fügst sie in einem Ordner ein.
 
 ### Baum als Datenstruktur
 
-Bild: Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter jedem Zimmer stehen zwei Kinder in Kästchen mit gestricheltem Rand. Bildunterschrift: Der Zimmerplan der Klassenfahrt als Baum. Beschriftungen: 1 Wurzel: der oberste Knoten, 2 Kante: eine Linie zwischen zwei Knoten, 3 Knoten: ein Kästchen im Baum, 4 Blatt: ein Knoten ohne Knoten darunter
+Bild: Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter jedem Zimmer stehen zwei Kinder in Kästchen mit gestricheltem Rand. Bildunterschrift: Der Zimmerplan von Mias Klassenfahrt an den Seeberg: die Kinder der 6b, unter ihnen Mia und ihre Freunde Selin und Jona. Beschriftungen: 1 Wurzel: der oberste Knoten, 2 Kante: eine Linie zwischen zwei Knoten, 3 Knoten: ein Kästchen im Baum, 4 Blatt: ein Knoten ohne Knoten darunter
 
 Kannst du das schon? Ich kann hierarchische Informationen als Baum mit Wurzel, Knoten, Kanten und
 Blättern darstellen. Mias Tablet wird gleich genauso ein Baum.
@@ -73,7 +73,7 @@ Blättern darstellen. Mias Tablet wird gleich genauso ein Baum.
 ### Bit und Byte
 
 Kannst du das schon? Ich kann die Einheiten Bit, Byte, Kilobyte, Megabyte und Gigabyte erklären und
-Datenmengen damit vergleichen. Du brauchst sie auf der Seite „Speicherorte“.
+Datenmengen damit vergleichen. Du brauchst sie auf der Seite „Speicherorte vergleichen“.
 
 Die Einheiten, wie wir in dieser App rechnen:
 - Einheit | so viel

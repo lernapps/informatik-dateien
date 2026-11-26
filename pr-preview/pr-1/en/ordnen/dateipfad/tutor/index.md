@@ -43,8 +43,8 @@ A path is the way from the root to the file: reading paths, writing them and usi
 
 ### Where is the photo of the lake?
 
-Selin writes to Mia: “Send me the photo of the lake!” Mia has tidied up even more. Inside the folder
-School there is now a folder for each subject. Her tree has grown.
+Selin is visiting Mia and wants to look at the photo of the lake on Mia's tablet. Mia has tidied up even
+more: inside the folder School there is now a folder for each subject. Her tree has grown.
 
 On the page before, you put files into folders. On this page you will learn to write down exactly where a
 file is, so that anyone can find it.
@@ -55,7 +55,7 @@ Interactive: Mia's folder tree, grown. At the top is the root “Mia's tablet”
 
 ### The path
 
-- **path**: The path of a file is its way in the folder tree, from the root to the file. You put a slash / between the names.
+- **path**: Every file and every folder has a path. It is the way in the folder tree, from the root to there. You put a slash / between the names.
 
 Three paths from Mia's tree:
 
@@ -92,7 +92,7 @@ swap.
 
 ### Opening a file by its path
 
-Selin has got Mia's path. Now you are Selin: in the file manager, open the file with this path. To do
+Mia tells Selin the path. Now you are Selin, at Mia's tablet: in the file manager, open the file with this path. To do
 this, go through the path from left to right, folder by folder. Then tap “Open” next to the file and press
 “Check”.
 
@@ -104,8 +104,9 @@ this, go through the path from left to right, folder by folder. Then tap “Open
 
 - Exercise `gleicher-name` (below)
 
-Selin has found the photo of the lake, in one second with Mia's path. Then Mia's tablet says: “Storage
-almost full.” On the next page, “Storage locations”, Mia looks for a place for her videos.
+With Mia's path, Selin found the photo of the lake straight away. A path only works on the device where the
+file is. Now Mia wants to put her videos from Seeberg onto the tablet. Then it says: “Storage almost
+full.” On the next page, “Comparing storage locations”, Mia looks for a place for the videos.
 
 ### Exercise weg-zum-see
 
@@ -122,7 +123,7 @@ almost full.” On the next page, “Storage locations”, Mia looks for a place
 
 ### Exercise ordner-ablesen
 
-- Task: „Jona gets the path {p.wurzel}/{p.o1}/{p.o2}/{p.name}. Which folder is the file in?“
+- Task: „Mia's friend Jona gets the path {p.wurzel}/{p.o1}/{p.o2}/{p.name}. Which folder is the file in?“
 - Answer format: choose one answer
 - The app's hint: „Read the path from the right. Which name comes just before the file?“
 - Steps of the solution:
@@ -166,7 +167,7 @@ No. | pfad | Solution | F4
 
 ### Exercise pfad-ordnen
 
-- Task: „Mia writes Selin the path to {p.name} in the folder {p.o2}. Put the parts in the right order, from left to right.“
+- Task: „Mia writes down the path for Selin to {p.name} in the folder {p.o2}. Put the parts in the right order, from left to right.“
 - Answer format: put the items in the right order (the app shows them shuffled)
 - The app's hint: „Start at the top of the tree and go down edge by edge to the file.“
 - Steps of the solution:

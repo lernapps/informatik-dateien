@@ -43,8 +43,8 @@ Der Pfad ist der Weg von der Wurzel zur Datei: Pfade lesen, angeben und im Datei
 
 ### Wo liegt das Foto vom See?
 
-Selin schreibt Mia: „Schick mir das Foto vom See!“ Mia hat noch mehr Ordnung gemacht. Im Ordner Schule
-liegt jetzt ein Ordner für jedes Fach. Ihr Baum ist gewachsen.
+Selin ist bei Mia zu Besuch und will auf Mias Tablet das Foto vom See ansehen. Mia hat noch mehr Ordnung
+gemacht: Im Ordner Schule liegt jetzt ein Ordner für jedes Fach. Ihr Baum ist gewachsen.
 
 Auf der Seite davor hast du Dateien in Ordner gelegt. Auf dieser Seite lernst du, den Ort einer Datei
 genau aufzuschreiben, so dass jeder sie findet.
@@ -55,7 +55,7 @@ Interaktiv: Mias Ordnerbaum, gewachsen. Oben die Wurzel „Mias Tablet“. Darun
 
 ### Der Pfad
 
-- **Pfad**: Der Pfad einer Datei ist ihr Weg im Ordnerbaum, von der Wurzel bis zur Datei. Zwischen die Namen setzt man einen Schrägstrich /.
+- **Pfad**: Jede Datei und jeder Ordner hat einen Pfad. Das ist der Weg im Ordnerbaum, von der Wurzel bis dorthin. Zwischen die Namen setzt man einen Schrägstrich /.
 
 Drei Pfade aus Mias Baum:
 
@@ -92,7 +92,7 @@ Baum. Dann tauscht ihr.
 
 ### Eine Datei über ihren Pfad öffnen
 
-Selin hat Mias Pfad bekommen. Jetzt bist du Selin: Öffne im Dateimanager die Datei mit diesem Pfad. Geh
+Mia sagt Selin den Pfad. Jetzt bist du Selin, an Mias Tablet: Öffne im Dateimanager die Datei mit diesem Pfad. Geh
 dafür den Pfad von links nach rechts durch, Ordner für Ordner. Tippe dann bei der Datei auf „Öffnen“ und
 drück „Prüfen“.
 
@@ -104,8 +104,9 @@ drück „Prüfen“.
 
 - Aufgabe `gleicher-name` (unten)
 
-Selin hat das Foto vom See gefunden, mit Mias Pfad in einer Sekunde. Da meldet Mias Tablet: „Speicher fast
-voll.“ Auf der nächsten Seite, „Speicherorte“, sucht Mia einen Platz für ihre Videos.
+Mit Mias Pfad hat Selin das Foto vom See sofort gefunden. Ein Pfad gilt nur auf dem Gerät, auf dem die Datei
+liegt. Nun will Mia ihre Videos vom Seeberg aufs Tablet holen. Da meldet es: „Speicher fast voll.“ Auf
+der nächsten Seite, „Speicherorte vergleichen“, sucht Mia einen Platz für die Videos.
 
 ### Aufgabe weg-zum-see
 
@@ -122,7 +123,7 @@ voll.“ Auf der nächsten Seite, „Speicherorte“, sucht Mia einen Platz für
 
 ### Aufgabe ordner-ablesen
 
-- Aufgabe: „Jona bekommt den Pfad {p.wurzel}/{p.o1}/{p.o2}/{p.name}. In welchem Ordner liegt die Datei?“
+- Aufgabe: „Mias Freund Jona bekommt den Pfad {p.wurzel}/{p.o1}/{p.o2}/{p.name}. In welchem Ordner liegt die Datei?“
 - Antwortformat: eine Antwort wählen
 - Tipp der App: „Lies den Pfad von rechts. Welcher Name steht direkt vor der Datei?“
 - Lösungsweg:
@@ -166,7 +167,7 @@ Nr. | pfad | Lösung | F4
 
 ### Aufgabe pfad-ordnen
 
-- Aufgabe: „Mia schreibt Selin den Pfad zu {p.name} im Ordner {p.o2}. Bring die Teile in die richtige Reihenfolge, von links nach rechts.“
+- Aufgabe: „Mia schreibt für Selin den Pfad zu {p.name} im Ordner {p.o2}. Bring die Teile in die richtige Reihenfolge, von links nach rechts.“
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
 - Tipp der App: „Fang oben im Baum an und geh Kante für Kante nach unten bis zur Datei.“
 - Lösungsweg:

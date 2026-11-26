@@ -48,7 +48,7 @@ Bild: Mia mit Brille und lila Jacke schaut ratlos auf ihr Tablet mit türkiser H
 Mia hat gestern ihr Referat für das Fach Deutsch geschrieben und gespeichert. Heute findet sie es nicht.
 
 Auf dieser Seite lernst du, wie du Dateien so ablegst, dass du sie wiederfindest. Dafür brauchst du den
-Baum, den du schon kennst.
+Baum wieder.
 
 - Aufgabe `was-hilft` (unten)
 
@@ -63,21 +63,21 @@ Interaktiv: Mias Ordnerbaum. Oben die Wurzel „Mias Tablet“. Darunter drei Or
 
 - **Ordner**: Ein Ordner ist ein Platz mit Namen. Darin liegen Dateien und weitere Ordner, die zusammengehören.
 
-- **Datei**: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text. In einer Datei liegt kein Ordner, darum ist sie im Baum ein Blatt.
+- **Datei**: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text. In einer Datei liegt nichts weiter, darum ist sie im Baum immer ein Blatt.
 
-- **Dateiendung**: Die Endung ist der letzte Teil des Dateinamens, nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text. Im Baum steht sie unten.
+- **Dateiendung**: Die Endung ist der letzte Teil des Dateinamens, nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text.
 
 ### Im Dateimanager aufräumen
 
-Auf dem Tablet siehst du den Baum nie ganz. Ein **Dateimanager** zeigt immer nur einen Ordner:
+Ein **Dateimanager** ist ein Programm, mit dem du Ordner öffnest und Dateien verschiebst. Auf dem Tablet zeigt er meist
+nur einen Ordner:
 
 - Tippe auf einen Ordner, dann öffnet er sich. Oben steht, wo du gerade bist.
 - „Nach oben“ bringt dich einen Ordner zurück.
-- „Ausschneiden“ nimmt eine Datei weg. Öffne dann den Ordner, in den sie soll, und tippe auf „Einfügen“.
-  Ausschneiden und Einfügen heißt zusammen: **verschieben**.
+- „Ausschneiden“ merkt sich eine Datei. Sie bleibt an ihrem Platz, bis du einfügst. Öffne dann den Ordner,
+  in den sie soll, und tippe auf „Einfügen“. Ausschneiden und Einfügen heißt zusammen: **verschieben**.
 
-Was du aus dem Internet oder aus einer Nachricht holst, landet oft im Ordner „Downloads“. Dort liegt
-eine neue Datei. Lege sie in einen passenden Ordner und drück dann „Prüfen“.
+Neue Dateien landen oft im Ordner „Downloads“. Lege die neue Datei in einen passenden Ordner und drück dann „Prüfen“.
 
 - Aufgabe `ablegen` (unten)
 
@@ -97,8 +97,7 @@ Nachbarin es mit deinem Baum in zehn Sekunden?
 
 - Aufgabe `im-ordner` (unten)
 
-Mias Tablet ist aufgeräumt. Jede Datei hat ihren Ordner. Da schreibt Selin: „Schick mir das Foto vom See!“
-Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
+Jede Datei hat jetzt ihren Ordner. Da kommt Selin zu Besuch, ihre Freundin. Sie will das Foto vom See sehen. Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
 
 ### Aufgabe was-hilft
 
@@ -106,7 +105,7 @@ Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Sie legt alles, was zusammengehört, an einen festen Platz, zum Beispiel alles für die Schule. – Dann weiß sie, wo sie suchen muss, auch in einem Jahr noch.
-  - ✗ Sie schaut in der Liste „Zuletzt verwendet“ nach. – Das hilft nur heute. „Zuletzt verwendet“ zeigt die letzten Dateien, ist aber kein Platz. Nächste Woche ist das Referat aus der Liste verschwunden.
+  - ✗ Sie schaut in der Liste „Zuletzt verwendet“ nach. – Das hilft nur heute. „Zuletzt verwendet“ zeigt die letzten Dateien, ist aber kein Platz. Bald ist das Referat vielleicht aus der Liste verschwunden.
   - ✗ Sie speichert das Referat noch einmal, dann ist es sicher da. – Gespeichert ist es schon. Die Frage ist, wo. Ohne festen Platz weiß Mia das beim nächsten Mal wieder nicht.
 - Lösung: Sie legt alles, was zusammengehört, an einen festen Platz, zum Beispiel alles für die Schule.
 - Erklärung: Was einen festen Platz hat, findest du wieder.
@@ -151,11 +150,11 @@ Nr. | datei | Lösung | F1 | F2 | F3
 
 ```
 Nr. | s.was | s.grund1 | s.grund2 | Zur Wahl | Lösung | F1 | F2
-1 | eine Datei mit der Endung .jpg | Die Endung .jpg zeigt: Das ist ein Foto, kein Text. | Die Endung .jpg zeigt: Das ist ein Foto, nichts zum Hören. | Schule; Fotos; Musik | Fotos | Schule | Musik
+1 | ein Bild von einer Party, eine Datei mit der Endung .jpg | Die Endung .jpg zeigt: Das ist ein Foto, kein Text. | Die Endung .jpg zeigt: Das ist ein Foto, nichts zum Hören. | Schule; Fotos; Musik | Fotos | Schule | Musik
 2 | das Bild, das sie mit der Kamera von ihrem Geburtstagskuchen gemacht hat | Ein Bild vom Kuchen gehört nicht zu den Sachen für die Schule. | Ein Bild kann man nicht anhören. | Schule; Fotos; Musik | Fotos | Schule | Musik
 3 | ihr Lieblingslied zum Mitsingen | Ihr Lieblingslied braucht Mia nicht für den Unterricht. | Ein Lied ist kein Foto. | Schule; Fotos; Musik | Musik | Schule | Fotos
 4 | ihre Notizen für den Unterricht | Notizen sind Text, kein Foto. | Notizen liest man, man hört sie nicht an. | Schule; Fotos; Musik | Schule | Fotos | Musik
-5 | eine Datei mit der Endung .mp3 | Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Text. | Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Foto. | Schule; Fotos; Musik | Musik | Schule | Fotos
+5 | ein Lied zum Tanzen, eine Datei mit der Endung .mp3 | Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Text. | Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Foto. | Schule; Fotos; Musik | Musik | Schule | Fotos
 6 | ihr Gedicht für das Fach Deutsch | Ein Gedicht ist ein Text, kein Foto. | Ein Gedicht ist ein Text zum Lesen. | Schule; Fotos; Musik | Schule | Fotos | Musik
 ```
 
@@ -164,7 +163,7 @@ Nr. | s.was | s.grund1 | s.grund2 | Zur Wahl | Lösung | F1 | F2
 - Aufgabe: Mia löscht im Ordnerbaum oben den Ordner Fotos. Wie viele Dateien sind dann weg? Schreib die Zahl.
 - Antwortformat: eine Zahl eintippen
 - Lösung: 2
-- Erklärung: Unter Fotos liegen zwei Dateien, see.jpg im Ordner Seeberg und party.jpg. Wer einen Ordner löscht, löscht alles darin mit, auch die Ordner darin.
+- Erklärung: Unter Fotos liegen zwei Dateien: see.jpg in Seeberg und party.jpg. Wer einen Ordner löscht, löscht alles darin mit. Oft landet es erst im Papierkorb.
 - Typische Fehler und was die App sagt:
   - 0: Ein Ordner ist ein Platz für Dateien. Wenn der Platz weg ist, ist auch alles darin weg. Zähle die Dateien unter Fotos.
   - 1: Du hast nur party.jpg gezählt. Auch im Ordner Seeberg liegt eine Datei, und Seeberg liegt im Ordner Fotos.
@@ -177,7 +176,7 @@ Nr. | s.was | s.grund1 | s.grund2 | Zur Wahl | Lösung | F1 | F2
 - Aufgabe: Mia gibt see.jpg einen neuen Namen, ausflug.jpg. Jetzt zeigt die Datei ein anderes Bild.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Der Name ist wie ein Schild an der Datei. Ein neues Schild ändert nicht, was in der Datei ist. Die Endung .jpg bleibt, es ist dasselbe Foto.
+- Erklärung: Der Name ist wie ein Schild an der Datei. Ein neues Schild ändert nicht, was in der Datei ist. Mia lässt die Endung .jpg gleich, damit das Tablet weiter weiß, dass es ein Foto ist.
 - Link: [../?via=tutor#umbenennen](../?via=tutor#umbenennen)
 
 ### Aufgabe im-ordner
