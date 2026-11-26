@@ -442,10 +442,11 @@ Nachrichten zwischen Mia und Selin (7-9); Simulation „Wie lange braucht ein Re
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite ordnen/ordner-und-dateien in de und en: Szene mia-sucht, Anzeige-Komponente Ordnerbaum (Stand 1) mit Test, Übungskomponente Dateimanager Modus ablegen mit Test, generated aus dateien, Data mias-tablet, dateien, ablegen; zeigt Mias Tablet, den Ordnerbaum und das Seitenmuster
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-- [ ] Sammel-Wiederholung ordnen/das-brauchst-du (de, en): recap computer-bestandteile, programme-bedienen, baum, bit-und-byte; glaeserner-computer und baum-zimmer mit Herkunft kopiert; zeigt die Anknüpfung an #490 und #491
+      Creator: Ja, die übrigen Seiten (Sammel-Wiederholung, Dateipfad, Speicherorte) folgen diesem Muster. Mias Tablet (türkise Hülle #2a9d8f, gelber Stern #f2c14e unten rechts, Bildschirm #1f2a36 mit hellem Rand) und der Ordnerbaum Stand 1 und 2 in de und en sind bestätigt. Runtime-Funde 1-4 sammelt der Orchestrator, nicht umgehen.
+- [x] Sammel-Wiederholung ordnen/das-brauchst-du (de, en): recap computer-bestandteile, programme-bedienen, baum, bit-und-byte; glaeserner-computer und baum-zimmer mit Herkunft kopiert; zeigt die Anknüpfung an #490 und #491
 - [ ] Seite ordnen/dateipfad (de, en): Ordnerbaum Stand 2, Dateimanager Modus oeffnen, generated Pfad ordnen und Ordner ablesen aus pfade, Pfad-Diktat unplugged; zeigt Pfad angeben und lesen
 - [ ] Seite ordnen/speicherorte (de, en): Bild speicherorte, Vergleichstabelle, generated Fotos pro Stick aus medien, generated Lagen, matching Risiken, Kapitelregel und Rückblick; zeigt Speicherorte vergleichen
 <!-- tasks: pages (3 added): the other pages or screens, after the pattern -->
