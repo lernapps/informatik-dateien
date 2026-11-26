@@ -41,12 +41,11 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 Tidying Mia's tablet: putting files into folders and finding them again. The folder tree and a file manager.
 
-### Where is Mia's talk?
+### Where is Mia's speech?
 
 Picture: Mia, with glasses and a purple jacket, looks puzzled at her tablet with a turquoise case. On the screen, lots of small symbols for texts, photos and songs lie all over the place. Caption: Mia's tablet. Everything is mixed up.
 
-Yesterday Mia wrote her talk for German and saved it. Today she cannot find it. There are 40 files on her
-tablet: photos, songs, texts.
+Yesterday Mia wrote her speech for German class and saved it. Today she cannot find it.
 
 On this page you will learn how to store files so that you can find them again. For this you need the
 tree that you already know.
@@ -55,44 +54,39 @@ tree that you already know.
 
 ### Mia's folder tree
 
-Mia tidies up. After that, her tablet looks like a tree in computer science: at the top is the **root**,
-which is the tablet itself. Below it are the **folders**, which are nodes. At the very bottom are the
-**files**, which are the leaves with a dashed border.
+Mia makes a **folder** for everything that belongs together: one for school, one for photos, one for
+music. After that, her tablet looks like a tree: at the top is the root (light blue), which is the tablet
+itself. Below it are the folders (with a yellow folder sign). At the very bottom are the **files** with a
+dashed border, which are the leaves. Inside the folder Photos there is another folder: Seeberg, for the
+photos of the class trip.
 
-- **file**: A file is a stored piece of data with a name, for example a photo, a song or a text.
+Interactive: Mia's folder tree. At the top is the root “Mia's tablet”. Below it are three folders: School, Photos and Music. In the folder School there is speech.txt. In the folder Photos there are the folder Seeberg and party.jpg; in the folder Seeberg there is lake.jpg. In the folder Music there is song.mp3. The files have a dashed border; their name is in two lines, the name at the top, the extension below.
 
-- **folder**: A folder is a place for files and for more folders. It has a name too.
+- **folder**: A folder is a place with a name. It holds files and more folders that belong together.
 
-Interactive: Mia's folder tree. At the top is the root “Mia's tablet”. Below it are three folders: School, Photos and Music. In the folder School there is talk.txt. In the folder Photos there are lake.jpg and party.jpg. In the folder Music there is song.mp3. The files at the very bottom have a dashed border.
+- **file**: A file is a stored piece of data with a name, for example a photo, a song or a text. A file holds no folder, so in the tree it is a leaf.
 
-- **file extension**: The extension comes at the end of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text.
-
-**Remember: Remember**
-
-A folder can hold files and folders. A file holds no folder, it is a leaf. If you delete a folder,
-you also delete **everything in it**. And a new name does not turn a photo into a different photo:
-what is in it stays the same.
+- **file extension**: The extension is the last part of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text. In the tree it is at the bottom.
 
 ### Tidying up in the file manager
 
-On the tablet you never see the whole tree. A **file manager** only ever shows one folder. This is how
-you use it:
+On the tablet you never see the whole tree. A **file manager** only ever shows one folder:
 
 - Tap a folder and it opens. At the top it says where you are.
 - “Up” takes you back one folder.
 - “Cut” takes a file away. Then open the folder where it should go and tap “Paste”. Cut and paste
   together mean: **move**.
 
-New files often end up in the folder “Downloads”. Take the new file out of there and put it into a
-folder that fits. Then press “Check”.
+What you get from the internet or from a message often ends up in the folder “Downloads”. A new file is
+there. Put it into a folder that fits and then press “Check”.
 
 - Exercise `ablegen` (below)
 
 **Remember: Try it without a tablet**
 
-Your school bag is a tree too. Draw it: at the top the bag as the root, below it the folders and
-pockets as folders, at the bottom the exercise books and sheets. Where is your homework book? Can the
-person next to you find it in ten seconds with your tree?
+Your school bag is a tree too. Draw it: at the top the bag as the root, below it its pockets and
+plastic wallets as folders, at the very bottom the exercise books and loose sheets. Where is your
+homework book? Can the person next to you find it in ten seconds with your tree?
 
 ### Practice
 
@@ -105,18 +99,18 @@ person next to you find it in ten seconds with your tree?
 - Exercise `im-ordner` (below)
 
 Mia's tablet is tidy. Every file has its folder. Then Selin writes: “Send me the photo of the lake!” On
-the next page Mia describes exactly where it is.
+the next page, “File paths”, Mia describes exactly where it is.
 
 ### Exercise was-hilft
 
-- Task: What helps Mia most to find her talk now and later?
+- Task: What helps Mia most to find her speech now and later?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ She puts her files into folders by their kind, for example a folder for school. – Then she knows where to look, even a year from now.
-  - ✗ She looks under “Recent”. – That only helps today. “Recent” is a list of the last files, not a place. The file is stored somewhere else, and next week it will be gone from the list.
-  - ✗ She saves the talk again, then it is sure to be there. – It is already saved. The question is where. A file often ends up in the folder “Downloads”.
-- Solution: She puts her files into folders by their kind, for example a folder for school.
-- Explanation: Folders give every file a fixed place. If something has a place, you can find it again.
+  - ✓ She puts everything that belongs together in one fixed place, for example everything for school. – Then she knows where to look, even a year from now.
+  - ✗ She looks in the list “Recent”. – That only helps today. “Recent” shows the last files, but it is not a place. Next week the speech will be gone from the list.
+  - ✗ She saves the speech again, then it is sure to be there. – It is already saved. The question is where. Without a fixed place, Mia will not know next time either.
+- Solution: She puts everything that belongs together in one fixed place, for example everything for school.
+- Explanation: If something has a fixed place, you can find it again.
 - Link: [../?via=tutor#was-hilft](../?via=tutor#was-hilft)
 
 ### Exercise ablegen
@@ -145,9 +139,9 @@ No. | datei | Solution | F1 | F2 | F3
 
 ### Exercise wiederfinden
 
-- Task: „Mia's tablet is tidy, like in the folder tree above. Mia is looking for {s.was}. Which folder does she look in?“
+- Task: „Mia's tablet is tidy, like in the folder tree above. Mia is looking for {s.was}. Which folder does she look in first?“
 - Answer format: choose one answer
-- The app's hint: „What kind of file is it? A text for school, a photo or something to listen to?“
+- The app's hint: „What does this file belong with? Look at the extension, or at what Mia needs it for.“
 - Steps of the solution:
   - Mia is looking for {s.was}. That belongs in the folder {answer}.
 - Typical mistakes and what the app says:
@@ -159,28 +153,29 @@ No. | datei | Solution | F1 | F2 | F3
 ```
 No. | s.was | s.grund1 | s.grund2 | Choices | Solution | F1 | F2
 1 | a file with the extension .jpg | The extension .jpg shows that this is a photo, not a text. | The extension .jpg shows that this is a photo, not something to listen to. | School; Photos; Music | Photos | School | Music
-2 | the photo of the cake | A photo is not a text for school. | You cannot listen to a photo. | School; Photos; Music | Photos | School | Music
-3 | the song from the school party | The song is from the school party, but it is something to listen to, not a text for a lesson. | A song is not a photo. | School; Photos; Music | Music | School | Photos
+2 | the picture she took of her birthday cake with the camera | A picture of a cake does not belong with the things for school. | You cannot listen to a picture. | School; Photos; Music | Photos | School | Music
+3 | her favourite song to sing along to | Mia does not need her favourite song for lessons. | A song is not a photo. | School; Photos; Music | Music | School | Photos
 4 | her notes for a lesson | Notes are text, not a photo. | You read notes, you do not listen to them. | School; Photos; Music | School | Photos | Music
 5 | a file with the extension .mp3 | The extension .mp3 shows that this is something to listen to, not a text. | The extension .mp3 shows that this is something to listen to, not a photo. | School; Photos; Music | Music | School | Photos
-6 | her poem for German | A poem is a text, not a photo. | A poem is a text to read. | School; Photos; Music | School | Photos | Music
+6 | her poem for German class | A poem is a text, not a photo. | A poem is a text to read. | School; Photos; Music | School | Photos | Music
 ```
 
 ### Exercise ordner-loeschen
 
-- Task: In the folder tree above, Mia deletes the folder Photos. How many files are gone then?
+- Task: In the folder tree above, Mia deletes the folder Photos. How many files are gone then? Write the number.
 - Answer format: type a number
 - Solution: 2
-- Explanation: In the folder Photos there are two files, lake.jpg and party.jpg. Both are gone with the folder.
+- Explanation: Below Photos there are two files, lake.jpg in the folder Seeberg and party.jpg. If you delete a folder, you also delete everything in it, the folders in it too.
 - Typical mistakes and what the app says:
-  - 0: If you delete a folder, you also delete everything in it. Count the files below Photos.
-  - 1: Count all the leaves below the folder Photos, not just one.
-  - 4: Those are all the files on the tablet. Only the ones in the folder Photos are gone.
+  - 0: A folder is a place for files. If the place is gone, everything in it is gone too. Count the files below Photos.
+  - 1: You only counted party.jpg. There is also a file in the folder Seeberg, and Seeberg is inside the folder Photos.
+  - 3: You counted the folder Seeberg too. Only the files are asked for, the leaves with a dashed border.
+  - 4: Those are all the files on the tablet. Only the ones below the folder Photos are gone.
 - Link: [../?via=tutor#ordner-loeschen](../?via=tutor#ordner-loeschen)
 
 ### Exercise umbenennen
 
-- Task: Mia renames lake.jpg to trip.jpg. Now the file shows a different picture.
+- Task: Mia gives lake.jpg a new name, trip.jpg. Now the file shows a different picture.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
 - Explanation: The name is like a label on the file. A new label does not change what is in the file. The extension .jpg stays, it is the same photo.
@@ -191,10 +186,10 @@ No. | s.was | s.grund1 | s.grund2 | Choices | Solution | F1 | F2
 - Task: What can be inside a folder? Choose everything that is true.
 - Answer format: choose all right answers
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ a file – Yes, that is what folders are for.
-  - ✓ another folder – Yes, for example a folder German inside the folder School. In the tree, one node then hangs below another node.
+  - ✓ a file – Yes, like party.jpg in the folder Photos.
+  - ✓ another folder – Yes, like Seeberg in the folder Photos. In the tree, one node then hangs below another node.
   - ✗ the whole tablet – The tablet is the root. All folders are inside it, not the other way round.
-  - ✗ the root of the tree – The root is at the very top. It is not inside any folder.
+  - ✗ the list “Recent” – The list only shows which files you used last. It is not a place and it is not inside a folder.
 - Solution: a file; another folder
 - Explanation: A folder can hold files and more folders. The tablet itself is the root above everything.
 - Link: [../?via=tutor#im-ordner](../?via=tutor#im-ordner)

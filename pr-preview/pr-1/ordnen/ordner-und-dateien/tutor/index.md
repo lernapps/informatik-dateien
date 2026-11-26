@@ -45,8 +45,7 @@ Mias Tablet aufräumen: Dateien in Ordner legen und wiederfinden. Der Ordnerbaum
 
 Bild: Mia mit Brille und lila Jacke schaut ratlos auf ihr Tablet mit türkiser Hülle. Auf dem Bildschirm liegen viele kleine Zeichen für Texte, Fotos und Lieder durcheinander. Bildunterschrift: Mias Tablet. Alles liegt durcheinander.
 
-Mia hat gestern ihr Referat für Deutsch geschrieben und gespeichert. Heute findet sie es nicht. Auf ihrem
-Tablet liegen 40 Dateien: Fotos, Lieder, Texte.
+Mia hat gestern ihr Referat für das Fach Deutsch geschrieben und gespeichert. Heute findet sie es nicht.
 
 Auf dieser Seite lernst du, wie du Dateien so ablegst, dass du sie wiederfindest. Dafür brauchst du den
 Baum, den du schon kennst.
@@ -55,43 +54,37 @@ Baum, den du schon kennst.
 
 ### Mias Ordnerbaum
 
-Mia räumt auf. Danach sieht ihr Tablet so aus wie ein Baum aus der Informatik: oben die **Wurzel**, das
-ist das Tablet selbst. Darunter die **Ordner**, das sind Knoten. Ganz unten die **Dateien**, das sind die
-Blätter mit gestricheltem Rand.
+Mia macht für alles, was zusammengehört, einen **Ordner**: einen für die Schule, einen für Fotos, einen
+für Musik. Danach sieht ihr Tablet aus wie ein Baum: oben die Wurzel (hellblau), das ist das Tablet selbst.
+Darunter die Ordner (mit gelbem Ordner-Zeichen). Ganz unten die **Dateien** mit gestricheltem Rand, das
+sind die Blätter. Im Ordner Fotos steckt noch ein Ordner: Seeberg, für die Fotos der Klassenfahrt.
 
-- **Datei**: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text.
+Interaktiv: Mias Ordnerbaum. Oben die Wurzel „Mias Tablet“. Darunter drei Ordner: Schule, Fotos und Musik. Im Ordner Schule liegt referat.txt. Im Ordner Fotos liegen der Ordner Seeberg und party.jpg; im Ordner Seeberg liegt see.jpg. Im Ordner Musik liegt lied.mp3. Die Dateien haben einen gestrichelten Rand; ihr Name steht in zwei Zeilen, oben der Name, darunter die Endung.
 
-- **Ordner**: Ein Ordner ist ein Platz für Dateien und für weitere Ordner. Er hat auch einen Namen.
+- **Ordner**: Ein Ordner ist ein Platz mit Namen. Darin liegen Dateien und weitere Ordner, die zusammengehören.
 
-Interaktiv: Mias Ordnerbaum. Oben die Wurzel „Mias Tablet“. Darunter drei Ordner: Schule, Fotos und Musik. Im Ordner Schule liegt referat.txt. Im Ordner Fotos liegen see.jpg und party.jpg. Im Ordner Musik liegt lied.mp3. Die Dateien ganz unten haben einen gestrichelten Rand.
+- **Datei**: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text. In einer Datei liegt kein Ordner, darum ist sie im Baum ein Blatt.
 
-- **Dateiendung**: Die Endung steht am Ende des Dateinamens nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text.
-
-**Merke: Merke**
-
-Ein Ordner kann Dateien und Ordner enthalten. Eine Datei enthält keinen Ordner, sie ist ein Blatt.
-Wer einen Ordner löscht, löscht **alles darin** mit. Und ein neuer Name macht aus einem Foto kein
-anderes Foto: Der Inhalt bleibt gleich.
+- **Dateiendung**: Die Endung ist der letzte Teil des Dateinamens, nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text. Im Baum steht sie unten.
 
 ### Im Dateimanager aufräumen
 
-Auf dem Tablet siehst du den Baum nie ganz. Ein **Dateimanager** zeigt immer nur einen Ordner. So
-bedienst du ihn:
+Auf dem Tablet siehst du den Baum nie ganz. Ein **Dateimanager** zeigt immer nur einen Ordner:
 
 - Tippe auf einen Ordner, dann öffnet er sich. Oben steht, wo du gerade bist.
 - „Nach oben“ bringt dich einen Ordner zurück.
-- „Ausschneiden“ nimmt eine Datei weg. Öffne dann den Ordner, in den sie soll, und tippe auf
-  „Einfügen“. Ausschneiden und Einfügen heißt zusammen: **verschieben**.
+- „Ausschneiden“ nimmt eine Datei weg. Öffne dann den Ordner, in den sie soll, und tippe auf „Einfügen“.
+  Ausschneiden und Einfügen heißt zusammen: **verschieben**.
 
-Neue Dateien landen oft im Ordner „Downloads“. Hol die neue Datei dort heraus und lege sie in einen
-passenden Ordner. Drück dann „Prüfen“.
+Was du aus dem Internet oder aus einer Nachricht holst, landet oft im Ordner „Downloads“. Dort liegt
+eine neue Datei. Lege sie in einen passenden Ordner und drück dann „Prüfen“.
 
 - Aufgabe `ablegen` (unten)
 
 **Merke: Zum Mitmachen ohne Tablet**
 
-Dein Schulranzen ist auch ein Baum. Zeichne ihn auf: oben der Ranzen als Wurzel, darunter die Mappen
-und Fächer als Ordner, unten die Hefte und Blätter. Wo liegt dein Hausaufgabenheft? Findet deine
+Dein Schulranzen ist auch ein Baum. Zeichne ihn auf: oben der Ranzen als Wurzel, darunter seine Fächer
+und Mappen als Ordner, ganz unten die Hefte und Zettel. Wo liegt dein Hausaufgabenheft? Findet deine
 Nachbarin es mit deinem Baum in zehn Sekunden?
 
 ### Übung
@@ -105,18 +98,18 @@ Nachbarin es mit deinem Baum in zehn Sekunden?
 - Aufgabe `im-ordner` (unten)
 
 Mias Tablet ist aufgeräumt. Jede Datei hat ihren Ordner. Da schreibt Selin: „Schick mir das Foto vom See!“
-Auf der nächsten Seite beschreibt Mia genau, wo es liegt.
+Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
 
 ### Aufgabe was-hilft
 
 - Aufgabe: Was hilft Mia am meisten, ihr Referat jetzt und später wiederzufinden?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Sie legt ihre Dateien nach ihrer Art in Ordner, zum Beispiel einen Ordner für die Schule. – Dann weiß sie, wo sie suchen muss, auch in einem Jahr noch.
-  - ✗ Sie schaut unter „Zuletzt verwendet“ nach. – Das hilft nur heute. „Zuletzt verwendet“ ist eine Liste der letzten Dateien, kein Ort. Die Datei liegt woanders, und nächste Woche ist sie aus der Liste verschwunden.
-  - ✗ Sie speichert das Referat noch einmal, dann ist es sicher da. – Gespeichert ist es schon. Die Frage ist, wo. Oft landet eine Datei im Ordner „Downloads“.
-- Lösung: Sie legt ihre Dateien nach ihrer Art in Ordner, zum Beispiel einen Ordner für die Schule.
-- Erklärung: Ordner geben jeder Datei einen festen Platz. Was einen Platz hat, findest du wieder.
+  - ✓ Sie legt alles, was zusammengehört, an einen festen Platz, zum Beispiel alles für die Schule. – Dann weiß sie, wo sie suchen muss, auch in einem Jahr noch.
+  - ✗ Sie schaut in der Liste „Zuletzt verwendet“ nach. – Das hilft nur heute. „Zuletzt verwendet“ zeigt die letzten Dateien, ist aber kein Platz. Nächste Woche ist das Referat aus der Liste verschwunden.
+  - ✗ Sie speichert das Referat noch einmal, dann ist es sicher da. – Gespeichert ist es schon. Die Frage ist, wo. Ohne festen Platz weiß Mia das beim nächsten Mal wieder nicht.
+- Lösung: Sie legt alles, was zusammengehört, an einen festen Platz, zum Beispiel alles für die Schule.
+- Erklärung: Was einen festen Platz hat, findest du wieder.
 - Link: [../?via=tutor#was-hilft](../?via=tutor#was-hilft)
 
 ### Aufgabe ablegen
@@ -145,9 +138,9 @@ Nr. | datei | Lösung | F1 | F2 | F3
 
 ### Aufgabe wiederfinden
 
-- Aufgabe: „Mias Tablet ist aufgeräumt wie im Ordnerbaum oben. Mia sucht {s.was}. In welchem Ordner schaut sie nach?“
+- Aufgabe: „Mias Tablet ist aufgeräumt wie im Ordnerbaum oben. Mia sucht {s.was}. In welchem Ordner schaut sie zuerst nach?“
 - Antwortformat: eine Antwort wählen
-- Tipp der App: „Was ist es für eine Art von Datei? Ein Text für die Schule, ein Foto oder etwas zum Hören?“
+- Tipp der App: „Was gehört mit dieser Datei zusammen? Schau auf die Endung oder darauf, wofür Mia sie braucht.“
 - Lösungsweg:
   - Mia sucht {s.was}. Das gehört in den Ordner {answer}.
 - Typische Fehler und was die App sagt:
@@ -159,28 +152,29 @@ Nr. | datei | Lösung | F1 | F2 | F3
 ```
 Nr. | s.was | s.grund1 | s.grund2 | Zur Wahl | Lösung | F1 | F2
 1 | eine Datei mit der Endung .jpg | Die Endung .jpg zeigt: Das ist ein Foto, kein Text. | Die Endung .jpg zeigt: Das ist ein Foto, nichts zum Hören. | Schule; Fotos; Musik | Fotos | Schule | Musik
-2 | das Foto vom Kuchen | Ein Foto ist kein Text für die Schule. | Ein Foto kann man nicht anhören. | Schule; Fotos; Musik | Fotos | Schule | Musik
-3 | das Lied vom Schulfest | Das Lied ist vom Schulfest, aber es ist etwas zum Hören, kein Text für den Unterricht. | Ein Lied ist kein Foto. | Schule; Fotos; Musik | Musik | Schule | Fotos
+2 | das Bild, das sie mit der Kamera von ihrem Geburtstagskuchen gemacht hat | Ein Bild vom Kuchen gehört nicht zu den Sachen für die Schule. | Ein Bild kann man nicht anhören. | Schule; Fotos; Musik | Fotos | Schule | Musik
+3 | ihr Lieblingslied zum Mitsingen | Ihr Lieblingslied braucht Mia nicht für den Unterricht. | Ein Lied ist kein Foto. | Schule; Fotos; Musik | Musik | Schule | Fotos
 4 | ihre Notizen für den Unterricht | Notizen sind Text, kein Foto. | Notizen liest man, man hört sie nicht an. | Schule; Fotos; Musik | Schule | Fotos | Musik
 5 | eine Datei mit der Endung .mp3 | Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Text. | Die Endung .mp3 zeigt: Das ist etwas zum Hören, kein Foto. | Schule; Fotos; Musik | Musik | Schule | Fotos
-6 | ihr Gedicht für Deutsch | Ein Gedicht ist ein Text, kein Foto. | Ein Gedicht ist ein Text zum Lesen. | Schule; Fotos; Musik | Schule | Fotos | Musik
+6 | ihr Gedicht für das Fach Deutsch | Ein Gedicht ist ein Text, kein Foto. | Ein Gedicht ist ein Text zum Lesen. | Schule; Fotos; Musik | Schule | Fotos | Musik
 ```
 
 ### Aufgabe ordner-loeschen
 
-- Aufgabe: Mia löscht im Ordnerbaum oben den Ordner Fotos. Wie viele Dateien sind dann weg?
+- Aufgabe: Mia löscht im Ordnerbaum oben den Ordner Fotos. Wie viele Dateien sind dann weg? Schreib die Zahl.
 - Antwortformat: eine Zahl eintippen
 - Lösung: 2
-- Erklärung: Im Ordner Fotos liegen zwei Dateien, see.jpg und party.jpg. Mit dem Ordner sind beide weg.
+- Erklärung: Unter Fotos liegen zwei Dateien, see.jpg im Ordner Seeberg und party.jpg. Wer einen Ordner löscht, löscht alles darin mit, auch die Ordner darin.
 - Typische Fehler und was die App sagt:
-  - 0: Wer einen Ordner löscht, löscht alles darin mit. Zähle die Dateien unter Fotos.
-  - 1: Zähle alle Blätter unter dem Ordner Fotos, nicht nur eins.
-  - 4: Das sind alle Dateien auf dem Tablet. Weg sind nur die im Ordner Fotos.
+  - 0: Ein Ordner ist ein Platz für Dateien. Wenn der Platz weg ist, ist auch alles darin weg. Zähle die Dateien unter Fotos.
+  - 1: Du hast nur party.jpg gezählt. Auch im Ordner Seeberg liegt eine Datei, und Seeberg liegt im Ordner Fotos.
+  - 3: Du hast den Ordner Seeberg mitgezählt. Gefragt sind nur die Dateien, also die Blätter mit gestricheltem Rand.
+  - 4: Das sind alle Dateien auf dem Tablet. Weg sind nur die unter dem Ordner Fotos.
 - Link: [../?via=tutor#ordner-loeschen](../?via=tutor#ordner-loeschen)
 
 ### Aufgabe umbenennen
 
-- Aufgabe: Mia nennt see.jpg um in ausflug.jpg. Jetzt zeigt die Datei ein anderes Bild.
+- Aufgabe: Mia gibt see.jpg einen neuen Namen, ausflug.jpg. Jetzt zeigt die Datei ein anderes Bild.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
 - Erklärung: Der Name ist wie ein Schild an der Datei. Ein neues Schild ändert nicht, was in der Datei ist. Die Endung .jpg bleibt, es ist dasselbe Foto.
@@ -191,10 +185,10 @@ Nr. | s.was | s.grund1 | s.grund2 | Zur Wahl | Lösung | F1 | F2
 - Aufgabe: Was kann in einem Ordner liegen? Wähle alles, was stimmt.
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ eine Datei – Ja, dafür sind Ordner da.
-  - ✓ ein anderer Ordner – Ja, zum Beispiel ein Ordner Deutsch im Ordner Schule. Im Baum hängt dann ein Knoten unter einem Knoten.
+  - ✓ eine Datei – Ja, wie party.jpg im Ordner Fotos.
+  - ✓ ein anderer Ordner – Ja, wie Seeberg im Ordner Fotos. Im Baum hängt dann ein Knoten unter einem Knoten.
   - ✗ das ganze Tablet – Das Tablet ist die Wurzel. Alle Ordner liegen darin, nicht umgekehrt.
-  - ✗ die Wurzel des Baums – Die Wurzel steht ganz oben. Sie hängt in keinem Ordner.
+  - ✗ die Liste „Zuletzt verwendet“ – Die Liste zeigt nur, welche Dateien du zuletzt benutzt hast. Sie ist kein Platz und liegt in keinem Ordner.
 - Lösung: eine Datei; ein anderer Ordner
 - Erklärung: Ein Ordner kann Dateien und weitere Ordner enthalten. Das Tablet selbst ist die Wurzel über allem.
 - Link: [../?via=tutor#im-ordner](../?via=tutor#im-ordner)
