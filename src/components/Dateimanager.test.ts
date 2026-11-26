@@ -44,6 +44,7 @@ const texts = {
   notMoved: "noch in Downloads",
   notPasted: "nicht eingefügt",
   wrongFolder: "liegt in {ordner}. {art}",
+  loose: "lose, in keinem Ordner",
   sameName: "geöffnet: {pfad}, gleicher Name",
   otherFile: "geöffnet: {pfad}",
 };
@@ -73,7 +74,7 @@ test("ablegen: a fitting folder is right, whatever the model folder; Downloads, 
   expect(reason(task, START, ablegen)).toBe("noch in Downloads");
   expect(reason(task, CUT, ablegen)).toBe("nicht eingefügt");
   expect(reason(task, 5, ablegen)).toBe("liegt in Musik. Die Endung .jpg zeigt: ein Foto.");
-  expect(reason(task, 1, ablegen)).toBe("liegt in Mias Tablet. Die Endung .jpg zeigt: ein Foto.");
+  expect(reason(task, 1, ablegen)).toBe("lose, in keinem Ordner");
   expect(reason(task, 4, ablegen)).toBeUndefined();
 });
 

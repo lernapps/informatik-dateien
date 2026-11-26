@@ -39,6 +39,8 @@ export interface Props {
   notPasted: string;
   /** ablegen: pasted into a folder that does not fit, with {ordner} and {art}. */
   wrongFolder: string;
+  /** ablegen: pasted into the root, in no folder. */
+  loose: string;
   /** oeffnen: a file of the same name in another folder, with {pfad} of the opened file. */
   sameName: string;
   /** oeffnen: another file, with {pfad} of the opened file. */
@@ -150,6 +152,7 @@ export function reason(task: Task, answer: Answer, props: Props, _lang?: string)
   if (task.mode === "ablegen") {
     if (answer === START) return props.notMoved;
     if (answer === CUT) return props.notPasted;
+    if (find(props, answer)?.parent === ROOT_PARENT) return props.loose;
     const folder = find(props, answer);
     if (folder === undefined) return undefined;
     return fill(props.wrongFolder, { ordner: folder.name, art: task.ablage.art });

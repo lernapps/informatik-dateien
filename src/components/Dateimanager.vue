@@ -41,6 +41,7 @@ const props = defineProps<{
   notMoved: string;
   notPasted: string;
   wrongFolder: string;
+  loose: string;
   sameName: string;
   otherFile: string;
   /** The task number, which the explainer gives. */

@@ -49,8 +49,8 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   Selin (will das Foto vom See, S. 2), Jona (hat einen USB-Stick, S. 3). Fotos vom Seeberg und Zimmer 22 knüpfen an
   die Klassenfahrt von #491 an.
 - Mias Ordnerbaum wächst (`src/data/mias-tablet.yaml`, Feld `von`/`bis`): Stand 1 (S. 1) Wurzel „Mias Tablet“ →
-  Schule, Fotos, Musik mit referat.txt, see.jpg, party.jpg, lied.mp3; Stand 2 (S. 2) Schule → Deutsch, Mathe;
-  Fotos → Seeberg; zwei `notizen.txt`; Stand 3 (S. 3) derselbe Baum an drei Orten; Kapitel 2: Kopie, Schloss, Angriff.
+  Schule (referat.txt), Fotos (Ordner Seeberg mit see.jpg, dazu party.jpg), Musik (lied.mp3): schon ein Ordner im
+  Ordner; Stand 2 (S. 2) Schule → Deutsch, Mathe; zwei `notizen.txt`; Stand 3 (S. 3) derselbe Baum an drei Orten; Kapitel 2: Kopie, Schloss, Angriff.
 - Abschnitte jeder Seite, ids fest, Titel passend zur Seite:
   1. `einstieg` – Szene, Ziel der Seite („Auf dieser Seite lernst du …“), eine erste leichte Frage vor der Erklärung.
   2. `idee` – das Neue mit Ordnerbaum oder Bild, `definition` je neuem Fachwort, Kasten `note` „Merke“.
@@ -72,7 +72,7 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 - Pfade mit `/`, die Wurzel „Mias Tablet“ ist das erste Glied: `Mias Tablet/Schule/Deutsch/referat.txt`. Ein Satz
   sagt: Computer schreiben die Wurzel anders (`/` oder `C:\`), manche trennen mit `\`.
 - Ordner- und Dateinamen höchstens 8 Zeichen vor der Endung, in beiden Sprachen: Schule/School, Fotos/Photos,
-  Musik/Music, Deutsch/German, Mathe/Maths, Seeberg; referat.txt/talk.txt, see.jpg/lake.jpg, lied.mp3/song.mp3,
+  Musik/Music, Deutsch/German, Mathe/Maths, Seeberg; referat.txt/speech.txt, see.jpg/lake.jpg, lied.mp3/song.mp3,
   notizen.txt/notes.txt, zimmer22.jpg/room22.jpg, party.jpg.
 - Einheiten: 1 Byte = 8 Bit, 1 KB = 1000 Byte, 1 MB = 1000 KB, 1 GB = 1000 MB. „1024“ ist kein Denkfehler: eigene
   Meldung „Manche Geräte rechnen mit 1024. In dieser App rechnen wir mit 1000: 2 GB = 2000 MB.“ Kein Terabyte.
@@ -135,5 +135,14 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 6. `npx --no -- lernapps check`, Commit, Vorschau-PR.
 
 ## Rules learned from mistakes
+
+- Ordner heißen „alles, was zusammengehört“ (Thema oder Art), nie nur „nach der Art der Datei“: Schule ist ein Thema,
+  Fotos und Musik sind Arten; der Lerncheck fand den Widerspruch. Keine Wiederfinden-Aufgabe, die zwei Ordner zulässt
+  (Lied vom Schulfest) oder den Ordnernamen nennt (Foto → Fotos).
+- Kein „Merke“, das eine spätere Übung wörtlich beantwortet; Löschen und Umbenennen lernen die Kinder aus dem Baum und
+  der Rückmeldung.
+- Was eine Übung fragt, zeigt die Seite vorher (Ordner im Ordner steht im Baum, nicht nur in einer Definition).
+- Der Dateimanager gibt vor dem ersten Schritt keine Antwort (Test der Runtime: „Prüfen“ ohne Antwort fragt nach
+  einer); für die Wurzel meldet er eigens „lose auf dem Tablet“.
 
 - Namen im Ordnerbaum höchstens 8 Zeichen: Die Skizze bei 360 px hatte bei 7 Blättern überlappende Namen.

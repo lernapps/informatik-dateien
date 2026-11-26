@@ -11,7 +11,7 @@ blocks:
     id: einstieg
     title:
       de: Wo ist Mias Referat?
-      en: Where is Mia's talk?
+      en: Where is Mia's speech?
     blocks:
       - type: figure
         image: images/mia-sucht.svg
@@ -28,14 +28,12 @@ blocks:
       - type: text
         text:
           de: |
-            Mia hat gestern ihr Referat für Deutsch geschrieben und gespeichert. Heute findet sie es nicht. Auf ihrem
-            Tablet liegen 40 Dateien: Fotos, Lieder, Texte.
+            Mia hat gestern ihr Referat für das Fach Deutsch geschrieben und gespeichert. Heute findet sie es nicht.
 
             Auf dieser Seite lernst du, wie du Dateien so ablegst, dass du sie wiederfindest. Dafür brauchst du den
             Baum, den du schon kennst.
           en: |
-            Yesterday Mia wrote her talk for German and saved it. Today she cannot find it. There are 40 files on her
-            tablet: photos, songs, texts.
+            Yesterday Mia wrote her speech for German class and saved it. Today she cannot find it.
 
             On this page you will learn how to store files so that you can find them again. For this you need the
             tree that you already know.
@@ -43,32 +41,32 @@ blocks:
         id: was-hilft
         text:
           de: Was hilft Mia am meisten, ihr Referat jetzt und später wiederzufinden?
-          en: What helps Mia most to find her talk now and later?
+          en: What helps Mia most to find her speech now and later?
         options:
           - text:
-              de: Sie legt ihre Dateien nach ihrer Art in Ordner, zum Beispiel einen Ordner für die Schule.
-              en: She puts her files into folders by their kind, for example a folder for school.
+              de: Sie legt alles, was zusammengehört, an einen festen Platz, zum Beispiel alles für die Schule.
+              en: She puts everything that belongs together in one fixed place, for example everything for school.
             correct: true
             info:
               de: Dann weiß sie, wo sie suchen muss, auch in einem Jahr noch.
               en: Then she knows where to look, even a year from now.
           - text:
-              de: Sie schaut unter „Zuletzt verwendet“ nach.
-              en: She looks under “Recent”.
+              de: Sie schaut in der Liste „Zuletzt verwendet“ nach.
+              en: She looks in the list “Recent”.
             correct: false
             info:
-              de: Das hilft nur heute. „Zuletzt verwendet“ ist eine Liste der letzten Dateien, kein Ort. Die Datei liegt woanders, und nächste Woche ist sie aus der Liste verschwunden.
-              en: That only helps today. “Recent” is a list of the last files, not a place. The file is stored somewhere else, and next week it will be gone from the list.
+              de: Das hilft nur heute. „Zuletzt verwendet“ zeigt die letzten Dateien, ist aber kein Platz. Nächste Woche ist das Referat aus der Liste verschwunden.
+              en: That only helps today. “Recent” shows the last files, but it is not a place. Next week the speech will be gone from the list.
           - text:
               de: Sie speichert das Referat noch einmal, dann ist es sicher da.
-              en: She saves the talk again, then it is sure to be there.
+              en: She saves the speech again, then it is sure to be there.
             correct: false
             info:
-              de: Gespeichert ist es schon. Die Frage ist, wo. Oft landet eine Datei im Ordner „Downloads“.
-              en: It is already saved. The question is where. A file often ends up in the folder “Downloads”.
+              de: Gespeichert ist es schon. Die Frage ist, wo. Ohne festen Platz weiß Mia das beim nächsten Mal wieder nicht.
+              en: It is already saved. The question is where. Without a fixed place, Mia will not know next time either.
         explanation:
-          de: Ordner geben jeder Datei einen festen Platz. Was einen Platz hat, findest du wieder.
-          en: Folders give every file a fixed place. If something has a place, you can find it again.
+          de: Was einen festen Platz hat, findest du wieder.
+          en: If something has a fixed place, you can find it again.
   - type: section
     id: idee
     title:
@@ -78,27 +76,16 @@ blocks:
       - type: text
         text:
           de: |
-            Mia räumt auf. Danach sieht ihr Tablet so aus wie ein Baum aus der Informatik: oben die **Wurzel**, das
-            ist das Tablet selbst. Darunter die **Ordner**, das sind Knoten. Ganz unten die **Dateien**, das sind die
-            Blätter mit gestricheltem Rand.
+            Mia macht für alles, was zusammengehört, einen **Ordner**: einen für die Schule, einen für Fotos, einen
+            für Musik. Danach sieht ihr Tablet aus wie ein Baum: oben die Wurzel (hellblau), das ist das Tablet selbst.
+            Darunter die Ordner (mit gelbem Ordner-Zeichen). Ganz unten die **Dateien** mit gestricheltem Rand, das
+            sind die Blätter. Im Ordner Fotos steckt noch ein Ordner: Seeberg, für die Fotos der Klassenfahrt.
           en: |
-            Mia tidies up. After that, her tablet looks like a tree in computer science: at the top is the **root**,
-            which is the tablet itself. Below it are the **folders**, which are nodes. At the very bottom are the
-            **files**, which are the leaves with a dashed border.
-      - type: definition
-        term:
-          de: Datei
-          en: file
-        explanation:
-          de: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text.
-          en: A file is a stored piece of data with a name, for example a photo, a song or a text.
-      - type: definition
-        term:
-          de: Ordner
-          en: folder
-        explanation:
-          de: Ein Ordner ist ein Platz für Dateien und für weitere Ordner. Er hat auch einen Namen.
-          en: A folder is a place for files and for more folders. It has a name too.
+            Mia makes a **folder** for everything that belongs together: one for school, one for photos, one for
+            music. After that, her tablet looks like a tree: at the top is the root (light blue), which is the tablet
+            itself. Below it are the folders (with a yellow folder sign). At the very bottom are the **files** with a
+            dashed border, which are the leaves. Inside the folder Photos there is another folder: Seeberg, for the
+            photos of the class trip.
       - type: vue-component
         component: Ordnerbaum
         props:
@@ -107,34 +94,35 @@ blocks:
         nojs:
           de: >-
             Mias Ordnerbaum. Oben die Wurzel „Mias Tablet“. Darunter drei Ordner: Schule, Fotos und Musik. Im Ordner
-            Schule liegt referat.txt. Im Ordner Fotos liegen see.jpg und party.jpg. Im Ordner Musik liegt lied.mp3.
-            Die Dateien ganz unten haben einen gestrichelten Rand.
+            Schule liegt referat.txt. Im Ordner Fotos liegen der Ordner Seeberg und party.jpg; im Ordner Seeberg liegt
+            see.jpg. Im Ordner Musik liegt lied.mp3. Die Dateien haben einen gestrichelten Rand; ihr Name steht in zwei
+            Zeilen, oben der Name, darunter die Endung.
           en: >-
             Mia's folder tree. At the top is the root “Mia's tablet”. Below it are three folders: School, Photos and
-            Music. In the folder School there is talk.txt. In the folder Photos there are lake.jpg and party.jpg. In
-            the folder Music there is song.mp3. The files at the very bottom have a dashed border.
+            Music. In the folder School there is speech.txt. In the folder Photos there are the folder Seeberg and
+            party.jpg; in the folder Seeberg there is lake.jpg. In the folder Music there is song.mp3. The files have a
+            dashed border; their name is in two lines, the name at the top, the extension below.
+      - type: definition
+        term:
+          de: Ordner
+          en: folder
+        explanation:
+          de: Ein Ordner ist ein Platz mit Namen. Darin liegen Dateien und weitere Ordner, die zusammengehören.
+          en: A folder is a place with a name. It holds files and more folders that belong together.
+      - type: definition
+        term:
+          de: Datei
+          en: file
+        explanation:
+          de: Eine Datei ist ein gespeichertes Stück Daten mit einem Namen, zum Beispiel ein Foto, ein Lied oder ein Text. In einer Datei liegt kein Ordner, darum ist sie im Baum ein Blatt.
+          en: A file is a stored piece of data with a name, for example a photo, a song or a text. A file holds no folder, so in the tree it is a leaf.
       - type: definition
         term:
           de: Dateiendung
           en: file extension
         explanation:
-          de: Die Endung steht am Ende des Dateinamens nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text.
-          en: The extension comes at the end of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text.
-      - type: note
-        title:
-          de: Merke
-          en: Remember
-        blocks:
-          - type: text
-            text:
-              de: |
-                Ein Ordner kann Dateien und Ordner enthalten. Eine Datei enthält keinen Ordner, sie ist ein Blatt.
-                Wer einen Ordner löscht, löscht **alles darin** mit. Und ein neuer Name macht aus einem Foto kein
-                anderes Foto: Der Inhalt bleibt gleich.
-              en: |
-                A folder can hold files and folders. A file holds no folder, it is a leaf. If you delete a folder,
-                you also delete **everything in it**. And a new name does not turn a photo into a different photo:
-                what is in it stays the same.
+          de: Die Endung ist der letzte Teil des Dateinamens, nach dem Punkt. Sie zeigt die Art der Datei, zum Beispiel .jpg für ein Foto, .mp3 für etwas zum Hören, .txt für einen Text. Im Baum steht sie unten.
+          en: The extension is the last part of the file name, after the dot. It shows the kind of file, for example .jpg for a photo, .mp3 for something to listen to, .txt for a text. In the tree it is at the bottom.
   - type: section
     id: ausprobieren
     title:
@@ -144,27 +132,25 @@ blocks:
       - type: text
         text:
           de: |
-            Auf dem Tablet siehst du den Baum nie ganz. Ein **Dateimanager** zeigt immer nur einen Ordner. So
-            bedienst du ihn:
+            Auf dem Tablet siehst du den Baum nie ganz. Ein **Dateimanager** zeigt immer nur einen Ordner:
 
             - Tippe auf einen Ordner, dann öffnet er sich. Oben steht, wo du gerade bist.
             - „Nach oben“ bringt dich einen Ordner zurück.
-            - „Ausschneiden“ nimmt eine Datei weg. Öffne dann den Ordner, in den sie soll, und tippe auf
-              „Einfügen“. Ausschneiden und Einfügen heißt zusammen: **verschieben**.
+            - „Ausschneiden“ nimmt eine Datei weg. Öffne dann den Ordner, in den sie soll, und tippe auf „Einfügen“.
+              Ausschneiden und Einfügen heißt zusammen: **verschieben**.
 
-            Neue Dateien landen oft im Ordner „Downloads“. Hol die neue Datei dort heraus und lege sie in einen
-            passenden Ordner. Drück dann „Prüfen“.
+            Was du aus dem Internet oder aus einer Nachricht holst, landet oft im Ordner „Downloads“. Dort liegt
+            eine neue Datei. Lege sie in einen passenden Ordner und drück dann „Prüfen“.
           en: |
-            On the tablet you never see the whole tree. A **file manager** only ever shows one folder. This is how
-            you use it:
+            On the tablet you never see the whole tree. A **file manager** only ever shows one folder:
 
             - Tap a folder and it opens. At the top it says where you are.
             - “Up” takes you back one folder.
             - “Cut” takes a file away. Then open the folder where it should go and tap “Paste”. Cut and paste
               together mean: **move**.
 
-            New files often end up in the folder “Downloads”. Take the new file out of there and put it into a
-            folder that fits. Then press “Check”.
+            What you get from the internet or from a message often ends up in the folder “Downloads”. A new file is
+            there. Put it into a folder that fits and then press “Check”.
       - type: vue-component
         id: ablegen
         component: Dateimanager
@@ -180,21 +166,24 @@ blocks:
           here: { de: "Du bist hier:", en: "You are here:" }
           up: { de: Nach oben, en: Up }
           cut: { de: Ausschneiden, en: Cut }
-          paste: { de: "{datei} einfügen", en: "Paste {datei}" }
+          paste: { de: "Einfügen: {datei}", en: "Paste: {datei}" }
           open: { de: Öffnen, en: Open }
           opened: { de: "Offen: {pfad}", en: "Open: {pfad}" }
           empty: { de: Dieser Ordner ist leer., en: This folder is empty. }
           folder: { de: "Ordner", en: "folder" }
           file: { de: "Datei", en: "file" }
           notMoved:
-            de: Die Datei liegt noch in Downloads. Öffne Downloads und schneide sie aus.
-            en: The file is still in Downloads. Open Downloads and cut it.
+            de: Die Datei liegt noch in Downloads. Öffne Downloads und tippe bei der Datei auf „Ausschneiden“.
+            en: The file is still in Downloads. Open Downloads and tap “Cut” next to the file.
           notPasted:
-            de: Du hast die Datei ausgeschnitten, aber noch nirgends eingefügt. Öffne einen Ordner und tippe auf „einfügen“.
+            de: Du hast die Datei ausgeschnitten, aber noch nirgends eingefügt. Öffne einen Ordner und tippe auf „Einfügen“.
             en: You cut the file, but you have not pasted it anywhere yet. Open a folder and tap “Paste”.
           wrongFolder:
-            de: "Die Datei liegt jetzt in {ordner}. {art} Passt sie dorthin?"
-            en: "The file is now in {ordner}. {art} Does it belong there?"
+            de: "Die Datei liegt jetzt in {ordner}. {art} Gehört sie dort zu den anderen Dateien?"
+            en: "The file is now in {ordner}. {art} Does it belong with the other files there?"
+          loose:
+            de: Die Datei liegt jetzt lose auf dem Tablet, in keinem Ordner. So findest du sie bald nicht mehr. Öffne einen Ordner, bevor du einfügst.
+            en: The file is now loose on the tablet, in no folder. Soon you will not find it. Open a folder before you paste.
           sameName: { de: "", en: "" }
           otherFile: { de: "", en: "" }
         examples:
@@ -204,6 +193,7 @@ blocks:
             - { answer: 2, seed: 1 }
             - { answer: -1, seed: 1 }
             - { answer: 5, seed: 1 }
+            - { answer: 1, seed: 1 }
       - type: note
         title:
           de: Zum Mitmachen ohne Tablet
@@ -212,13 +202,13 @@ blocks:
           - type: text
             text:
               de: |
-                Dein Schulranzen ist auch ein Baum. Zeichne ihn auf: oben der Ranzen als Wurzel, darunter die Mappen
-                und Fächer als Ordner, unten die Hefte und Blätter. Wo liegt dein Hausaufgabenheft? Findet deine
+                Dein Schulranzen ist auch ein Baum. Zeichne ihn auf: oben der Ranzen als Wurzel, darunter seine Fächer
+                und Mappen als Ordner, ganz unten die Hefte und Zettel. Wo liegt dein Hausaufgabenheft? Findet deine
                 Nachbarin es mit deinem Baum in zehn Sekunden?
               en: |
-                Your school bag is a tree too. Draw it: at the top the bag as the root, below it the folders and
-                pockets as folders, at the bottom the exercise books and sheets. Where is your homework book? Can the
-                person next to you find it in ten seconds with your tree?
+                Your school bag is a tree too. Draw it: at the top the bag as the root, below it its pockets and
+                plastic wallets as folders, at the very bottom the exercise books and loose sheets. Where is your
+                homework book? Can the person next to you find it in ten seconds with your tree?
   - type: section
     id: uebung
     title:
@@ -231,8 +221,8 @@ blocks:
           s: { pick: 1, from: { data: suchen } }
         task:
           text:
-            de: "Mias Tablet ist aufgeräumt wie im Ordnerbaum oben. Mia sucht {{s.was}}. In welchem Ordner schaut sie nach?"
-            en: "Mia's tablet is tidy, like in the folder tree above. Mia is looking for {{s.was}}. Which folder does she look in?"
+            de: "Mias Tablet ist aufgeräumt wie im Ordnerbaum oben. Mia sucht {{s.was}}. In welchem Ordner schaut sie zuerst nach?"
+            en: "Mia's tablet is tidy, like in the folder tree above. Mia is looking for {{s.was}}. Which folder does she look in first?"
         answer:
           value: s.ordner
           compare:
@@ -246,39 +236,43 @@ blocks:
           - value: s.falsch2
             message: { de: "{{s.grund2}}", en: "{{s.grund2}}" }
         hint:
-          de: Was ist es für eine Art von Datei? Ein Text für die Schule, ein Foto oder etwas zum Hören?
-          en: What kind of file is it? A text for school, a photo or something to listen to?
+          de: Was gehört mit dieser Datei zusammen? Schau auf die Endung oder darauf, wofür Mia sie braucht.
+          en: What does this file belong with? Look at the extension, or at what Mia needs it for.
         steps:
           - de: "Mia sucht {{s.was}}. Das gehört in den Ordner {{answer}}."
             en: "Mia is looking for {{s.was}}. That belongs in the folder {{answer}}."
       - type: number
         id: ordner-loeschen
         text:
-          de: Mia löscht im Ordnerbaum oben den Ordner Fotos. Wie viele Dateien sind dann weg?
-          en: In the folder tree above, Mia deletes the folder Photos. How many files are gone then?
+          de: Mia löscht im Ordnerbaum oben den Ordner Fotos. Wie viele Dateien sind dann weg? Schreib die Zahl.
+          en: In the folder tree above, Mia deletes the folder Photos. How many files are gone then? Write the number.
         answer: 2
         tolerance: 0
         mistakes:
           - answer: 0
             message:
-              de: Wer einen Ordner löscht, löscht alles darin mit. Zähle die Dateien unter Fotos.
-              en: If you delete a folder, you also delete everything in it. Count the files below Photos.
+              de: Ein Ordner ist ein Platz für Dateien. Wenn der Platz weg ist, ist auch alles darin weg. Zähle die Dateien unter Fotos.
+              en: A folder is a place for files. If the place is gone, everything in it is gone too. Count the files below Photos.
           - answer: 1
             message:
-              de: Zähle alle Blätter unter dem Ordner Fotos, nicht nur eins.
-              en: Count all the leaves below the folder Photos, not just one.
+              de: Du hast nur party.jpg gezählt. Auch im Ordner Seeberg liegt eine Datei, und Seeberg liegt im Ordner Fotos.
+              en: You only counted party.jpg. There is also a file in the folder Seeberg, and Seeberg is inside the folder Photos.
+          - answer: 3
+            message:
+              de: Du hast den Ordner Seeberg mitgezählt. Gefragt sind nur die Dateien, also die Blätter mit gestricheltem Rand.
+              en: You counted the folder Seeberg too. Only the files are asked for, the leaves with a dashed border.
           - answer: 4
             message:
-              de: Das sind alle Dateien auf dem Tablet. Weg sind nur die im Ordner Fotos.
-              en: Those are all the files on the tablet. Only the ones in the folder Photos are gone.
+              de: Das sind alle Dateien auf dem Tablet. Weg sind nur die unter dem Ordner Fotos.
+              en: Those are all the files on the tablet. Only the ones below the folder Photos are gone.
         explanation:
-          de: Im Ordner Fotos liegen zwei Dateien, see.jpg und party.jpg. Mit dem Ordner sind beide weg.
-          en: In the folder Photos there are two files, lake.jpg and party.jpg. Both are gone with the folder.
+          de: Unter Fotos liegen zwei Dateien, see.jpg im Ordner Seeberg und party.jpg. Wer einen Ordner löscht, löscht alles darin mit, auch die Ordner darin.
+          en: Below Photos there are two files, lake.jpg in the folder Seeberg and party.jpg. If you delete a folder, you also delete everything in it, the folders in it too.
       - type: true-false
         id: umbenennen
         text:
-          de: Mia nennt see.jpg um in ausflug.jpg. Jetzt zeigt die Datei ein anderes Bild.
-          en: Mia renames lake.jpg to trip.jpg. Now the file shows a different picture.
+          de: Mia gibt see.jpg einen neuen Namen, ausflug.jpg. Jetzt zeigt die Datei ein anderes Bild.
+          en: Mia gives lake.jpg a new name, trip.jpg. Now the file shows a different picture.
         answer: false
         explanation:
           de: Der Name ist wie ein Schild an der Datei. Ein neues Schild ändert nicht, was in der Datei ist. Die Endung .jpg bleibt, es ist dasselbe Foto.
@@ -292,23 +286,23 @@ blocks:
           - text: { de: eine Datei, en: a file }
             correct: true
             info:
-              de: Ja, dafür sind Ordner da.
-              en: Yes, that is what folders are for.
+              de: Ja, wie party.jpg im Ordner Fotos.
+              en: Yes, like party.jpg in the folder Photos.
           - text: { de: ein anderer Ordner, en: another folder }
             correct: true
             info:
-              de: Ja, zum Beispiel ein Ordner Deutsch im Ordner Schule. Im Baum hängt dann ein Knoten unter einem Knoten.
-              en: Yes, for example a folder German inside the folder School. In the tree, one node then hangs below another node.
+              de: Ja, wie Seeberg im Ordner Fotos. Im Baum hängt dann ein Knoten unter einem Knoten.
+              en: Yes, like Seeberg in the folder Photos. In the tree, one node then hangs below another node.
           - text: { de: das ganze Tablet, en: the whole tablet }
             correct: false
             info:
               de: Das Tablet ist die Wurzel. Alle Ordner liegen darin, nicht umgekehrt.
               en: The tablet is the root. All folders are inside it, not the other way round.
-          - text: { de: die Wurzel des Baums, en: the root of the tree }
+          - text: { de: die Liste „Zuletzt verwendet“, en: the list “Recent” }
             correct: false
             info:
-              de: Die Wurzel steht ganz oben. Sie hängt in keinem Ordner.
-              en: The root is at the very top. It is not inside any folder.
+              de: Die Liste zeigt nur, welche Dateien du zuletzt benutzt hast. Sie ist kein Platz und liegt in keinem Ordner.
+              en: The list only shows which files you used last. It is not a place and it is not inside a folder.
         explanation:
           de: Ein Ordner kann Dateien und weitere Ordner enthalten. Das Tablet selbst ist die Wurzel über allem.
           en: A folder can hold files and more folders. The tablet itself is the root above everything.
@@ -316,7 +310,7 @@ blocks:
         text:
           de: |
             Mias Tablet ist aufgeräumt. Jede Datei hat ihren Ordner. Da schreibt Selin: „Schick mir das Foto vom See!“
-            Auf der nächsten Seite beschreibt Mia genau, wo es liegt.
+            Auf der nächsten Seite, „Dateipfad“, beschreibt Mia genau, wo es liegt.
           en: |
             Mia's tablet is tidy. Every file has its folder. Then Selin writes: “Send me the photo of the lake!” On
-            the next page Mia describes exactly where it is.
+            the next page, “File paths”, Mia describes exactly where it is.
