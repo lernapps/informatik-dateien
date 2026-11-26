@@ -1,0 +1,6 @@
+# Sizes of files, rounded and "ungefähr" (examples, no primary source; see the content guide). For the generated task
+# "how many fit on a stick"; mb so that 1000 · GB / mb is a whole number for every stick size.
+- { art: { de: Fotos, en: photos }, mb: 4 }
+- { art: { de: Lieder, en: songs }, mb: 5 }
+- { art: { de: "Videos von je 1 Minute", en: "videos of 1 minute each" }, mb: 100 }
+- { art: { de: "Hörbücher von je 1 Stunde", en: "audiobooks of 1 hour each" }, mb: 50 }

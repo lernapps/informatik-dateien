@@ -448,7 +448,7 @@ Nachrichten zwischen Mia und Selin (7-9); Simulation „Wie lange braucht ein Re
       Creator: Ja, die übrigen Seiten (Sammel-Wiederholung, Dateipfad, Speicherorte) folgen diesem Muster. Mias Tablet (türkise Hülle #2a9d8f, gelber Stern #f2c14e unten rechts, Bildschirm #1f2a36 mit hellem Rand) und der Ordnerbaum Stand 1 und 2 in de und en sind bestätigt. Runtime-Funde 1-4 sammelt der Orchestrator, nicht umgehen.
 - [x] Sammel-Wiederholung ordnen/das-brauchst-du (de, en): recap computer-bestandteile, programme-bedienen, baum, bit-und-byte; glaeserner-computer und baum-zimmer mit Herkunft kopiert; zeigt die Anknüpfung an #490 und #491
 - [x] Seite ordnen/dateipfad (de, en): Ordnerbaum Stand 2, Dateimanager Modus oeffnen, generated Pfad ordnen und Ordner ablesen aus pfade, Pfad-Diktat unplugged; zeigt Pfad angeben und lesen
-- [ ] Seite ordnen/speicherorte (de, en): Bild speicherorte, Vergleichstabelle, generated Fotos pro Stick aus medien, generated Lagen, matching Risiken, Kapitelregel und Rückblick; zeigt Speicherorte vergleichen
+- [x] Seite ordnen/speicherorte (de, en): Bild speicherorte, Vergleichstabelle, generated Fotos pro Stick aus medien, generated Lagen, matching Risiken, Kapitelregel und Rückblick; zeigt Speicherorte vergleichen
 <!-- tasks: pages (3 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
