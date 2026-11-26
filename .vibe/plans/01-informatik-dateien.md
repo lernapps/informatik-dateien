@@ -101,6 +101,44 @@ Voraussetzungen von außerhalb (nicht in dieser App geübt):
   `schadsoftware`), beide #490. Eine Sammel-Wiederholung am Kapitelanfang. `datensicherung` und `schutzsoftware`
   bauen auf Seiten dieser App auf.
 
+### Quellen (geöffnet und gelesen; Zitate von einem Hilfsagenten ausgelesen, Kernstellen von mir in den Texten nachgesehen)
+
+- Lernlandkarte Informatik: https://lernapps.net/apps/map/informatik.json (Strang informatiksysteme).
+- GI: Bildungsstandards Informatik Sek I (2025), doi:10.18420/rec2025_052,
+  https://www.mnu.de/images/fachbereiche/Informatik/Bildungsstandards_Sek_I_2025__pdf-A_.pdf, S. 19, Abschnitt 5.4:
+  Jg. 5-6 IS-3 „öffnen und speichern Dateien an verschiedenen, bewusst gewählten Orten“, IS-4 „schützen den Zugang …
+  durch geeignete Maßnahmen“; Jg. 7-10 IS-8 „sichern ihre Daten durch geeignete Maßnahmen (z. B. Versionierung,
+  Redundanz)“, IS-9 „beschreiben und benutzen Sicherheitsfunktionen“. S. 20 IMG-5 (menschliches Verhalten und
+  Sicherheit). Die Wörter Pfad, Ordner, Cloud, Passwort kommen nicht vor.
+- NRW: Kernlehrplan Informatik 5/6 (2021),
+  https://lehrplannavigator.nrw.de/system/files/media/document/file/si_kl5u6_if_klp_2021_07_01.pdf, S. 19:
+  „erläutern Prinzipien der strukturierten Dateiverwaltung“, „vergleichen Möglichkeiten der Datenverwaltung
+  hinsichtlich ihrer spezifischen Charakteristika (u. a. Speicherort, Kapazität, Aspekte der Datensicherheit)“.
+- Bayern LehrplanPLUS: Gymnasium NT 6, LB 2.3 „Hierarchische Informationsstrukturen – Dateisystem“
+  (https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/nt_gym): „nutzen einen Dateimanager, um Dateien und
+  Ordner in einer hierarchischen Struktur geeignet zu organisieren“, „geben die Lage von Dateien … durch Pfade an“,
+  Fachbegriffe „Ordner, Datei, Pfad, Baum, Wurzel, Knoten, Kante, Blatt“. Mittelschule Informatik 5, LB 1:
+  „Ordner/Verzeichnisse, Dateien; … Pfade“. MS Informatik 6, LB 1 und Gymnasium NT 7, LB 2.2: sichere Passwörter,
+  Virenschutz, Firewall, Viren, Trojaner, Datensicherung (für Kapitel 2). **Nicht geprüft:** Gymnasium Informatik 7
+  (URL leitet auf die Startseite).
+- Hessen: Handreichung „Digitale Welt“ (HMKB, Nov. 2024),
+  https://kultus.hessen.de/sites/kultus.hessen.de/files/2024-11/hmkb_digwelt_nov24_barrierefrei_v2.pdf, S. 15
+  (Datensicherheit/Datenschutz unterscheiden, Jg. 6 – das gehört nach #505), S. 28 (Dateien nach Größe ordnen). Ordner,
+  Pfad, Cloud nicht genannt.
+- BSI für Bürger (Cloud): „für den Zugriff auf Cloud-Dienste immer ein geeigneter Netzwerkanschluss
+  (Internetverbindung) benötigt“, Daten werden „an einen ‚Fremden‘ (den Cloud-Anbieter) übermittelt“, „entfernte
+  Server“; Seiten unter https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cloud-Computing-Sicherheitstipps/
+  (genaue Unterseiten-Adressen trage ich beim Bauen ein). Tablet/Smartphone: „deutlich größere Wahrscheinlichkeit des
+  Verlusts oder Diebstahls“ (https://www.bsi.bund.de/dok/6598916). Für Kapitel 2: Passwörter (dok/6596574, „Je
+  länger, desto besser“; Seite nennt 25 und „20 bis 25“ Zeichen uneinheitlich), Datensicherung (dok/6599060,
+  dok/6598916 „mehrere Kopien … an unterschiedlichen Orten“; **keine** 3-2-1-Regel beim BSI), Schadprogramme
+  (dok/6596284, dok/6596868, dok/6599600), Updates (dok/504184), Virenschutz (dok/504492, dok/504502).
+- Pfadtrenner: Microsoft Learn https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file („Use a backslash
+  (\\) to separate the components of a path“); POSIX.1-2024 https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap03.html,
+  3.254 („separated by <slash> characters“). Apple **nicht geprüft**.
+- Dateigrößen (Foto 4 MB, Lied 4 MB, Video 100 MB je Minute, Text 20 KB) und Speichergrößen (Tablet 64 GB, Stick
+  32 GB, Cloud 15 GB): **ohne Primärquelle**, als „ungefähr, Beispiel“ im Text (guess).
+
 ### Didaktik
 
 - Leitbild **Mias Tablet**. Mia (11) aus der Klasse 6b (#490/#491): schwarze Locken #222, runde Brille, Haut #8d5a3b,
