@@ -1,6 +1,7 @@
 import { expect, test } from "vite-plus/test";
 import {
   check,
+  unanswered,
   contents,
   CUT,
   describe,
@@ -47,6 +48,7 @@ const texts = {
   loose: "lose, in keinem Ordner",
   sameName: "geöffnet: {pfad}, gleicher Name",
   otherFile: "geöffnet: {pfad}",
+  unanswered: "noch nichts getan",
 };
 const ablegen: Props = {
   mode: "ablegen",
@@ -101,4 +103,8 @@ test("paths and folder contents follow the stand: folders first, a file of stand
   expect(path(ablegen, 8, " / ")).toBe("Mias Tablet / Fotos / party.jpg");
   expect(contents(ablegen, 3).map((n) => n.id)).toEqual([6]);
   expect(contents(oeffnen, 3).map((n) => n.id)).toEqual([10, 11]);
+});
+
+test("Prüfen before any step gets the block's own text", () => {
+  expect(unanswered(ablegen, "de")).toBe("noch nichts getan");
 });

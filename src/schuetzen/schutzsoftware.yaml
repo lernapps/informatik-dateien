@@ -1,0 +1,262 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Schutzsoftware und Updates
+  en: Security software and updates
+description:
+  de: "Firewall, Virenschutz, Updates und Einstellungen am Tablet: was sie schützen. Mit der Regel des Kapitels."
+  en: "Firewall, antivirus, updates and settings on the tablet: what they protect. With the rule of the chapter."
+competencies: [schutzsoftware]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Später, später, später
+      en: Later, later, later
+    blocks:
+      - type: text
+        text:
+          de: |
+            **Selin:** Mein Tablet will dauernd ein Update. Ich tippe immer auf „Später“.
+
+            **Mia:** Mein Onkel sagt, genau so kam die Schadsoftware auf ein Gerät bei ihm in der Firma.
+
+            Auf der Seite davor hast du gelernt, wie Schadsoftware hereinkommt. Hier lernst du, was dein Gerät davor
+            schützt und welche Einstellungen du selbst machen kannst.
+          en: |
+            **Selin:** My tablet keeps wanting an update. I always tap “Later”.
+
+            **Mia:** My uncle says that is exactly how malware got onto a device at his company.
+
+            On the page before, you learnt how malware gets in. Here you will learn what protects your device from it
+            and which settings you can make yourself.
+      - type: true-false
+        id: nur-funktionen
+        text:
+          de: Updates bringen nur neue Funktionen. Wer sie nicht braucht, kann sie weglassen.
+          en: Updates only bring new features. If you do not need them, you can skip them.
+        answer: false
+        explanation:
+          de: Mit Updates beseitigen Hersteller auch Fehler und schließen Sicherheitslücken. Das BSI rät, sie möglichst rasch zu installieren.
+          en: With updates, makers also fix mistakes and close security holes. The BSI advises installing them as soon as possible.
+  - type: section
+    id: idee
+    title:
+      de: Vier Schutzschichten
+      en: Four layers of protection
+    blocks:
+      - type: table
+        caption:
+          de: Was schützt wovor (nach dem BSI)
+          en: What protects against what (as the BSI describes it)
+        header:
+          - { de: Schutz, en: Protection }
+          - { de: Was er tut, en: What it does }
+        rowHeaders: true
+        rows:
+          - - { de: Firewall, en: firewall }
+            - {
+                de: "prüft die Daten, die ins Gerät hinein- und aus ihm hinausgehen",
+                en: "checks the data that goes into and out of the device",
+              }
+          - - { de: Virenschutz, en: antivirus }
+            - {
+                de: "erkennt bekannte Schadsoftware; muss immer aktuell sein",
+                en: "recognises known malware; must always be up to date",
+              }
+          - - { de: Update, en: update }
+            - {
+                de: "beseitigt Fehler und schließt Sicherheitslücken in Programmen",
+                en: "fixes mistakes and closes security holes in programs",
+              }
+          - - { de: Bildschirmsperre, en: screen lock }
+            - {
+                de: "hält Fremde fern, die das Gerät in der Hand haben",
+                en: "keeps out strangers who have the device in their hands",
+              }
+      - type: definition
+        term:
+          de: Sicherheitslücke
+          en: security hole
+        explanation:
+          de: Ein Fehler in einem Programm, durch den Schadsoftware oder Angreifer hineinkommen können. Ein Update schließt sie.
+          en: A mistake in a program through which malware or attackers can get in. An update closes it.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: |
+                Kein Schutz fängt alles ab. Ein Virenschutz erkennt vor allem bekannte Schadsoftware, ganz neue oft nicht. Darum
+                gehören alle vier zusammen, dazu deine Vorsicht und eine Sicherung.
+              en: |
+                No protection catches everything. Antivirus mainly recognises known malware, often not brand-new malware. That is why all
+                four belong together, plus your care and a backup.
+  - type: section
+    id: beispiel
+    title:
+      de: Einstellungen am Tablet
+      en: Settings on the tablet
+    blocks:
+      - type: example
+        title:
+          de: Mias neues Tablet
+          en: Mia's new tablet
+        blocks:
+          - type: text
+            text:
+              de: |
+                1. Bildschirmsperre mit PIN einschalten.
+                2. Automatische Updates einschalten.
+                3. Apps nur aus dem App-Store des Geräts holen.
+                4. Bei jeder App prüfen, welche Rechte sie will. Braucht eine Taschenlampen-App die Kontakte? Nein,
+                   also nicht installieren.
+
+                So rät es das BSI für Smartphones und Tablets.
+                [Mehr beim BSI](https://www.bsi.bund.de/dok/6687234)
+              en: |
+                1. Turn on the screen lock with a PIN.
+                2. Turn on automatic updates.
+                3. Only get apps from the device's app store.
+                4. For each app, check which permissions it wants. Does a torch app need your contacts? No, so do not
+                   install it.
+
+                This is what the BSI advises for smartphones and tablets.
+                [More from the BSI (in German)](https://www.bsi.bund.de/dok/6687234)
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: welcher-schutz
+        given:
+          s: { pick: 1, from: { data: schutz } }
+        task:
+          text:
+            de: "{{s.fall}} Welcher Schutz hilft hier am meisten?"
+            en: "{{s.fall}} Which protection helps most here?"
+        answer:
+          value: s.schutz
+          compare:
+            choice:
+              - { de: Firewall, en: firewall }
+              - { de: Virenschutz, en: antivirus }
+              - { de: Update, en: update }
+              - { de: Bildschirmsperre, en: screen lock }
+        mistakes:
+          - value: s.falsch1
+            message: { de: "{{s.grund1}}", en: "{{s.grund1}}" }
+          - value: s.falsch2
+            message: { de: "{{s.grund2}}", en: "{{s.grund2}}" }
+          - value: s.falsch3
+            message: { de: "{{s.grund3}}", en: "{{s.grund3}}" }
+        hint:
+          de: "Wo kommt die Gefahr her: aus dem Internet, aus einer Datei, aus einem Fehler im Programm oder von einem Menschen am Gerät?"
+          en: "Where does the danger come from: the internet, a file, a mistake in a program or a person at the device?"
+        steps:
+          - de: "Hier hilft am meisten: {{answer}}."
+            en: "What helps most here: {{answer}}."
+      - type: multiple-choice
+        id: einstellungen
+        text:
+          de: Welche Einstellungen machen Selins Tablet sicherer? Wähle alles, was stimmt.
+          en: Which settings make Selin's tablet safer? Choose everything that is true.
+        options:
+          - text: { de: automatische Updates einschalten, en: turning on automatic updates }
+            correct: true
+            info:
+              de: Ja. Dann sind Sicherheitslücken schnell zu.
+              en: Yes. Then security holes are closed quickly.
+          - text: { de: eine Bildschirmsperre mit PIN, en: a screen lock with a PIN }
+            correct: true
+            info:
+              de: Ja. Wer das Tablet findet, kommt nicht hinein. Nach ein paar falschen Versuchen muss er lange warten, darum hilft hier schon eine PIN.
+              en: Yes. Whoever finds the tablet cannot get in. After a few wrong tries they have to wait a long time, so a PIN already helps here.
+          - text:
+              {
+                de: "Apps von irgendeiner Webseite holen, wenn sie dort umsonst sind",
+                en: "getting apps from any website if they are free there",
+              }
+            correct: false
+            info:
+              de: Das BSI rät, Apps nur aus vertrauenswürdigen Quellen zu holen, etwa dem App-Store des Geräts.
+              en: The BSI advises getting apps only from trusted sources, such as the device's app store.
+          - text:
+              {
+                de: "jeder App alle Rechte geben, die sie verlangt",
+                en: "giving every app all the permissions it asks for",
+              }
+            correct: false
+            info:
+              de: Prüfe, ob die App die Rechte wirklich braucht. Im Zweifel lieber nicht installieren.
+              en: Check whether the app really needs them. If in doubt, better not install it.
+        explanation:
+          de: Updates automatisch, eine Sperre mit PIN, Apps aus dem Store und nur nötige Rechte.
+          en: Automatic updates, a lock with a PIN, apps from the store and only the permissions that are needed.
+      - type: matching
+        id: was-er-tut
+        text:
+          de: Ordne jedem Schutz zu, wovor er dich bewahrt.
+          en: Match each protection to what it keeps you safe from.
+        pairs:
+          - left: { de: Firewall, en: firewall }
+            right:
+              {
+                de: ein fremder Rechner will aus dem Internet auf dein Gerät zugreifen,
+                en: a strange computer on the internet wants to get into your device,
+              }
+          - left: { de: Virenschutz, en: antivirus }
+            right: { de: eine bekannte Schadsoftware in einem Anhang, en: a known piece of malware in an attachment }
+          - left: { de: Update, en: update }
+            right:
+              {
+                de: "ein Fehler in einer App, durch den Angreifer hineinkommen",
+                en: "a mistake in an app that lets attackers in",
+              }
+          - left: { de: Bildschirmsperre, en: screen lock }
+            right: { de: ein Fremder findet dein Tablet im Bus, en: a stranger finds your tablet on the bus }
+        distractors:
+          - { de: ein zu kurzes Passwort, en: a password that is too short }
+        explanation:
+          de: Jeder Schutz hat seine eigene Aufgabe. Gegen ein zu kurzes Passwort hilft ein längeres, dazu die Zwei-Faktor-Anmeldung.
+          en: Each protection has its own job. Against a password that is too short, a longer one helps, and two-factor authentication too.
+  - type: section
+    id: regel
+    title:
+      de: Deine Regel
+      en: Your rule
+    blocks:
+      - type: note
+        title:
+          de: Meine Regel für mein Gerät
+          en: My rule for my device
+        blocks:
+          - type: text
+            text:
+              de: |
+                Sichere an zwei Orten, einer davon nicht zu Hause. Ein eigenes, langes Passwort für jeden Zugang.
+                Updates sofort.
+              en: |
+                Back up in two places, one of them not at home. A separate, long password for every account. Updates
+                straight away.
+      - type: text
+        text:
+          de: |
+            Rückblick: Du hast Mias Dateien gesichert, sichere Passwörter gebildet, Wege der Schadsoftware erkannt und
+            das Tablet geschützt. Zusammen mit dem ersten Kapitel kannst du jetzt deine Dateien ordnen, speichern und
+            schützen. Probier die Regel an deinem eigenen Gerät aus.
+
+            **Selin:** Updates sind an. 👍
+
+            **Mia:** Und mein Stick liegt bei Oma.
+          en: |
+            Looking back: you backed up Mia's files, made secure passwords, spotted the ways malware gets in and
+            protected the tablet. Together with the first chapter, you can now organise, store and protect your files.
+            Try the rule on your own device.
+
+            **Selin:** Updates are on. 👍
+
+            **Mia:** And my stick is at my grandma's.

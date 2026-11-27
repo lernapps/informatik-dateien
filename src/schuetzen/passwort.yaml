@@ -1,0 +1,351 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Sichere Passwörter
+  en: Secure passwords
+description:
+  de: "Warum ein langes Passwort schwer zu erraten ist: eine Simulation, die Regeln des BSI und wie du deine Zugänge schützt."
+  en: "Why a long password is hard to guess: a simulation, the BSI's advice and how to protect your accounts."
+competencies: [sicheres-passwort]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Jemand war in Selins Konto
+      en: Someone was in Selin's account
+    blocks:
+      - type: text
+        text:
+          de: |
+            **Selin:** Mia, jemand hat sich in mein Spiele-Konto eingeloggt! 😮
+
+            **Mia:** Was war dein Passwort?
+
+            **Selin:** selin2014. Mein Name und mein Geburtsjahr.
+
+            **Mia:** Das kann jeder raten, der dich kennt. Ein Computer noch schneller.
+
+            Auf der Seite davor hast du Mias Dateien gesichert. Hier lernst du, warum manche Passwörter schnell erraten sind
+            und wie du deine Zugänge schützt.
+          en: |
+            **Selin:** Mia, someone logged into my gaming account! 😮
+
+            **Mia:** What was your password?
+
+            **Selin:** selin2014. My name and the year I was born.
+
+            **Mia:** Anyone who knows you can guess that. A computer even faster.
+
+            On the page before, you backed up Mia's files. Here you will learn why some passwords are guessed quickly and how to
+            protect your accounts.
+      - type: number
+        id: pin-moeglichkeiten
+        text:
+          de: Eine PIN hat 4 Ziffern, jede von 0 bis 9. Wie viele verschiedene PINs gibt es? Schreib die Zahl ohne Punkt.
+          en: A PIN has 4 digits, each from 0 to 9. How many different PINs are there? Write the number without a comma.
+        answer: 10000
+        tolerance: 0
+        mistakes:
+          - answer: 40
+            message:
+              de: "Du hast 10 · 4 gerechnet. Jede Ziffer hat 10 Möglichkeiten, mit jeder anderen zusammen: 10 · 10 · 10 · 10."
+              en: "You worked out 10 · 4. Each digit has 10 options, and each combines with all options of the others: 10 · 10 · 10 · 10."
+          - answer: 1000
+            message:
+              de: Das wären PINs mit 3 Ziffern. Jede der 4 Ziffern hat 10 Möglichkeiten.
+              en: That would be PINs with 3 digits. Each of the 4 digits has 10 options.
+          - answer: 9999
+            message:
+              de: Fast. Die PIN 0000 zählt auch mit. Von 0000 bis 9999 sind es eine mehr.
+              en: Nearly. The PIN 0000 counts too. From 0000 to 9999 there is one more.
+        explanation:
+          de: 10 · 10 · 10 · 10 = 10 000 PINs, von 0000 bis 9999.
+          en: 10 · 10 · 10 · 10 = 10,000 PINs, from 0000 to 9999.
+  - type: section
+    id: idee
+    title:
+      de: Wie viele Passwörter gibt es?
+      en: How many passwords are there?
+    blocks:
+      - type: text
+        text:
+          de: |
+            Ein Rateprogramm probiert alle Passwörter aus. Wie lange das dauert, hängt davon ab, wie viele es gibt.
+          en: |
+            A guessing program tries all passwords. How long that takes depends on how many there are.
+      - type: definition
+        term:
+          de: Zeichenvorrat
+          en: character set
+        explanation:
+          de: Alle Zeichen, aus denen ein Passwort bestehen darf, zum Beispiel 26 kleine Buchstaben oder 10 Ziffern.
+          en: All the characters a password may be made of, for example 26 lowercase letters or 10 digits.
+      - type: formula
+        formula:
+          de: '\text{Anzahl} = \text{Zeichenvorrat}^{\,\text{Länge}}'
+          en: '\text{number} = \text{character set}^{\,\text{length}}'
+      - type: generated
+        id: moeglichkeiten
+        given:
+          z: { pick: 1, from: { data: zeichenarten } }
+          l: { int: [2, 4] }
+        task:
+          text:
+            de: "Ein Passwort hat {{l}} Zeichen und besteht nur aus {{z.art}}. Wie viele verschiedene Passwörter gibt es?"
+            en: "A password has {{l}} characters and is made only of {{z.art}}. How many different passwords are there?"
+        answer:
+          value: "pow(z.n, l)"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "z.n * l"
+            message:
+              de: "Du hast {{z.n}} · {{l}} gerechnet. Nimm {{z.n}} so oft mal sich selbst, wie das Passwort Zeichen hat."
+              en: "You worked out {{z.n}} · {{l}}. Multiply {{z.n}} by itself as many times as the password has characters."
+          - value: "pow(l, z.n)"
+            message:
+              de: Du hast Länge und Zeichenvorrat vertauscht. Rechne Zeichenvorrat hoch Länge, nicht umgekehrt.
+              en: You swapped the length and the character set. Work out character set to the power of length, not the other way round.
+        hint:
+          de: "Wie bei der PIN: Zeichenvorrat hoch Länge."
+          en: "Like the PIN: character set to the power of the length."
+        steps:
+          - de: "{{z.n}} hoch {{l}} = {{answer}}."
+            en: "{{z.n}} to the power of {{l}} = {{answer}}."
+  - type: section
+    id: ausprobieren
+    title:
+      de: Ausprobieren, wie lange das Raten dauert
+      en: Try out how long guessing takes
+    blocks:
+      - type: text
+        text:
+          de: |
+            Stell mit dem Regler die Länge ein und hake die Zeichenarten an. Du tippst hier kein Passwort ein. Der
+            Balken füllt sich von links: je weiter, desto länger dauert das Raten. Probier zuerst 12 statt 8 Zeichen.
+            Dann zurück auf 8 und hake alle vier Zeichenarten an.
+          en: |
+            Set the length with the slider and tick the kinds of characters. You do not type a password here. The bar
+            fills from the left: the further it goes, the longer guessing takes. First try 12 instead of 8 characters.
+            Then go back to 8 and tick all four kinds.
+      - type: vue-component
+        component: RateZeit
+        props:
+          lengthLabel: { de: Länge, en: Length }
+          characters: { de: Zeichen, en: characters }
+          kindsLabel: { de: Zeichenarten, en: Kinds of characters }
+          kinds:
+            - { name: { de: kleine Buchstaben, en: lowercase letters }, size: 26 }
+            - { name: { de: große Buchstaben, en: uppercase letters }, size: 26 }
+            - { name: { de: Ziffern, en: digits }, size: 10 }
+            - { name: { de: Sonderzeichen, en: special characters }, size: 33 }
+          setLine: { de: "Zeichenvorrat: {n} Zeichen", en: "Character set: {n} characters" }
+          countLine: { de: "Mögliche Passwörter: {anzahl}", en: "Possible passwords: {anzahl}" }
+          timeLine: { de: "Ratezeit im Mittel: {zeit}", en: "Average time to guess: {zeit}" }
+          none: { de: Hake mindestens eine Zeichenart an., en: Tick at least one kind of character. }
+          rate: 10000000000
+          units:
+            - { one: { de: Sekunde, en: second }, many: { de: Sekunden, en: seconds }, seconds: 1 }
+            - { one: { de: Minute, en: minute }, many: { de: Minuten, en: minutes }, seconds: 60 }
+            - { one: { de: Stunde, en: hour }, many: { de: Stunden, en: hours }, seconds: 3600 }
+            - { one: { de: Tag, en: day }, many: { de: Tage, en: days }, seconds: 86400 }
+            - { one: { de: Jahr, en: year }, many: { de: Jahre, en: years }, seconds: 31536000 }
+          bigs:
+            - { name: { de: Tausend, en: thousand }, value: 1000 }
+            - { name: { de: Millionen, en: million }, value: 1000000 }
+            - { name: { de: Milliarden, en: billion }, value: 1000000000 }
+            - { name: { de: Billionen, en: trillion }, value: 1000000000000 }
+            - { name: { de: Billiarden, en: quadrillion }, value: 1000000000000000 }
+            - { name: { de: Trillionen, en: quintillion }, value: 1000000000000000000 }
+          less: { de: weniger als eine Sekunde, en: less than a second }
+          hugeCount: { de: "eine Zahl mit {n} Stellen", en: "a number {n} places long" }
+          hugeTime:
+            {
+              de: "so viele Jahre, dass die Zahl {n} Stellen hat",
+              en: "so many years that the number is {n} places long",
+            }
+          stages:
+            - { de: Sekunden, en: seconds }
+            - { de: Minuten, en: minutes }
+            - { de: Stunden, en: hours }
+            - { de: Tage, en: days }
+            - { de: Monate, en: months }
+            - { de: Jahre, en: years }
+            - { de: über 1000 Jahre, en: over 1000 years }
+          about: { de: ungefähr, en: about }
+          locale: { de: de-DE, en: en-GB }
+        nojs:
+          de: >-
+            Eine Simulation: Du wählst die Länge (4 bis 24 Zeichen) und die Zeichenarten, und sie zeigt, wie lange ein
+            Rechner im Mittel zum Erraten braucht, wenn er 10 Milliarden Passwörter pro Sekunde probiert. Beispiele:
+            8 kleine Buchstaben: ungefähr 10 Sekunden. 8 Zeichen aus allen vier Zeichenarten (95): ungefähr 4 Tage.
+            12 kleine Buchstaben: ungefähr 55 Tage. 20 kleine Buchstaben: ungefähr 32 Milliarden Jahre.
+          en: >-
+            A simulation: you choose the length (4 to 24 characters) and the kinds of characters, and it shows how long
+            a computer needs on average to guess, if it tries 10 billion passwords per second. Examples: 8 lowercase letters: about 10 seconds. 8 characters from all four kinds (95): about 4 days. 12 lowercase letters: about 55
+            days. 20 lowercase letters: about 32 billion years.
+      - type: single-choice
+        id: was-bringt-mehr
+        text:
+          de: "Ein Passwort hat 8 kleine Buchstaben. Was macht es stärker gegen einen Rechner, der rät?"
+          en: "A password has 8 lowercase letters. What makes it stronger against a computer that guesses?"
+        options:
+          - text: { de: 4 Zeichen mehr (12 kleine Buchstaben), en: 4 more characters (12 lowercase letters) }
+            correct: true
+            info:
+              de: Ungefähr 55 Tage statt 10 Sekunden.
+              en: About 55 days instead of 10 seconds.
+          - text: { de: alle vier Zeichenarten (8 Zeichen), en: all four kinds (8 characters) }
+            correct: false
+            info:
+              de: Ungefähr 4 Tage. Nur der Zeichenvorrat wächst, die Länge bleibt 8.
+              en: About 4 days. Only the character set grows; the length stays 8.
+          - text: { de: Beides bringt genau gleich viel., en: Both help exactly the same. }
+            correct: false
+            info:
+              de: "Vergleiche die Zeiten: 55 Tage und 4 Tage."
+              en: "Compare the times: 55 days and 4 days."
+        explanation:
+          de: "Mehr Zeichen bringen mehr als neue Zeichenarten: Jedes Zeichen nimmt die Anzahl noch einmal mal den Zeichenvorrat."
+          en: A few more characters help more than new kinds, because each extra character multiplies the number by the character set again.
+      - type: note
+        title:
+          de: Annahmen dieser App
+          en: What this app assumes
+        blocks:
+          - type: text
+            text:
+              de: |
+                Der Rechner probiert 10 Milliarden Passwörter pro Sekunde, und im Mittel findet er das richtige nach
+                der Hälfte. Sonderzeichen zählen wir als 33. Echte Angreifer sind
+                oft schneller: Sie probieren zuerst Listen mit Namen, Wörtern und Geburtsjahren, weil Menschen
+                solche Passwörter wählen. „selin2014“ steht auf so einer Liste weit vorn.
+              en: |
+                The computer tries 10 billion passwords per second, and on average it finds the right one after half
+                of them. We count special characters as 33. Real attackers
+                are often faster: they try lists of names, words and years of birth first, because people choose
+                passwords like that. “selin2014” is near the top of such a list.
+  - type: section
+    id: zugang
+    title:
+      de: Deinen Zugang schützen
+      en: Protecting your account
+    blocks:
+      - type: text
+        text:
+          de: |
+            Das BSI, das Amt für Sicherheit in der Informationstechnik, rät: „Je länger, desto besser.“ Als
+            Mindestmaß nennt es 8 Zeichen aus vier Zeichenarten; die Simulation zeigt, warum das nur das Mindeste ist.
+            Besser ist ein sehr langes (das BSI nennt 20 bis 25 Zeichen). Und: Jedes Passwort nur für einen Zugang.
+            [Mehr beim BSI](https://www.bsi.bund.de/dok/6596574)
+          en: |
+            The BSI, Germany's office for information security, advises: “The longer, the better.” As a minimum it
+            names 8 characters from four kinds; the simulation shows why that is only the minimum. A very long one is
+            better (the BSI says 20 to 25 characters). And: use each password for one account only.
+            [More from the BSI (in German)](https://www.bsi.bund.de/dok/6596574)
+      - type: definition
+        term:
+          de: Passwort-Manager
+          en: password manager
+        explanation:
+          de: Ein Programm, das deine Passwörter verschlüsselt aufbewahrt, also in einer Geheimschrift, die man nur mit deinem Hauptpasswort lesen kann. Du merkst dir nur noch ein langes Hauptpasswort.
+          en: A program that keeps your passwords encrypted, that is in a secret code that can only be read with your main password. You only need to remember one long main password.
+      - type: definition
+        term:
+          de: Zwei-Faktor-Anmeldung
+          en: two-factor authentication
+        explanation:
+          de: Du meldest dich mit zwei Dingen aus verschiedenen Arten an, zum Beispiel etwas, das du weißt (Passwort), und etwas, das du hast (Handy mit Code). Ist das Passwort verraten, bleibt das Konto meist trotzdem geschützt, solange niemand auch den Code hat.
+          en: You log in with two things of different kinds, for example something you know (a password) and something you have (a phone with a code). If the password gets out, the account usually stays protected, as long as nobody also has the code.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: single-choice
+        id: am-schwersten
+        text:
+          de: Ein Rateprogramm probiert Zeichen für Zeichen alle Möglichkeiten durch. Bei welchem Passwort braucht es am längsten?
+          en: A guessing program tries all possibilities, character by character. Which password takes it the longest?
+        options:
+          - text:
+              de: "tomatefahrradwolkeregen (23 kleine Buchstaben)"
+              en: "tomatobicyclecloudrain (22 lowercase letters)"
+            correct: true
+            info:
+              de: Im Mittel ungefähr 560 Billionen Jahre.
+              en: On average about 21 trillion years.
+          - text: { de: "Hund!7 (6 Zeichen, vier Zeichenarten)", en: "Dog!7x (6 characters, four kinds)" }
+            correct: false
+            info:
+              de: "95 hoch 6: ungefähr 37 Sekunden."
+              en: "95 to the power of 6: about 37 seconds."
+          - text: { de: "selin2014 (9 Zeichen)", en: "selin2014 (9 characters)" }
+            correct: false
+            info:
+              de: "36 hoch 9: ungefähr eine Stunde, und auf den Listen der Angreifer steht es weit vorn."
+              en: "36 to the power of 9: about an hour, and it is near the top of attackers' lists."
+          - text: { de: "Abc12345 (8 Zeichen)", en: "Abc12345 (8 characters)" }
+            correct: false
+            info:
+              de: "62 hoch 8: ungefähr 3 Stunden, und solche Muster stehen auf den Listen der Angreifer weit vorn."
+              en: "62 to the power of 8: about 3 hours, and patterns like this are near the top of attackers' lists."
+        explanation:
+          de: Das längste Passwort gewinnt, obwohl es nur kleine Buchstaben hat. Darum rät das BSI zu sehr langen Passwörtern.
+          en: The longest password wins, even though it only has lowercase letters. That is why the BSI advises very long passwords.
+      - type: true-false
+        id: ein-fuer-alles
+        text:
+          de: Wenn ein Passwort sehr stark ist, kannst du es für alle deine Zugänge nehmen.
+          en: If a password is very strong, you can use it for all your accounts.
+        answer: false
+        explanation:
+          de: "Wird es bei einem Dienst verraten, sind alle Zugänge offen. Das BSI rät: jedes Passwort nur für einen Zugang."
+          en: "If it gets out at one service, all your accounts are open. The BSI advises: each password for one account only."
+      - type: multiple-choice
+        id: zusaetzlich-schuetzen
+        text:
+          de: Was schützt dein Konto zusätzlich zu einem guten Passwort? Wähle alles, was stimmt.
+          en: What protects your account in addition to a good password? Choose everything that is true.
+        options:
+          - text: { de: Zwei-Faktor-Anmeldung einschalten, en: turning on two-factor authentication }
+            correct: true
+            info:
+              de: Ja, sobald ein Dienst sie anbietet, rät das BSI.
+              en: Yes, as soon as a service offers it, says the BSI.
+          - text: { de: einen Passwort-Manager nutzen, en: using a password manager }
+            correct: true
+            info:
+              de: Ja. Dann hat jeder Zugang sein eigenes Passwort.
+              en: Yes. Then each account has its own password.
+          - text:
+              de: "das Passwort der besten Freundin schicken, damit es nicht verloren geht"
+              en: "sending the password to your best friend so it does not get lost"
+            correct: false
+            info:
+              de: Was ein anderer kennt, ist nicht mehr geheim.
+              en: What someone else knows is no longer secret.
+          - text:
+              { de: das Passwort auf einen Zettel am Tablet kleben, en: sticking the password on a note on the tablet }
+            correct: false
+            info:
+              de: Dann kann es jeder lesen, der das Tablet in die Hand nimmt.
+              en: Then anyone who picks up the tablet can read it.
+        explanation:
+          de: Zwei-Faktor-Anmeldung und ein Passwort-Manager schützen zusätzlich.
+          en: Two-factor login and a password manager give extra protection.
+      - type: text
+        text:
+          de: |
+            **Selin:** Neues Passwort: lang, nur für dieses Konto, und Zwei-Faktor ist an. 💪
+
+            **Mia:** Gut! Aber kann man auch ohne Passwort in ein Gerät?
+
+            Auf der nächsten Seite, „Schadsoftware“, geht
+            es darum, wie Schadprogramme hineinkommen.
+          en: |
+            **Selin:** New password: long, only for this account, and two-factor is on. 💪
+
+            **Mia:** Great! But can someone get into a device without a password?
+
+            On the next page, “Malware”, you
+            will find out how harmful programs get in.

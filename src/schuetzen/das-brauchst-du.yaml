@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Das brauchst du hier
+  en: What you need here
+description:
+  de: "Kurz wiederholt: Informatiksysteme im Alltag, Hardware und Software."
+  en: "A short reminder: computing systems in everyday life, hardware and software."
+recap: [informatik/informatiksysteme-im-alltag, informatik/hardware-und-software]
+blocks:
+  - type: text
+    text:
+      de: |
+        Ein Jahr später: Mia und Selin sind 12 und gehen jetzt in die 7b. In diesem Kapitel schützt du Mias Dateien
+        und Geräte. Dafür brauchst du zwei Dinge, die du schon kennst. Frag dich bei jedem: Kann ich das schon?
+      en: |
+        One year later: Mia and Selin are 12 and now in class 7b. In this chapter you protect Mia's files and
+        devices. For this you need two things that you already know. For each one, ask yourself: can I do this
+        already?
+  - type: section
+    id: systeme
+    title:
+      de: Informatiksysteme im Alltag
+      en: Computing systems in everyday life
+    blocks:
+      - type: text
+        text:
+          de: |
+            Ich kann Informatiksysteme in meinem Alltag erkennen, zum Beispiel Smartphone, Spielkonsole oder Kasse.
+            Mias Tablet, ihr Spiele-Konto im Internet und der Cloud-Speicher sind solche Systeme. Jedes davon kann
+            man schützen, und jedes kann angegriffen werden.
+          en: |
+            I can recognise computing systems in my everyday life, for example a smartphone, a games console or a
+            till. Mia's tablet, her gaming account on the internet and her cloud storage are systems like that. Each of
+            them can be protected, and each can be attacked.
+  - type: section
+    id: hardware-software
+    title:
+      de: Hardware und Software
+      en: Hardware and software
+    blocks:
+      - type: table
+        caption:
+          de: Hardware und Software an Mias Tablet
+          en: Hardware and software on Mia's tablet
+        header:
+          - { de: Begriff, en: Term }
+          - { de: Was es ist, en: What it is }
+          - { de: Beispiel, en: Example }
+        rowHeaders: true
+        rows:
+          - - { de: Hardware, en: hardware }
+            - { de: die Teile zum Anfassen, en: the parts you can touch }
+            - { de: "Tablet, USB-Stick", en: "tablet, USB stick" }
+          - - { de: Software, en: software }
+            - { de: "die Programme, die darauf laufen", en: "the programs that run on it" }
+            - { de: "Apps, Betriebssystem", en: "apps, operating system" }
+      - type: text
+        text:
+          de: |
+            Ich kann Hardware und Software unterscheiden und erklären, wie sie zusammenwirken. Das brauchst du gleich:
+            Schadsoftware ist auch Software, und Updates ändern die Software, nicht die Hardware.
+
+            Außerdem brauchst du das erste Kapitel: Ordnerbaum, USB-Stick und Cloud als Speicherorte.
+
+            Fehlt dir etwas? Dann schau zuerst auf der Seite des Bausteins nach, oben auf dieser Seite.
+          en: |
+            I can tell hardware and software apart and explain how they work together. You will need this soon:
+            malware is software too, and updates change the software, not the hardware.
+
+            You also need the first chapter: the folder tree, the USB stick and the cloud as storage locations.
+
+            Is anything missing for you? Then look at the page of that building block first, at the top of this page.

@@ -46,6 +46,8 @@ const props = defineProps<{
   loose: string;
   sameName: string;
   otherFile: string;
+  /** What "Prüfen" says before the learner did anything. */
+  unanswered: string;
   /** The task number, which the explainer gives. */
   seed: number;
   /** Whether the explainer checked the answer the manager gives now. */

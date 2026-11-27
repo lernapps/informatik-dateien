@@ -1,0 +1,251 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Datensicherung
+  en: Backing up data
+description:
+  de: "Sicherungskopien an einem zweiten Ort und Zwischenstände: so bleiben Mias Dateien, auch wenn das Tablet weg ist."
+  en: "Backup copies in a second place and saved versions: how Mia's files stay safe even when the tablet is gone."
+competencies: [datensicherung]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Das Tablet im See
+      en: The tablet in the lake
+    blocks:
+      - type: text
+        text:
+          de: |
+            **Mia:** Mein Tablet ist beim Paddeln in den See gefallen. Es geht nicht mehr an. 😭
+
+            **Selin:** Oh nein! Und deine Videos vom Seeberg?
+
+            **Mia:** Die liegen noch auf dem Stick und in der Cloud. Aber mein Referat von gestern war nur auf dem Tablet.
+
+            Im ersten Kapitel hast du Speicherorte verglichen. Auf dieser Seite lernst du, wie du Dateien so sicherst,
+            dass sie bleiben, wenn ein Gerät kaputtgeht oder verloren ist.
+          en: |
+            **Mia:** My tablet fell into the lake when I was canoeing. It won't turn on any more. 😭
+
+            **Selin:** Oh no! What about your videos from Seeberg?
+
+            **Mia:** They are still on the stick and in the cloud. But my speech from yesterday was only on the tablet.
+
+            In the first chapter you compared storage locations. On this page you will learn how to back up files so
+            that they stay safe when a device breaks or gets lost.
+      - type: multiple-choice
+        id: was-bleibt
+        text:
+          de: Welche von Mias Dateien gibt es nach dem Unfall noch? Wähle alles, was stimmt.
+          en: Which of Mia's files still exist after the accident? Choose everything that is true.
+        options:
+          - text: { de: die Videos auf dem Stick, en: the videos on the stick }
+            correct: true
+            info:
+              de: Ja, der Stick war nicht im Wasser.
+              en: Yes, the stick was not in the water.
+          - text: { de: die Videos in der Cloud, en: the videos in the cloud }
+            correct: true
+            info:
+              de: Ja, sie liegen auf Rechnern einer Firma, nicht auf dem Tablet.
+              en: Yes, they are on the computers of a company, not on the tablet.
+          - text: { de: das Referat von gestern, en: the speech from yesterday }
+            correct: false
+            info:
+              de: Es war nur auf dem Tablet. Ohne Kopie an einem anderen Ort ist es weg.
+              en: It was only on the tablet. Without a copy in another place, it is gone.
+        explanation:
+          de: Was es an einem zweiten Ort gibt, bleibt. Was nur auf dem Tablet lag, ist mit dem Tablet weg.
+          en: What exists in a second place stays. What was only on the tablet is gone with the tablet.
+  - type: section
+    id: idee
+    title:
+      de: Eine Kopie an einem zweiten Ort
+      en: A copy in a second place
+    blocks:
+      - type: definition
+        term:
+          de: Sicherungskopie
+          en: backup
+        explanation:
+          de: Eine Kopie deiner Dateien an einem anderen Ort, zum Beispiel auf einem Stick oder in der Cloud. Das Original bleibt, wo es ist.
+          en: A copy of your files in another place, for example on a stick or in the cloud. The original stays where it is.
+      - type: vue-component
+        component: Ordnerbaum
+        props:
+          nodes: { data: mias-tablet }
+          stand: 2
+          rootName: { de: Kopie auf dem Stick, en: Copy on the stick }
+        nojs:
+          de: >-
+            Mias Ordnerbaum noch einmal, aber die Wurzel heißt „Kopie auf dem Stick“: dieselben Ordner Schule, Fotos
+            und Musik mit den Dateien vom letzten Sonntag. Was Mia danach geschrieben hat, fehlt.
+          en: >-
+            Mia's folder tree again, but the root is called “Copy on the stick”: the same folders School, Photos and
+            Music with the files from last Sunday. What Mia wrote after that is missing.
+      - type: text
+        text:
+          de: |
+            So sah Mias Stick nach der Sicherung vom letzten Sonntag aus. Eine Sicherung ist derselbe Ordnerbaum noch
+            einmal, an einem zweiten Ort, mit dem Stand vom Tag der Sicherung. Dafür **kopierst** du die
+            Dateien. Wer sie verschiebt, hat danach wieder nur eine Datei. Das BSI, das Bundesamt für Sicherheit in der Informationstechnik, rät außerdem:
+
+            - regelmäßig sichern, zum Beispiel jeden Sonntag, oder ein Programm sichern lassen,
+            - die Sicherung räumlich getrennt aufbewahren, nicht neben dem Tablet,
+            - ab und zu prüfen, ob sich die Kopien öffnen lassen.
+          en: |
+            This is what Mia's stick looked like after her backup last Sunday. A backup is the same folder tree again,
+            in a second place, as it was on the day of the backup. To make one, you **copy** the files. If you move
+            them, you only have one file again afterwards. The BSI, Germany's federal office for information security, also advises:
+
+            - back up regularly, for example every Sunday, or let a program do it,
+            - keep the backup in a separate place, not next to the tablet,
+            - check now and then that the copies open.
+      - type: note
+        title:
+          de: Zwischenstände
+          en: Saved versions
+        blocks:
+          - type: text
+            text:
+              de: |
+                Willst du alte Fassungen behalten, speichere unter einem neuen Namen: referat-1.txt, referat-2.txt.
+                Geht in der neuen Fassung etwas schief, hast du die alte noch.
+              en: |
+                If you want to keep old versions, save under a new name: speech-1.txt, speech-2.txt. If something
+                goes wrong in the new version, you still have the old one.
+  - type: section
+    id: beispiel
+    title:
+      de: Beispiel
+      en: Example
+    blocks:
+      - type: example
+        title:
+          de: Mias Sicherung am Sonntag
+          en: Mia's backup on Sunday
+        blocks:
+          - type: text
+            text:
+              de: |
+                1. Mia steckt den Stick an.
+                2. Sie kopiert die Ordner Schule, Fotos und Musik auf den Stick.
+                3. Sie öffnet eine Datei auf dem Stick, um zu prüfen, ob die Kopie geht.
+                4. Sie zieht den Stick ab und legt ihn in die Schreibtischschublade.
+
+                Dazu sichert ein Programm alle drei Ordner jede Nacht in die Cloud. So liegen ihre Dateien an zwei Orten,
+                und einer davon ist nicht zu Hause.
+              en: |
+                1. Mia plugs in the stick.
+                2. She copies the folders School, Photos and Music onto the stick.
+                3. She opens a file on the stick to check that the copy works.
+                4. She unplugs the stick and puts it in her desk drawer.
+
+                On top of that, a program backs up all three folders to the cloud every night. So her files are in two
+                places, and one of them is not at home.
+      - type: text
+        text:
+          de: |
+            Auch gegen Erpressungssoftware hilft eine Sicherung. Solche Schadprogramme sperren deine Daten und
+            verlangen Geld. Mit einer Kopie, die nicht am Gerät steckt, kommst du ohne Lösegeld wieder an deine Daten.
+            [Mehr beim BSI](https://www.bsi.bund.de/dok/10366332)
+          en: |
+            A backup also helps against ransomware. Programs like that lock your data and ask for money. With a copy
+            that is not plugged into the device, you get your data back without paying a ransom.
+            [More from the BSI (in German)](https://www.bsi.bund.de/dok/10366332)
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: noch-da
+        given:
+          v: { pick: 1, from: { data: verlust } }
+        task:
+          text:
+            de: "{{v.lage}} Kommt Mia danach noch an ihre Datei?"
+            en: "{{v.lage}} Can Mia still get to her file afterwards?"
+        answer:
+          value: v.bleibt
+          compare:
+            choice:
+              - { de: Ja, en: "Yes" }
+              - { de: Nein, en: "No" }
+        mistakes:
+          - value: v.falsch
+            message: { de: "{{v.grund}}", en: "{{v.grund}}" }
+        hint:
+          de: Gibt es eine Kopie an einem Ort, den das Unglück nicht trifft?
+          en: Is there a copy in a place that the accident does not reach?
+        steps:
+          - de: "{{v.grund}}"
+            en: "{{v.grund}}"
+      - type: generated
+        id: verlorene-tage
+        given:
+          a: { int: [2, 20] }
+          b: { int: [3, 29] }
+        where: ["b - a >= 2", "b - a <= 9"]
+        task:
+          text:
+            de: "Mia arbeitet jeden Tag an ihrem Referat. Am Abend des {{a}}. Mai sichert sie es auf den Stick. Am {{b}}. Mai fällt das Tablet abends ins Wasser, nachdem sie gearbeitet hat. Die Arbeit von wie vielen Tagen ist verloren?"
+            en: "Mia works on her speech every day. On the evening of {{a}} May she backs it up to the stick. On {{b}} May, in the evening after she has worked, the tablet falls into the water. The work of how many days is lost?"
+        answer:
+          value: "b - a"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "b - a + 1"
+            message:
+              de: Du hast den {{a}}. Mai mitgezählt. Die Arbeit von diesem Tag ist in der Sicherung vom Abend.
+              en: You counted {{a}} May too. The work of that day is in the backup from that evening.
+          - value: b
+            message:
+              de: Das ist das Datum, nicht die Zahl der Tage. Zähle nur die Tage nach der Sicherung.
+              en: That is the date, not the number of days. Only count the days after the backup.
+        hint:
+          de: Verloren ist nur, was nach der letzten Sicherung dazukam.
+          en: Only what was added after the last backup is lost.
+        steps:
+          - de: "Gesichert ist alles bis zum Abend des {{a}}. Mai. Verloren sind die Tage danach bis zum Unfall: {{answer}} Tage."
+            en: "Everything up to the evening of {{a}} May is backed up. The days after that, up to the accident, are lost: {{answer}} days."
+      - type: true-false
+        id: verschieben
+        text:
+          de: Wenn Mia ihre Fotos vom Tablet auf den Stick verschiebt, hat sie eine Sicherung.
+          en: If Mia moves her photos from the tablet onto the stick, she has a backup.
+        answer: false
+        explanation:
+          de: Nach dem Verschieben liegen die Fotos nur noch auf dem Stick. Eine Sicherung ist eine Kopie, das Original bleibt.
+          en: After moving, the photos are only on the stick. A backup is a copy; the original stays.
+      - type: ordering
+        id: sicherung-ordnen
+        text:
+          de: Bring Mias Sicherung in die richtige Reihenfolge.
+          en: Put Mia's backup in the right order.
+        items:
+          - { de: Stick anstecken, en: plug in the stick }
+          - { de: Ordner auf den Stick kopieren, en: copy the folders onto the stick }
+          - { de: eine Datei auf dem Stick öffnen und prüfen, en: open a file on the stick and check it }
+          - {
+              de: Stick abziehen und getrennt vom Tablet aufbewahren,
+              en: unplug the stick and keep it apart from the tablet,
+            }
+        explanation:
+          de: Erst anstecken, dann kopieren, dann prüfen. Zum Schluss kommt der Stick an einen anderen Ort, damit ihn dasselbe Unglück nicht trifft.
+          en: First plug in, then copy, then check. Last, the stick goes to another place, so that the same accident does not reach it.
+      - type: text
+        text:
+          de: |
+            **Selin:** Und dein Referat?
+
+            **Mia:** Neu geschrieben. Ab jetzt sichere ich jeden Sonntag. Die Cloud hat ein Passwort – ist das gut genug?
+
+            Auf der nächsten Seite, „Sichere Passwörter“, findest du es heraus.
+          en: |
+            **Selin:** And your speech?
+
+            **Mia:** I rewrote it. From now on I back up every Sunday. The cloud has a password – is it good enough?
+
+            On the next page, “Secure passwords”, you will find out.

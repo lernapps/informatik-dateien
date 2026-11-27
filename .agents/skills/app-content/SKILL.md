@@ -41,9 +41,24 @@ Kapitel `ordnen` – Ordner, Pfade und Speicherorte (5-6):
   Pflicht), `welcher-ort` (generated), `risiko`, `cloud-nirgendwo`, `cloud-brauchen`; Abschnitt `regel` mit der
   Kapitelregel und dem Rückblick.
 
-Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `datensicherung`, `sicheres-passwort`
-(Seite `passwort`), `schadsoftware`, `schutzsoftware`; Sammel-Wiederholung `informatiksysteme-im-alltag`,
-`hardware-und-software`.
+Kapitel `schuetzen` – Daten sichern und schützen (7-8):
+- Sammel-Wiederholung `src/schuetzen/das-brauchst-du.yaml`: `recap` auf `informatik/informatiksysteme-im-alltag`,
+  `informatik/hardware-und-software` (#490); stellt Mia und Selin ein Jahr später vor (12, 7b). Keine Übung.
+- `datensicherung`: „Ich kann meine Daten durch Sicherungskopien und gespeicherte Zwischenstände vor Verlust
+  schützen.“ → `src/schuetzen/datensicherung.yaml`. Übungen: `was-bleibt`, `noch-da` (generated, Pflicht,
+  `data/verlust.yaml`), `verlorene-tage` (generated), `verschieben`, `sicherung-ordnen`.
+- `sicheres-passwort`: „Ich kann ein sicheres Passwort bilden und erklären, wie ich meine Zugänge schütze.“ →
+  `src/schuetzen/passwort.yaml` (Musterseite des Kapitels). Übungen: `pin-moeglichkeiten`, `moeglichkeiten`
+  (generated, Pflicht, `data/zeichenarten.yaml`), `was-bringt-mehr`, `am-schwersten`, `ein-fuer-alles`,
+  `zusaetzlich-schuetzen`.
+- `schadsoftware`: „Ich kann Arten von Schadsoftware wie Viren und Trojaner beschreiben und erklären, wie sie auf ein
+  Gerät gelangen.“ → `src/schuetzen/schadsoftware.yaml`. Übungen: `nur-webseiten`, `welcher-weg` (generated, Pflicht,
+  `data/wege.yaml`), `arten`, `was-tun`. Nur „wie kommt sie herein, woran erkenne ich sie, was tue ich dann“.
+- `schutzsoftware`: „Ich kann erklären, wie Firewall, Virenschutz und Updates ein Gerät schützen, und
+  Sicherheitseinstellungen nutzen.“ → `src/schuetzen/schutzsoftware.yaml`. Übungen: `nur-funktionen`,
+  `welcher-schutz` (generated, Pflicht, `data/schutz.yaml`), `einstellungen`, `was-er-tut`; Abschnitt `regel` mit der
+  Kapitelregel „Sichere an zwei Orten, einer davon nicht zu Hause. Ein eigenes, langes Passwort für jeden Zugang.
+  Updates sofort.“ und dem Rückblick auf die ganze App.
 
 ## Content structure
 
@@ -71,6 +86,12 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   6. Nur auf der letzten Seite des Kapitels: `regel` – die Regel für das eigene Gerät und der Rückblick.
 - Kapitelregel 1: „Jede Datei bekommt einen klaren Namen und ihren Ordner. Was wichtig ist, liegt an zwei Orten.“
 - Länge: höchstens 350 Wörter zum Lesen und 350 in Aufgaben, höchstens 4 Textblöcke hintereinander.
+
+- **Kapitel 2 (7-8):** Mia und Selin sind 12, Klasse 7b, ein Jahr nach Kapitel 1 (Vorgabe für alle Explainer der
+  Welle 2). Die Geschichte steht als **Nachrichten** in einem `text`-Block: Zeilen „**Selin:** …“ / „**Mia:** …“,
+  keine Szenenbilder. Jede Seite beginnt und endet mit Nachrichten. Jede Nachricht ist ein eigener Absatz (Leerzeile
+  dazwischen), sonst laufen sie zusammen; der Satz des Erzählers („Auf der nächsten Seite …“) steht in einem eigenen Absatz.
+- Fakten nur, wo das BSI sie belegt (Seiten im Abschnitt Sources); die Kapitelregel ist eine Regel der App.
 
 ## Terminology
 
@@ -115,6 +136,17 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 - **Ort → Risiko** (`speicherorte`): `matching` `risiko` mit einem Ablenker.
 - Pfade stehen fett im Text (kein `code`-Block, nicht übersetzbar).
 
+- **Fall → richtige Antwort mit Grund je falscher** (Kapitel 2): `generated` mit `choice` aus `data/verlust.yaml`
+  (Ja/Nein), `data/wege.yaml` (vier Wege), `data/schutz.yaml` (vier Schutzarten); Felder `falsch1..3`, `grund1..3`.
+  Jeder Fall ist eindeutig und nennt, was entscheidet.
+- **Datum ohne Rechnen im Platzhalter** (`verlorene-tage`): zwei gezogene Tage `a`, `b` mit `where`, Antwort `b - a`;
+  ein Platzhalter ist nur ein Name, nie `{{a + d}}`.
+- **Ratezeit ausprobieren** (`passwort`): Anzeige-Komponente `RateZeit` (Regler Länge 4–24, Kästchen für 4
+  Zeichenarten 26/26/10/33), zeigt Zeichenvorrat, Möglichkeiten und mittlere Ratezeit bei 10¹⁰ Versuchen pro Sekunde.
+  Rate und Sonderzeichen-Zahl sind **Annahmen der App** und stehen im Kasten „Annahmen dieser App“ daneben; kein
+  Eingabefeld für Passwörter. Zahlen ehrlich gerundet mit „ungefähr“, sehr große als „eine Zahl mit n Stellen“.
+  Logik in `RateZeit.ts` mit Test; Beispiele im `nojs` aus der echten Rechnung.
+
 ## Figures
 
 - `src/images/mia-sucht.svg` (S. 1): Mia vor ihrem Tablet voller loser Datei-Symbole (Text: weißes Blatt mit Zeilen;
@@ -133,6 +165,10 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   (#491). Nichts daran ändern.
 - Alle eigenen Bilder: `source: eigene Zeichnung`, `licence: CC-BY-4.0`. Keine Screenshots fremder Software.
 
+- `RateZeit`: Rahmen und Farben nur aus den Variablen der Seite; Stufenbalken in den Einheiten des Textes (Sekunden –
+  Minuten – Stunden – Tage – Jahre – über 1000 Jahre), füllt sich von links (im Text gesagt), erreichte Stufen in
+  der Akzentfarbe, Beschriftung mit Silbentrennung. Zahlwörter bis Trillionen; exakte Zahlen ohne „ungefähr“.
+
 ## Sources
 
 - Fakten zu Speicherorten nur aus dem BSI (Cloud braucht Internet, Daten beim Anbieter; Mobilgeräte gehen leicht
@@ -143,13 +179,20 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
   <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap03.html> (3.254).
 - Dateigrößen (Foto ~4 MB, Lied ~4 MB, Video ~100 MB je Minute, Text ~20 KB) und Speichergrößen (Tablet 64 GB, Stick
   32 GB, Cloud 15 GB) sind gerundete Beispiele ohne Primärquelle; der Text sagt „ungefähr“.
-- Kapitel 2: nur belegen, was das BSI sagt (Passwörter dok/6596574, Datensicherung dok/6599060, dok/6598916,
+- Kapitel 2: Datensicherung „Datensicherung – wie geht das?“, dok/10655274, dok/6598916; Ransomware dok/10366332;
+  Wege der Schadsoftware dok/6596284; Arten dok/6596868, dok/6599600; Firewall dok/504484; Virenschutz dok/504492;
+  Updates dok/504184; Mobilgeräte dok/6687234, Apps dok/6684714 (bei App-Updates widersprechen sich die beiden Seiten;
+  wir folgen dok/6687234, automatisch). Passwörter https://www.bsi.bund.de/dok/6596574 („Je länger, desto besser“, 8 Zeichen aus vier Zeichenarten
+  oder sehr lang, „20 bis 25 Zeichen“, ein Passwort je Zugang), Zwei-Faktor dok/509176, Passwort-Manager (BSI
+  Accountschutz). Das BSI nennt keine Rate pro Sekunde. Sonst nur belegen, was das BSI sagt (Passwörter dok/6596574, Datensicherung dok/6599060, dok/6598916,
   Schadprogramme dok/6596284, dok/6596868, dok/6599600, Updates dok/504184, Virenschutz dok/504492, dok/504502). Das
   BSI nennt keine 3-2-1-Regel; die eigene Regel heißt „an zwei Orten, einer davon nicht zu Hause“.
 
 ## Adding a chapter or round
 
-1. Plan im Inkrement (`npx --no -- lernapps plan new <name>`), Branch `increment/7-8`.
+Kapitel 2 ist so entstanden; für ein weiteres Kapitel:
+
+1. Plan im Inkrement (`npx --no -- lernapps plan new <name>`), Branch `increment/<name>`.
 2. Ordner `src/schuetzen/` mit `chapter.yaml`, in `src/app.yaml` an `chapters` anhängen.
 3. Zuerst `das-brauchst-du.yaml` mit `recap: [informatik/informatiksysteme-im-alltag, informatik/hardware-und-software]`,
    dann je Baustein eine Seite in der Reihenfolge der Karte, `competencies: [<id>]`.
@@ -158,10 +201,17 @@ Kapitel `schuetzen` – Daten sichern und schützen (7-8, noch nicht gebaut): `d
 5. Übungen aus den Mustern oben; neue Datendateien in `src/data/`; Komponenten nur, wo kein Block passt.
 6. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt
    (nur Übungen, die ohne ihre Seite klar sind; Kapitel 1: `ablegen` zweimal, `im-ordner`, `ordner-ablesen`,
-   `pfad-ordnen`, `oeffnen`, `gb-in-mb`, `wie-viele-passen`, `welcher-ort`).
+   `pfad-ordnen`, `oeffnen`, `gb-in-mb`, `wie-viele-passen`, `welcher-ort`; Kapitel 2: je Seite zwei – `noch-da`,
+   `verlorene-tage`, `moeglichkeiten`, `am-schwersten`, `welcher-weg`, `arten`, `welcher-schutz`, `einstellungen`; die ganze
+   App hat damit 17).
 7. `npx --no -- lernapps check`, Commit, Vorschau-PR.
 
 ## Rules learned from mistakes
+
+- Eine Simulation, die die Kinder etwas vergleichen lässt, bekommt direkt danach eine Übung zu genau diesem Vergleich
+  (`was-bringt-mehr`); ein Balken nutzt dieselben Einheiten wie der Text (Lerncheck: „4 Tage“ leuchtete „Monate“).
+- Formeln kurz halten: eine lange `formula` scrollt bei 360 px und verletzt `accessible`.
+- Zahlaufgaben mit großen Zahlen: „Schreib die Zahl ohne Punkt“ (die Runtime liest „10.000“ nicht).
 
 - Ein Pfad gilt nur auf dem Gerät, auf dem die Datei liegt: Niemand „schickt“ einen Pfad statt der Datei (Fachprüfer).
 - Ausschneiden lässt eine Datei an ihrem Platz, bis sie eingefügt ist; der Dateimanager zeigt sie blass mit

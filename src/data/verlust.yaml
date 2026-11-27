@@ -1,0 +1,62 @@
+# Situations of the page datensicherung: where Mia's file lies, what happens, and whether it is still there. `bleibt` is
+# Ja or Nein in both languages; `grund` says why, and the wrong answer is told the same reason.
+- lage:
+    {
+      de: "Mias Referat liegt nur auf dem Tablet. Das Tablet fällt ins Wasser.",
+      en: "Mia's speech is only on the tablet. The tablet falls into the water.",
+    }
+  bleibt: { de: Nein, en: "No" }
+  falsch: { de: Ja, en: "Yes" }
+  grund:
+    {
+      de: "Es gab nur eine Datei, und die war auf dem Tablet. Ohne Kopie an einem zweiten Ort ist sie weg.",
+      en: "There was only one file, and it was on the tablet. Without a copy in a second place, it is gone.",
+    }
+- lage:
+    {
+      de: "Mia hat eine Kopie in der Cloud. Das Tablet fällt ins Wasser.",
+      en: "Mia has a copy in the cloud. The tablet falls into the water.",
+    }
+  bleibt: { de: Ja, en: "Yes" }
+  falsch: { de: Nein, en: "No" }
+  grund:
+    {
+      de: "Die Kopie liegt an einem anderen Ort. Mia holt sie auf ein neues Gerät.",
+      en: "The copy is in another place. Mia gets it onto a new device.",
+    }
+- lage:
+    {
+      de: "Mia hat das Referat auf den Stick verschoben. Der Stick geht verloren.",
+      en: "Mia moved the speech onto the stick. The stick gets lost.",
+    }
+  bleibt: { de: Nein, en: "No" }
+  falsch: { de: Ja, en: "Yes" }
+  grund:
+    {
+      de: "Verschieben ist keine Sicherung: Die Datei lag danach nur noch auf dem Stick.",
+      en: "Moving is not a backup: afterwards the file was only on the stick.",
+    }
+- lage:
+    {
+      de: "Mias Kopie liegt auf dem Stick, und der steckt immer im Tablet. Beides wird zusammen gestohlen.",
+      en: "Mia's copy is on the stick, which is always plugged into the tablet. Both are stolen together.",
+    }
+  bleibt: { de: Nein, en: "No" }
+  falsch: { de: Ja, en: "Yes" }
+  grund:
+    {
+      de: "Die Kopie war am selben Ort wie das Tablet. Das BSI rät, die Sicherung räumlich getrennt aufzubewahren.",
+      en: "The copy was in the same place as the tablet. The BSI advises keeping the backup in a separate place.",
+    }
+- lage:
+    {
+      de: "Mias Kopie liegt auf dem Stick in der Schublade. Erpressungssoftware sperrt das Tablet.",
+      en: "Mia's copy is on the stick in the drawer. Ransomware locks the tablet.",
+    }
+  bleibt: { de: Ja, en: "Yes" }
+  falsch: { de: Nein, en: "No" }
+  grund:
+    {
+      de: "Der Stick war nicht angesteckt. Mit der Kopie kommt Mia an ihre Daten, ohne Lösegeld zu zahlen.",
+      en: "The stick was not plugged in. With the copy Mia gets her data back without paying a ransom.",
+    }

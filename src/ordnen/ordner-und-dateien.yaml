@@ -186,6 +186,9 @@ blocks:
             de: Die Datei liegt jetzt direkt in der Wurzel, neben den Ordnern. Öffne erst einen passenden Ordner.
             en: The file is now directly in the root, next to the folders. First open a folder that fits.
           sameName: { de: "", en: "" }
+          unanswered:
+            de: "Du hast noch nichts gemacht. Öffne den Ordner Downloads und schneide die neue Datei aus."
+            en: "You have not done anything yet. Open the folder Downloads and cut the new file."
           otherFile: { de: "", en: "" }
         examples:
           accepted:

@@ -1,0 +1,239 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+# Only how harmful software gets onto a device, how to spot it and what to do; never how to make or spread it.
+title:
+  de: Schadsoftware
+  en: Malware
+description:
+  de: "Viren, Würmer, Trojaner und Erpressungssoftware: wie sie auf ein Gerät kommen und was du dann tust."
+  en: "Viruses, worms, Trojans and ransomware: how they get onto a device and what you do then."
+competencies: [schadsoftware]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Der Stick vom Schulhof
+      en: The stick from the school yard
+    blocks:
+      - type: text
+        text:
+          de: |
+            **Selin:** Jona hat auf dem Schulhof einen USB-Stick gefunden und in den Schullaptop gesteckt.
+
+            **Mia:** Und?
+
+            **Selin:** Jetzt gehen auf dem Laptop dauernd Fenster auf, und er ist total langsam. 😬
+
+            Jona ist mit Mia und Selin in der 7b. Auf der Seite davor hast du Zugänge mit Passwörtern geschützt. Hier
+            lernst du, wie Schadsoftware ohne Passwort auf ein Gerät kommt und was du dann tust.
+          en: |
+            **Selin:** Jona found a USB stick in the school yard and plugged it into the school laptop.
+
+            **Mia:** And?
+
+            **Selin:** Now windows keep popping up on the laptop, and it is really slow. 😬
+
+            Jona is in class 7b with Mia and Selin. On the page before, you protected accounts with passwords. Here
+            you will learn how malware gets onto a device without a password and what you do then.
+      - type: true-false
+        id: nur-webseiten
+        text:
+          de: Schadsoftware kommt nur von schlechten Webseiten auf ein Gerät.
+          en: Malware only gets onto a device from bad websites.
+        answer: false
+        explanation:
+          de: "Das BSI nennt viele Wege: den Anhang einer Mail, eine „Zugabe“ bei einem Gratis-Download, ein Makro in einem Dokument und immer noch USB-Sticks."
+          en: "The BSI names many ways: an email attachment, an “extra” in a free download, a macro in a document and still USB sticks."
+  - type: section
+    id: idee
+    title:
+      de: Was Schadsoftware ist
+      en: What malware is
+    blocks:
+      - type: definition
+        term:
+          de: Schadsoftware
+          en: malware
+        explanation:
+          de: Software, die auf einem Gerät Schaden anrichten soll, zum Beispiel Daten stehlen, löschen oder sperren. Sie ist ein Programm wie jedes andere, nur mit bösem Zweck.
+          en: Software that is meant to do harm on a device, for example steal, delete or lock data. It is a program like any other, only with a bad purpose.
+      - type: table
+        caption:
+          de: Vier Arten von Schadsoftware (nach dem BSI)
+          en: Four kinds of malware (as the BSI describes them)
+        header:
+          - { de: Art, en: Kind }
+          - { de: Was sie tut, en: What it does }
+        rowHeaders: true
+        rows:
+          - - { de: Virus, en: virus }
+            - {
+                de: "kopiert sich in andere Programme oder Dateien und verbreitet sich, wenn sie gestartet oder weitergegeben werden",
+                en: "copies itself into other programs or files and spreads when they are run or shared",
+              }
+          - - { de: Wurm, en: worm }
+            - {
+                de: "verbreitet sich von selbst, ohne anderes Programm",
+                en: "spreads on its own, without another program",
+              }
+          - - { de: Trojaner, en: Trojan }
+            - {
+                de: "tarnt sich als nützliches Programm; vermehrt sich nicht selbst",
+                en: "pretends to be a useful program; does not copy itself",
+              }
+          - - { de: Erpressungssoftware, en: ransomware }
+            - {
+                de: "sperrt deine Daten und verlangt Geld, das Lösegeld",
+                en: "locks your data and asks for money, the ransom",
+              }
+      - type: text
+        text:
+          de: |
+            So kommt sie oft herein: als Anhang einer Mail, mit einem Gratis-Download, auf einem fremden USB-Stick oder
+            als Makro in einem Dokument. Ein Makro ist ein kleines Programm in einem Dokument.
+
+            Woran du sie oft erkennst: Das Gerät wird plötzlich langsam, Fenster gehen von selbst auf, Dateien lassen
+            sich nicht mehr öffnen, oder eine Meldung verlangt Geld. [Mehr beim BSI](https://www.bsi.bund.de/dok/6596284)
+          en: |
+            This is how it often gets in: as an email attachment, with a free download, on an unknown USB stick or as a
+            macro in a document. A macro is a small program inside a document.
+
+            How you can often spot it: the device suddenly gets slow, windows open by themselves, files no longer open,
+            or a message asks for money. [More from the BSI (in German)](https://www.bsi.bund.de/dok/6596284)
+  - type: section
+    id: beispiel
+    title:
+      de: Was tust du dann?
+      en: What do you do then?
+    blocks:
+      - type: example
+        title:
+          de: Jona und der Schullaptop
+          en: Jona and the school laptop
+        blocks:
+          - type: text
+            text:
+              de: |
+                1. Jona sagt es sofort einer Lehrkraft. Er schämt sich nicht: Melden hilft allen.
+                2. Die Lehrkraft trennt den Laptop vom Netz, also WLAN aus oder Kabel ab, damit sich nichts weiter ausbreitet.
+                3. Jona steckt den Stick nirgends mehr ein und gibt ihn ab.
+                4. Erwachsene kümmern sich um den Laptop. Gibt es eine Sicherung, sind die Daten nicht verloren.
+              en: |
+                1. Jona tells a teacher straight away. He is not ashamed: reporting it helps everyone.
+                2. The teacher takes the laptop off the network, by turning off the Wi-Fi or pulling out the cable, so that nothing spreads.
+                3. Jona does not plug the stick in anywhere again and hands it in.
+                4. Adults take care of the laptop. If there is a backup, the data is not lost.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: welcher-weg
+        given:
+          w: { pick: 1, from: { data: wege } }
+        task:
+          text:
+            de: "{{w.fall}} Auf welchem Weg könnte hier Schadsoftware auf das Gerät kommen?"
+            en: "{{w.fall}} In which way could malware get onto the device here?"
+        answer:
+          value: w.weg
+          compare:
+            choice:
+              - { de: Anhang einer Mail, en: email attachment }
+              - { de: Gratis-Download, en: free download }
+              - { de: fremder USB-Stick, en: unknown USB stick }
+              - { de: Makro in einem Dokument, en: macro in a document }
+        mistakes:
+          - value: w.falsch1
+            message: { de: "{{w.grund1}}", en: "{{w.grund1}}" }
+          - value: w.falsch2
+            message: { de: "{{w.grund2}}", en: "{{w.grund2}}" }
+          - value: w.falsch3
+            message: { de: "{{w.grund3}}", en: "{{w.grund3}}" }
+        hint:
+          de: Woher kommt in diesem Fall das Neue, das auf das Gerät soll?
+          en: Where does the new thing that is meant to go onto the device come from in this case?
+        steps:
+          - de: "{{w.warum}} Also: {{answer}}."
+            en: "{{w.warum}} So: {{answer}}."
+      - type: matching
+        id: arten
+        text:
+          de: Ordne jeder Art von Schadsoftware zu, was sie tut.
+          en: Match each kind of malware to what it does.
+        pairs:
+          - left: { de: Trojaner, en: Trojan }
+            right: { de: sieht aus wie ein nützliches Spiel, en: looks like a useful game }
+          - left: { de: Wurm, en: worm }
+            right: { de: "springt ohne Hilfe von Gerät zu Gerät", en: "jumps from device to device without help" }
+          - left: { de: Erpressungssoftware, en: ransomware }
+            right:
+              de: "zeigt „Zahle, dann bekommst du deine Fotos zurück“"
+              en: "shows “Pay, then you get your photos back”"
+          - left: { de: Virus, en: virus }
+            right:
+              de: kopiert sich in andere Dateien und reist mit ihnen weiter
+              en: copies itself into other files and travels on with them
+        distractors:
+          - {
+              de: "prüft, welche Verbindungen ins Gerät dürfen",
+              en: "checks which connections may get into the device",
+            }
+        explanation:
+          de: Der Trojaner tarnt sich, der Wurm verbreitet sich selbst, der Virus kopiert sich in andere Programme, und Erpressungssoftware will Geld.
+          en: The Trojan disguises itself, the worm spreads on its own, the virus copies itself into other programs, and ransomware wants money.
+      - type: single-choice
+        id: was-tun
+        text:
+          de: Mias Tablet zeigt plötzlich „Deine Dateien sind gesperrt. Zahle 100 Euro.“ Was tut sie zuerst?
+          en: Mia's tablet suddenly shows “Your files are locked. Pay 100 euros.” What does she do first?
+        options:
+          - text:
+              {
+                de: "Einem Erwachsenen Bescheid sagen und das WLAN ausschalten",
+                en: "Tell an adult and switch off the Wi-Fi",
+              }
+            correct: true
+            info:
+              de: Erwachsene helfen weiter, und ohne Netz breitet sich nichts übers Netz weiter aus. Mit ihrer Sicherung bekommt Mia den Stand ihrer letzten Sicherung zurück, ohne Lösegeld.
+              en: Adults can help, and without the network nothing spreads further over it. With her backup Mia gets back the state of her last backup, without paying a ransom.
+          - text:
+              de: "Schnell bezahlen, damit die Fotos zurückkommen"
+              en: "Pay quickly so that the photos come back"
+            correct: false
+            info:
+              de: Ob dann wirklich alles zurückkommt, weiß niemand. Mit einer Sicherung musst du nicht zahlen.
+              en: Nobody knows if everything really comes back then. With a backup you do not have to pay.
+          - text: { de: Nichts sagen und das Tablet neu starten, en: Say nothing and restart the tablet }
+            correct: false
+            info:
+              de: Allein geht das schief. Sag es einem Erwachsenen, bevor du etwas versuchst.
+              en: On your own this goes wrong. Tell an adult before you try anything.
+          - text:
+              { de: Den Stick mit der Sicherung sofort anstecken, en: Plug in the stick with the backup straight away }
+            correct: false
+            info:
+              de: Dann kann die Erpressungssoftware auch die Sicherung sperren. Der Stick bleibt erst einmal weg.
+              en: Then the ransomware could lock the backup too. The stick stays away for now.
+        explanation:
+          de: Zuerst Hilfe holen und das Gerät vom Netz trennen. Die Sicherung kommt erst wieder dran, wenn das Gerät sauber ist.
+          en: First get help and take the device off the network. The backup only comes back once the device is clean.
+      - type: text
+        text:
+          de: |
+            **Mia:** Jonas Laptop ist wieder sauber. Die Schule hat ihn zurückgesetzt, also alles gelöscht und neu eingerichtet.
+            Seine Dateien waren in der Sicherung.
+
+            **Selin:** Puh! Und wie verhindert man so was?
+
+            Auf der nächsten Seite, „Schutzsoftware und Updates“, geht es
+            um den Schutz.
+          en: |
+            **Mia:** Jona's laptop is clean again. The school reset it, so it deleted everything and set it up again. His files
+            were in the backup.
+
+            **Selin:** Phew! And how do you stop that happening?
+
+            The next page, “Security software and updates”, is
+            about protection.
