@@ -88,15 +88,16 @@ export function duration(
 }
 
 /**
- * The step of the bar, in the units of the text: 0 seconds (below a minute), 1 minutes, 2 hours, 3 days (below a
- * year), 4 years (below a thousand years), 5 thousands of years and more.
+ * The step of the bar, in the units of the text: 0 seconds (below a minute), 1 minutes, 2 hours, 3 days (below 30
+ * days), 4 months (below a year), 5 years (below a thousand years), 6 thousands of years and more.
  */
 export function stage(seconds: number): number {
   const year = 365 * 24 * 3600;
   if (seconds < 60) return 0;
   if (seconds < 3600) return 1;
   if (seconds < 24 * 3600) return 2;
-  if (seconds < year) return 3;
-  if (seconds < 1000 * year) return 4;
-  return 5;
+  if (seconds < 30 * 24 * 3600) return 3;
+  if (seconds < year) return 4;
+  if (seconds < 1000 * year) return 5;
+  return 6;
 }

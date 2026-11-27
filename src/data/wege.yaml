@@ -3,10 +3,15 @@
 # three, each with why it does not fit this case.
 - fall:
     {
-      de: "Selin bekommt eine Mail von einer fremden Adresse: „Deine Rechnung, bitte öffnen“, mit einer Datei daran.",
-      en: "Selin gets an email from an unknown address: “Your bill, please open”, with a file attached.",
+      de: "Selin bekommt eine Mail von einer fremden Adresse: „Deine Rechnung, bitte öffnen“, mit einer Datei daran. Geöffnet hat sie die Datei noch nicht.",
+      en: "Selin gets an email from an unknown address: “Your bill, please open”, with a file attached. She has not opened the file yet.",
     }
   weg: { de: Anhang einer Mail, en: email attachment }
+  warum:
+    {
+      de: "Die Datei hängt an einer Mail von einer fremden Adresse.",
+      en: "The file is attached to an email from an unknown address.",
+    }
   falsch1: { de: Gratis-Download, en: free download }
   falsch2: { de: fremder USB-Stick, en: unknown USB stick }
   falsch3: { de: Makro in einem Dokument, en: macro in a document }
@@ -31,6 +36,11 @@
       en: "A game that normally costs money is free to download from an unknown website.",
     }
   weg: { de: Gratis-Download, en: free download }
+  warum:
+    {
+      de: "Ein teures Spiel umsonst von einer unbekannten Seite: Darin kann eine Schadsoftware als „Zugabe“ stecken.",
+      en: "An expensive game for free from an unknown website: malware can be hidden in it as an “extra”.",
+    }
   falsch1: { de: Anhang einer Mail, en: email attachment }
   falsch2: { de: fremder USB-Stick, en: unknown USB stick }
   falsch3: { de: Makro in einem Dokument, en: macro in a document }
@@ -51,6 +61,8 @@
       en: "Jona finds a USB stick in the school yard and plugs it into the school laptop to see whose it is.",
     }
   weg: { de: fremder USB-Stick, en: unknown USB stick }
+  warum:
+    { de: "Niemand weiß, was auf einem gefundenen Stick ist.", en: "Nobody knows what is on a stick that was found." }
   falsch1: { de: Anhang einer Mail, en: email attachment }
   falsch2: { de: Gratis-Download, en: free download }
   falsch3: { de: Makro in einem Dokument, en: macro in a document }
@@ -72,6 +84,11 @@
       en: "Mia opens a document, and a message asks: “Please enable macros to see the content.”",
     }
   weg: { de: Makro in einem Dokument, en: macro in a document }
+  warum:
+    {
+      de: "Das Dokument will ein Makro starten, also ein kleines Programm darin.",
+      en: "The document wants to run a macro, a small program inside it.",
+    }
   falsch1: { de: Anhang einer Mail, en: email attachment }
   falsch2: { de: Gratis-Download, en: free download }
   falsch3: { de: fremder USB-Stick, en: unknown USB stick }

@@ -48,7 +48,7 @@ blocks:
           - answer: 40
             message:
               de: "Du hast 10 · 4 gerechnet. Jede Ziffer hat 10 Möglichkeiten, mit jeder anderen zusammen: 10 · 10 · 10 · 10."
-              en: "You worked out 10 · 4. Each digit has 10 options, with every other one: 10 · 10 · 10 · 10."
+              en: "You worked out 10 · 4. Each digit has 10 options, and each combines with all options of the others: 10 · 10 · 10 · 10."
           - answer: 1000
             message:
               de: Das wären PINs mit 3 Ziffern. Jede der 4 Ziffern hat 10 Möglichkeiten.
@@ -81,8 +81,8 @@ blocks:
           en: All the characters a password may be made of, for example 26 lowercase letters or 10 digits.
       - type: formula
         formula:
-          de: '\text{Anzahl} = \text{Vorrat}^{\,\text{Länge}}'
-          en: '\text{number} = \text{set}^{\,\text{length}}'
+          de: '\text{Anzahl} = \text{Zeichenvorrat}^{\,\text{Länge}}'
+          en: '\text{number} = \text{character set}^{\,\text{length}}'
       - type: generated
         id: moeglichkeiten
         given:
@@ -102,8 +102,8 @@ blocks:
               en: "You worked out {{z.n}} · {{l}}. Multiply {{z.n}} by itself as many times as the password has characters."
           - value: "pow(l, z.n)"
             message:
-              de: Du hast Länge und Zeichenvorrat vertauscht. Der Zeichenvorrat ist die Grundzahl, die Länge die Hochzahl.
-              en: You swapped the length and the character set. The character set is the base, the length is the power.
+              de: Du hast Länge und Zeichenvorrat vertauscht. Rechne Zeichenvorrat hoch Länge, nicht umgekehrt.
+              en: You swapped the length and the character set. Work out character set to the power of length, not the other way round.
         hint:
           de: "Wie bei der PIN: Zeichenvorrat hoch Länge."
           en: "Like the PIN: character set to the power of the length."
@@ -167,6 +167,7 @@ blocks:
             - { de: Minuten, en: minutes }
             - { de: Stunden, en: hours }
             - { de: Tage, en: days }
+            - { de: Monate, en: months }
             - { de: Jahre, en: years }
             - { de: über 1000 Jahre, en: over 1000 years }
           about: { de: ungefähr, en: about }

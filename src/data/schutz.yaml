@@ -2,8 +2,8 @@
 # dok/504184, mobile devices dok/6687234). `schutz` is the right one; `falschN` the other three with why not here.
 - fall:
     {
-      de: "Ein fremder Rechner aus dem Internet versucht, eine Verbindung zu Mias Laptop aufzubauen.",
-      en: "A strange computer on the internet tries to set up a connection to Mia's laptop.",
+      de: "Ein fremder Rechner aus dem Internet versucht, eine Verbindung zu Mias Tablet aufzubauen.",
+      en: "A strange computer on the internet tries to set up a connection to Mia's tablet.",
     }
   schutz: { de: Firewall, en: firewall }
   falsch1: { de: Virenschutz, en: antivirus }
@@ -17,7 +17,7 @@
   grund2:
     {
       de: "Ein Update schließt Lücken in Programmen. Es kontrolliert keine Verbindungen.",
-      en: "An update closes gaps in programs. It does not control connections.",
+      en: "An update closes holes in programs. It does not control connections.",
     }
   grund3:
     {
@@ -27,7 +27,7 @@
 - fall:
     {
       de: "Der Hersteller hat eine Sicherheitslücke in Mias App gefunden und behoben.",
-      en: "The maker has found a security gap in Mia's app and fixed it.",
+      en: "The maker has found a security hole in Mia's app and fixed it.",
     }
   schutz: { de: Update, en: update }
   falsch1: { de: Firewall, en: firewall }
@@ -36,12 +36,12 @@
   grund1:
     {
       de: "Die Lücke ist in der App selbst. Nur die neue Fassung der App schließt sie.",
-      en: "The gap is in the app itself. Only the new version of the app closes it.",
+      en: "The hole is in the app itself. Only the new version of the app closes it.",
     }
   grund2:
     {
       de: "Die Lücke ist keine Schadsoftware, sondern ein Fehler in der App. Den behebt das Update.",
-      en: "The gap is not malware but a mistake in the app. The update fixes it.",
+      en: "The hole is not malware but a mistake in the app. The update fixes it.",
     }
   grund3:
     {
@@ -94,5 +94,5 @@
   grund3:
     {
       de: "Ein Update schließt Lücken in Programmen, aber es hält niemanden vom Bildschirm fern.",
-      en: "An update closes gaps in programs, but it keeps nobody away from the screen.",
+      en: "An update closes holes in programs, but it keeps nobody away from the screen.",
     }

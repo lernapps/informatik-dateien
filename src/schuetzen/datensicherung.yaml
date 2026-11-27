@@ -79,22 +79,24 @@ blocks:
         nojs:
           de: >-
             Mias Ordnerbaum noch einmal, aber die Wurzel heißt „Kopie auf dem Stick“: dieselben Ordner Schule, Fotos
-            und Musik mit denselben Dateien wie auf dem Tablet.
+            und Musik mit den Dateien vom letzten Sonntag. Was Mia danach geschrieben hat, fehlt.
           en: >-
             Mia's folder tree again, but the root is called “Copy on the stick”: the same folders School, Photos and
-            Music with the same files as on the tablet.
+            Music with the files from last Sunday. What Mia wrote after that is missing.
       - type: text
         text:
           de: |
-            Eine Sicherung ist derselbe Ordnerbaum noch einmal, an einem zweiten Ort. Dafür **kopierst** du die
-            Dateien. Wer sie verschiebt, hat danach wieder nur eine Datei. Das BSI rät außerdem:
+            So sah Mias Stick nach der Sicherung vom letzten Sonntag aus. Eine Sicherung ist derselbe Ordnerbaum noch
+            einmal, an einem zweiten Ort, mit dem Stand vom Tag der Sicherung. Dafür **kopierst** du die
+            Dateien. Wer sie verschiebt, hat danach wieder nur eine Datei. Das BSI, das Bundesamt für Sicherheit in der Informationstechnik, rät außerdem:
 
             - regelmäßig sichern, zum Beispiel jeden Sonntag, oder ein Programm sichern lassen,
             - die Sicherung räumlich getrennt aufbewahren, nicht neben dem Tablet,
             - ab und zu prüfen, ob sich die Kopien öffnen lassen.
           en: |
-            A backup is the same folder tree again, in a second place. To make one, you **copy** the files. If you move
-            them, you only have one file again afterwards. The BSI also advises:
+            This is what Mia's stick looked like after her backup last Sunday. A backup is the same folder tree again,
+            in a second place, as it was on the day of the backup. To make one, you **copy** the files. If you move
+            them, you only have one file again afterwards. The BSI, Germany's federal office for information security, also advises:
 
             - back up regularly, for example every Sunday, or let a program do it,
             - keep the backup in a separate place, not next to the tablet,
@@ -207,7 +209,7 @@ blocks:
           en: Only what was added after the last backup is lost.
         steps:
           - de: "Gesichert ist alles bis zum Abend des {{a}}. Mai. Verloren sind die Tage danach bis zum Unfall: {{answer}} Tage."
-            en: "Everything up to the evening of {{a}} May is backed up. Lost are the days after that, up to the accident: {{answer}} days."
+            en: "Everything up to the evening of {{a}} May is backed up. The days after that, up to the accident, are lost: {{answer}} days."
       - type: true-false
         id: verschieben
         text:
@@ -244,6 +246,6 @@ blocks:
           en: |
             **Selin:** And your speech?
 
-            **Mia:** Written again. From now on I back up every Sunday. The cloud has a password – is it good enough?
+            **Mia:** I rewrote it. From now on I back up every Sunday. The cloud has a password – is it good enough?
 
             On the next page, “Secure passwords”, you will find out.

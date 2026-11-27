@@ -74,9 +74,9 @@ test("the bar has six steps in the units of the text, so 4 days are days, not mo
   expect(stage(600)).toBe(1);
   expect(stage(3600)).toBe(2);
   expect(stage(4 * 86400)).toBe(3);
-  expect(stage(55 * 86400)).toBe(3);
-  expect(stage(5 * 31536000)).toBe(4);
-  expect(stage(1e12)).toBe(5);
+  expect(stage(55 * 86400)).toBe(4);
+  expect(stage(5 * 31536000)).toBe(5);
+  expect(stage(1e12)).toBe(6);
 });
 
 test("an exact count needs no ungefähr", () => {

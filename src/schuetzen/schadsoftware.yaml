@@ -88,9 +88,15 @@ blocks:
       - type: text
         text:
           de: |
+            So kommt sie oft herein: als Anhang einer Mail, mit einem Gratis-Download, auf einem fremden USB-Stick oder
+            als Makro in einem Dokument. Ein Makro ist ein kleines Programm in einem Dokument.
+
             Woran du sie oft erkennst: Das Gerät wird plötzlich langsam, Fenster gehen von selbst auf, Dateien lassen
             sich nicht mehr öffnen, oder eine Meldung verlangt Geld. [Mehr beim BSI](https://www.bsi.bund.de/dok/6596284)
           en: |
+            This is how it often gets in: as an email attachment, with a free download, on an unknown USB stick or as a
+            macro in a document. A macro is a small program inside a document.
+
             How you can often spot it: the device suddenly gets slow, windows open by themselves, files no longer open,
             or a message asks for money. [More from the BSI (in German)](https://www.bsi.bund.de/dok/6596284)
   - type: section
@@ -113,7 +119,7 @@ blocks:
                 4. Erwachsene kümmern sich um den Laptop. Gibt es eine Sicherung, sind die Daten nicht verloren.
               en: |
                 1. Jona tells a teacher straight away. He is not ashamed: reporting it helps everyone.
-                2. The teacher takes the laptop off the network, so Wi-Fi off or cable out, so that nothing spreads.
+                2. The teacher takes the laptop off the network, by turning off the Wi-Fi or pulling out the cable, so that nothing spreads.
                 3. Jona does not plug the stick in anywhere again and hands it in.
                 4. Adults take care of the laptop. If there is a backup, the data is not lost.
   - type: section
@@ -149,8 +155,8 @@ blocks:
           de: Woher kommt in diesem Fall das Neue, das auf das Gerät soll?
           en: Where does the new thing that is meant to go onto the device come from in this case?
         steps:
-          - de: "Hier ist es: {{answer}}."
-            en: "Here it is: {{answer}}."
+          - de: "{{w.warum}} Also: {{answer}}."
+            en: "{{w.warum}} So: {{answer}}."
       - type: matching
         id: arten
         text:
@@ -216,14 +222,16 @@ blocks:
       - type: text
         text:
           de: |
-            **Mia:** Mein Onkel hat das Tablet zurückgesetzt, und mit dem Stick war alles wieder da.
+            **Mia:** Jonas Laptop ist wieder sauber. Die Schule hat ihn zurückgesetzt, also alles gelöscht und neu eingerichtet.
+            Seine Dateien waren in der Sicherung.
 
             **Selin:** Puh! Und wie verhindert man so was?
 
             Auf der nächsten Seite, „Schutzsoftware und Updates“, geht es
             um den Schutz.
           en: |
-            **Mia:** My uncle reset the tablet, and with the stick everything was back.
+            **Mia:** Jona's laptop is clean again. The school reset it, so it deleted everything and set it up again. His files
+            were in the backup.
 
             **Selin:** Phew! And how do you stop that happening?
 

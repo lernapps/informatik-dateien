@@ -101,8 +101,8 @@ blocks:
     blocks:
       - type: example
         title:
-          de: Mias Tablet nach dem Zurücksetzen
-          en: Mia's tablet after the reset
+          de: Mias neues Tablet
+          en: Mia's new tablet
         blocks:
           - type: text
             text:
@@ -173,8 +173,8 @@ blocks:
           - text: { de: eine Bildschirmsperre mit PIN, en: a screen lock with a PIN }
             correct: true
             info:
-              de: Ja. Wer das Tablet findet, kommt nicht hinein.
-              en: Yes. Whoever finds the tablet cannot get in.
+              de: Ja. Wer das Tablet findet, kommt nicht hinein. Nach ein paar falschen Versuchen muss er lange warten, darum hilft hier schon eine PIN.
+              en: Yes. Whoever finds the tablet cannot get in. After a few wrong tries they have to wait a long time, so a PIN already helps here.
           - text:
               {
                 de: "Apps von irgendeiner Webseite holen, wenn sie dort umsonst sind",

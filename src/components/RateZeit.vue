@@ -87,7 +87,11 @@ const fill = (text: string) =>
         <p>
           <strong>{{ fill(timeLine) }}</strong>
         </p>
-        <ol class="ratezeit-bar" :aria-label="stages[step]">
+        <ol
+          class="ratezeit-bar"
+          :aria-label="stages[step]"
+          :style="{ gridTemplateColumns: `repeat(${stages.length}, 1fr)` }"
+        >
           <li v-for="(name, i) in stages" :key="i" :class="{ 'ratezeit-on': i <= step }">
             <span>{{ name }}</span>
           </li>
@@ -145,7 +149,7 @@ const fill = (text: string) =>
 
 .ratezeit-bar {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 2px;
   list-style: none;
   margin: 0.5rem 0 0;
