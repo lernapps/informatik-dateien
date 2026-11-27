@@ -281,20 +281,22 @@ einem zweiten Ort ist. Sonst keine Bilder (7-8, Nachrichten).
       as it says. Commit.
 - [x] Load skill `lernapps-github`. Push the branch, open the preview pull request and see its checks to green, as it
       says.
-- [ ] **Checkpoint:** publish. Show what the increment adds and the preview link. Ask whether it may go online. Stop
+- [x] **Checkpoint:** publish. Show what the increment adds and the preview link. Ask whether it may go online. Stop
       and wait for the yes.
-- [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: the pull request squash-merged into
+      Creator: Checkpoint „Veröffentlichen“ #492 Kapitel 2: angenommen, der Mensch hat zugestimmt, PR #2 ist gemergt, Katalog steht auf Klassen 5–8 (lernapps/apps#922).
+- [x] (skipped: Der Orchestrator hat PR #2 per Squash nach main gebracht (9d7257a).) Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: the pull request squash-merged into
       `main`, the run of `Pages` watched to its end.
-- [ ] Open the address the job `deploy` printed and confirm the new content. Never use a derived address.
-- [ ] The app is listed and its entry changes (school years, summary): load skill `lernapps-listing` and write the
+- [x] Open the address the job `deploy` printed and confirm the new content. Never use a derived address.
+- [x] (skipped: Den Katalog-Eintrag (Klassen 5–8) macht der Orchestrator: lernapps/apps#922.) The app is listed and its entry changes (school years, summary): load skill `lernapps-listing` and write the
       changed entry. Else skip this task.
-- [ ] Fill the retrospective.
-- [ ] Commit this plan on `main` and push it. A push of only `.vibe/` publishes nothing.
-- [ ] The entry changed: open the pull request to the catalog as skill `lernapps-listing` says, without asking first,
+- [x] Fill the retrospective.
+- [x] Commit this plan on `main` and push it. A push of only `.vibe/` publishes nothing.
+- [x] (skipped: Katalog-PR macht der Orchestrator (lernapps/apps#922).) The entry changed: open the pull request to the catalog as skill `lernapps-listing` says, without asking first,
       and see it to "bestanden". Else skip this task: `npx --no -- lernapps plan skip "entry unchanged"`.
-- [ ] **Checkpoint:** list. Tell the creator the result: the pull request and its result, or, when the entry did not
+- [x] **Checkpoint:** list. Tell the creator the result: the pull request and its result, or, when the entry did not
       change, that the catalog takes over the app by itself. Tick it with their reply.
-- [ ] If the plan changed since its last push, commit it on `main` and push again.
+      Creator: Katalog steht auf Klassen 5–8 (lernapps/apps#922).
+- [x] If the plan changed since its last push, commit it on `main` and push again.
 
 ## Retrospective
 
@@ -304,10 +306,25 @@ einem zweiten Ort ist. Sonst keine Bilder (7-8, Nachrichten).
 
 <!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
 
+Commit. Checkpoints Recherche, Plan, Musterseite (passwort) und Veröffentlichen angenommen; Inkrement gemergt (9d7257a)
+und online, Einleitung nachgezogen (#3). Katalog-Eintrag (Klassen 5–8) macht der Orchestrator.
+
 ### Creator turns after the plan
 
 <!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
 
+Ein Mensch: 1 Nachricht („Versuch es noch einmal“, nach einem Abbruch). Alle übrigen Antworten kamen vom Orchestrator:
+Musterseite angenommen, Nachtrag 5 (Übungen allein verständlich, 360/1280 px), Veröffentlichen angenommen, Auftrag
+Einleitung (#3) und Plan-PR.
+
 ### Where I had to guess
 
 <!-- Each gap in plan, skills, content guide, messages or answers, and your choice. "None" if none. -->
+
+- Bilder nur, wo sie etwas zeigen (Ordnerbaum, Simulation); kein neues SVG für Kapitel 2.
+- `Ordnerbaum` bekam eine optionale Prop für den Namen der Wurzel (Kopie auf dem Stick).
+- Reihenfolge: Passwort als Musterseite zuerst gebaut, im Kapitel an zweiter Stelle.
+- 10 Milliarden Versuche pro Sekunde als Annahme der App; das BSI nennt keine Zahl, die Seite sagt das.
+- Balken der Simulation: 7 Stufen (Tage und Monate getrennt), nach dem Befund der Lernenden-Prüfung.
+- Lücke im Plan: Einleitung und Klassenangabe in `app.yaml` standen nicht im Inkrement-Plan; erst der Orchestrator
+  fand sie (PR #3).
