@@ -185,8 +185,8 @@ blocks:
       - type: single-choice
         id: was-bringt-mehr
         text:
-          de: "Du hast es ausprobiert: Was macht ein Passwort aus 8 kleinen Buchstaben stärker?"
-          en: "You have tried it out: what makes a password of 8 lowercase letters stronger?"
+          de: "Ein Passwort hat 8 kleine Buchstaben. Was macht es stärker gegen einen Rechner, der rät?"
+          en: "A password has 8 lowercase letters. What makes it stronger against a computer that guesses?"
         options:
           - text: { de: 4 Zeichen mehr (12 kleine Buchstaben), en: 4 more characters (12 lowercase letters) }
             correct: true
