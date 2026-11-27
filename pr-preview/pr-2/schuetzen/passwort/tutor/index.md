@@ -49,7 +49,7 @@ Warum ein langes Passwort schwer zu erraten ist: eine Simulation, die Regeln des
 
 **Selin:** selin2014. Mein Name und mein Geburtsjahr.
 
-**Mia:** Das kann jeder raten, der dich kennt. Und ein Computer rät noch viel schneller.
+**Mia:** Das kann jeder raten, der dich kennt. Ein Computer noch schneller.
 
 Auf der Seite davor hast du Mias Dateien gesichert. Hier lernst du, warum manche Passwörter schnell erraten sind
 und wie du deine Zugänge schützt.
@@ -62,7 +62,7 @@ Ein Rateprogramm probiert alle Passwörter aus. Wie lange das dauert, hängt dav
 
 - **Zeichenvorrat**: Alle Zeichen, aus denen ein Passwort bestehen darf, zum Beispiel 26 kleine Buchstaben oder 10 Ziffern.
 
-$\text{Anzahl} = \text{Vorrat}^{\,\text{Länge}}$
+$\text{Anzahl} = \text{Zeichenvorrat}^{\,\text{Länge}}$
 
 - Aufgabe `moeglichkeiten` (unten)
 
@@ -87,13 +87,12 @@ solche Passwörter wählen. „selin2014“ steht auf so einer Liste weit vorn.
 
 Das BSI, das Amt für Sicherheit in der Informationstechnik, rät: „Je länger, desto besser.“ Als
 Mindestmaß nennt es 8 Zeichen aus vier Zeichenarten; die Simulation zeigt, warum das nur das Mindeste ist.
-Besser ist ein sehr langes, zum Beispiel aus
-mehreren Wörtern (das BSI nennt 20 bis 25 Zeichen). Und: Jedes Passwort nur für einen Zugang.
+Besser ist ein sehr langes (das BSI nennt 20 bis 25 Zeichen). Und: Jedes Passwort nur für einen Zugang.
 [Mehr beim BSI](https://www.bsi.bund.de/dok/6596574)
 
-- **Passwort-Manager**: Ein Programm, das deine Passwörter verschlüsselt aufbewahrt, also in einer Geheimschrift, die nur es lesen kann. Du merkst dir nur noch ein langes Hauptpasswort.
+- **Passwort-Manager**: Ein Programm, das deine Passwörter verschlüsselt aufbewahrt, also in einer Geheimschrift, die man nur mit deinem Hauptpasswort lesen kann. Du merkst dir nur noch ein langes Hauptpasswort.
 
-- **Zwei-Faktor-Anmeldung**: Du meldest dich mit zwei Dingen aus verschiedenen Arten an, zum Beispiel etwas, das du weißt (Passwort), und etwas, das du hast (Handy mit Code). Ist das Passwort verraten, ist das Konto noch geschützt.
+- **Zwei-Faktor-Anmeldung**: Du meldest dich mit zwei Dingen aus verschiedenen Arten an, zum Beispiel etwas, das du weißt (Passwort), und etwas, das du hast (Handy mit Code). Ist das Passwort verraten, bleibt das Konto meist trotzdem geschützt, solange niemand auch den Code hat.
 
 ### Übung
 
@@ -131,7 +130,7 @@ es darum, wie Schadprogramme hineinkommen.
   - {z.n} hoch {l} = {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast {z.n} · {l} gerechnet. Nimm {z.n} so oft mal sich selbst, wie das Passwort Zeichen hat.“
-  - F2: „Du hast Länge und Zeichenvorrat vertauscht. Der Zeichenvorrat ist die Grundzahl, die Länge die Hochzahl.“
+  - F2: „Du hast Länge und Zeichenvorrat vertauscht. Rechne Zeichenvorrat hoch Länge, nicht umgekehrt.“
 - Link zu Nummer n: `../?moeglichkeiten=n&via=tutor#moeglichkeiten`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
@@ -150,11 +149,11 @@ Nr. | l | z.art | z.n | Lösung | F1 | F2
 - Aufgabe: Du hast es ausprobiert: Was macht ein Passwort aus 8 kleinen Buchstaben stärker?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ 4 Zeichen mehr (12 kleine Buchstaben) – Ungefähr 55 Tage statt 10 Sekunden. Jedes Zeichen mehr nimmt die Anzahl mal 26.
+  - ✓ 4 Zeichen mehr (12 kleine Buchstaben) – Ungefähr 55 Tage statt 10 Sekunden.
   - ✗ alle vier Zeichenarten (8 Zeichen) – Ungefähr 4 Tage. Nur der Zeichenvorrat wächst, die Länge bleibt 8.
   - ✗ Beides bringt genau gleich viel. – Vergleiche die Zeiten: 55 Tage und 4 Tage.
 - Lösung: 4 Zeichen mehr (12 kleine Buchstaben)
-- Erklärung: Jedes Zeichen mehr nimmt die Anzahl mal den Zeichenvorrat. Darum zählt die Länge am meisten.
+- Erklärung: Mehr Zeichen bringen mehr als neue Zeichenarten: Jedes Zeichen nimmt die Anzahl noch einmal mal den Zeichenvorrat.
 - Link: [../?via=tutor#was-bringt-mehr](../?via=tutor#was-bringt-mehr)
 
 ### Aufgabe am-schwersten
@@ -165,7 +164,7 @@ Nr. | l | z.art | z.n | Lösung | F1 | F2
   - ✓ tomatefahrradwolkeregen (23 kleine Buchstaben) – Im Mittel ungefähr 560 Billionen Jahre.
   - ✗ Hund!7 (6 Zeichen, vier Zeichenarten) – 95 hoch 6: ungefähr 37 Sekunden.
   - ✗ selin2014 (9 Zeichen) – 36 hoch 9: ungefähr eine Stunde, und auf den Listen der Angreifer steht es weit vorn.
-  - ✗ Abc12345 (8 Zeichen) – 62 hoch 8: ungefähr 3 Stunden.
+  - ✗ Abc12345 (8 Zeichen) – 62 hoch 8: ungefähr 3 Stunden, und solche Muster stehen auf den Listen der Angreifer weit vorn.
 - Lösung: tomatefahrradwolkeregen (23 kleine Buchstaben)
 - Erklärung: Das längste Passwort gewinnt, obwohl es nur kleine Buchstaben hat. Darum rät das BSI zu sehr langen Passwörtern.
 - Link: [../?via=tutor#am-schwersten](../?via=tutor#am-schwersten)
@@ -183,8 +182,8 @@ Nr. | l | z.art | z.n | Lösung | F1 | F2
 - Aufgabe: Was schützt dein Konto zusätzlich zu einem guten Passwort? Wähle alles, was stimmt.
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Zwei-Faktor-Anmeldung einschalten – Ja. Das BSI rät, sie zu nutzen, sobald ein Dienst sie anbietet.
-  - ✓ einen Passwort-Manager nutzen – Ja. Dann kannst du für jeden Zugang ein eigenes, langes Passwort haben.
+  - ✓ Zwei-Faktor-Anmeldung einschalten – Ja, sobald ein Dienst sie anbietet, rät das BSI.
+  - ✓ einen Passwort-Manager nutzen – Ja. Dann hat jeder Zugang sein eigenes Passwort.
   - ✗ das Passwort der besten Freundin schicken, damit es nicht verloren geht – Was ein anderer kennt, ist nicht mehr geheim.
   - ✗ das Passwort auf einen Zettel am Tablet kleben – Dann kann es jeder lesen, der das Tablet in die Hand nimmt.
 - Lösung: Zwei-Faktor-Anmeldung einschalten; einen Passwort-Manager nutzen

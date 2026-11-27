@@ -65,12 +65,12 @@ Was schützt wovor (nach dem BSI):
 
 **Merke: Merke**
 
-Kein Schutz fängt alles ab. Ein Virenschutz kennt nur Schadsoftware, die schon bekannt ist. Darum
+Kein Schutz fängt alles ab. Ein Virenschutz erkennt vor allem bekannte Schadsoftware, ganz neue oft nicht. Darum
 gehören alle vier zusammen, dazu deine Vorsicht und eine Sicherung.
 
 ### Einstellungen am Tablet
 
-**Beispiel: Mias Tablet nach dem Zurücksetzen**
+**Beispiel: Mias neues Tablet**
 
 1. Bildschirmsperre mit PIN einschalten.
 2. Automatische Updates einschalten.
@@ -128,7 +128,7 @@ schützen. Probier die Regel an deinem eigenen Gerät aus.
 
 ```
 Nr. | s.fall | s.grund1 | s.grund2 | s.grund3 | Zur Wahl | Lösung | F1 | F2 | F3
-1 | Ein Programm auf Mias Laptop will heimlich Daten ins Internet schicken. | Der Virenschutz sucht nach bekannter Schadsoftware. Wer welche Verbindung ins Internet aufbaut, prüft er nicht. | Ein Update schließt Lücken in Programmen. Es kontrolliert keine Verbindungen. | Die Sperre hält Fremde vom Bildschirm fern, nicht Programme vom Internet. | Firewall; Virenschutz; Update; Bildschirmsperre | Firewall | Virenschutz | Update | Bildschirmsperre
+1 | Ein fremder Rechner aus dem Internet versucht, eine Verbindung zu Mias Tablet aufzubauen. | Hier kommt keine Datei, sondern eine Verbindung von außen. Die prüft die Firewall. | Ein Update schließt Lücken in Programmen. Es kontrolliert keine Verbindungen. | Die Sperre hält Menschen am Gerät fern, nicht Verbindungen aus dem Internet. | Firewall; Virenschutz; Update; Bildschirmsperre | Firewall | Virenschutz | Update | Bildschirmsperre
 2 | Der Hersteller hat eine Sicherheitslücke in Mias App gefunden und behoben. | Die Lücke ist in der App selbst. Nur die neue Fassung der App schließt sie. | Die Lücke ist keine Schadsoftware, sondern ein Fehler in der App. Den behebt das Update. | Die Sperre hilft gegen Fremde am Gerät, nicht gegen Fehler in einer App. | Firewall; Virenschutz; Update; Bildschirmsperre | Update | Firewall | Virenschutz | Bildschirmsperre
 3 | Mia hat ihr Tablet im Bus liegen lassen. Jemand will es aufmachen und hineinschauen. | Die Person sitzt direkt am Gerät, nicht im Internet. | Hier will kein Programm schaden, sondern ein Mensch hineinschauen. | Ein Update schließt Lücken in Programmen, aber es hält niemanden vom Bildschirm fern. | Firewall; Virenschutz; Update; Bildschirmsperre | Bildschirmsperre | Firewall | Virenschutz | Update
 4 | Im Ordner Downloads landet eine Datei mit einer bekannten Schadsoftware. | Die Datei ist schon auf dem Gerät. Jetzt muss jemand sie als Schadsoftware erkennen. | Ein Update ändert deine Programme, es prüft keine Dateien in Downloads. | Die Sperre hilft gegen Fremde am Gerät, nicht gegen eine Datei, die schon da ist. | Firewall; Virenschutz; Update; Bildschirmsperre | Virenschutz | Firewall | Update | Bildschirmsperre
@@ -140,7 +140,7 @@ Nr. | s.fall | s.grund1 | s.grund2 | s.grund3 | Zur Wahl | Lösung | F1 | F2 | F
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ automatische Updates einschalten – Ja. Dann sind Sicherheitslücken schnell zu.
-  - ✓ eine Bildschirmsperre mit PIN – Ja. Wer das Tablet findet, kommt nicht hinein.
+  - ✓ eine Bildschirmsperre mit PIN – Ja. Wer das Tablet findet, kommt nicht hinein. Nach ein paar falschen Versuchen muss er lange warten, darum hilft hier schon eine PIN.
   - ✗ Apps von irgendeiner Webseite holen, wenn sie dort umsonst sind – Das BSI rät, Apps nur aus vertrauenswürdigen Quellen zu holen, etwa dem App-Store des Geräts.
   - ✗ jeder App alle Rechte geben, die sie verlangt – Prüfe, ob die App die Rechte wirklich braucht. Im Zweifel lieber nicht installieren.
 - Lösung: automatische Updates einschalten; eine Bildschirmsperre mit PIN
@@ -151,6 +151,6 @@ Nr. | s.fall | s.grund1 | s.grund2 | s.grund3 | Zur Wahl | Lösung | F1 | F2 | F
 
 - Aufgabe: Ordne jedem Schutz zu, wovor er dich bewahrt.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Firewall – ein Programm schickt heimlich Daten nach draußen; Virenschutz – eine bekannte Schadsoftware in einem Anhang; Update – ein Fehler in einer App, durch den Angreifer hineinkommen; Bildschirmsperre – ein Fremder findet dein Tablet im Bus
-- Erklärung: Jeder Schutz hat seine eigene Aufgabe. Gegen ein zu kurzes Passwort hilft nur ein längeres.
+- Lösung: Firewall – ein fremder Rechner will aus dem Internet auf dein Gerät zugreifen; Virenschutz – eine bekannte Schadsoftware in einem Anhang; Update – ein Fehler in einer App, durch den Angreifer hineinkommen; Bildschirmsperre – ein Fremder findet dein Tablet im Bus
+- Erklärung: Jeder Schutz hat seine eigene Aufgabe. Gegen ein zu kurzes Passwort hilft ein längeres, dazu die Zwei-Faktor-Anmeldung.
 - Link: [../?via=tutor#was-er-tut](../?via=tutor#was-er-tut)

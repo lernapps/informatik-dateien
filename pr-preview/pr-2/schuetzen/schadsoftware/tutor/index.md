@@ -60,10 +60,13 @@ lernst du, wie Schadsoftware ohne Passwort auf ein Gerät kommt und was du dann 
 
 Vier Arten von Schadsoftware (nach dem BSI):
 - Art | Was sie tut
-- Virus | hängt sich an ein anderes Programm und verbreitet sich mit ihm
+- Virus | kopiert sich in andere Programme oder Dateien und verbreitet sich, wenn sie gestartet oder weitergegeben werden
 - Wurm | verbreitet sich von selbst, ohne anderes Programm
 - Trojaner | tarnt sich als nützliches Programm; vermehrt sich nicht selbst
 - Erpressungssoftware | sperrt deine Daten und verlangt Geld, das Lösegeld
+
+So kommt sie oft herein: als Anhang einer Mail, mit einem Gratis-Download, auf einem fremden USB-Stick oder
+als Makro in einem Dokument. Ein Makro ist ein kleines Programm in einem Dokument.
 
 Woran du sie oft erkennst: Das Gerät wird plötzlich langsam, Fenster gehen von selbst auf, Dateien lassen
 sich nicht mehr öffnen, oder eine Meldung verlangt Geld. [Mehr beim BSI](https://www.bsi.bund.de/dok/6596284)
@@ -85,7 +88,8 @@ sich nicht mehr öffnen, oder eine Meldung verlangt Geld. [Mehr beim BSI](https:
 
 - Aufgabe `was-tun` (unten)
 
-**Mia:** Mein Onkel hat das Tablet zurückgesetzt, und mit dem Stick war alles wieder da.
+**Mia:** Jonas Laptop ist wieder sauber. Die Schule hat ihn zurückgesetzt, also alles gelöscht und neu eingerichtet.
+Seine Dateien waren in der Sicherung.
 
 **Selin:** Puh! Und wie verhindert man so was?
 
@@ -106,7 +110,7 @@ um den Schutz.
 - Antwortformat: eine Antwort wählen
 - Tipp der App: „Woher kommt in diesem Fall das Neue, das auf das Gerät soll?“
 - Lösungsweg:
-  - Hier ist es: {answer}.
+  - {w.warum} Also: {answer}.
 - Typische Fehler und was die App sagt:
   - F1: „{w.grund1}“
   - F2: „{w.grund2}“
@@ -115,19 +119,19 @@ um den Schutz.
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
-Nr. | w.fall | w.grund1 | w.grund2 | w.grund3 | Zur Wahl | Lösung | F1 | F2 | F3
-1 | Selin bekommt eine Mail von einer fremden Adresse: „Deine Rechnung, bitte öffnen“, mit einer Datei daran. | Selin lädt nichts von einer Webseite herunter. Die Datei kommt mit der Mail. | Hier steckt niemand etwas ein. Die Datei kommt mit der Mail. | Noch ist kein Dokument offen. Die Gefahr ist die Datei, die an der Mail hängt. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | Anhang einer Mail | Gratis-Download | fremder USB-Stick | Makro in einem Dokument
-2 | Mia öffnet ein Dokument, und eine Meldung bittet: „Bitte Makros aktivieren, um den Inhalt zu sehen.“ | Woher das Dokument kam, sagt der Fall nicht. Die Gefahr ist das Makro, das es starten will. | Mia lädt gerade nichts herunter. Die Gefahr steckt im Dokument. | Hier steckt niemand etwas ein. Die Gefahr steckt im Dokument. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | Makro in einem Dokument | Anhang einer Mail | Gratis-Download | fremder USB-Stick
-3 | Jona findet auf dem Schulhof einen USB-Stick und steckt ihn in den Schullaptop, um zu sehen, wem er gehört. | Es kommt keine Mail. Die Gefahr steckt auf dem Stick. | Jona lädt nichts aus dem Internet. Er steckt einen fremden Stick ein. | Noch ist kein Dokument offen. Schon der fremde Stick ist das Risiko. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | fremder USB-Stick | Anhang einer Mail | Gratis-Download | Makro in einem Dokument
-4 | Ein Spiel, das sonst Geld kostet, gibt es auf einer unbekannten Seite umsonst zum Herunterladen. | Es kommt keine Mail. Das Spiel wird von einer Webseite geladen. | Hier steckt niemand etwas ein. Das Spiel kommt aus dem Internet. | Ein Spiel ist ein Programm, kein Dokument. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | Gratis-Download | Anhang einer Mail | fremder USB-Stick | Makro in einem Dokument
+Nr. | w.fall | w.warum | w.grund1 | w.grund2 | w.grund3 | Zur Wahl | Lösung | F1 | F2 | F3
+1 | Selin bekommt eine Mail von einer fremden Adresse: „Deine Rechnung, bitte öffnen“, mit einer Datei daran. Geöffnet hat sie die Datei noch nicht. | Die Datei hängt an einer Mail von einer fremden Adresse. | Selin lädt nichts von einer Webseite herunter. Die Datei kommt mit der Mail. | Hier steckt niemand etwas ein. Die Datei kommt mit der Mail. | Noch ist kein Dokument offen. Die Gefahr ist die Datei, die an der Mail hängt. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | Anhang einer Mail | Gratis-Download | fremder USB-Stick | Makro in einem Dokument
+2 | Mia öffnet ein Dokument, und eine Meldung bittet: „Bitte Makros aktivieren, um den Inhalt zu sehen.“ | Das Dokument will ein Makro starten, also ein kleines Programm darin. | Woher das Dokument kam, sagt der Fall nicht. Die Gefahr ist das Makro, das es starten will. | Mia lädt gerade nichts herunter. Die Gefahr steckt im Dokument. | Hier steckt niemand etwas ein. Die Gefahr steckt im Dokument. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | Makro in einem Dokument | Anhang einer Mail | Gratis-Download | fremder USB-Stick
+3 | Jona findet auf dem Schulhof einen USB-Stick und steckt ihn in den Schullaptop, um zu sehen, wem er gehört. | Niemand weiß, was auf einem gefundenen Stick ist. | Es kommt keine Mail. Die Gefahr steckt auf dem Stick. | Jona lädt nichts aus dem Internet. Er steckt einen fremden Stick ein. | Noch ist kein Dokument offen. Schon der fremde Stick ist das Risiko. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | fremder USB-Stick | Anhang einer Mail | Gratis-Download | Makro in einem Dokument
+4 | Ein Spiel, das sonst Geld kostet, gibt es auf einer unbekannten Seite umsonst zum Herunterladen. | Ein teures Spiel umsonst von einer unbekannten Seite: Darin kann eine Schadsoftware als „Zugabe“ stecken. | Es kommt keine Mail. Das Spiel wird von einer Webseite geladen. | Hier steckt niemand etwas ein. Das Spiel kommt aus dem Internet. | Ein Spiel ist ein Programm, kein Dokument. | Anhang einer Mail; Gratis-Download; fremder USB-Stick; Makro in einem Dokument | Gratis-Download | Anhang einer Mail | fremder USB-Stick | Makro in einem Dokument
 ```
 
 ### Aufgabe arten
 
 - Aufgabe: Ordne jeder Art von Schadsoftware zu, was sie tut.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Trojaner – sieht aus wie ein nützliches Spiel; Wurm – springt ohne Hilfe von Gerät zu Gerät; Erpressungssoftware – zeigt „Zahle, dann bekommst du deine Fotos zurück“; Virus – steckt in einem anderen Programm und reist mit ihm
-- Erklärung: Der Trojaner tarnt sich, der Wurm verbreitet sich selbst, der Virus braucht ein anderes Programm, und Erpressungssoftware will Geld.
+- Lösung: Trojaner – sieht aus wie ein nützliches Spiel; Wurm – springt ohne Hilfe von Gerät zu Gerät; Erpressungssoftware – zeigt „Zahle, dann bekommst du deine Fotos zurück“; Virus – kopiert sich in andere Dateien und reist mit ihnen weiter
+- Erklärung: Der Trojaner tarnt sich, der Wurm verbreitet sich selbst, der Virus kopiert sich in andere Programme, und Erpressungssoftware will Geld.
 - Link: [../?via=tutor#arten](../?via=tutor#arten)
 
 ### Aufgabe was-tun
@@ -135,7 +139,7 @@ Nr. | w.fall | w.grund1 | w.grund2 | w.grund3 | Zur Wahl | Lösung | F1 | F2 | F
 - Aufgabe: Mias Tablet zeigt plötzlich „Deine Dateien sind gesperrt. Zahle 100 Euro.“ Was tut sie zuerst?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Einem Erwachsenen Bescheid sagen und das WLAN ausschalten – Erwachsene helfen weiter, und ohne Netz breitet sich nichts aus. Mit ihrer Sicherung bekommt Mia die Daten auch ohne Lösegeld zurück.
+  - ✓ Einem Erwachsenen Bescheid sagen und das WLAN ausschalten – Erwachsene helfen weiter, und ohne Netz breitet sich nichts übers Netz weiter aus. Mit ihrer Sicherung bekommt Mia den Stand ihrer letzten Sicherung zurück, ohne Lösegeld.
   - ✗ Schnell bezahlen, damit die Fotos zurückkommen – Ob dann wirklich alles zurückkommt, weiß niemand. Mit einer Sicherung musst du nicht zahlen.
   - ✗ Nichts sagen und das Tablet neu starten – Allein geht das schief. Sag es einem Erwachsenen, bevor du etwas versuchst.
   - ✗ Den Stick mit der Sicherung sofort anstecken – Dann kann die Erpressungssoftware auch die Sicherung sperren. Der Stick bleibt erst einmal weg.

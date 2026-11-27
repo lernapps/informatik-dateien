@@ -60,4 +60,6 @@ Hardware und Software an Mias Tablet:
 Ich kann Hardware und Software unterscheiden und erklären, wie sie zusammenwirken. Das brauchst du gleich:
 Schadsoftware ist auch Software, und Updates ändern die Software, nicht die Hardware.
 
+Außerdem brauchst du das erste Kapitel: Ordnerbaum, USB-Stick und Cloud als Speicherorte.
+
 Fehlt dir etwas? Dann schau zuerst auf der Seite des Bausteins nach, oben auf dieser Seite.
