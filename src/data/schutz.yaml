@@ -2,8 +2,8 @@
 # dok/504184, mobile devices dok/6687234). `schutz` is the right one; `falschN` the other three with why not here.
 - fall:
     {
-      de: "Ein Programm auf Mias Laptop will heimlich Daten ins Internet schicken.",
-      en: "A program on Mia's laptop wants to send data to the internet in secret.",
+      de: "Ein fremder Rechner aus dem Internet versucht, eine Verbindung zu Mias Laptop aufzubauen.",
+      en: "A strange computer on the internet tries to set up a connection to Mia's laptop.",
     }
   schutz: { de: Firewall, en: firewall }
   falsch1: { de: Virenschutz, en: antivirus }
@@ -11,8 +11,8 @@
   falsch3: { de: Bildschirmsperre, en: screen lock }
   grund1:
     {
-      de: "Der Virenschutz sucht nach bekannter Schadsoftware. Wer welche Verbindung ins Internet aufbaut, prüft er nicht.",
-      en: "Antivirus looks for known malware. It does not check who connects to the internet.",
+      de: "Hier kommt keine Datei, sondern eine Verbindung von außen. Die prüft die Firewall.",
+      en: "No file arrives here, but a connection from outside. That is what the firewall checks.",
     }
   grund2:
     {
@@ -21,8 +21,8 @@
     }
   grund3:
     {
-      de: "Die Sperre hält Fremde vom Bildschirm fern, nicht Programme vom Internet.",
-      en: "The lock keeps strangers away from the screen, not programs away from the internet.",
+      de: "Die Sperre hält Menschen am Gerät fern, nicht Verbindungen aus dem Internet.",
+      en: "The lock keeps people at the device out, not connections from the internet.",
     }
 - fall:
     {

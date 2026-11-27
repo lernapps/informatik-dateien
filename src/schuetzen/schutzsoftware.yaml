@@ -37,7 +37,7 @@ blocks:
         answer: false
         explanation:
           de: Mit Updates beseitigen Hersteller auch Fehler und schließen Sicherheitslücken. Das BSI rät, sie möglichst rasch zu installieren.
-          en: With updates, makers also fix mistakes and close security gaps. The BSI advises installing them as soon as possible.
+          en: With updates, makers also fix mistakes and close security holes. The BSI advises installing them as soon as possible.
   - type: section
     id: idee
     title:
@@ -66,7 +66,7 @@ blocks:
           - - { de: Update, en: update }
             - {
                 de: "beseitigt Fehler und schließt Sicherheitslücken in Programmen",
-                en: "fixes mistakes and closes security gaps in programs",
+                en: "fixes mistakes and closes security holes in programs",
               }
           - - { de: Bildschirmsperre, en: screen lock }
             - {
@@ -76,7 +76,7 @@ blocks:
       - type: definition
         term:
           de: Sicherheitslücke
-          en: security gap
+          en: security hole
         explanation:
           de: Ein Fehler in einem Programm, durch den Schadsoftware oder Angreifer hineinkommen können. Ein Update schließt sie.
           en: A mistake in a program through which malware or attackers can get in. An update closes it.
@@ -88,10 +88,10 @@ blocks:
           - type: text
             text:
               de: |
-                Kein Schutz fängt alles ab. Ein Virenschutz kennt nur Schadsoftware, die schon bekannt ist. Darum
+                Kein Schutz fängt alles ab. Ein Virenschutz erkennt vor allem bekannte Schadsoftware, ganz neue oft nicht. Darum
                 gehören alle vier zusammen, dazu deine Vorsicht und eine Sicherung.
               en: |
-                No protection catches everything. Antivirus only knows malware that is already known. That is why all
+                No protection catches everything. Antivirus mainly recognises known malware, often not brand-new malware. That is why all
                 four belong together, plus your care and a backup.
   - type: section
     id: beispiel
@@ -169,7 +169,7 @@ blocks:
             correct: true
             info:
               de: Ja. Dann sind Sicherheitslücken schnell zu.
-              en: Yes. Then security gaps are closed quickly.
+              en: Yes. Then security holes are closed quickly.
           - text: { de: eine Bildschirmsperre mit PIN, en: a screen lock with a PIN }
             correct: true
             info:
@@ -203,7 +203,11 @@ blocks:
           en: Match each protection to what it keeps you safe from.
         pairs:
           - left: { de: Firewall, en: firewall }
-            right: { de: ein Programm schickt heimlich Daten nach draußen, en: a program secretly sends data out }
+            right:
+              {
+                de: ein fremder Rechner will aus dem Internet auf dein Gerät zugreifen,
+                en: a strange computer on the internet wants to get into your device,
+              }
           - left: { de: Virenschutz, en: antivirus }
             right: { de: eine bekannte Schadsoftware in einem Anhang, en: a known piece of malware in an attachment }
           - left: { de: Update, en: update }
@@ -217,8 +221,8 @@ blocks:
         distractors:
           - { de: ein zu kurzes Passwort, en: a password that is too short }
         explanation:
-          de: Jeder Schutz hat seine eigene Aufgabe. Gegen ein zu kurzes Passwort hilft nur ein längeres.
-          en: Each protection has its own job. Against a password that is too short, only a longer one helps.
+          de: Jeder Schutz hat seine eigene Aufgabe. Gegen ein zu kurzes Passwort hilft ein längeres, dazu die Zwei-Faktor-Anmeldung.
+          en: Each protection has its own job. Against a password that is too short, a longer one helps, and two-factor authentication too.
   - type: section
     id: regel
     title:

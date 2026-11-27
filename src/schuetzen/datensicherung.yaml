@@ -131,7 +131,7 @@ blocks:
                 3. Sie öffnet eine Datei auf dem Stick, um zu prüfen, ob die Kopie geht.
                 4. Sie zieht den Stick ab und legt ihn in die Schreibtischschublade.
 
-                Dazu sichert ein Programm ihre Fotos jede Nacht in die Cloud. So liegen ihre Dateien an zwei Orten,
+                Dazu sichert ein Programm alle drei Ordner jede Nacht in die Cloud. So liegen ihre Dateien an zwei Orten,
                 und einer davon ist nicht zu Hause.
               en: |
                 1. Mia plugs in the stick.
@@ -139,7 +139,7 @@ blocks:
                 3. She opens a file on the stick to check that the copy works.
                 4. She unplugs the stick and puts it in her desk drawer.
 
-                On top of that, a program backs up her photos to the cloud every night. So her files are in two
+                On top of that, a program backs up all three folders to the cloud every night. So her files are in two
                 places, and one of them is not at home.
       - type: text
         text:
@@ -163,8 +163,8 @@ blocks:
           v: { pick: 1, from: { data: verlust } }
         task:
           text:
-            de: "{{v.lage}} Ist die Datei danach noch da?"
-            en: "{{v.lage}} Is the file still there afterwards?"
+            de: "{{v.lage}} Kommt Mia danach noch an ihre Datei?"
+            en: "{{v.lage}} Can Mia still get to her file afterwards?"
         answer:
           value: v.bleibt
           compare:
@@ -183,7 +183,7 @@ blocks:
       - type: generated
         id: verlorene-tage
         given:
-          a: { int: [1, 20] }
+          a: { int: [2, 20] }
           b: { int: [3, 29] }
         where: ["b - a >= 2", "b - a <= 9"]
         task:

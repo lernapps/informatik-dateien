@@ -22,7 +22,7 @@ blocks:
 
             **Selin:** selin2014. Mein Name und mein Geburtsjahr.
 
-            **Mia:** Das kann jeder raten, der dich kennt. Und ein Computer rät noch viel schneller.
+            **Mia:** Das kann jeder raten, der dich kennt. Ein Computer noch schneller.
 
             Auf der Seite davor hast du Mias Dateien gesichert. Hier lernst du, warum manche Passwörter schnell erraten sind
             und wie du deine Zugänge schützt.
@@ -33,7 +33,7 @@ blocks:
 
             **Selin:** selin2014. My name and the year I was born.
 
-            **Mia:** Anyone who knows you can guess that. And a computer guesses even faster.
+            **Mia:** Anyone who knows you can guess that. A computer even faster.
 
             On the page before, you backed up Mia's files. Here you will learn why some passwords are guessed quickly and how to
             protect your accounts.
@@ -179,8 +179,7 @@ blocks:
             12 kleine Buchstaben: ungefähr 55 Tage. 20 kleine Buchstaben: ungefähr 32 Milliarden Jahre.
           en: >-
             A simulation: you choose the length (4 to 24 characters) and the kinds of characters, and it shows how long
-            a computer needs on average to guess, if it tries 10 billion passwords per second. Examples: 8 small
-            letters: about 10 seconds. 8 characters from all four kinds (95): about 4 days. 12 lowercase letters: about 55
+            a computer needs on average to guess, if it tries 10 billion passwords per second. Examples: 8 lowercase letters: about 10 seconds. 8 characters from all four kinds (95): about 4 days. 12 lowercase letters: about 55
             days. 20 lowercase letters: about 32 billion years.
       - type: single-choice
         id: was-bringt-mehr
@@ -191,8 +190,8 @@ blocks:
           - text: { de: 4 Zeichen mehr (12 kleine Buchstaben), en: 4 more characters (12 lowercase letters) }
             correct: true
             info:
-              de: Ungefähr 55 Tage statt 10 Sekunden. Jedes Zeichen mehr nimmt die Anzahl mal 26.
-              en: About 55 days instead of 10 seconds. Each extra character multiplies the number by 26.
+              de: Ungefähr 55 Tage statt 10 Sekunden.
+              en: About 55 days instead of 10 seconds.
           - text: { de: alle vier Zeichenarten (8 Zeichen), en: all four kinds (8 characters) }
             correct: false
             info:
@@ -204,8 +203,8 @@ blocks:
               de: "Vergleiche die Zeiten: 55 Tage und 4 Tage."
               en: "Compare the times: 55 days and 4 days."
         explanation:
-          de: Jedes Zeichen mehr nimmt die Anzahl mal den Zeichenvorrat. Darum zählt die Länge am meisten.
-          en: Each extra character multiplies the number by the character set. That is why length counts most.
+          de: "Mehr Zeichen bringen mehr als neue Zeichenarten: Jedes Zeichen nimmt die Anzahl noch einmal mal den Zeichenvorrat."
+          en: A few more characters help more than new kinds, because each extra character multiplies the number by the character set again.
       - type: note
         title:
           de: Annahmen dieser App
@@ -234,29 +233,27 @@ blocks:
           de: |
             Das BSI, das Amt für Sicherheit in der Informationstechnik, rät: „Je länger, desto besser.“ Als
             Mindestmaß nennt es 8 Zeichen aus vier Zeichenarten; die Simulation zeigt, warum das nur das Mindeste ist.
-            Besser ist ein sehr langes, zum Beispiel aus
-            mehreren Wörtern (das BSI nennt 20 bis 25 Zeichen). Und: Jedes Passwort nur für einen Zugang.
+            Besser ist ein sehr langes (das BSI nennt 20 bis 25 Zeichen). Und: Jedes Passwort nur für einen Zugang.
             [Mehr beim BSI](https://www.bsi.bund.de/dok/6596574)
           en: |
             The BSI, Germany's office for information security, advises: “The longer, the better.” As a minimum it
             names 8 characters from four kinds; the simulation shows why that is only the minimum. A very long one is
-            better, for example made of several words
-            (the BSI says 20 to 25 characters). And: use each password for one account only.
+            better (the BSI says 20 to 25 characters). And: use each password for one account only.
             [More from the BSI (in German)](https://www.bsi.bund.de/dok/6596574)
       - type: definition
         term:
           de: Passwort-Manager
           en: password manager
         explanation:
-          de: Ein Programm, das deine Passwörter verschlüsselt aufbewahrt, also in einer Geheimschrift, die nur es lesen kann. Du merkst dir nur noch ein langes Hauptpasswort.
-          en: A program that keeps your passwords encrypted, that is in a secret code only it can read. You only need to remember one long main password.
+          de: Ein Programm, das deine Passwörter verschlüsselt aufbewahrt, also in einer Geheimschrift, die man nur mit deinem Hauptpasswort lesen kann. Du merkst dir nur noch ein langes Hauptpasswort.
+          en: A program that keeps your passwords encrypted, that is in a secret code that can only be read with your main password. You only need to remember one long main password.
       - type: definition
         term:
           de: Zwei-Faktor-Anmeldung
-          en: two-factor login
+          en: two-factor authentication
         explanation:
-          de: Du meldest dich mit zwei Dingen aus verschiedenen Arten an, zum Beispiel etwas, das du weißt (Passwort), und etwas, das du hast (Handy mit Code). Ist das Passwort verraten, ist das Konto noch geschützt.
-          en: You log in with two things of different kinds, for example something you know (a password) and something you have (a phone with a code). If the password gets out, the account is still protected.
+          de: Du meldest dich mit zwei Dingen aus verschiedenen Arten an, zum Beispiel etwas, das du weißt (Passwort), und etwas, das du hast (Handy mit Code). Ist das Passwort verraten, bleibt das Konto meist trotzdem geschützt, solange niemand auch den Code hat.
+          en: You log in with two things of different kinds, for example something you know (a password) and something you have (a phone with a code). If the password gets out, the account usually stays protected, as long as nobody also has the code.
   - type: section
     id: uebung
     title:
@@ -289,8 +286,8 @@ blocks:
           - text: { de: "Abc12345 (8 Zeichen)", en: "Abc12345 (8 characters)" }
             correct: false
             info:
-              de: "62 hoch 8: ungefähr 3 Stunden."
-              en: "62 to the power of 8: about 3 hours."
+              de: "62 hoch 8: ungefähr 3 Stunden, und solche Muster stehen auf den Listen der Angreifer weit vorn."
+              en: "62 to the power of 8: about 3 hours, and patterns like this are near the top of attackers' lists."
         explanation:
           de: Das längste Passwort gewinnt, obwohl es nur kleine Buchstaben hat. Darum rät das BSI zu sehr langen Passwörtern.
           en: The longest password wins, even though it only has lowercase letters. That is why the BSI advises very long passwords.
@@ -309,16 +306,16 @@ blocks:
           de: Was schützt dein Konto zusätzlich zu einem guten Passwort? Wähle alles, was stimmt.
           en: What protects your account in addition to a good password? Choose everything that is true.
         options:
-          - text: { de: Zwei-Faktor-Anmeldung einschalten, en: turning on two-factor login }
+          - text: { de: Zwei-Faktor-Anmeldung einschalten, en: turning on two-factor authentication }
             correct: true
             info:
-              de: Ja. Das BSI rät, sie zu nutzen, sobald ein Dienst sie anbietet.
-              en: Yes. The BSI advises using it as soon as a service offers it.
+              de: Ja, sobald ein Dienst sie anbietet, rät das BSI.
+              en: Yes, as soon as a service offers it, says the BSI.
           - text: { de: einen Passwort-Manager nutzen, en: using a password manager }
             correct: true
             info:
-              de: Ja. Dann kannst du für jeden Zugang ein eigenes, langes Passwort haben.
-              en: Yes. Then you can have a separate long password for each account.
+              de: Ja. Dann hat jeder Zugang sein eigenes Passwort.
+              en: Yes. Then each account has its own password.
           - text:
               de: "das Passwort der besten Freundin schicken, damit es nicht verloren geht"
               en: "sending the password to your best friend so it does not get lost"

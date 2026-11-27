@@ -67,8 +67,8 @@ blocks:
         rows:
           - - { de: Virus, en: virus }
             - {
-                de: "hängt sich an ein anderes Programm und verbreitet sich mit ihm",
-                en: "attaches itself to another program and spreads with it",
+                de: "kopiert sich in andere Programme oder Dateien und verbreitet sich, wenn sie gestartet oder weitergegeben werden",
+                en: "copies itself into other programs or files and spreads when they are run or shared",
               }
           - - { de: Wurm, en: worm }
             - {
@@ -167,18 +167,16 @@ blocks:
               en: "shows “Pay, then you get your photos back”"
           - left: { de: Virus, en: virus }
             right:
-              {
-                de: steckt in einem anderen Programm und reist mit ihm,
-                en: hides in another program and travels with it,
-              }
+              de: kopiert sich in andere Dateien und reist mit ihnen weiter
+              en: copies itself into other files and travels on with them
         distractors:
           - {
               de: "prüft, welche Verbindungen ins Gerät dürfen",
               en: "checks which connections may get into the device",
             }
         explanation:
-          de: Der Trojaner tarnt sich, der Wurm verbreitet sich selbst, der Virus braucht ein anderes Programm, und Erpressungssoftware will Geld.
-          en: The Trojan disguises itself, the worm spreads on its own, the virus needs another program, and ransomware wants money.
+          de: Der Trojaner tarnt sich, der Wurm verbreitet sich selbst, der Virus kopiert sich in andere Programme, und Erpressungssoftware will Geld.
+          en: The Trojan disguises itself, the worm spreads on its own, the virus copies itself into other programs, and ransomware wants money.
       - type: single-choice
         id: was-tun
         text:
@@ -192,8 +190,8 @@ blocks:
               }
             correct: true
             info:
-              de: Erwachsene helfen weiter, und ohne Netz breitet sich nichts aus. Mit ihrer Sicherung bekommt Mia die Daten auch ohne Lösegeld zurück.
-              en: Adults can help, and without the network nothing spreads. With her backup Mia gets her data back without paying a ransom.
+              de: Erwachsene helfen weiter, und ohne Netz breitet sich nichts übers Netz weiter aus. Mit ihrer Sicherung bekommt Mia den Stand ihrer letzten Sicherung zurück, ohne Lösegeld.
+              en: Adults can help, and without the network nothing spreads further over it. With her backup Mia gets back the state of her last backup, without paying a ransom.
           - text:
               de: "Schnell bezahlen, damit die Fotos zurückkommen"
               en: "Pay quickly so that the photos come back"
