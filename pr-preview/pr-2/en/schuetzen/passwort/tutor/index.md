@@ -146,7 +146,7 @@ No. | l | z.art | z.n | Solution | F1 | F2
 
 ### Exercise was-bringt-mehr
 
-- Task: You have tried it out: what makes a password of 8 lowercase letters stronger?
+- Task: A password has 8 lowercase letters. What makes it stronger against a computer that guesses?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ 4 more characters (12 lowercase letters) – About 55 days instead of 10 seconds.

@@ -146,7 +146,7 @@ Nr. | l | z.art | z.n | Lösung | F1 | F2
 
 ### Aufgabe was-bringt-mehr
 
-- Aufgabe: Du hast es ausprobiert: Was macht ein Passwort aus 8 kleinen Buchstaben stärker?
+- Aufgabe: Ein Passwort hat 8 kleine Buchstaben. Was macht es stärker gegen einen Rechner, der rät?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ 4 Zeichen mehr (12 kleine Buchstaben) – Ungefähr 55 Tage statt 10 Sekunden.
